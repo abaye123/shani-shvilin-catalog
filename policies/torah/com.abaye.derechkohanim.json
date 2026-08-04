@@ -1,0 +1,10 @@
+{
+  "type": "Fixed",
+  "packageName": "com.abaye.derechkohanim",
+  "category": "TORAH",
+  "networkPolicy": {
+    "mode": "FULL_OPEN",
+    "desc": "Unfiltered inside the tunnel, by request"
+  },
+  "minimumVersionCode": 1
+}

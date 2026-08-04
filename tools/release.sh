@@ -22,7 +22,7 @@ set -euo pipefail
 
 cd "$(dirname "$0")/.."
 
-KEY="${1:-${CATALOG_SIGNING_KEY:-../keys/shani-shvilin-signing.pem}}"
+KEY="${1:-${CATALOG_SIGNING_KEY:-../keys/shani-shvilin-catalog.pem}}"
 
 if [ ! -f "$KEY" ]; then
     cat >&2 <<EOF
@@ -32,7 +32,7 @@ Pass one as the first argument, or set CATALOG_SIGNING_KEY.
 To create a fresh pair (this replaces the pinned key, so the app has to be
 rebuilt with the new public value before any device will accept a release):
 
-    openssl genpkey -algorithm ed25519 -out signing.pem
+    openssl ecparam -name prime256v1 -genkey -noout -out signing.pem
     openssl pkey -in signing.pem -pubout -outform DER | xxd -p -c 256
 EOF
     exit 1
@@ -42,7 +42,7 @@ python tools/build_catalog.py --out catalog.json --version-out catalog.version
 python tools/build_policies.py --out policies.json
 
 sign() {
-    openssl pkeyutl -sign -rawin -inkey "$KEY" -in "$1" -out "$1.sig"
+    openssl dgst -sha256 -sign "$KEY" -out "$1.sig" "$1"
     printf '  signed %s -> %s.sig (%s bytes)\n' "$1" "$1" "$(wc -c <"$1.sig" | tr -d ' ')"
 }
 
@@ -65,7 +65,7 @@ import base64, hashlib, json
 files = ["catalog.json", "policies.json"]
 document = {
     "schemaVersion": 1,
-    "algorithm": "Ed25519",
+    "algorithm": "SHA256withECDSA",
     "signatures": {
         name: base64.b64encode(open(name + ".sig", "rb").read()).decode("ascii")
         for name in files

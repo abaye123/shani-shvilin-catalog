@@ -25,8 +25,8 @@ for file in "${FILES[@]}"; do
     accepted=""
     for key in "${KEYS[@]}"; do
         [ -f "$key" ] || continue
-        if openssl pkeyutl -verify -rawin -pubin -inkey "$key" \
-                -in "$file" -sigfile "$file.sig" >/dev/null 2>&1; then
+        if openssl dgst -sha256 -verify "$key" \
+                -signature "$file.sig" "$file" >/dev/null 2>&1; then
             accepted="$key"
             break
         fi
@@ -71,8 +71,8 @@ for name in ("catalog.json", "policies.json"):
     try:
         accepted = next(
             (key for key in keys if subprocess.run(
-                ["openssl", "pkeyutl", "-verify", "-rawin", "-pubin", "-inkey", key,
-                 "-in", name, "-sigfile", sig_path],
+                ["openssl", "dgst", "-sha256", "-verify", key,
+                 "-signature", sig_path, name],
                 capture_output=True).returncode == 0),
             None,
         )

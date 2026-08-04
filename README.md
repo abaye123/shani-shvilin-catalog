@@ -158,7 +158,7 @@ apksigner verify --print-certs app.apk | grep -i "SHA-256 digest"
 ## בנייה וחתימה
 
 ```bash
-./tools/release.sh [path/to/private-key.pem]     # ברירת מחדל ../keys/shani-shvilin-signing.pem
+./tools/release.sh [path/to/private-key.pem]     # ברירת מחדל ../keys/shani-shvilin-catalog.pem
 ./tools/verify.sh                                # אימות בלבד, כמו שהמכשיר עושה
 python tools/build_catalog.py --check            # התוצר תואם למקור?
 python tools/build_policies.py --check
@@ -167,7 +167,7 @@ python tools/build_policies.py --check
 `catalog.version` הוא קובץ צד קטן שהאפליקציה מושכת לפני הקטלוג עצמו:
 
 ```json
-{ "schemaVersion": 1, "entryCount": 13, "revision": "33f7b1e3c0b05884" }
+{ "schemaVersion": 1, "entryCount": 14, "revision": "275a19108cba70b1" }
 ```
 
 ה-`revision` הוא טביעת אצבע של **הנתונים בלבד**, לא של הקובץ. בנייה חוזרת ללא
@@ -175,7 +175,7 @@ python tools/build_policies.py --check
 
 ## מפתחות
 
-החתימה היא Ed25519, והאימות במכשיר הוא חובה - לא best effort.
+החתימה היא ECDSA על עקומת P-256 עם SHA-256, והאימות במכשיר הוא חובה - לא best effort.
 
 - `keys/signing-current.pub.pem`, `keys/signing-standby.pub.pem` - החצאים
   הציבוריים, ו-`keys/public-keys.hex` הוא בדיוק מה שמוצמד באפליקציה
@@ -201,5 +201,21 @@ HTML, זורק אותו, ונשאר על העותק המוטמע לנצח - כש
 **קובץ שהחתימה שלו לא מאמתת נזרק, והמכשיר נשאר על העותק הקודם.** אם גם הוא לא
 קיים, נשאר העותק המוטמע ב-APK. כישלון סנכרון לעולם אינו פותח גישה.
 
-> אימות Ed25519 דרך ספק המערכת קיים מ-API 33. מתחת לזה הסנכרון מדווח
-> `Unsupported` ונשאר על העותק המוטמע, ולא מקבל קובץ לא מאומת.
+### למה ECDSA ולא Ed25519
+
+זה היה Ed25519, בהנחה המתועדת שהספק של המערכת תומך בו מ-API 33. הוא לא, לא על
+חומרה אמיתית. נמדד על Samsung SM-A075F עם אנדרואיד 16 (API 36): כל מה שקיים
+במכשיר בצורת Edwards הוא `AndroidKeyStore: KeyFactory/ED25519` - כלומר רק
+ה-keystore, שנועד לייצר מפתחות בתוך חומרה מאובטחת ומסרב לייבא מפתח מבחוץ:
+
+```
+InvalidKeySpecException: To generate a key pair in Android Keystore, use
+KeyPairGenerator initialized with KeyGenParameterSpec
+```
+
+התוצאה בשטח: כל מפתח מוצמד נדחה כפגום, כל הורדה דווחה כחתימה לא תקינה, והמכשיר
+נשאר על הקטלוג המוטמע ב-APK בלי דרך להבדיל בין זה לבין זיוף.
+
+ECDSA/P-256 קיים ב-AndroidOpenSSL בכל גרסה שהאפליקציה תומכת בה, הוא מה ש-openssl
+מייצר עם `dgst -sha256 -sign`, ולא דורש שום תלות. הוא גם מבטל את רצפת ה-API 33
+שהתכנון הקודם גרר, כך שגם מכשירים מתחת ל-Tiramisu מאמתים ומסתנכרנים.

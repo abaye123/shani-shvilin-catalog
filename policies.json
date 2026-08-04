@@ -1,8 +1,18 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-04T17:09:33Z",
-  "sourceTag": "f819472ef5025d99",
+  "generatedAt": "2026-08-04T17:58:59Z",
+  "sourceTag": "afc0272a11a3fe50",
   "policies": [
+    {
+      "type": "Fixed",
+      "packageName": "com.abaye.derechkohanim",
+      "category": "TORAH",
+      "networkPolicy": {
+        "mode": "FULL_OPEN",
+        "desc": "Unfiltered inside the tunnel, by request"
+      },
+      "minimumVersionCode": 1
+    },
     {
       "type": "Fixed",
       "packageName": "com.gettaxi.android",
