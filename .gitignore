@@ -1,0 +1,9 @@
+# Private signing keys never belong here. Signing happens on the machine that
+# holds the key; this repository carries only the public halves, under keys/.
+*.pem
+!keys/*.pub.pem
+*.key
+signing*.der
+
+__pycache__/
+*.pyc

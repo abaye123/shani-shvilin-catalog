@@ -1,0 +1,16 @@
+{
+  "type": "Fixed",
+  "packageName": "fm.jewishmusic.application",
+  "category": "MUSIC_AUDIO",
+  "minimumVersionCode": 161,
+  "networkPolicy": {
+    "mode": "BLACKLIST",
+    "spec": {
+      "type": "HostList",
+      "hosts": [
+        "googleads.g.doubleclick.net",
+        "graph.facebook.com"
+      ]
+    }
+  }
+}

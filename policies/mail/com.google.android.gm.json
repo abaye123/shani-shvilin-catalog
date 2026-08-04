@@ -1,0 +1,23 @@
+{
+  "type": "ModeBased",
+  "packageName": "com.google.android.gm",
+  "category": "MAIL",
+  "minimumVersionCode": 64075573,
+  "modePolicies": {
+    "NAVIGATION_AND_MAIL_ONLY": {
+      "mode": "BLACKLIST",
+      "desc": "Mail only; Google Chat and Meet are blocked",
+      "spec": {
+        "type": "HostList",
+        "hosts": [
+          "chat.google.com",
+          "meet.google.com",
+          "*.googlevideo.com"
+        ]
+      }
+    },
+    "REDUCED_RISK": {
+      "mode": "FULL_OPEN"
+    }
+  }
+}

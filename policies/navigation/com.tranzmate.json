@@ -1,0 +1,25 @@
+{
+  "type": "Fixed",
+  "packageName": "com.tranzmate",
+  "category": "NAVIGATION",
+  "minimumVersionCode": 593,
+  "networkPolicy": {
+    "mode": "BLACKLIST",
+    "desc": "Public transport routing only",
+    "spec": {
+      "type": "HostList",
+      "hosts": [
+        "moovit.com",
+        "www.moovit.com",
+        "support.moovitapp.com",
+        "www.support.moovitapp.com",
+        "global-attractions.moovit.com",
+        "moovitapp.zendesk.com",
+        "googleads.g.doubleclick.net",
+        "graph.facebook.com",
+        "*.facebook.com",
+        "bit.ly"
+      ]
+    }
+  }
+}

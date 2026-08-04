@@ -1,0 +1,23 @@
+{
+  "type": "Fixed",
+  "packageName": "com.waze",
+  "category": "NAVIGATION",
+  "minimumVersionCode": 1030416,
+  "isRecommendedInStore": true,
+  "networkPolicy": {
+    "mode": "BLACKLIST",
+    "desc": "Aligned with KDroidDatabase app-policies/navigation/com.waze.json, which is maintained against real applications. If Waze misbehaves under this list, suspect our matcher or our engine before the data.",
+    "spec": {
+      "type": "HostList",
+      "hosts": [
+        "*.waze.com",
+        "venue-image.waze.com",
+        "ads-resources.waze.com",
+        "ads-resources-legacy.waze.com",
+        "adsassets.waze.com",
+        "social.waze.co.il",
+        "support.google.com"
+      ]
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "packageName": "fm.jewishmusic.application",
+  "displayName": {
+    "he": "מוזיקה יהודית",
+    "en": "Jewish Music"
+  },
+  "category": "MUSIC_AUDIO",
+  "minimumVersionCode": 161,
+  "sha256": "97f137aa25f859a3c2b96977ea1c645690844eecf1c1db61fd7a55e856cdc1d3",
+  "availableInStore": true,
+  "grantsNetworkAccess": true,
+  "minUserMode": "REDUCED_RISK",
+  "flags": {
+    "isRecommendedInStore": false
+  },
+  "source": {
+    "type": "APKPURE",
+    "id": "fm.jewishmusic.application"
+  }
+}

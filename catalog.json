@@ -1,0 +1,252 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-04T17:00:20Z",
+  "entries": [
+    {
+      "packageName": "com.gettaxi.android",
+      "displayName": {
+        "he": "גט",
+        "en": "Gett"
+      },
+      "category": "NAVIGATION",
+      "minimumVersionCode": 1026069,
+      "sha256": "ea4dfeea9235b0130deecfc550dd3712c5b04fa724bcdede8916bca0574a2b2f",
+      "availableInStore": true,
+      "grantsNetworkAccess": true,
+      "minUserMode": "NAVIGATION_ONLY",
+      "flags": {
+        "isRecommendedInStore": false
+      },
+      "source": {
+        "type": "APKPURE",
+        "id": "com.gettaxi.android"
+      }
+    },
+    {
+      "packageName": "com.google.android.apps.maps",
+      "displayName": {
+        "he": "מפות גוגל",
+        "en": "Google Maps"
+      },
+      "category": "NAVIGATION",
+      "minimumVersionCode": 0,
+      "sha256": "f0fd6c5b410f25cb25c3b53346c8972fae30f8ee7411df910480ad6b2d60db83",
+      "availableInStore": false,
+      "grantsNetworkAccess": true,
+      "minUserMode": "NAVIGATION_ONLY",
+      "flags": {
+        "isRecommendedInStore": false
+      },
+      "notes": "Preinstalled on the test device, so it is granted network but not offered for installation. Signature pinned from that device."
+    },
+    {
+      "packageName": "com.google.android.gm",
+      "displayName": {
+        "he": "Gmail",
+        "en": "Gmail"
+      },
+      "category": "MAIL",
+      "minimumVersionCode": 64075573,
+      "sha256": "f0fd6c5b410f25cb25c3b53346c8972fae30f8ee7411df910480ad6b2d60db83",
+      "availableInStore": true,
+      "grantsNetworkAccess": true,
+      "minUserMode": "NAVIGATION_AND_MAIL_ONLY",
+      "flags": {
+        "isRecommendedInStore": false
+      },
+      "source": {
+        "type": "APKPURE",
+        "id": "com.google.android.gm"
+      }
+    },
+    {
+      "packageName": "com.google.android.gms",
+      "displayName": {
+        "he": "שירותי Google Play",
+        "en": "Google Play Services"
+      },
+      "category": "SYSTEM",
+      "minimumVersionCode": 0,
+      "sha256": "5f2391277b1dbd489000467e4c2fa6af802430080457dce2f618992e9dfb5402",
+      "availableInStore": false,
+      "grantsNetworkAccess": true,
+      "minUserMode": "NAVIGATION_ONLY",
+      "flags": {
+        "isRecommendedInStore": false
+      }
+    },
+    {
+      "packageName": "com.google.android.gsf",
+      "displayName": {
+        "he": "מסגרת שירותי Google",
+        "en": "Google Services Framework"
+      },
+      "category": "SYSTEM",
+      "minimumVersionCode": 0,
+      "sha256": "7ce83c1b71f3d572fed04c8d40c5cb10ff75e6d87d9df6fbd53f0468c2905053",
+      "availableInStore": false,
+      "grantsNetworkAccess": true,
+      "minUserMode": "NAVIGATION_ONLY",
+      "flags": {
+        "isRecommendedInStore": false
+      }
+    },
+    {
+      "packageName": "com.google.android.tts",
+      "displayName": {
+        "he": "הקראת טקסט",
+        "en": "Google TTS"
+      },
+      "category": "SYSTEM",
+      "minimumVersionCode": 0,
+      "sha256": "f0fd6c5b410f25cb25c3b53346c8972fae30f8ee7411df910480ad6b2d60db83",
+      "availableInStore": false,
+      "grantsNetworkAccess": true,
+      "minUserMode": "NAVIGATION_ONLY",
+      "flags": {
+        "isRecommendedInStore": false
+      },
+      "notes": "Needed for spoken navigation directions"
+    },
+    {
+      "packageName": "com.moblin.israeltrain",
+      "displayName": {
+        "he": "רכבת ישראל",
+        "en": "Israel Railways"
+      },
+      "category": "NAVIGATION",
+      "minimumVersionCode": 0,
+      "sha256": "2d1fc3df5fa10433d692f0dfe3933b0a400d83ff99691e1b583ccb7edc2b70e9",
+      "availableInStore": true,
+      "grantsNetworkAccess": true,
+      "minUserMode": "NAVIGATION_ONLY",
+      "flags": {
+        "isRecommendedInStore": false
+      },
+      "source": {
+        "type": "APKCOMBO",
+        "id": "com.moblin.israeltrain"
+      },
+      "notes": "Was APKPURE, but apkpure.com answers 410 Gone for this package while it is still live on Play, so that source could not serve a download. Pinned from the APKCombo build, which is where the file actually came from."
+    },
+    {
+      "packageName": "com.sec.android.daemonapp",
+      "displayName": {
+        "he": "מזג אוויר",
+        "en": "Weather"
+      },
+      "category": "TOOLS",
+      "minimumVersionCode": 0,
+      "sha256": "34df0e7a9f1cf1892e45c056b4973cd81ccf148a4050d11aea4ac5a65f900a42",
+      "availableInStore": false,
+      "grantsNetworkAccess": true,
+      "minUserMode": "NAVIGATION_ONLY",
+      "flags": {
+        "isRecommendedInStore": false
+      },
+      "notes": "Samsung Weather, preinstalled on the test device at /system/app/SamsungWeather/SamsungWeather.apk, so it is granted network but not offered for installation. Signature pinned from that device. Category is TOOLS rather than SYSTEM on purpose: CatalogMapper exempts SYSTEM entries from the sha256 validity gate, and this entry has a real pin that should be enforced."
+    },
+    {
+      "packageName": "com.tranzmate",
+      "displayName": {
+        "he": "מוביט",
+        "en": "Moovit"
+      },
+      "category": "NAVIGATION",
+      "minimumVersionCode": 593,
+      "sha256": "c42f9060274bc622dd53d1ac25dc1c0167c3023ec3d87649c3c9ec10e3ad7db0",
+      "availableInStore": true,
+      "grantsNetworkAccess": true,
+      "minUserMode": "NAVIGATION_ONLY",
+      "flags": {
+        "isRecommendedInStore": false
+      },
+      "source": {
+        "type": "APKPURE",
+        "id": "com.tranzmate"
+      }
+    },
+    {
+      "packageName": "com.unicell.pangoandroid",
+      "displayName": {
+        "he": "פנגו",
+        "en": "Pango"
+      },
+      "category": "NAVIGATION",
+      "minimumVersionCode": 110603,
+      "sha256": "97c63437c7cf91eacf185ced2dfc3b4df6c401d9e4cdedeeb3ca5c81c554f498",
+      "availableInStore": true,
+      "grantsNetworkAccess": true,
+      "minUserMode": "NAVIGATION_ONLY",
+      "flags": {
+        "isRecommendedInStore": false
+      },
+      "source": {
+        "type": "APKPURE",
+        "id": "com.unicell.pangoandroid"
+      }
+    },
+    {
+      "packageName": "com.waze",
+      "displayName": {
+        "he": "וייז",
+        "en": "Waze"
+      },
+      "category": "NAVIGATION",
+      "minimumVersionCode": 1030416,
+      "sha256": "03637f6c5d8f604e6fdb79a6ffbfa578de4e318f8da22fc6106665247f8807d7",
+      "availableInStore": true,
+      "grantsNetworkAccess": true,
+      "minUserMode": "NAVIGATION_ONLY",
+      "flags": {
+        "isRecommendedInStore": true
+      },
+      "source": {
+        "type": "APKPURE",
+        "id": "com.waze"
+      },
+      "notes": "APKPure serves this as a ~169 MB XAPK bundle, not a plain APK. The pin is the certificate of the BASE apk inside it (com.waze.apk), which is the only member PackageManager reports for the package."
+    },
+    {
+      "packageName": "fm.jewishmusic.application",
+      "displayName": {
+        "he": "מוזיקה יהודית",
+        "en": "Jewish Music"
+      },
+      "category": "MUSIC_AUDIO",
+      "minimumVersionCode": 161,
+      "sha256": "97f137aa25f859a3c2b96977ea1c645690844eecf1c1db61fd7a55e856cdc1d3",
+      "availableInStore": true,
+      "grantsNetworkAccess": true,
+      "minUserMode": "REDUCED_RISK",
+      "flags": {
+        "isRecommendedInStore": false
+      },
+      "source": {
+        "type": "APKPURE",
+        "id": "fm.jewishmusic.application"
+      }
+    },
+    {
+      "packageName": "in.krosbits.musicolet",
+      "displayName": {
+        "he": "מיוזיקולט",
+        "en": "Musicolet"
+      },
+      "category": "MUSIC_AUDIO",
+      "minimumVersionCode": 0,
+      "sha256": "8a4d4121f541e3644c1fd1e5c3502eb4bea49792cafd26e600d413cd1f10851f",
+      "availableInStore": true,
+      "grantsNetworkAccess": false,
+      "minUserMode": "OFFLINE",
+      "flags": {
+        "isRecommendedInStore": true
+      },
+      "source": {
+        "type": "APKPURE",
+        "id": "in.krosbits.musicolet"
+      },
+      "notes": "Not on F-Droid despite an earlier entry claiming so: the F-Droid API answers 404. APKPURE is where the file actually comes from, so hasSignedIndex is false and the pinned digest is the only remaining defence."
+    }
+  ]
+}

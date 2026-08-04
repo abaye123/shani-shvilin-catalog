@@ -1,0 +1,9 @@
+{
+  "type": "Fixed",
+  "packageName": "com.google.android.gms",
+  "category": "SYSTEM",
+  "minimumVersionCode": 0,
+  "networkPolicy": {
+    "mode": "FULL_OPEN"
+  }
+}

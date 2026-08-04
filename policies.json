@@ -1,0 +1,180 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-04T17:00:21Z",
+  "sourceTag": "f819472ef5025d99",
+  "policies": [
+    {
+      "type": "Fixed",
+      "packageName": "com.gettaxi.android",
+      "category": "NAVIGATION",
+      "minimumVersionCode": 1026069,
+      "networkPolicy": {
+        "mode": "BLACKLIST",
+        "spec": {
+          "type": "HostList",
+          "hosts": [
+            "googleads.g.doubleclick.net",
+            "graph.facebook.com",
+            "*.facebook.com"
+          ]
+        }
+      }
+    },
+    {
+      "type": "ModeBased",
+      "packageName": "com.google.android.gm",
+      "category": "MAIL",
+      "minimumVersionCode": 64075573,
+      "modePolicies": {
+        "NAVIGATION_AND_MAIL_ONLY": {
+          "mode": "BLACKLIST",
+          "desc": "Mail only; Google Chat and Meet are blocked",
+          "spec": {
+            "type": "HostList",
+            "hosts": [
+              "chat.google.com",
+              "meet.google.com",
+              "*.googlevideo.com"
+            ]
+          }
+        },
+        "REDUCED_RISK": {
+          "mode": "FULL_OPEN"
+        }
+      }
+    },
+    {
+      "type": "Fixed",
+      "packageName": "com.google.android.gms",
+      "category": "SYSTEM",
+      "minimumVersionCode": 0,
+      "networkPolicy": {
+        "mode": "FULL_OPEN"
+      }
+    },
+    {
+      "type": "Fixed",
+      "packageName": "com.google.android.gsf",
+      "category": "SYSTEM",
+      "minimumVersionCode": 0,
+      "networkPolicy": {
+        "mode": "FULL_OPEN"
+      }
+    },
+    {
+      "type": "Fixed",
+      "packageName": "com.google.android.tts",
+      "category": "SYSTEM",
+      "minimumVersionCode": 0,
+      "networkPolicy": {
+        "mode": "FULL_OPEN"
+      }
+    },
+    {
+      "type": "Fixed",
+      "packageName": "com.moblin.israeltrain",
+      "category": "NAVIGATION",
+      "minimumVersionCode": 1435123456,
+      "networkPolicy": {
+        "mode": "FULL_OPEN"
+      }
+    },
+    {
+      "type": "Fixed",
+      "packageName": "com.tranzmate",
+      "category": "NAVIGATION",
+      "minimumVersionCode": 593,
+      "networkPolicy": {
+        "mode": "BLACKLIST",
+        "desc": "Public transport routing only",
+        "spec": {
+          "type": "HostList",
+          "hosts": [
+            "moovit.com",
+            "www.moovit.com",
+            "support.moovitapp.com",
+            "www.support.moovitapp.com",
+            "global-attractions.moovit.com",
+            "moovitapp.zendesk.com",
+            "googleads.g.doubleclick.net",
+            "graph.facebook.com",
+            "*.facebook.com",
+            "bit.ly"
+          ]
+        }
+      }
+    },
+    {
+      "type": "Fixed",
+      "packageName": "com.unicell.pangoandroid",
+      "category": "NAVIGATION",
+      "minimumVersionCode": 110603,
+      "networkPolicy": {
+        "mode": "BLACKLIST",
+        "desc": "Parking and tolls; the entertainment and content sub-services are blocked",
+        "spec": {
+          "type": "HostList",
+          "hosts": [
+            "pango.co.il",
+            "www.pango.co.il",
+            "pango-global-fun.pango.co.il",
+            "pango.world8.co.il",
+            "pango-stage.skygini.com",
+            "apps.commbox.io",
+            "connectop.co.il",
+            "s3-eu-west-1.amazonaws.com"
+          ]
+        }
+      }
+    },
+    {
+      "type": "Fixed",
+      "packageName": "com.waze",
+      "category": "NAVIGATION",
+      "minimumVersionCode": 1030416,
+      "isRecommendedInStore": true,
+      "networkPolicy": {
+        "mode": "BLACKLIST",
+        "desc": "Aligned with KDroidDatabase app-policies/navigation/com.waze.json, which is maintained against real applications. If Waze misbehaves under this list, suspect our matcher or our engine before the data.",
+        "spec": {
+          "type": "HostList",
+          "hosts": [
+            "*.waze.com",
+            "venue-image.waze.com",
+            "ads-resources.waze.com",
+            "ads-resources-legacy.waze.com",
+            "adsassets.waze.com",
+            "social.waze.co.il",
+            "support.google.com"
+          ]
+        }
+      }
+    },
+    {
+      "type": "Fixed",
+      "packageName": "fm.jewishmusic.application",
+      "category": "MUSIC_AUDIO",
+      "minimumVersionCode": 161,
+      "networkPolicy": {
+        "mode": "BLACKLIST",
+        "spec": {
+          "type": "HostList",
+          "hosts": [
+            "googleads.g.doubleclick.net",
+            "graph.facebook.com"
+          ]
+        }
+      }
+    },
+    {
+      "type": "Fixed",
+      "packageName": "in.krosbits.musicolet",
+      "category": "MUSIC_AUDIO",
+      "minimumVersionCode": 0,
+      "isRecommendedInStore": true,
+      "networkPolicy": {
+        "mode": "OFFLINE"
+      }
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "type": "Fixed",
+  "packageName": "com.unicell.pangoandroid",
+  "category": "NAVIGATION",
+  "minimumVersionCode": 110603,
+  "networkPolicy": {
+    "mode": "BLACKLIST",
+    "desc": "Parking and tolls; the entertainment and content sub-services are blocked",
+    "spec": {
+      "type": "HostList",
+      "hosts": [
+        "pango.co.il",
+        "www.pango.co.il",
+        "pango-global-fun.pango.co.il",
+        "pango.world8.co.il",
+        "pango-stage.skygini.com",
+        "apps.commbox.io",
+        "connectop.co.il",
+        "s3-eu-west-1.amazonaws.com"
+      ]
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "packageName": "com.unicell.pangoandroid",
+  "displayName": {
+    "he": "פנגו",
+    "en": "Pango"
+  },
+  "category": "NAVIGATION",
+  "minimumVersionCode": 110603,
+  "sha256": "97c63437c7cf91eacf185ced2dfc3b4df6c401d9e4cdedeeb3ca5c81c554f498",
+  "availableInStore": true,
+  "grantsNetworkAccess": true,
+  "minUserMode": "NAVIGATION_ONLY",
+  "flags": {
+    "isRecommendedInStore": false
+  },
+  "source": {
+    "type": "APKPURE",
+    "id": "com.unicell.pangoandroid"
+  }
+}

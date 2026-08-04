@@ -1,0 +1,9 @@
+# No end of line translation, anywhere.
+#
+# The device verifies a detached signature over the exact bytes GitHub serves.
+# A CRLF added on checkout or on commit changes those bytes, the signature
+# stops matching, and every device rejects the update while reporting only that
+# the signature was invalid. So the working tree and the blob are the same file.
+* -text
+
+*.sig binary

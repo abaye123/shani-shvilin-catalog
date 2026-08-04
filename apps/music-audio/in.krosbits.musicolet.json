@@ -1,0 +1,21 @@
+{
+  "packageName": "in.krosbits.musicolet",
+  "displayName": {
+    "he": "מיוזיקולט",
+    "en": "Musicolet"
+  },
+  "category": "MUSIC_AUDIO",
+  "minimumVersionCode": 0,
+  "sha256": "8a4d4121f541e3644c1fd1e5c3502eb4bea49792cafd26e600d413cd1f10851f",
+  "availableInStore": true,
+  "grantsNetworkAccess": false,
+  "minUserMode": "OFFLINE",
+  "flags": {
+    "isRecommendedInStore": true
+  },
+  "source": {
+    "type": "APKPURE",
+    "id": "in.krosbits.musicolet"
+  },
+  "notes": "Not on F-Droid despite an earlier entry claiming so: the F-Droid API answers 404. APKPURE is where the file actually comes from, so hasSignedIndex is false and the pinned digest is the only remaining defence."
+}

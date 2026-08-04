@@ -1,0 +1,16 @@
+{
+  "packageName": "com.google.android.gsf",
+  "displayName": {
+    "he": "מסגרת שירותי Google",
+    "en": "Google Services Framework"
+  },
+  "category": "SYSTEM",
+  "minimumVersionCode": 0,
+  "sha256": "7ce83c1b71f3d572fed04c8d40c5cb10ff75e6d87d9df6fbd53f0468c2905053",
+  "availableInStore": false,
+  "grantsNetworkAccess": true,
+  "minUserMode": "NAVIGATION_ONLY",
+  "flags": {
+    "isRecommendedInStore": false
+  }
+}

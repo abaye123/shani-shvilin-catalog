@@ -1,0 +1,17 @@
+{
+  "packageName": "com.sec.android.daemonapp",
+  "displayName": {
+    "he": "מזג אוויר",
+    "en": "Weather"
+  },
+  "category": "TOOLS",
+  "minimumVersionCode": 0,
+  "sha256": "34df0e7a9f1cf1892e45c056b4973cd81ccf148a4050d11aea4ac5a65f900a42",
+  "availableInStore": false,
+  "grantsNetworkAccess": true,
+  "minUserMode": "NAVIGATION_ONLY",
+  "flags": {
+    "isRecommendedInStore": false
+  },
+  "notes": "Samsung Weather, preinstalled on the test device at /system/app/SamsungWeather/SamsungWeather.apk, so it is granted network but not offered for installation. Signature pinned from that device. Category is TOOLS rather than SYSTEM on purpose: CatalogMapper exempts SYSTEM entries from the sha256 validity gate, and this entry has a real pin that should be enforced."
+}

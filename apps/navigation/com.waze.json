@@ -1,0 +1,21 @@
+{
+  "packageName": "com.waze",
+  "displayName": {
+    "he": "וייז",
+    "en": "Waze"
+  },
+  "category": "NAVIGATION",
+  "minimumVersionCode": 1030416,
+  "sha256": "03637f6c5d8f604e6fdb79a6ffbfa578de4e318f8da22fc6106665247f8807d7",
+  "availableInStore": true,
+  "grantsNetworkAccess": true,
+  "minUserMode": "NAVIGATION_ONLY",
+  "flags": {
+    "isRecommendedInStore": true
+  },
+  "source": {
+    "type": "APKPURE",
+    "id": "com.waze"
+  },
+  "notes": "APKPure serves this as a ~169 MB XAPK bundle, not a plain APK. The pin is the certificate of the BASE apk inside it (com.waze.apk), which is the only member PackageManager reports for the package."
+}

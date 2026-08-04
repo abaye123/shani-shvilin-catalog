@@ -1,0 +1,4 @@
+# X.509 SubjectPublicKeyInfo, DER, as hex.
+# These are the values pinned in SyncWorker.PINNED_PUBLIC_KEYS, in this order.
+current 302a300506032b6570032100db3cc226ee6f58217f24d588febe452d46afef30bb6cbeae4f896b0ebc4ade54
+standby 302a300506032b6570032100a26e7db998ec496752128c171001ec8a5894b786374888354cf0fc9811d9c6ed

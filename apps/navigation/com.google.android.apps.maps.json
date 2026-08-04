@@ -1,0 +1,17 @@
+{
+  "packageName": "com.google.android.apps.maps",
+  "displayName": {
+    "he": "מפות גוגל",
+    "en": "Google Maps"
+  },
+  "category": "NAVIGATION",
+  "minimumVersionCode": 0,
+  "sha256": "f0fd6c5b410f25cb25c3b53346c8972fae30f8ee7411df910480ad6b2d60db83",
+  "availableInStore": false,
+  "grantsNetworkAccess": true,
+  "minUserMode": "NAVIGATION_ONLY",
+  "flags": {
+    "isRecommendedInStore": false
+  },
+  "notes": "Preinstalled on the test device, so it is granted network but not offered for installation. Signature pinned from that device."
+}

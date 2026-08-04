@@ -1,0 +1,21 @@
+{
+  "packageName": "com.moblin.israeltrain",
+  "displayName": {
+    "he": "רכבת ישראל",
+    "en": "Israel Railways"
+  },
+  "category": "NAVIGATION",
+  "minimumVersionCode": 0,
+  "sha256": "2d1fc3df5fa10433d692f0dfe3933b0a400d83ff99691e1b583ccb7edc2b70e9",
+  "availableInStore": true,
+  "grantsNetworkAccess": true,
+  "minUserMode": "NAVIGATION_ONLY",
+  "flags": {
+    "isRecommendedInStore": false
+  },
+  "source": {
+    "type": "APKCOMBO",
+    "id": "com.moblin.israeltrain"
+  },
+  "notes": "Was APKPURE, but apkpure.com answers 410 Gone for this package while it is still live on Play, so that source could not serve a download. Pinned from the APKCombo build, which is where the file actually came from."
+}

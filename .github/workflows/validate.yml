@@ -1,0 +1,29 @@
+name: validate
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: The sources are valid
+        run: |
+          python tools/build_catalog.py --out /tmp/catalog.json \
+            --version-out /tmp/catalog.version
+          python tools/build_policies.py --out /tmp/policies.json
+
+      - name: The published files match the sources
+        run: |
+          python tools/build_catalog.py --check
+          python tools/build_policies.py --check
+
+      - name: The published files are signed
+        run: ./tools/verify.sh

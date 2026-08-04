@@ -1,0 +1,17 @@
+{
+  "packageName": "com.google.android.tts",
+  "displayName": {
+    "he": "הקראת טקסט",
+    "en": "Google TTS"
+  },
+  "category": "SYSTEM",
+  "minimumVersionCode": 0,
+  "sha256": "f0fd6c5b410f25cb25c3b53346c8972fae30f8ee7411df910480ad6b2d60db83",
+  "availableInStore": false,
+  "grantsNetworkAccess": true,
+  "minUserMode": "NAVIGATION_ONLY",
+  "flags": {
+    "isRecommendedInStore": false
+  },
+  "notes": "Needed for spoken navigation directions"
+}

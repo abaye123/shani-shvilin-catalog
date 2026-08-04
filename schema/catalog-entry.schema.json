@@ -1,0 +1,126 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/abaye/ShaniShvilinCatalog/schema/catalog-entry.schema.json",
+  "title": "ShaniShvilin catalog entry",
+  "type": "object",
+  "required": [
+    "packageName",
+    "displayName",
+    "category",
+    "minimumVersionCode",
+    "sha256"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "packageName": {
+      "type": "string",
+      "pattern": "^[a-zA-Z][a-zA-Z0-9_]*(\\.[a-zA-Z0-9_]+)+$"
+    },
+    "displayName": {
+      "type": "object",
+      "required": [
+        "he",
+        "en"
+      ],
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "NAVIGATION",
+        "MAIL",
+        "COMMUNICATION",
+        "MUSIC_AUDIO",
+        "VIDEO",
+        "TORAH",
+        "PRODUCTIVITY",
+        "TOOLS",
+        "FINANCE",
+        "HEALTH_FITNESS",
+        "NEWS",
+        "GOVERNMENT",
+        "HOME",
+        "SYSTEM"
+      ]
+    },
+    "minimumVersionCode": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "sha256": {
+      "type": "string",
+      "pattern": "^([0-9a-f]{64}|)$",
+      "description": "Lower case hex SHA-256 of the signing certificate. May be empty for SYSTEM entries only."
+    },
+    "availableInStore": {
+      "type": "boolean",
+      "default": true
+    },
+    "grantsNetworkAccess": {
+      "type": "boolean",
+      "default": false
+    },
+    "minUserMode": {
+      "type": "string",
+      "enum": [
+        "OFFLINE",
+        "LOCAL_ONLY",
+        "NAVIGATION_ONLY",
+        "NAVIGATION_AND_MAIL_ONLY",
+        "REDUCED_RISK",
+        "MOST_OPEN"
+      ],
+      "default": "MOST_OPEN"
+    },
+    "flags": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "hasUnmodestImage": {
+          "type": "boolean"
+        },
+        "isPotentiallyDangerous": {
+          "type": "boolean"
+        },
+        "requiresPlayStoreInstallation": {
+          "type": "boolean"
+        },
+        "isRecommendedInStore": {
+          "type": "boolean"
+        }
+      }
+    },
+    "source": {
+      "type": "object",
+      "required": [
+        "type"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "APKPURE",
+            "APKCOMBO",
+            "FDROID",
+            "APTOIDE",
+            "PLAY",
+            "DIRECT_URL"
+          ]
+        },
+        "id": {
+          "type": "string"
+        },
+        "directUrl": {
+          "type": "string",
+          "format": "uri"
+        }
+      }
+    },
+    "notes": {
+      "type": "string"
+    }
+  }
+}

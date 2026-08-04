@@ -1,0 +1,16 @@
+{
+  "packageName": "com.google.android.gms",
+  "displayName": {
+    "he": "שירותי Google Play",
+    "en": "Google Play Services"
+  },
+  "category": "SYSTEM",
+  "minimumVersionCode": 0,
+  "sha256": "5f2391277b1dbd489000467e4c2fa6af802430080457dce2f618992e9dfb5402",
+  "availableInStore": false,
+  "grantsNetworkAccess": true,
+  "minUserMode": "NAVIGATION_ONLY",
+  "flags": {
+    "isRecommendedInStore": false
+  }
+}

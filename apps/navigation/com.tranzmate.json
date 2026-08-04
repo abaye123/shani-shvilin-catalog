@@ -1,0 +1,20 @@
+{
+  "packageName": "com.tranzmate",
+  "displayName": {
+    "he": "מוביט",
+    "en": "Moovit"
+  },
+  "category": "NAVIGATION",
+  "minimumVersionCode": 593,
+  "sha256": "c42f9060274bc622dd53d1ac25dc1c0167c3023ec3d87649c3c9ec10e3ad7db0",
+  "availableInStore": true,
+  "grantsNetworkAccess": true,
+  "minUserMode": "NAVIGATION_ONLY",
+  "flags": {
+    "isRecommendedInStore": false
+  },
+  "source": {
+    "type": "APKPURE",
+    "id": "com.tranzmate"
+  }
+}
