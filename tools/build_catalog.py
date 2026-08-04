@@ -29,6 +29,7 @@ DIR_TO_CATEGORY = {
     "health-fitness": "HEALTH_FITNESS", "news": "NEWS",
     "governement": "GOVERNMENT", "home": "HOME", "system": "SYSTEM",
 }
+POLICY_BUNDLE = "policies.json"
 SHA256_RE = re.compile(r"^[0-9a-f]{64}$")
 PACKAGE_RE = re.compile(r"^[a-zA-Z][a-zA-Z0-9_]*(\.[a-zA-Z0-9_]+)+$")
 
@@ -216,11 +217,26 @@ def main():
     }
     write_json(args.out, document)
 
+    # The side car names both documents on purpose. It is the one small file a
+    # device polls before downloading anything, so it is also the only place
+    # that can say "this catalog and these policies were published together".
+    # Without the policy tag here the app had nothing to compare against and
+    # redownloaded the policy bundle on every run.
+    policy_tag = None
+    if os.path.exists(POLICY_BUNDLE):
+        try:
+            with open(POLICY_BUNDLE, encoding="utf-8") as fh:
+                policy_tag = json.load(fh).get("sourceTag")
+        except Exception as exc:
+            print(f"warning: cannot read {POLICY_BUNDLE} ({exc}); "
+                  f"the side car will not carry a policy tag", file=sys.stderr)
+
     write_json(args.version_out, {
         "schemaVersion": 1,
         "generatedAt": generated_at,
         "entryCount": len(entries),
         "revision": revision,
+        "policyTag": policy_tag,
     })
 
     granting = sum(1 for e in entries if e.get("grantsNetworkAccess"))

@@ -38,8 +38,10 @@ EOF
     exit 1
 fi
 
-python tools/build_catalog.py --out catalog.json --version-out catalog.version
+# Policies first: the catalog side car records the policy tag, so that file
+# has to exist and be current before the side car is written.
 python tools/build_policies.py --out policies.json
+python tools/build_catalog.py --out catalog.json --version-out catalog.version
 
 sign() {
     openssl dgst -sha256 -sign "$KEY" -out "$1.sig" "$1"
