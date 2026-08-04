@@ -71,6 +71,22 @@ def validate(path, entry, errors, warnings):
         if sha == "0" * 64:
             err("sha256 is still the placeholder; compute the real digest")
 
+    extra = entry.get("additionalSha256", [])
+    if not isinstance(extra, list):
+        err("additionalSha256 must be a list")
+    else:
+        for digest in extra:
+            if not isinstance(digest, str) or not SHA256_RE.match(digest):
+                err(f"additionalSha256 entry '{digest}' is not 64 lower case hex "
+                    f"characters")
+            elif digest == sha:
+                err("additionalSha256 repeats the primary sha256")
+        if extra:
+            # Every certificate here is another key allowed to speak for this
+            # package, so it should be a deliberate exception and visible on
+            # every build rather than something that accumulates quietly.
+            warn(f"accepts {len(extra) + 1} signing certificates")
+
     if not isinstance(entry.get("minimumVersionCode"), int):
         err("minimumVersionCode must be an integer")
 

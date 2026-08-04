@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-04T17:58:58Z",
+  "generatedAt": "2026-08-04T18:07:19Z",
   "entries": [
     {
       "packageName": "com.abaye.derechkohanim",
@@ -11,13 +11,16 @@
       "category": "TORAH",
       "minimumVersionCode": 1,
       "sha256": "1576ff26779c0f0e929b7da663f998183e4d6d3c3b78a42efe5dc91fc99f41ee",
+      "additionalSha256": [
+        "5560e47deeadb29b3da24871ac2f1b1fc44c0b79ed40636d3a014292e0986689"
+      ],
       "availableInStore": false,
       "grantsNetworkAccess": true,
       "minUserMode": "NAVIGATION_ONLY",
       "flags": {
         "isRecommendedInStore": false
       },
-      "notes": "Not published on Play, so it is not offered for installation and is installed by hand. The entry exists because network access is decided here: a package that is not in the catalog gets nothing, whatever its policy says. Pinned to the release signing certificate (C=IL, O=abaye, CN=abaye); a debug build carries a different certificate and will not be granted network."
+      "notes": "Not published on Play, so it is not offered for installation and is installed by hand. The entry exists because network access is decided here: a package that is not in the catalog gets nothing, whatever its policy says. Two certificates are accepted while this app is still in development: the release key (C=IL, O=abaye, CN=abaye) and the debug key of the machine it is built on (C=US, O=Android, CN=Android Debug), which is what is installed on the test device today. Drop the debug entry once the app ships."
     },
     {
       "packageName": "com.gettaxi.android",
