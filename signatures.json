@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "algorithm": "Ed25519",
+  "signatures": {
+    "catalog.json": "MViR1uyVh9FJhvRy5Ftr0WFTlyR0oLGHTRPmbp5VfpdRAh4nF/l7/XE8+yPb/kDRMIXtgOW0pxTj+NbBCx9TDA==",
+    "policies.json": "FhXO817Kpw6SOSk56rJ9TELC0/Dkuw025mrfwjHtBJfPS69SeM2TVklZOb52sT6vITGMbcVCfSFYrCzrWC7dAw=="
+  },
+  "sha256": {
+    "catalog.json": "bdb5eee6c36340c1bfe663bb0ee7fc4ab5f669ad5dbe6b88901f27b1827606f5",
+    "policies.json": "db55ac417803b8848a4cb6af4af37632db65ae810f053596b80cc07933f13fd7"
+  }
+}

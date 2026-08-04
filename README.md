@@ -23,12 +23,14 @@
 apps/<category>/<packageName>.json         מי - הקטלוג
 policies/<category>/<packageName>.json     מה - מה חסום בתוך אפליקציה מאושרת
 
-catalog.json      catalog.json.sig     catalog.version    ← נבנים, לא נערכים ביד
-policies.json     policies.json.sig                       ← נבנים, לא נערכים ביד
+catalog.json      catalog.version                         ← נבנים, לא נערכים ביד
+policies.json                                             ← נבנה, לא נערך ביד
+signatures.json                                           ← החתימות, base64
+catalog.json.sig  policies.json.sig                       ← אותן חתימות כבייטים
 ```
 
 קובץ אחד לאפליקציה, מסודר לפי קטגוריה. זה מונע קונפליקטי merge ומאפשר PR ממוקד.
-חמשת הקבצים שבשורש הם התוצר, והם היחידים שהאפליקציה מורידה.
+הקבצים שבשורש הם התוצר, והם היחידים שהאפליקציה מורידה.
 
 קטגוריות: `navigation`, `mail`, `communication`, `music-audio`, `video`,
 `torah`, `productivity`, `tools`, `finance`, `health-fitness`, `news`,
@@ -145,7 +147,7 @@ apksigner verify --print-certs app.apk | grep -i "SHA-256 digest"
 
 1. ערוך או הוסף קובץ תחת `apps/` או `policies/`.
 2. הרץ `./tools/release.sh` - הוא בונה, חותם ומאמת.
-3. commit לחמשת קבצי התוצר יחד עם קובץ המקור, ודחוף ל-`main`.
+3. commit לקבצי התוצר יחד עם קובץ המקור, ודחוף ל-`main`.
 
 תוך שש שעות לכל היותר כל מכשיר מושך את השינוי. אין צורך בגרסה חדשה של
 האפליקציה.
@@ -183,6 +185,18 @@ python tools/build_policies.py --check
 - שני מפתחות מוצמדים, נוכחי ומילואים, כדי שאפשר יהיה להחליף מפתח בלי לנתק
   מכשירים שנשארו על גרסה ישנה: חותמים במפתח המילואים, משחררים גרסה שמצמידה
   (מילואים, חדש), ורק אז פורשים את הישן.
+
+### למה החתימות ב-JSON ולא כקובץ `.sig`
+
+זה התחיל כקובץ `.sig` נפרד, וזה לא שורד את הרשתות שהמוצר הזה חי בהן.
+`raw.githubusercontent.com` מגיש `.sig` בתור `application/octet-stream`, ומסנני
+תוכן עונים על זה בדף חסימה. נמדד על קו חי: `catalog.json` חזר 200 כ-`text/plain`
+ו-`catalog.json.sig` חזר דף HTML של חסימה. המכשיר היה מאמת את הקטלוג מול פיסת
+HTML, זורק אותו, ונשאר על העותק המוטמע לנצח - כשההודעה היחידה היא "החתימה אינה
+תקינה".
+
+`signatures.json` מוגש כטקסט ועובר. הוא גם בקשה אחת במקום שתיים. קבצי ה-`.sig`
+עדיין מתפרסמים לצד, לאימות עם openssl.
 
 **קובץ שהחתימה שלו לא מאמתת נזרק, והמכשיר נשאר על העותק הקודם.** אם גם הוא לא
 קיים, נשאר העותק המוטמע ב-APK. כישלון סנכרון לעולם אינו פותח גישה.
