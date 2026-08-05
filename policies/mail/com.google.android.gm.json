@@ -6,28 +6,28 @@
   "modePolicies": {
     "NAVIGATION_AND_MAIL_ONLY": {
       "mode": "BLACKLIST",
-      "desc": "Mail only; Google Chat and Meet are blocked",
+      "desc": "Mail only; Google Chat, Spaces and Meet are blocked",
       "spec": {
         "type": "HostList",
         "hosts": [
           "chat.google.com",
-          "meet.google.com",
-          "*.googlevideo.com"
+          "hangouts.googleapis.com",
+          "meet.google.com"
         ]
       }
     },
     "REDUCED_RISK": {
       "mode": "BLACKLIST",
-      "desc": "Mail only; Google Chat and Meet are blocked",
+      "desc": "Mail only; Google Chat, Spaces and Meet are blocked",
       "spec": {
         "type": "HostList",
         "hosts": [
           "chat.google.com",
-          "meet.google.com",
-          "*.googlevideo.com"
+          "hangouts.googleapis.com",
+          "meet.google.com"
         ]
       }
     }
   },
-  "notes": "Chat is blocked in every mode, which is a deliberate divergence from upstream. Upstream defines the block for NAVIGATION_AND_MAIL_ONLY only and opens Gmail completely from REDUCED_RISK up; since a policy inherits downward, that left Chat reachable in REDUCED_RISK and in MOST_OPEN, which is the mode most devices run in. Upstream also ships the host list as the literal placeholder \"HOST OF GOOGLE CHAT\", so there was nothing to copy: the hosts here were written for this catalog."
+  "notes": "Chat is blocked in every mode, which is a deliberate divergence from upstream. Upstream defines the block for NAVIGATION_AND_MAIL_ONLY only and opens Gmail completely from REDUCED_RISK up; since a policy inherits downward, that left Chat reachable in REDUCED_RISK and in MOST_OPEN, which is the mode most devices run in. Upstream also ships the host list as the literal placeholder \"HOST OF GOOGLE CHAT\", so there was nothing to copy: the hosts here were written for this catalog.\n\nhangouts.googleapis.com is the one that matters and it was missing. chat.google.com alone blocks the web front end and leaves the backend the application actually talks to, which is still the Hangouts API: Chat kept its old service name when it was renamed. tools/extract_hosts.py on the Gmail APK on the device is where this came from, along with its staging twins (autopush-, preprod-, loadtest-, daily-) which are not listed here because a shipped build does not dial them.\n\n\"*.googlevideo.com\" used to be on this list and has been removed. It reads as a wildcard and is not one: in this data format the star is dropped and a www twin added, so it expanded to googlevideo.com and www.googlevideo.com and blocked nothing that carries video. Leaving it in was worse than leaving it out, because it read like a rule that was working.\n\nWhat this cannot reach: the notification. A new message in a Space still raises a banner, because that push arrives over the connection Google Play Services keeps open for every application on the device, not over any connection of Gmail's. Blocking it would silence every notification on the device. The message itself does not load, which is what a host rule can do here."
 }
