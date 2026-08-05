@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-05T18:13:43Z",
+  "generatedAt": "2026-08-05T18:31:10Z",
   "entries": [
     {
       "packageName": "air.com.cellogroup.Cellopark",
@@ -244,8 +244,8 @@
       "minimumVersionCode": 11203,
       "sha256": "89e925321f513c3468aa477b29fa5e596dc446717477f14970456409650328a8",
       "availableInStore": true,
-      "grantsNetworkAccess": false,
-      "minUserMode": "OFFLINE",
+      "grantsNetworkAccess": true,
+      "minUserMode": "REDUCED_RISK",
       "flags": {
         "isRecommendedInStore": false
       },
@@ -253,7 +253,7 @@
         "type": "APKPURE",
         "id": "com.noctuasoftware.stellarium_free"
       },
-      "notes": "A star map draws the sky from a catalogue on the device and a clock, so it is offered with no network at all and at minUserMode OFFLINE, which makes it available in every mode including the one where nothing is allowed out. If a feature turns out to need the network, that is one field to change here."
+      "notes": "Granted network. I had it offline on the reasoning that a star map draws the sky from a catalogue and a clock, which is true of the drawing and not of everything else it does: the free build fetches its extended catalogues, satellite elements and imagery on demand, and without the network those simply never appear. Network is opt-in in this catalog, so the default was the safe direction; being wrong in that direction costs a feature that silently does nothing, which is worse to diagnose than a refusal."
     },
     {
       "packageName": "com.redalert.tzevaadom",

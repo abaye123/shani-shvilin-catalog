@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-05T18:13:43Z",
-  "sourceTag": "d58e397b591c8d0e",
+  "generatedAt": "2026-08-05T18:31:10Z",
+  "sourceTag": "2cacfd9996a0342c",
   "policies": [
     {
       "type": "Fixed",
@@ -24,72 +24,34 @@
       "notes": "Home Front Command alerts, unfiltered on purpose. KDroidDatabase files this policy under com.ioref.meserhadashtv; the certificate of the application actually installed matches the SHA-1 recorded there, so this is the same application under the name it really has. The upstream name is kept beside this one in case a TV build shares the signer."
     },
     {
-      "type": "MultiMode",
+      "type": "Fixed",
       "packageName": "com.google.android.apps.maps",
       "category": "NAVIGATION",
-      "minimumVersionCode": 1068205141,
-      "modeVariants": [
-        {
-          "userMode": "REDUCED_RISK",
-          "variants": [
-            {
-              "id": "standard_blocked",
-              "label": "Standard navigation (Street View blocked)",
-              "policy": {
-                "mode": "BLACKLIST",
-                "spec": {
-                  "type": "HostList",
-                  "hosts": [
-                    "*.googleusercontent.com",
-                    "*.googlevideo.com",
-                    "s.youtube.com",
-                    "streetviewpixels-pa.googleapis.com"
-                  ]
-                }
-              }
-            }
-          ],
-          "defaultVariantId": "standard_blocked"
-        },
-        {
-          "userMode": "MOST_OPEN",
-          "variants": [
-            {
-              "id": "with_streetview",
-              "label": "Full navigation with Street View",
-              "policy": {
-                "mode": "BLACKLIST",
-                "spec": {
-                  "type": "HostList",
-                  "hosts": [
-                    "*.googleusercontent.com",
-                    "*.googlevideo.com",
-                    "s.youtube.com"
-                  ]
-                }
-              }
-            },
-            {
-              "id": "without_streetview",
-              "label": "Navigation without Street View",
-              "policy": {
-                "mode": "BLACKLIST",
-                "spec": {
-                  "type": "HostList",
-                  "hosts": [
-                    "*.googleusercontent.com",
-                    "*.googlevideo.com",
-                    "s.youtube.com",
-                    "streetviewpixels-pa.googleapis.com"
-                  ]
-                }
-              }
-            }
-          ],
-          "defaultVariantId": "with_streetview"
+      "networkPolicy": {
+        "mode": "BLACKLIST",
+        "desc": "Navigation works; place photos and Street View do not",
+        "spec": {
+          "type": "HostList",
+          "hosts": [
+            "lh3.googleusercontent.com",
+            "lh4.googleusercontent.com",
+            "lh5.googleusercontent.com",
+            "lh6.googleusercontent.com",
+            "lh3.ggpht.com",
+            "lh4.ggpht.com",
+            "lh5.ggpht.com",
+            "lh6.ggpht.com",
+            "streetviewpixels-pa.googleapis.com",
+            "geo0.ggpht.com",
+            "geo1.ggpht.com",
+            "geo2.ggpht.com",
+            "geo3.ggpht.com",
+            "s.youtube.com"
+          ]
         }
-      ],
-      "notes": "Verbatim from KDroidDatabase, minus its sha1: this catalog pins certificates by sha256 in the catalog entry, and a second hash in a second format that nothing checks is an invitation to trust it."
+      },
+      "minimumVersionCode": 0,
+      "notes": "Every host is written out, and that is the whole point of this file. Upstream blocks \"*.googleusercontent.com\", which reads as a wildcard and is not one: in this data format the star is dropped and a www twin added, so it expands to googleusercontent.com and www.googleusercontent.com and matches nothing that serves a photograph. Place photos come from lh3 through lh6, so a policy that means to block them has to say so. See KDroidHosts in the application for the evidence."
     },
     {
       "type": "ModeBased",
