@@ -1,0 +1,10 @@
+{
+  "type": "Fixed",
+  "packageName": "tfilon.tfilon",
+  "category": "TORAH",
+  "networkPolicy": {
+    "mode": "OFFLINE"
+  },
+  "minimumVersionCode": 0,
+  "notes": "Offline upstream, and left that way: the siddur is on the device and nothing it does needs a network."
+}

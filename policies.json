@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-04T18:13:02Z",
-  "sourceTag": "afc0272a11a3fe50",
+  "generatedAt": "2026-08-05T16:47:46Z",
+  "sourceTag": "e8d71a04267c338f",
   "policies": [
     {
       "type": "Fixed",
@@ -31,6 +31,74 @@
       }
     },
     {
+      "type": "MultiMode",
+      "packageName": "com.google.android.apps.maps",
+      "category": "NAVIGATION",
+      "minimumVersionCode": 1068205141,
+      "modeVariants": [
+        {
+          "userMode": "REDUCED_RISK",
+          "variants": [
+            {
+              "id": "standard_blocked",
+              "label": "Standard navigation (Street View blocked)",
+              "policy": {
+                "mode": "BLACKLIST",
+                "spec": {
+                  "type": "HostList",
+                  "hosts": [
+                    "*.googleusercontent.com",
+                    "*.googlevideo.com",
+                    "s.youtube.com",
+                    "streetviewpixels-pa.googleapis.com"
+                  ]
+                }
+              }
+            }
+          ],
+          "defaultVariantId": "standard_blocked"
+        },
+        {
+          "userMode": "MOST_OPEN",
+          "variants": [
+            {
+              "id": "with_streetview",
+              "label": "Full navigation with Street View",
+              "policy": {
+                "mode": "BLACKLIST",
+                "spec": {
+                  "type": "HostList",
+                  "hosts": [
+                    "*.googleusercontent.com",
+                    "*.googlevideo.com",
+                    "s.youtube.com"
+                  ]
+                }
+              }
+            },
+            {
+              "id": "without_streetview",
+              "label": "Navigation without Street View",
+              "policy": {
+                "mode": "BLACKLIST",
+                "spec": {
+                  "type": "HostList",
+                  "hosts": [
+                    "*.googleusercontent.com",
+                    "*.googlevideo.com",
+                    "s.youtube.com",
+                    "streetviewpixels-pa.googleapis.com"
+                  ]
+                }
+              }
+            }
+          ],
+          "defaultVariantId": "with_streetview"
+        }
+      ],
+      "notes": "Verbatim from KDroidDatabase, minus its sha1: this catalog pins certificates by sha256 in the catalog entry, and a second hash in a second format that nothing checks is an invitation to trust it."
+    },
+    {
       "type": "ModeBased",
       "packageName": "com.google.android.gm",
       "category": "MAIL",
@@ -49,9 +117,19 @@
           }
         },
         "REDUCED_RISK": {
-          "mode": "FULL_OPEN"
+          "mode": "BLACKLIST",
+          "desc": "Mail only; Google Chat and Meet are blocked",
+          "spec": {
+            "type": "HostList",
+            "hosts": [
+              "chat.google.com",
+              "meet.google.com",
+              "*.googlevideo.com"
+            ]
+          }
         }
-      }
+      },
+      "notes": "Chat is blocked in every mode, which is a deliberate divergence from upstream. Upstream defines the block for NAVIGATION_AND_MAIL_ONLY only and opens Gmail completely from REDUCED_RISK up; since a policy inherits downward, that left Chat reachable in REDUCED_RISK and in MOST_OPEN, which is the mode most devices run in. Upstream also ships the host list as the literal placeholder \"HOST OF GOOGLE CHAT\", so there was nothing to copy: the hosts here were written for this catalog."
     },
     {
       "type": "Fixed",
@@ -82,12 +160,41 @@
     },
     {
       "type": "Fixed",
+      "packageName": "com.ioref.meserhadashtv",
+      "category": "GOVERNMENT",
+      "networkPolicy": {
+        "mode": "FULL_OPEN"
+      },
+      "minimumVersionCode": 191,
+      "notes": "Home Front Command alerts. Unfiltered on purpose: an alert application that cannot reach its server is worse than absent, because the device looks protected and is not."
+    },
+    {
+      "type": "Fixed",
+      "packageName": "com.miui.weather2",
+      "category": "TOOLS",
+      "networkPolicy": {
+        "mode": "FULL_OPEN"
+      },
+      "minimumVersionCode": 0
+    },
+    {
+      "type": "Fixed",
       "packageName": "com.moblin.israeltrain",
       "category": "NAVIGATION",
       "minimumVersionCode": 1435123456,
       "networkPolicy": {
         "mode": "FULL_OPEN"
       }
+    },
+    {
+      "type": "Fixed",
+      "packageName": "com.redalert.tzevaadom",
+      "category": "GOVERNMENT",
+      "networkPolicy": {
+        "mode": "FULL_OPEN"
+      },
+      "minimumVersionCode": 83,
+      "notes": "Tzeva Adom alerts. Unfiltered for the same reason as the Home Front Command application beside it."
     },
     {
       "type": "Fixed",
@@ -185,6 +292,34 @@
       "networkPolicy": {
         "mode": "OFFLINE"
       }
+    },
+    {
+      "type": "Fixed",
+      "packageName": "kcm.fm.volume",
+      "category": "MUSIC_AUDIO",
+      "networkPolicy": {
+        "mode": "WHITELIST",
+        "spec": {
+          "type": "HostList",
+          "hosts": [
+            "kcm.fm",
+            "media.kcm.fm",
+            "live.kcm.fm",
+            "firebaselogging-pa.googleapis.com"
+          ]
+        }
+      },
+      "minimumVersionCode": 30
+    },
+    {
+      "type": "Fixed",
+      "packageName": "tfilon.tfilon",
+      "category": "TORAH",
+      "networkPolicy": {
+        "mode": "OFFLINE"
+      },
+      "minimumVersionCode": 0,
+      "notes": "Offline upstream, and left that way: the siddur is on the device and nothing it does needs a network."
     }
   ]
 }

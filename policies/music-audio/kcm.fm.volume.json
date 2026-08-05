@@ -1,0 +1,18 @@
+{
+  "type": "Fixed",
+  "packageName": "kcm.fm.volume",
+  "category": "MUSIC_AUDIO",
+  "networkPolicy": {
+    "mode": "WHITELIST",
+    "spec": {
+      "type": "HostList",
+      "hosts": [
+        "kcm.fm",
+        "media.kcm.fm",
+        "live.kcm.fm",
+        "firebaselogging-pa.googleapis.com"
+      ]
+    }
+  },
+  "minimumVersionCode": 30
+}

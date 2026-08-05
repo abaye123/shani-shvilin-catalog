@@ -1,0 +1,68 @@
+{
+  "type": "MultiMode",
+  "packageName": "com.google.android.apps.maps",
+  "category": "NAVIGATION",
+  "minimumVersionCode": 1068205141,
+  "modeVariants": [
+    {
+      "userMode": "REDUCED_RISK",
+      "variants": [
+        {
+          "id": "standard_blocked",
+          "label": "Standard navigation (Street View blocked)",
+          "policy": {
+            "mode": "BLACKLIST",
+            "spec": {
+              "type": "HostList",
+              "hosts": [
+                "*.googleusercontent.com",
+                "*.googlevideo.com",
+                "s.youtube.com",
+                "streetviewpixels-pa.googleapis.com"
+              ]
+            }
+          }
+        }
+      ],
+      "defaultVariantId": "standard_blocked"
+    },
+    {
+      "userMode": "MOST_OPEN",
+      "variants": [
+        {
+          "id": "with_streetview",
+          "label": "Full navigation with Street View",
+          "policy": {
+            "mode": "BLACKLIST",
+            "spec": {
+              "type": "HostList",
+              "hosts": [
+                "*.googleusercontent.com",
+                "*.googlevideo.com",
+                "s.youtube.com"
+              ]
+            }
+          }
+        },
+        {
+          "id": "without_streetview",
+          "label": "Navigation without Street View",
+          "policy": {
+            "mode": "BLACKLIST",
+            "spec": {
+              "type": "HostList",
+              "hosts": [
+                "*.googleusercontent.com",
+                "*.googlevideo.com",
+                "s.youtube.com",
+                "streetviewpixels-pa.googleapis.com"
+              ]
+            }
+          }
+        }
+      ],
+      "defaultVariantId": "with_streetview"
+    }
+  ],
+  "notes": "Verbatim from KDroidDatabase, minus its sha1: this catalog pins certificates by sha256 in the catalog entry, and a second hash in a second format that nothing checks is an invitation to trust it."
+}

@@ -1,0 +1,10 @@
+{
+  "type": "Fixed",
+  "packageName": "com.ioref.meserhadashtv",
+  "category": "GOVERNMENT",
+  "networkPolicy": {
+    "mode": "FULL_OPEN"
+  },
+  "minimumVersionCode": 191,
+  "notes": "Home Front Command alerts. Unfiltered on purpose: an alert application that cannot reach its server is worse than absent, because the device looks protected and is not."
+}
