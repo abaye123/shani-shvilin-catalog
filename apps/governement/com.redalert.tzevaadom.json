@@ -1,0 +1,21 @@
+{
+  "packageName": "com.redalert.tzevaadom",
+  "displayName": {
+    "he": "צבע אדום",
+    "en": "Tzeva Adom"
+  },
+  "category": "GOVERNMENT",
+  "minimumVersionCode": 83,
+  "sha256": "97763172f97fd7f567bf1b245f8420c0284847adfc1633adbd6e5cd65b6d3914",
+  "availableInStore": true,
+  "grantsNetworkAccess": true,
+  "minUserMode": "NAVIGATION_ONLY",
+  "flags": {
+    "isRecommendedInStore": true
+  },
+  "source": {
+    "type": "APKPURE",
+    "id": "com.redalert.tzevaadom"
+  },
+  "notes": "Alerts, so it is granted network and sits at the lowest mode in which anything reaches the internet at all. Its certificate SHA-1 is exactly the value KDroidDatabase records for this package, so the build on the device is the build its policy was written for. The application calls itself Tzofar on the launcher; the name here is the one people ask for."
+}

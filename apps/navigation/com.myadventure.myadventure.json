@@ -1,0 +1,21 @@
+{
+  "packageName": "com.myadventure.myadventure",
+  "displayName": {
+    "he": "אוף רואד",
+    "en": "Off Road"
+  },
+  "category": "NAVIGATION",
+  "minimumVersionCode": 560,
+  "sha256": "0fd44657bd860772302f186b8a8032e3f48c39c6d1b7e98d580bbb3faedb662c",
+  "availableInStore": true,
+  "grantsNetworkAccess": true,
+  "minUserMode": "NAVIGATION_ONLY",
+  "flags": {
+    "isRecommendedInStore": false
+  },
+  "source": {
+    "type": "APKPURE",
+    "id": "com.myadventure.myadventure"
+  },
+  "notes": "Off road route navigation. Granted network because its maps and tracks come from a server; no policy, for the same reason as Cellopark."
+}

@@ -1,0 +1,21 @@
+{
+  "packageName": "air.com.cellogroup.Cellopark",
+  "displayName": {
+    "he": "סלופארק",
+    "en": "Cellopark"
+  },
+  "category": "NAVIGATION",
+  "minimumVersionCode": 10000187,
+  "sha256": "37871c33fb96420aa2ff28893595acc89fc65e422219fb3e615b304c2a17c76f",
+  "availableInStore": true,
+  "grantsNetworkAccess": true,
+  "minUserMode": "NAVIGATION_ONLY",
+  "flags": {
+    "isRecommendedInStore": false
+  },
+  "source": {
+    "type": "APKPURE",
+    "id": "air.com.cellogroup.Cellopark"
+  },
+  "notes": "Parking payments, which is part of driving, so it sits beside Pango. No policy: nobody has measured which hosts it needs, and a host list invented for it would be a guess wearing the clothes of a rule."
+}

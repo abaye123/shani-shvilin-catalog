@@ -1,0 +1,21 @@
+{
+  "packageName": "il.co.pat.disabledparkingpermits",
+  "displayName": {
+    "he": "בדיקת תו נכה",
+    "en": "CheckTav"
+  },
+  "category": "TOOLS",
+  "minimumVersionCode": 46,
+  "sha256": "03aaa624cf9c1b6bb507ab123f57e95b7469648ba673d2fddc113e2710ccce17",
+  "availableInStore": true,
+  "grantsNetworkAccess": true,
+  "minUserMode": "REDUCED_RISK",
+  "flags": {
+    "isRecommendedInStore": false
+  },
+  "source": {
+    "type": "APKPURE",
+    "id": "il.co.pat.disabledparkingpermits"
+  },
+  "notes": "Looks a permit up in a government register, which is the whole of what it does, so without network it does nothing at all."
+}

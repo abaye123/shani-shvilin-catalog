@@ -1,0 +1,21 @@
+{
+  "packageName": "net.sf.times",
+  "displayName": {
+    "he": "זמני תפילה הלכתיים",
+    "en": "Halachic Prayer Times"
+  },
+  "category": "TORAH",
+  "minimumVersionCode": 1605,
+  "sha256": "031fc72eaad7c7001b5df58470e502a81abc7a12407a9ca2f034c3d43d432d5d",
+  "availableInStore": true,
+  "grantsNetworkAccess": false,
+  "minUserMode": "OFFLINE",
+  "flags": {
+    "isRecommendedInStore": true
+  },
+  "source": {
+    "type": "APKPURE",
+    "id": "net.sf.times"
+  },
+  "notes": "Computes its times from the position and the clock, the same arithmetic this product does for its own home screen, so it needs no network. Offline and available in every mode."
+}

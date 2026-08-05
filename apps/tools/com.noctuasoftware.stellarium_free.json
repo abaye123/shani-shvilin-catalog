@@ -1,0 +1,21 @@
+{
+  "packageName": "com.noctuasoftware.stellarium_free",
+  "displayName": {
+    "he": "סטלריום",
+    "en": "Stellarium"
+  },
+  "category": "TOOLS",
+  "minimumVersionCode": 11203,
+  "sha256": "89e925321f513c3468aa477b29fa5e596dc446717477f14970456409650328a8",
+  "availableInStore": true,
+  "grantsNetworkAccess": false,
+  "minUserMode": "OFFLINE",
+  "flags": {
+    "isRecommendedInStore": false
+  },
+  "source": {
+    "type": "APKPURE",
+    "id": "com.noctuasoftware.stellarium_free"
+  },
+  "notes": "A star map draws the sky from a catalogue on the device and a clock, so it is offered with no network at all and at minUserMode OFFLINE, which makes it available in every mode including the one where nothing is allowed out. If a feature turns out to need the network, that is one field to change here."
+}
