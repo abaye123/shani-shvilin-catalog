@@ -143,14 +143,129 @@ apksigner verify --print-certs app.apk | grep -i "SHA-256 digest"
 > ממומש ב-`KDroidHosts`. **המסקנה המעשית: כל מה שרוצים לחסום חייב להיות כתוב
 > במפורש.**
 
-## תהליך עדכון
+## הוספת אפליקציה חדשה
 
-1. ערוך או הוסף קובץ תחת `apps/` או `policies/`.
-2. הרץ `./tools/release.sh` - הוא בונה, חותם ומאמת.
-3. commit לקבצי התוצר יחד עם קובץ המקור, ודחוף ל-`main`.
+לפני הכל, שתי החלטות **נפרדות**:
 
-תוך שש שעות לכל היותר כל מכשיר מושך את השינוי. אין צורך בגרסה חדשה של
-האפליקציה.
+- `availableInStore` - האם היא מוצגת בחנות ואפשר להתקין אותה משם.
+- `grantsNetworkAccess` - האם היא מקבלת גישה לרשת.
+
+הן לא כרוכות זו בזו. אפליקציה offline לגמרי (Musicolet) מוצגת בחנות בלי רשת;
+אפליקציה שמותקנת ידנית או מגיעה עם המכשיר (מפות, מזג אוויר) מקבלת רשת בלי
+להופיע בחנות. **חבילה שאינה בקטלוג אינה מקבלת כלום**, לא משנה מה כתוב במדיניות
+שלה.
+
+### שלב 1: להשיג את טביעת האצבע של החתימה
+
+זה השדה היחיד שאי אפשר לנחש, והוא מה שמונע מאפליקציה מזויפת בעלת אותו שם חבילה
+לקבל רשת.
+
+```bash
+# האפליקציה מותקנת על מכשיר מחובר:
+./tools/compute-signature.sh com.example.app
+
+# או מקובץ APK שיש לך:
+apksigner verify --print-certs app.apk | grep -i "SHA-256 digest"
+```
+
+התוצאה היא 64 תווי hex קטנים. **אל תעתיק ערכים מהגרסאות הישנות של המוצר** - הן
+השתמשו ב-SHA-1 עם באג ריפוד, והערכים שם באורך 37 עד 40 תווים.
+
+### שלב 2: לכתוב את קובץ הקטלוג
+
+`apps/<category>/<packageName>.json` - שם הקובץ חייב להיות שם החבילה, והתיקייה
+חייבת להתאים ל-`category` שבתוכו. ה-CI בודק את שניהם.
+
+```json
+{
+  "packageName": "com.example.app",
+  "displayName": { "he": "שם בעברית", "en": "English name" },
+  "category": "NAVIGATION",
+  "minimumVersionCode": 1030416,
+  "sha256": "03637f6c...8807d7",
+  "availableInStore": true,
+  "grantsNetworkAccess": true,
+  "minUserMode": "NAVIGATION_ONLY",
+  "flags": { "isRecommendedInStore": true },
+  "source": { "type": "APKPURE", "id": "com.example.app" }
+}
+```
+
+`minUserMode` הוא המסלול המינימלי שממנו האפליקציה זמינה. אפליקציה זמינה כאשר
+**המסלול הנוכחי במכשיר >= `minUserMode` שלה**.
+
+#### מאיפה החנות מורידה
+
+| `type` | מה קורה בפועל |
+|---|---|
+| `APKPURE` | מוריד. מנסה XAPK ואז APK, כי חבילות split מגיעות רק כ-XAPK |
+| `FDROID` | מוריד דרך ה-index הרשמי |
+| `DIRECT_URL` | מוריד מהכתובת. **חייבת להיות https** |
+| `APKCOMBO`, `APTOIDE`, `PLAY` | **מזוהים אך לא מורידים דבר** |
+
+שלושת האחרונים חוזרים כ-`Unsupported` מה-resolver. רשומה כזאת עם
+`availableInStore: true` תופיע בחנות ותיכשל בהתקנה. אם אין מקור שמוריד, עדיף
+`availableInStore: false` והתקנה ידנית.
+
+> `com.moblin.israeltrain` נמצא כרגע במצב הזה בדיוק: `APKCOMBO`, מוצג בחנות,
+> לא ניתן להורדה. ההערה בקובץ מסבירה למה - apkpure החזיר 410 עבור החבילה הזאת.
+
+#### כמה אישורי חתימה לאותה חבילה
+
+`additionalSha256` מקבל רשימה של טביעות אצבע נוספות. שימושי לאפליקציה שמותקנת
+גם בגרסת debug וגם בגרסת release. **כל ערך שם הוא מפתח נוסף שרשאי לדבר בשם
+החבילה**, ולכן הבנייה מזהירה על כל רשומה שמשתמשת בזה ומדפיסה כמה אישורים היא
+מקבלת.
+
+### שלב 3 (רשות): מדיניות רשת
+
+`policies/<category>/<packageName>.json` קובע מה חסום **בתוך** אפליקציה שכבר
+קיבלה רשת. אפליקציה בלי מסמך מדיניות מקבלת `FULL_OPEN` בתוך המנהרה - כלומר
+הקטלוג לבדו הוא מה שפותח את הרשת, והמדיניות רק מצמצמת.
+
+### שלב 4: לבנות, לחתום ולדחוף
+
+```bash
+./tools/release.sh
+git add apps/ policies/ catalog.json catalog.version policies.json signatures.json *.sig
+git commit -m "Add com.example.app"
+git push
+```
+
+`release.sh` בונה את שני המסמכים, חותם עליהם, ומאמת את החתימות לפני שהוא מסיים.
+אם הוא נכשל - שום דבר לא נדחף.
+
+### שלב 5: לוודא על המכשיר
+
+תוך שש שעות לכל היותר כל מכשיר מושך את השינוי לבד. כדי לא לחכות:
+
+- **בחנות**: כפתור הרענון בסרגל העליון.
+- **ב-ADB**:
+
+```bash
+adb shell am broadcast --user 0 \
+  -n com.abaye.shanishvilin/com.abaye.shanishvilin.feature.admin.recovery.RecoveryReceiver \
+  -a com.abaye.shanishvilin.action.RECOVERY \
+  --es cmd sync --es token <token>
+```
+
+התשובה מדפיסה `catalogVersion`, `policyTag` ו-`lastSyncError`.
+
+לבדוק שהאפליקציה אכן נכנסה לרשימת ההיתר:
+
+```bash
+adb logcat -d | grep -E "Allow list for|Rejected "
+```
+
+### מה משתבש, ואיך זה נראה
+
+| מה רואים | הסיבה |
+|---|---|
+| `Rejected <pkg>: NOT_INSTALLED` | הרשומה תקינה, האפליקציה פשוט לא מותקנת |
+| `Rejected <pkg>: SIGNATURE_MISMATCH` | ה-`sha256` אינו של הבנייה שמותקנת בפועל |
+| `Rejected <pkg>: VERSION_TOO_LOW` | הגרסה המותקנת נמוכה מ-`minimumVersionCode` |
+| האפליקציה בחנות אך ההתקנה נכשלת | `source` שאינו מוריד, או XAPK עם splits חסרים |
+| הרשומה לא מופיעה כלל | `minUserMode` גבוה מהמסלול הנוכחי, או דגל שמחריג ב-`REDUCED_RISK` |
 
 ה-CI דוחה JSON לא תקין, קובץ בקטגוריה שגויה, `sha256` שאינו 64 תווי hex, תוצר
 שלא תואם למקור, וחתימה שאינה מאמתת.
