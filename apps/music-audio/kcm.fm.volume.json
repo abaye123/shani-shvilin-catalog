@@ -1,0 +1,21 @@
+{
+  "packageName": "kcm.fm.volume",
+  "displayName": {
+    "he": "מיוזיק ווליום",
+    "en": "Music Volume"
+  },
+  "category": "MUSIC_AUDIO",
+  "minimumVersionCode": 30,
+  "sha256": "371c0d8b2da38a92525e234e9eb1d7099f67e76681d7f4f20f52f1d02e91e2be",
+  "availableInStore": true,
+  "grantsNetworkAccess": true,
+  "minUserMode": "REDUCED_RISK",
+  "flags": {
+    "isRecommendedInStore": false
+  },
+  "source": {
+    "type": "APKPURE",
+    "id": "kcm.fm.volume"
+  },
+  "notes": "Streams, so it is granted network, and its policy is a four host whitelist rather than an open door. The certificate was read off the installed application and its SHA-1 matches the one KDroidDatabase records for this package exactly, which is as good a confirmation as this catalog can get that the build on the device is the build the policy was written for."
+}

@@ -1,0 +1,10 @@
+{
+  "type": "Fixed",
+  "packageName": "com.alert.meserhadash",
+  "category": "GOVERNMENT",
+  "networkPolicy": {
+    "mode": "FULL_OPEN"
+  },
+  "minimumVersionCode": 191,
+  "notes": "Home Front Command alerts, unfiltered on purpose. KDroidDatabase files this policy under com.ioref.meserhadashtv; the certificate of the application actually installed matches the SHA-1 recorded there, so this is the same application under the name it really has. The upstream name is kept beside this one in case a TV build shares the signer."
+}

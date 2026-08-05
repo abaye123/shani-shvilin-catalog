@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-05T16:47:46Z",
-  "sourceTag": "e8d71a04267c338f",
+  "generatedAt": "2026-08-05T17:45:28Z",
+  "sourceTag": "af0b5a9ac3cbd178",
   "policies": [
     {
       "type": "Fixed",
@@ -12,6 +12,16 @@
         "desc": "Unfiltered inside the tunnel, by request"
       },
       "minimumVersionCode": 1
+    },
+    {
+      "type": "Fixed",
+      "packageName": "com.alert.meserhadash",
+      "category": "GOVERNMENT",
+      "networkPolicy": {
+        "mode": "FULL_OPEN"
+      },
+      "minimumVersionCode": 191,
+      "notes": "Home Front Command alerts, unfiltered on purpose. KDroidDatabase files this policy under com.ioref.meserhadashtv; the certificate of the application actually installed matches the SHA-1 recorded there, so this is the same application under the name it really has. The upstream name is kept beside this one in case a TV build shares the signer."
     },
     {
       "type": "Fixed",
@@ -166,7 +176,7 @@
         "mode": "FULL_OPEN"
       },
       "minimumVersionCode": 191,
-      "notes": "Home Front Command alerts. Unfiltered on purpose: an alert application that cannot reach its server is worse than absent, because the device looks protected and is not."
+      "notes": "Upstream's name for the Home Front Command application. No package by this name was found on a device; the application that is installed is com.alert.meserhadash, and it carries the certificate whose SHA-1 upstream records here. Kept in case a TV build exists under this name and shares the signer. A policy for a package nobody has is inert, so it costs nothing."
     },
     {
       "type": "Fixed",

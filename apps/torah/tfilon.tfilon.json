@@ -1,0 +1,21 @@
+{
+  "packageName": "tfilon.tfilon",
+  "displayName": {
+    "he": "תפילון",
+    "en": "Tfilon"
+  },
+  "category": "TORAH",
+  "minimumVersionCode": 0,
+  "sha256": "0f6d40d630d947aa91eda06abdbbef74823042d9d4651c1a3da5b39aac95ba39",
+  "availableInStore": true,
+  "grantsNetworkAccess": false,
+  "minUserMode": "OFFLINE",
+  "flags": {
+    "isRecommendedInStore": true
+  },
+  "source": {
+    "type": "APKPURE",
+    "id": "tfilon.tfilon"
+  },
+  "notes": "Offered in the store and given no network at all, which is what its upstream policy says and what a siddur needs. minUserMode OFFLINE for the same reason: an application that asks for nothing should be available in every mode, including the one where nothing is allowed out."
+}

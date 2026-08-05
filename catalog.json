@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-05T16:47:46Z",
+  "generatedAt": "2026-08-05T17:45:28Z",
   "entries": [
     {
       "packageName": "com.abaye.derechkohanim",
@@ -21,6 +21,27 @@
         "isRecommendedInStore": false
       },
       "notes": "Not published on Play, so it is not offered for installation and is installed by hand. The entry exists because network access is decided here: a package that is not in the catalog gets nothing, whatever its policy says. Two certificates are accepted while this app is still in development: the release key (C=IL, O=abaye, CN=abaye) and the debug key of the machine it is built on (C=US, O=Android, CN=Android Debug), which is what is installed on the test device today. Drop the debug entry once the app ships."
+    },
+    {
+      "packageName": "com.alert.meserhadash",
+      "displayName": {
+        "he": "פיקוד העורף",
+        "en": "Home Front Command"
+      },
+      "category": "GOVERNMENT",
+      "minimumVersionCode": 191,
+      "sha256": "b13af257a51221f5a422a854de8e2bdc84be88847829196c6abab9cce185d540",
+      "availableInStore": true,
+      "grantsNetworkAccess": true,
+      "minUserMode": "NAVIGATION_ONLY",
+      "flags": {
+        "isRecommendedInStore": true
+      },
+      "source": {
+        "type": "APKPURE",
+        "id": "com.alert.meserhadash"
+      },
+      "notes": "The package name is com.alert.meserhadash, not the com.ioref.meserhadashtv that KDroidDatabase files this under. The certificate settles it: the application installed on the test device carries SHA-1 131c243751d9ea44299c0a97311deee77eb2345e, which is exactly the value upstream records for that other name. Same signer, different package name, and only this one exists on a phone. minUserMode is NAVIGATION_ONLY, the lowest mode in which anything reaches the internet at all, because an alert application that cannot reach its server is worse than absent: the device looks protected and is not."
     },
     {
       "packageName": "com.gettaxi.android",
@@ -267,6 +288,48 @@
         "id": "in.krosbits.musicolet"
       },
       "notes": "Not on F-Droid despite an earlier entry claiming so: the F-Droid API answers 404. APKPURE is where the file actually comes from, so hasSignedIndex is false and the pinned digest is the only remaining defence."
+    },
+    {
+      "packageName": "kcm.fm.volume",
+      "displayName": {
+        "he": "מיוזיק ווליום",
+        "en": "Music Volume"
+      },
+      "category": "MUSIC_AUDIO",
+      "minimumVersionCode": 30,
+      "sha256": "371c0d8b2da38a92525e234e9eb1d7099f67e76681d7f4f20f52f1d02e91e2be",
+      "availableInStore": true,
+      "grantsNetworkAccess": true,
+      "minUserMode": "REDUCED_RISK",
+      "flags": {
+        "isRecommendedInStore": false
+      },
+      "source": {
+        "type": "APKPURE",
+        "id": "kcm.fm.volume"
+      },
+      "notes": "Streams, so it is granted network, and its policy is a four host whitelist rather than an open door. The certificate was read off the installed application and its SHA-1 matches the one KDroidDatabase records for this package exactly, which is as good a confirmation as this catalog can get that the build on the device is the build the policy was written for."
+    },
+    {
+      "packageName": "tfilon.tfilon",
+      "displayName": {
+        "he": "תפילון",
+        "en": "Tfilon"
+      },
+      "category": "TORAH",
+      "minimumVersionCode": 0,
+      "sha256": "0f6d40d630d947aa91eda06abdbbef74823042d9d4651c1a3da5b39aac95ba39",
+      "availableInStore": true,
+      "grantsNetworkAccess": false,
+      "minUserMode": "OFFLINE",
+      "flags": {
+        "isRecommendedInStore": true
+      },
+      "source": {
+        "type": "APKPURE",
+        "id": "tfilon.tfilon"
+      },
+      "notes": "Offered in the store and given no network at all, which is what its upstream policy says and what a siddur needs. minUserMode OFFLINE for the same reason: an application that asks for nothing should be available in every mode, including the one where nothing is allowed out."
     }
   ]
 }
