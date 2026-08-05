@@ -4,14 +4,15 @@
   "category": "TOOLS",
   "networkPolicy": {
     "mode": "WHITELIST",
-    "desc": "The vehicle register, and nothing else",
+    "desc": "Its own backend and the vehicle register, and nothing else",
     "spec": {
       "type": "HostList",
       "hosts": [
+        "scan-car.xyz",
         "data.gov.il"
       ]
     }
   },
   "minimumVersionCode": 2,
-  "notes": "An allow list rather than a block list, because this application needs exactly one host and naming it is easier than naming everything it does not need. tools/extract_hosts.py on the installed APK found data.gov.il, the government open data portal that holds the vehicle register; every other host in the binary belongs to a library or to documentation (react.dev, exoplayer.dev, fontawesome.com and so on) and is never dialled.\n\nclassic-assets.eascdn.net is deliberately not here. It is the Expo update channel, and it would let the application replace its own code after review without the store or this catalog seeing the change. The application runs on the bundle it shipped with."
+  "notes": "An allow list rather than a block list, because this application needs two hosts and naming them is easier than naming everything it does not need.\n\nThe list was written from the binary and corrected by the device, and the difference between the two is the point. tools/extract_hosts.py found data.gov.il, the government open data portal that holds the vehicle register, and that is the host the application is about. It is not the host it dials. Watching it run said so on the first launch:\n\n    Flow blocked: uid=10261 dst=213.137.85.57:443\n    host=scan-car.xyz (WHITELIST_MISS)\n\nscan-car.xyz is the developer's own backend, which queries the register on the application's behalf and appears nowhere in the strings the extractor can reach. Static extraction narrows the search; only the device closes it. data.gov.il is kept because a later version may go direct, and a host that is never dialled costs nothing.\n\nclassic-assets.eascdn.net is deliberately absent. It is the Expo update channel, and it would let the application replace its own code after review without the store or this catalog seeing the change. The application runs on the bundle it shipped with."
 }
