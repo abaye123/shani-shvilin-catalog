@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-05T17:45:28Z",
+  "generatedAt": "2026-08-05T17:51:00Z",
   "entries": [
     {
       "packageName": "com.abaye.derechkohanim",
@@ -44,14 +44,14 @@
       "notes": "The package name is com.alert.meserhadash, not the com.ioref.meserhadashtv that KDroidDatabase files this under. The certificate settles it: the application installed on the test device carries SHA-1 131c243751d9ea44299c0a97311deee77eb2345e, which is exactly the value upstream records for that other name. Same signer, different package name, and only this one exists on a phone. minUserMode is NAVIGATION_ONLY, the lowest mode in which anything reaches the internet at all, because an alert application that cannot reach its server is worse than absent: the device looks protected and is not."
     },
     {
-      "packageName": "com.gettaxi.android",
+      "packageName": "com.egged.egg",
       "displayName": {
-        "he": "גט",
-        "en": "Gett"
+        "he": "אגד",
+        "en": "Egged"
       },
       "category": "NAVIGATION",
-      "minimumVersionCode": 1026069,
-      "sha256": "ea4dfeea9235b0130deecfc550dd3712c5b04fa724bcdede8916bca0574a2b2f",
+      "minimumVersionCode": 400001098,
+      "sha256": "7b3e2b1ef624d1dcde74fa7b27f0b68b752a5cab00d36c0b25b533247ee0b155",
       "availableInStore": true,
       "grantsNetworkAccess": true,
       "minUserMode": "NAVIGATION_ONLY",
@@ -60,8 +60,9 @@
       },
       "source": {
         "type": "APKPURE",
-        "id": "com.gettaxi.android"
-      }
+        "id": "com.egged.egg"
+      },
+      "notes": "Public transport, so it sits at NAVIGATION_ONLY beside the train and Moovit. KDroidDatabase has no policy for this package, and none is written here either: with no policy an allowed application is FULL_OPEN inside the tunnel, which is the honest state for a timetable and ticketing application nobody has measured. The certificate was read off the build installed on the test device."
     },
     {
       "packageName": "com.google.android.apps.maps",

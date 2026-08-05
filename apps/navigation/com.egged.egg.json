@@ -1,0 +1,21 @@
+{
+  "packageName": "com.egged.egg",
+  "displayName": {
+    "he": "אגד",
+    "en": "Egged"
+  },
+  "category": "NAVIGATION",
+  "minimumVersionCode": 400001098,
+  "sha256": "7b3e2b1ef624d1dcde74fa7b27f0b68b752a5cab00d36c0b25b533247ee0b155",
+  "availableInStore": true,
+  "grantsNetworkAccess": true,
+  "minUserMode": "NAVIGATION_ONLY",
+  "flags": {
+    "isRecommendedInStore": false
+  },
+  "source": {
+    "type": "APKPURE",
+    "id": "com.egged.egg"
+  },
+  "notes": "Public transport, so it sits at NAVIGATION_ONLY beside the train and Moovit. KDroidDatabase has no policy for this package, and none is written here either: with no policy an allowed application is FULL_OPEN inside the tunnel, which is the honest state for a timetable and ticketing application nobody has measured. The certificate was read off the build installed on the test device."
+}

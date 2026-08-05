@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-05T17:45:28Z",
-  "sourceTag": "af0b5a9ac3cbd178",
+  "generatedAt": "2026-08-05T17:51:00Z",
+  "sourceTag": "d58e397b591c8d0e",
   "policies": [
     {
       "type": "Fixed",
@@ -22,23 +22,6 @@
       },
       "minimumVersionCode": 191,
       "notes": "Home Front Command alerts, unfiltered on purpose. KDroidDatabase files this policy under com.ioref.meserhadashtv; the certificate of the application actually installed matches the SHA-1 recorded there, so this is the same application under the name it really has. The upstream name is kept beside this one in case a TV build shares the signer."
-    },
-    {
-      "type": "Fixed",
-      "packageName": "com.gettaxi.android",
-      "category": "NAVIGATION",
-      "minimumVersionCode": 1026069,
-      "networkPolicy": {
-        "mode": "BLACKLIST",
-        "spec": {
-          "type": "HostList",
-          "hosts": [
-            "googleads.g.doubleclick.net",
-            "graph.facebook.com",
-            "*.facebook.com"
-          ]
-        }
-      }
     },
     {
       "type": "MultiMode",
