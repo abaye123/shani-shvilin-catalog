@@ -1,0 +1,21 @@
+{
+  "packageName": "com.platetoprice.app",
+  "displayName": {
+    "he": "סרוק רכב",
+    "en": "Plate to Price"
+  },
+  "category": "TOOLS",
+  "minimumVersionCode": 2,
+  "sha256": "4b136b2ae9319f627d1f6a086a86c0761f9cc2f29fa890839bf1359058133c2d",
+  "availableInStore": true,
+  "grantsNetworkAccess": true,
+  "minUserMode": "REDUCED_RISK",
+  "flags": {
+    "isRecommendedInStore": false
+  },
+  "source": {
+    "type": "APKPURE",
+    "id": "com.platetoprice.app"
+  },
+  "notes": "Reads a licence plate and looks the vehicle up, so without network it does nothing at all. The signing certificate is Google's, not the developer's (CN=Android, O=Google Inc.), because the application is distributed through Play App Signing; that is the certificate an installed copy carries and therefore the one to pin."
+}

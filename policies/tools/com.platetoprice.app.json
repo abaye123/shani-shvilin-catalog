@@ -1,0 +1,17 @@
+{
+  "type": "Fixed",
+  "packageName": "com.platetoprice.app",
+  "category": "TOOLS",
+  "networkPolicy": {
+    "mode": "WHITELIST",
+    "desc": "The vehicle register, and nothing else",
+    "spec": {
+      "type": "HostList",
+      "hosts": [
+        "data.gov.il"
+      ]
+    }
+  },
+  "minimumVersionCode": 2,
+  "notes": "An allow list rather than a block list, because this application needs exactly one host and naming it is easier than naming everything it does not need. tools/extract_hosts.py on the installed APK found data.gov.il, the government open data portal that holds the vehicle register; every other host in the binary belongs to a library or to documentation (react.dev, exoplayer.dev, fontawesome.com and so on) and is never dialled.\n\nclassic-assets.eascdn.net is deliberately not here. It is the Expo update channel, and it would let the application replace its own code after review without the store or this catalog seeing the change. The application runs on the bundle it shipped with."
+}
