@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-05T23:02:11Z",
+  "generatedAt": "2026-08-16T21:34:21Z",
   "entries": [
     {
       "packageName": "air.com.cellogroup.Cellopark",
@@ -22,6 +22,23 @@
         "id": "air.com.cellogroup.Cellopark"
       },
       "notes": "Parking payments, which is part of driving, so it sits beside Pango. No policy: nobody has measured which hosts it needs, and a host list invented for it would be a guess wearing the clothes of a rule."
+    },
+    {
+      "packageName": "co.abaye.musicradio",
+      "displayName": {
+        "he": "מיוזיק רדיו",
+        "en": "Music Radio"
+      },
+      "category": "MUSIC_AUDIO",
+      "minimumVersionCode": 1,
+      "sha256": "e1d3afd85bf391fafb673fa31ed3121e7eb0e1e9cdfb33bfa129452a300a1c12",
+      "availableInStore": false,
+      "grantsNetworkAccess": true,
+      "minUserMode": "NAVIGATION_ONLY",
+      "flags": {
+        "isRecommendedInStore": false
+      },
+      "notes": "sha256 computed with apksigner from the base APK of the copy installed on the reference device, versionCode 1. Single signer, no rotation lineage; the source stamp on the file is Google's and is deliberately not the pinned value. availableInStore is false because no download source is defined for this package, and an install button with nothing behind it is worse than no button."
     },
     {
       "packageName": "com.abaye.derechkohanim",
