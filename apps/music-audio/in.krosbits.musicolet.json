@@ -17,5 +17,11 @@
     "type": "PLAY",
     "id": "in.krosbits.musicolet"
   },
-  "notes": "Not on F-Droid despite an earlier entry claiming so: the F-Droid API answers 404. Play is where the file comes from, so hasSignedIndex is false and the pinned digest is the only remaining defence."
+  "notes": "Not on F-Droid despite an earlier entry claiming so: the F-Droid API answers 404. Play is where the file comes from, so hasSignedIndex is false and the pinned digest is the only remaining defence.",
+  "screenshots": [
+    "https://play-lh.googleusercontent.com/E5P7VIdMKpRAVLWQz8Ybepm3Vnr0ctTvJBG7ITVavnsvg5azUppOyef8Lj1Lx6fCNWlT_eVkKEbFfvVOTIsU",
+    "https://play-lh.googleusercontent.com/V1fpd9g1_vTaByDjm4WmUep335KZVnrfrp5Q3vOay5DJ1Bm_JJ5yIFq_tDnwOog0BNhcSZJ-d3ng_RNmExpgLQ",
+    "https://play-lh.googleusercontent.com/E8E_zjpZDvXjM7AW63E_gYGhRYoiFTRf0kXUn_Sxurb6kcEsTPn0oR_T8smJEPBWduOtcF020J_Ztxb3NVve",
+    "https://play-lh.googleusercontent.com/uP_FFWnPgu1CT5Pj3mawgXkxbDMj0JlO0F0oIkETTbqwnZme1Q0fnXTbg33ymqh32cMIBBvdF_O1TjVuwhwYX6Q"
+  ]
 }

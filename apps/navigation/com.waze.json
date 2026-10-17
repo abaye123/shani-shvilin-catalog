@@ -17,5 +17,11 @@
     "type": "PLAY",
     "id": "com.waze"
   },
-  "notes": "Play delivers this as a base APK plus configuration splits (~169 MB in all). The pin is the certificate of the BASE apk, which is the only member PackageManager reports for the package."
+  "notes": "Play delivers this as a base APK plus configuration splits (~169 MB in all). The pin is the certificate of the BASE apk, which is the only member PackageManager reports for the package.",
+  "screenshots": [
+    "https://play-lh.googleusercontent.com/K9_9vgPEKK_1u35yFY2TwU76X49hTOWm1grx3boG4091R2qUA1PhVNCXbdmph6UCPQx2aWj7GfXIjBamNg4teg",
+    "https://play-lh.googleusercontent.com/Qxka9wwb1A4veP3C-7NIMQhFxwBTi-Q460TLpFa_xG8LnnepsP2aylDaZU0WjzSTOOFKw-EroEmvxTjBPgjL",
+    "https://play-lh.googleusercontent.com/u68l-kc21JyxrEINIm7yxB-hc0cfG5J8fgyKCxUBIlDSYy3la8zHIDL1oMai_GKTsOr5kd5nDzuBljZ4uTKItA",
+    "https://play-lh.googleusercontent.com/TIeNJK21oq0f9AslyyjKbkiltPjNHPNAaVqaCHBa9QuZ9wBgLCtHE7U3Vd-QCqPq-uBlLKm4dbrVXGfxT1oXJA"
+  ]
 }

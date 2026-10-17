@@ -17,5 +17,11 @@
     "type": "PLAY",
     "id": "tfilon.tfilon"
   },
-  "notes": "Offered in the store and given no network at all, which is what its upstream policy says and what a siddur needs. minUserMode OFFLINE for the same reason: an application that asks for nothing should be available in every mode, including the one where nothing is allowed out."
+  "notes": "Offered in the store and given no network at all, which is what its upstream policy says and what a siddur needs. minUserMode OFFLINE for the same reason: an application that asks for nothing should be available in every mode, including the one where nothing is allowed out.",
+  "screenshots": [
+    "https://play-lh.googleusercontent.com/yhYs-dFggE36gpob5_-xZc6JmcQigEdYO4jq1RadA7uGEZOUsFvFmZLyEuzzJbJRbB0FxkwD-r701SOQbmvbGQ",
+    "https://play-lh.googleusercontent.com/sM01rgLsHIGEftI_IYkAcc3YKbwQqqeMZZnd4lrguu87qLm-9MNuDU6jNtOgJ8HNHej_SJrurbP2BuPZ8Qcz8Fg",
+    "https://play-lh.googleusercontent.com/22Xl6DaPAkPMWTg11kPUePkic947VPu1pMWR2K4ACThhzRhoukdUuJrrK-0lKQp1uLJqDzY3_rGGVnRW8H0SBQM",
+    "https://play-lh.googleusercontent.com/B244efwlk0zdv7BcK7UBBrBt5bFDQUonPOGjKoNBF0Jsedt7xmFmV29oG2QE0ZmilliUQ2YJk77Bmb3gyDCqEw"
+  ]
 }
