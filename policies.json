@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-17T19:56:15Z",
-  "sourceTag": "b6f74fc65117a176",
+  "generatedAt": "2026-10-17T22:57:11Z",
+  "sourceTag": "abc508f41fc6ce89",
   "policies": [
     {
       "type": "Fixed",
@@ -21,7 +21,8 @@
         "mode": "FULL_OPEN"
       },
       "minimumVersionCode": 191,
-      "notes": "Home Front Command alerts, unfiltered on purpose. KDroidDatabase files this policy under com.ioref.meserhadashtv; the certificate of the application actually installed matches the SHA-1 recorded there, so this is the same application under the name it really has. The upstream name is kept beside this one in case a TV build shares the signer."
+      "notes": "Home Front Command alerts, unfiltered on purpose. KDroidDatabase files this policy under com.ioref.meserhadashtv; the certificate of the application actually installed matches the SHA-1 recorded there, so this is the same application under the name it really has. The upstream name is kept beside this one in case a TV build shares the signer.",
+      "isRecommendedInStore": true
     },
     {
       "type": "Fixed",
@@ -205,7 +206,8 @@
         "mode": "FULL_OPEN"
       },
       "minimumVersionCode": 83,
-      "notes": "Tzeva Adom alerts. Unfiltered for the same reason as the Home Front Command application beside it."
+      "notes": "Tzeva Adom alerts. Unfiltered for the same reason as the Home Front Command application beside it.",
+      "isRecommendedInStore": true
     },
     {
       "type": "Fixed",

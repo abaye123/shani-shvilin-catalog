@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-17T19:56:15Z",
+  "generatedAt": "2026-10-17T22:57:11Z",
   "entries": [
     {
       "packageName": "air.com.cellogroup.Cellopark",
@@ -79,7 +79,16 @@
         "type": "PLAY",
         "id": "com.alert.meserhadash"
       },
-      "notes": "The package name is com.alert.meserhadash, not the com.ioref.meserhadashtv that KDroidDatabase files this under. The certificate settles it: the application installed on the test device carries SHA-1 131c243751d9ea44299c0a97311deee77eb2345e, which is exactly the value upstream records for that other name. Same signer, different package name, and only this one exists on a phone. minUserMode is NAVIGATION_ONLY, the lowest mode in which anything reaches the internet at all, because an alert application that cannot reach its server is worse than absent: the device looks protected and is not."
+      "notes": "The package name is com.alert.meserhadash, not the com.ioref.meserhadashtv that KDroidDatabase files this under. The certificate settles it: the application installed on the test device carries SHA-1 131c243751d9ea44299c0a97311deee77eb2345e, which is exactly the value upstream records for that other name. Same signer, different package name, and only this one exists on a phone. minUserMode is NAVIGATION_ONLY, the lowest mode in which anything reaches the internet at all, because an alert application that cannot reach its server is worse than absent: the device looks protected and is not.",
+      "screenshots": [
+        "https://play-lh.googleusercontent.com/0z0JlY1s34h2Z6ykP1ns02yf0Ly7Zk3sVNjiVxVO9yl-2yhL9RzBCGamJ3wVY0CYA5_LxWxMM33pP3_VYPXD",
+        "https://play-lh.googleusercontent.com/HR-aid09HynKmutLirznxTIz6RQnfxaGpzGJVppzSnE3WMxYgJWh1mB4oXHSt3XHzLVy63o7oJoLEhaPAQZQ",
+        "https://play-lh.googleusercontent.com/p79rX3h7Rdml9g-ycozZqHgkGplnWU1vI6G6f9j-dxrOpjnt3EgrfXFndyxKWRxYbvOlwA5rKlzdwz6Adi35tg",
+        "https://play-lh.googleusercontent.com/Ws3zHj6aKxBmx7yB-Lv_9xQ3aYchaeVF9njcopXr57K1Pt4ZNeoprRPYUDW1a-cL0Y1JEJg2XmirthW5XAr48Q",
+        "https://play-lh.googleusercontent.com/jJBSMQtpc98d6YegvVucO7UJGP1nQhsxZ-4SHOcHWa1F_-iB0pHO8omlXmZpl7IVoTdrO3YQtCoSp9xUQ5maHQ",
+        "https://play-lh.googleusercontent.com/6pSv5M18aDt_wxMLf8ebVf7gxhKwo4rc9OmIM-LoMkEJsy2gKNdzY63plVlQxnXZbYUPnJCL-CHX3R99p53cSw",
+        "https://play-lh.googleusercontent.com/c_p-zA6qalWJ0g-szHfAxCaVzGj9w5D6fs6STu4iufAowg5BOX0L4QiEA5XbNPsJYupDuWwz_ZDYB8DIRcnkTQ"
+      ]
     },
     {
       "packageName": "com.app.GoSurf",
@@ -114,14 +123,17 @@
       "availableInStore": true,
       "grantsNetworkAccess": true,
       "minUserMode": "NAVIGATION_ONLY",
-      "flags": {
-        "isRecommendedInStore": false
-      },
       "source": {
         "type": "PLAY",
         "id": "com.egged.egg"
       },
-      "notes": "Public transport, so it sits at NAVIGATION_ONLY beside the train and Moovit. KDroidDatabase has no policy for this package, and none is written here either: with no policy an allowed application is FULL_OPEN inside the tunnel, which is the honest state for a timetable and ticketing application nobody has measured. The certificate was read off the build installed on the test device."
+      "notes": "Public transport, so it sits at NAVIGATION_ONLY beside the train and Moovit. KDroidDatabase has no policy for this package, and none is written here either: with no policy an allowed application is FULL_OPEN inside the tunnel, which is the honest state for a timetable and ticketing application nobody has measured. The certificate was read off the build installed on the test device.",
+      "screenshots": [
+        "https://play-lh.googleusercontent.com/UaXp0LKUgM-AVmDK6GZ2hmxpqZuOEp_aL4qj5X5moqPsVYVeR7dzXXdOdjrAcn7Oud0QG8BHWs25MbgcW8bV",
+        "https://play-lh.googleusercontent.com/UI5s0EVeruV2IKiAPQ6stahw9CExdN-v0VpABOKPMi0ZnPa9s7t7AitnTurfRmZ_IFUG3kTFEwcCdaFSDj5GKw",
+        "https://play-lh.googleusercontent.com/abgBTdq3ReBvNx_m9_2QVwq25KuAHMBbEvSelMlE9IOcHcu54Qs4lnBh7gpc8xt4Ap26RfKJv1mlzqR6cKqcMA",
+        "https://play-lh.googleusercontent.com/sw71MD1G_8Jt7uzcefIQuRHf8T8ZTbvQMoVi0-4sz-uf4ePg8aC81tXBHcxPWmbBAzaUt1LgcSAfXjRagO0pOA"
+      ]
     },
     {
       "packageName": "com.google.android.apps.maps",
@@ -152,13 +164,19 @@
       "availableInStore": true,
       "grantsNetworkAccess": true,
       "minUserMode": "NAVIGATION_AND_MAIL_ONLY",
-      "flags": {
-        "isRecommendedInStore": false
-      },
       "source": {
         "type": "PLAY",
         "id": "com.google.android.gm"
-      }
+      },
+      "screenshots": [
+        "https://play-lh.googleusercontent.com/7nnJaHKhF1RejKTbMZvaz2QTCj_PGrz7IdzbcFrUwtcFriT6F1uZRB8dCxn1M6lIlyK0mLbX4UKMr8VLuzSbEmg",
+        "https://play-lh.googleusercontent.com/T5C2GUPTFLxvNdBG9ZOR8SWlwbU50bmXGN29mB_PXbVwKJYVi4WkYLZ6X7AZryTTEpNXblYg-JSuDkFp_iQucCQ",
+        "https://play-lh.googleusercontent.com/Tt0DWmpGb4MkEmT6L6WE-4PCLxLPcFaWdVGIkuJlq5SQY-thuKDsJpcpAwxx9D23g8X6OlsgoqmzgoX4nO_qgA",
+        "https://play-lh.googleusercontent.com/1pyy4P9-omvtF5qXUBOtjl-u6FAv7Dzp1_0yCJqcwfEqGB625YSyTKv_R3mnqSighzpl2sdiCwZfVMnBaz688g",
+        "https://play-lh.googleusercontent.com/9oWPA6ykBel9OHaakqddfhmutRx3wyTTh8xJSUUObEm1D_b5ZnGruE26KEsVauQ2P05uhAxM0nCW3Rb_Ebzp4w",
+        "https://play-lh.googleusercontent.com/GvhcSb_9rISkRbjr17QZ0klb3ni0j15FIdGPoti2yEFedAD153ClC6hwZ1Ddezz1aRfjf3vUd2mdI4YZpTfY64s",
+        "https://play-lh.googleusercontent.com/ikFCwoaAJsAaldyJ9sZGrecejEYq55JK0HO_OnjXzJFZWvhuUs12SRw6AjX_xuTRmPi3nkmdKKopeu-c-Eaa"
+      ]
     },
     {
       "packageName": "com.google.android.gms",
@@ -242,14 +260,20 @@
       "availableInStore": true,
       "grantsNetworkAccess": true,
       "minUserMode": "NAVIGATION_ONLY",
-      "flags": {
-        "isRecommendedInStore": false
-      },
       "source": {
         "type": "PLAY",
         "id": "com.myadventure.myadventure"
       },
-      "notes": "Off road route navigation. Granted network because its maps and tracks come from a server; no policy, for the same reason as Cellopark."
+      "notes": "Off road route navigation. Granted network because its maps and tracks come from a server; no policy, for the same reason as Cellopark.",
+      "screenshots": [
+        "https://play-lh.googleusercontent.com/YtWZXDYK9shYtk4NYCGXDbTykzGj6cPk6a93wT8-k1CQbLlz-8P_uZu7vNS3Ieq6AYNtMLpdda824HIQHVaycw",
+        "https://play-lh.googleusercontent.com/umZZx4bi7LCrOPF29xKuesIuJXQ2Jn_mEUKTymGM3geZ5MZ1Fs4CVk4VgWxtuY5mcyh_bVhs60HzIzqylk9llA",
+        "https://play-lh.googleusercontent.com/hPezJzNbZl6YbnexYi8zdWNQuO1wFYJGkXERep7ORosxMrQViOJONK86RQPWHBwCVGXTRgXOTB5shahs25JuBw",
+        "https://play-lh.googleusercontent.com/oGvThhmIa4WK3qPZxLMg6U_8_xv_7jsF_P1DPvnYh568heqtbGlmX8aW1ik3_TXXIW8AKEl3VcMRGrlZPggE",
+        "https://play-lh.googleusercontent.com/Gx_VE2cbONE7QqwSO3hMoc_0SgpIaSWOGPZYMNxyRGcO8M0y4LhSPZ5sgb4_xbZwFwWL0q3e_RrNwOyCz0tBPA",
+        "https://play-lh.googleusercontent.com/7sA9IMJllMPiyUYkQGg-rbU7_sbALbE-qYbQBXtvOgAeX2DpJE0t5Qx-e-qO8qGXB6oX0lw5HdRfMdOsP7Yo6g",
+        "https://play-lh.googleusercontent.com/MhPa1BPnRlZt5BxoBVROtgm1G_-dnUVjANl6f7GYOoy4RchjhPkEv2e8ZMRnQB3V3MOU7_27whV30EgXjzmaylc"
+      ]
     },
     {
       "packageName": "com.noctuasoftware.stellarium_free",
@@ -263,14 +287,21 @@
       "availableInStore": true,
       "grantsNetworkAccess": true,
       "minUserMode": "REDUCED_RISK",
-      "flags": {
-        "isRecommendedInStore": false
-      },
       "source": {
         "type": "PLAY",
         "id": "com.noctuasoftware.stellarium_free"
       },
-      "notes": "Granted network. I had it offline on the reasoning that a star map draws the sky from a catalogue and a clock, which is true of the drawing and not of everything else it does: the free build fetches its extended catalogues, satellite elements and imagery on demand, and without the network those simply never appear. Network is opt-in in this catalog, so the default was the safe direction; being wrong in that direction costs a feature that silently does nothing, which is worse to diagnose than a refusal."
+      "notes": "Granted network. I had it offline on the reasoning that a star map draws the sky from a catalogue and a clock, which is true of the drawing and not of everything else it does: the free build fetches its extended catalogues, satellite elements and imagery on demand, and without the network those simply never appear. Network is opt-in in this catalog, so the default was the safe direction; being wrong in that direction costs a feature that silently does nothing, which is worse to diagnose than a refusal.",
+      "screenshots": [
+        "https://play-lh.googleusercontent.com/QxNGW_YYnHJaxEs1tcQpZ-l3qHgYAtlpxXKj_ZeBZjnE2g7snn05Su4tFAtSclAGQiXeIcJmhO0oGrfxCa9jkw",
+        "https://play-lh.googleusercontent.com/rav4-e_Xd65cFKX8-WryY-nzSRdx8kiXGj4GeSvx3QZFC7bWYjjLqoRuVyZ40XB2nT28AMpYbSgY3Ur64J28qA",
+        "https://play-lh.googleusercontent.com/QYU9xA23MqSRofEF-3w_K1T0jJIZaIwXHxulqIhb8Mzae2GtiCzmzuCY9ukW-LtjtvGt_rX2oflZDy3u8iggSdI",
+        "https://play-lh.googleusercontent.com/YhCsqInPMVFWfAA7gB9j7hUAiAEtZWk_gN6AviGb9GyXLOkRwEznp21jJMaKtyobPcyDSmu0vBFES1aU8aLN5Ps",
+        "https://play-lh.googleusercontent.com/WBemg1YaKaLN1Revf5FXQo2_QK7C2iCGH5xxLj4Q-h_EDXXAMBk9gz6X2rg5FTSuWyrSHwlG47Op63TanTAH2Q",
+        "https://play-lh.googleusercontent.com/DkLPrPybQWBrFOyTa1B51JJPIP-i3WoujKYNf2BL3WtRpmpsOErybN9tRbqfNHyQGlsAlO1kx2-bdKHrIWJuINE",
+        "https://play-lh.googleusercontent.com/KoOY1K-f4KODcjIwwIwXX8gtdsgNn4OHpC0Uv5enanRDGp-P19j1gBUJ-c-OQAPxN-rU3nAVbYI7k1ujLnkwKA",
+        "https://play-lh.googleusercontent.com/k0BteOLQ418B7L5t4GotUDvF0ngQbp3tT2BA1Et8v9z8n60mzFo2skbwUV_PCgknTBWzIstBCBt4ZrY6xqbX"
+      ]
     },
     {
       "packageName": "com.platetoprice.app",
@@ -312,7 +343,14 @@
         "type": "PLAY",
         "id": "com.redalert.tzevaadom"
       },
-      "notes": "Alerts, so it is granted network and sits at the lowest mode in which anything reaches the internet at all. Its certificate SHA-1 is exactly the value KDroidDatabase records for this package, so the build on the device is the build its policy was written for. The application calls itself Tzofar on the launcher; the name here is the one people ask for."
+      "notes": "Alerts, so it is granted network and sits at the lowest mode in which anything reaches the internet at all. Its certificate SHA-1 is exactly the value KDroidDatabase records for this package, so the build on the device is the build its policy was written for. The application calls itself Tzofar on the launcher; the name here is the one people ask for.",
+      "screenshots": [
+        "https://play-lh.googleusercontent.com/gm-meNn3wJUNAP-c6QCGzf43aNj-QJ2s1GgQcOe2SLNno7tf8MYtNDL8ALaFDGcVTwdV64uCcuwhO0GFpyvZjQ",
+        "https://play-lh.googleusercontent.com/5uKrN1895f1KyV643tx8it3mR05BzxJZARziy-oiPJ1AH7XiuCZtKSSIA0K4LPQ8q5HxJddUvaB8NmgcAJL0OA",
+        "https://play-lh.googleusercontent.com/ej8eeP-oJHAd6SiELPRIQ9zzc0A0JYxenl2UMMEGWv_ZTTuwHdAIcMe6Exsit72F6SNok70BxXM51qzQXc9a_90",
+        "https://play-lh.googleusercontent.com/MwbZI9BjVdRQ5FdI4s5fI9cb5g6QZx-ZkatSWJ4TAt6MELRZfgLtOh72-CrSfaa4eV28fnFS8BbxlVWuWkTqIQ",
+        "https://play-lh.googleusercontent.com/CjHpu2mrnQjLiAyh8mgSyFOrqTgYMVZY50hkWKgHGjdg11SgR3itU4oM6iEnXzr_IiMxKLhqQcbA4pXibAJECA"
+      ]
     },
     {
       "packageName": "com.sec.android.daemonapp",
@@ -390,7 +428,13 @@
         "type": "PLAY",
         "id": "com.waze"
       },
-      "notes": "Play delivers this as a base APK plus configuration splits (~169 MB in all). The pin is the certificate of the BASE apk, which is the only member PackageManager reports for the package."
+      "notes": "Play delivers this as a base APK plus configuration splits (~169 MB in all). The pin is the certificate of the BASE apk, which is the only member PackageManager reports for the package.",
+      "screenshots": [
+        "https://play-lh.googleusercontent.com/K9_9vgPEKK_1u35yFY2TwU76X49hTOWm1grx3boG4091R2qUA1PhVNCXbdmph6UCPQx2aWj7GfXIjBamNg4teg",
+        "https://play-lh.googleusercontent.com/Qxka9wwb1A4veP3C-7NIMQhFxwBTi-Q460TLpFa_xG8LnnepsP2aylDaZU0WjzSTOOFKw-EroEmvxTjBPgjL",
+        "https://play-lh.googleusercontent.com/u68l-kc21JyxrEINIm7yxB-hc0cfG5J8fgyKCxUBIlDSYy3la8zHIDL1oMai_GKTsOr5kd5nDzuBljZ4uTKItA",
+        "https://play-lh.googleusercontent.com/TIeNJK21oq0f9AslyyjKbkiltPjNHPNAaVqaCHBa9QuZ9wBgLCtHE7U3Vd-QCqPq-uBlLKm4dbrVXGfxT1oXJA"
+      ]
     },
     {
       "packageName": "fm.jewishmusic.application",
@@ -404,13 +448,17 @@
       "availableInStore": true,
       "grantsNetworkAccess": true,
       "minUserMode": "REDUCED_RISK",
-      "flags": {
-        "isRecommendedInStore": false
-      },
       "source": {
         "type": "PLAY",
         "id": "fm.jewishmusic.application"
-      }
+      },
+      "screenshots": [
+        "https://play-lh.googleusercontent.com/bBhSb4fFg4e4xgYmAZd0ObjB8PTJ0T53-vw0Uwls1STz94iqvo4va86GakX9JP81ERTinsZ2mQUBb9eu-KtNS5g",
+        "https://play-lh.googleusercontent.com/oMwfdqn04tZQQQ0eZtPiC_eArqXRxGBShihzHYBIoLdVyS7R75sS_QD463HZBMlwS8NRbCRukKPaVkDzHL-TRg",
+        "https://play-lh.googleusercontent.com/FfNbwl9RrCaQiCLNWRoK1b_cQGtVxFPYPepTJ6oaWi8FWND7WqHD5o1KMhs8fGhN-70zouvuVR_KF-1N_CSZvhw",
+        "https://play-lh.googleusercontent.com/QXh6rR_8igYXXyNsVbsmPFPwJf7xYBM-AMX-oajSEiuWE5ayhyYAdVh6Jgphd-rle3WllaV6lz6ptkyvpdTH",
+        "https://play-lh.googleusercontent.com/t_q0Ds9iXo6vlx4LWMDOxgaE-Z-MwMbQ5yM0k6xPPYVIyAwxQCv7qAgfVVuxdYb5LGQa7_qyAt-WawQUQ9yvB_s"
+      ]
     },
     {
       "packageName": "il.co.pat.disabledparkingpermits",
@@ -424,14 +472,17 @@
       "availableInStore": true,
       "grantsNetworkAccess": true,
       "minUserMode": "REDUCED_RISK",
-      "flags": {
-        "isRecommendedInStore": false
-      },
       "source": {
         "type": "PLAY",
         "id": "il.co.pat.disabledparkingpermits"
       },
-      "notes": "Looks a permit up in a government register, which is the whole of what it does, so without network it does nothing at all."
+      "notes": "Looks a permit up in a government register, which is the whole of what it does, so without network it does nothing at all.",
+      "screenshots": [
+        "https://play-lh.googleusercontent.com/cBDUgupCqHqmLxkHkqAoPBi6OIqHGV0k0kVSjY2aKtTrPQLBSIiYhMSZATUvHvCPaF9u6J2U0q_ZLD4ne7wRTA",
+        "https://play-lh.googleusercontent.com/SDIj69FZ3w8ml_BqaSNbt6SGQEmJoFA788hHG5gV9rCXNNtToS5En7dsvMcOgUlQMmtpPyPsFfcSkSt7zCiiLg",
+        "https://play-lh.googleusercontent.com/pjNhu75BiKMP-oUPYQ7bCqJ5HED7z2OnvmR_PvxhHcepP_IvZMh4sr0uDjg_it6YAgRoshxMXsKWUEZMqYiWAA",
+        "https://play-lh.googleusercontent.com/e5RdxCidHxyCRzuaG26WCat7txkIYcMiROSm1tONdNA2TEJdynoTDs7uRmtKke18lmqNzFZVBZ6GjbwouGT1"
+      ]
     },
     {
       "packageName": "in.krosbits.musicolet",
@@ -452,7 +503,13 @@
         "type": "PLAY",
         "id": "in.krosbits.musicolet"
       },
-      "notes": "Not on F-Droid despite an earlier entry claiming so: the F-Droid API answers 404. Play is where the file comes from, so hasSignedIndex is false and the pinned digest is the only remaining defence."
+      "notes": "Not on F-Droid despite an earlier entry claiming so: the F-Droid API answers 404. Play is where the file comes from, so hasSignedIndex is false and the pinned digest is the only remaining defence.",
+      "screenshots": [
+        "https://play-lh.googleusercontent.com/E5P7VIdMKpRAVLWQz8Ybepm3Vnr0ctTvJBG7ITVavnsvg5azUppOyef8Lj1Lx6fCNWlT_eVkKEbFfvVOTIsU",
+        "https://play-lh.googleusercontent.com/V1fpd9g1_vTaByDjm4WmUep335KZVnrfrp5Q3vOay5DJ1Bm_JJ5yIFq_tDnwOog0BNhcSZJ-d3ng_RNmExpgLQ",
+        "https://play-lh.googleusercontent.com/E8E_zjpZDvXjM7AW63E_gYGhRYoiFTRf0kXUn_Sxurb6kcEsTPn0oR_T8smJEPBWduOtcF020J_Ztxb3NVve",
+        "https://play-lh.googleusercontent.com/uP_FFWnPgu1CT5Pj3mawgXkxbDMj0JlO0F0oIkETTbqwnZme1Q0fnXTbg33ymqh32cMIBBvdF_O1TjVuwhwYX6Q"
+      ]
     },
     {
       "packageName": "kcm.fm.volume",
@@ -494,7 +551,16 @@
         "type": "PLAY",
         "id": "net.sf.times"
       },
-      "notes": "Computes its times from the position and the clock, the same arithmetic this product does for its own home screen, so it needs no network. Offline and available in every mode."
+      "notes": "Computes its times from the position and the clock, the same arithmetic this product does for its own home screen, so it needs no network. Offline and available in every mode.",
+      "screenshots": [
+        "https://play-lh.googleusercontent.com/ajWBTEfY-8BP6oVm7EzmVjZWXahEIWwcuphoLM281YpT7QF4B68Dv3ysalG0iQjn89RoQC6DUoDeRPZ-es9kbw",
+        "https://play-lh.googleusercontent.com/i1H4IMR7iJUFbdEMZucr4rcJAuBydG35KOHJn-irdzz8WAyh40E3GxBC9QwZgdgP9lMsApEav54GHgt_9zIc6w",
+        "https://play-lh.googleusercontent.com/05JzLjaXicqlSHBfuv1oShOzhZ0FGQ5skz9VAxb9cHIenJ-rPt6nGQxVaPZ7BIyx8irOkHsG1IBkIJLA2qylTUI",
+        "https://play-lh.googleusercontent.com/cgrKryRiP1FcZGKo06Yg4CeIeZ4NL1Ek3f1NlUYbBY-Fz8Cv6onV5EVP7ZIsDFMVewOn0UxdixNTy4k6DRA6",
+        "https://play-lh.googleusercontent.com/HMY_dIItuqFIWSZ9S2x-9qzQFDlqE2GCCjM5Oy6btEkg3xL0e_Md6JvA96yTeQerfcQiwsS1O_Fo_PkUVhYP7w",
+        "https://play-lh.googleusercontent.com/pWCTB-HX2hRv5mt9uAJDyFtJMcdJj-HUFV8HqN5Kp3rB3pAsTZpkQh9jYRjMZCMkJ8NDm_I7Rv2atWz_NNWWPQ",
+        "https://play-lh.googleusercontent.com/VmNkTtSK9NJDtBHoB6ufEzDfTonj-yMO8enfmAMybhIrC3OD1euWLVTerfaxuANZQh9s7WADGiPt8B4jXe54sQ"
+      ]
     },
     {
       "packageName": "tfilon.tfilon",
@@ -515,7 +581,13 @@
         "type": "PLAY",
         "id": "tfilon.tfilon"
       },
-      "notes": "Offered in the store and given no network at all, which is what its upstream policy says and what a siddur needs. minUserMode OFFLINE for the same reason: an application that asks for nothing should be available in every mode, including the one where nothing is allowed out."
+      "notes": "Offered in the store and given no network at all, which is what its upstream policy says and what a siddur needs. minUserMode OFFLINE for the same reason: an application that asks for nothing should be available in every mode, including the one where nothing is allowed out.",
+      "screenshots": [
+        "https://play-lh.googleusercontent.com/yhYs-dFggE36gpob5_-xZc6JmcQigEdYO4jq1RadA7uGEZOUsFvFmZLyEuzzJbJRbB0FxkwD-r701SOQbmvbGQ",
+        "https://play-lh.googleusercontent.com/sM01rgLsHIGEftI_IYkAcc3YKbwQqqeMZZnd4lrguu87qLm-9MNuDU6jNtOgJ8HNHej_SJrurbP2BuPZ8Qcz8Fg",
+        "https://play-lh.googleusercontent.com/22Xl6DaPAkPMWTg11kPUePkic947VPu1pMWR2K4ACThhzRhoukdUuJrrK-0lKQp1uLJqDzY3_rGGVnRW8H0SBQM",
+        "https://play-lh.googleusercontent.com/B244efwlk0zdv7BcK7UBBrBt5bFDQUonPOGjKoNBF0Jsedt7xmFmV29oG2QE0ZmilliUQ2YJk77Bmb3gyDCqEw"
+      ]
     }
   ]
 }

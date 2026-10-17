@@ -17,5 +17,14 @@
     "type": "PLAY",
     "id": "net.sf.times"
   },
-  "notes": "Computes its times from the position and the clock, the same arithmetic this product does for its own home screen, so it needs no network. Offline and available in every mode."
+  "notes": "Computes its times from the position and the clock, the same arithmetic this product does for its own home screen, so it needs no network. Offline and available in every mode.",
+  "screenshots": [
+    "https://play-lh.googleusercontent.com/ajWBTEfY-8BP6oVm7EzmVjZWXahEIWwcuphoLM281YpT7QF4B68Dv3ysalG0iQjn89RoQC6DUoDeRPZ-es9kbw",
+    "https://play-lh.googleusercontent.com/i1H4IMR7iJUFbdEMZucr4rcJAuBydG35KOHJn-irdzz8WAyh40E3GxBC9QwZgdgP9lMsApEav54GHgt_9zIc6w",
+    "https://play-lh.googleusercontent.com/05JzLjaXicqlSHBfuv1oShOzhZ0FGQ5skz9VAxb9cHIenJ-rPt6nGQxVaPZ7BIyx8irOkHsG1IBkIJLA2qylTUI",
+    "https://play-lh.googleusercontent.com/cgrKryRiP1FcZGKo06Yg4CeIeZ4NL1Ek3f1NlUYbBY-Fz8Cv6onV5EVP7ZIsDFMVewOn0UxdixNTy4k6DRA6",
+    "https://play-lh.googleusercontent.com/HMY_dIItuqFIWSZ9S2x-9qzQFDlqE2GCCjM5Oy6btEkg3xL0e_Md6JvA96yTeQerfcQiwsS1O_Fo_PkUVhYP7w",
+    "https://play-lh.googleusercontent.com/pWCTB-HX2hRv5mt9uAJDyFtJMcdJj-HUFV8HqN5Kp3rB3pAsTZpkQh9jYRjMZCMkJ8NDm_I7Rv2atWz_NNWWPQ",
+    "https://play-lh.googleusercontent.com/VmNkTtSK9NJDtBHoB6ufEzDfTonj-yMO8enfmAMybhIrC3OD1euWLVTerfaxuANZQh9s7WADGiPt8B4jXe54sQ"
+  ]
 }

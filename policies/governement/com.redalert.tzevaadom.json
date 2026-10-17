@@ -6,5 +6,6 @@
     "mode": "FULL_OPEN"
   },
   "minimumVersionCode": 83,
-  "notes": "Tzeva Adom alerts. Unfiltered for the same reason as the Home Front Command application beside it."
+  "notes": "Tzeva Adom alerts. Unfiltered for the same reason as the Home Front Command application beside it.",
+  "isRecommendedInStore": true
 }

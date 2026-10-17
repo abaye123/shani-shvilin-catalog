@@ -10,12 +10,18 @@
   "availableInStore": true,
   "grantsNetworkAccess": true,
   "minUserMode": "NAVIGATION_ONLY",
-  "flags": {
-    "isRecommendedInStore": false
-  },
   "source": {
     "type": "PLAY",
     "id": "com.myadventure.myadventure"
   },
-  "notes": "Off road route navigation. Granted network because its maps and tracks come from a server; no policy, for the same reason as Cellopark."
+  "notes": "Off road route navigation. Granted network because its maps and tracks come from a server; no policy, for the same reason as Cellopark.",
+  "screenshots": [
+    "https://play-lh.googleusercontent.com/YtWZXDYK9shYtk4NYCGXDbTykzGj6cPk6a93wT8-k1CQbLlz-8P_uZu7vNS3Ieq6AYNtMLpdda824HIQHVaycw",
+    "https://play-lh.googleusercontent.com/umZZx4bi7LCrOPF29xKuesIuJXQ2Jn_mEUKTymGM3geZ5MZ1Fs4CVk4VgWxtuY5mcyh_bVhs60HzIzqylk9llA",
+    "https://play-lh.googleusercontent.com/hPezJzNbZl6YbnexYi8zdWNQuO1wFYJGkXERep7ORosxMrQViOJONK86RQPWHBwCVGXTRgXOTB5shahs25JuBw",
+    "https://play-lh.googleusercontent.com/oGvThhmIa4WK3qPZxLMg6U_8_xv_7jsF_P1DPvnYh568heqtbGlmX8aW1ik3_TXXIW8AKEl3VcMRGrlZPggE",
+    "https://play-lh.googleusercontent.com/Gx_VE2cbONE7QqwSO3hMoc_0SgpIaSWOGPZYMNxyRGcO8M0y4LhSPZ5sgb4_xbZwFwWL0q3e_RrNwOyCz0tBPA",
+    "https://play-lh.googleusercontent.com/7sA9IMJllMPiyUYkQGg-rbU7_sbALbE-qYbQBXtvOgAeX2DpJE0t5Qx-e-qO8qGXB6oX0lw5HdRfMdOsP7Yo6g",
+    "https://play-lh.googleusercontent.com/MhPa1BPnRlZt5BxoBVROtgm1G_-dnUVjANl6f7GYOoy4RchjhPkEv2e8ZMRnQB3V3MOU7_27whV30EgXjzmaylc"
+  ]
 }

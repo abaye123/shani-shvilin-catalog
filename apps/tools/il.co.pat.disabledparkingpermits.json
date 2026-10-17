@@ -10,12 +10,15 @@
   "availableInStore": true,
   "grantsNetworkAccess": true,
   "minUserMode": "REDUCED_RISK",
-  "flags": {
-    "isRecommendedInStore": false
-  },
   "source": {
     "type": "PLAY",
     "id": "il.co.pat.disabledparkingpermits"
   },
-  "notes": "Looks a permit up in a government register, which is the whole of what it does, so without network it does nothing at all."
+  "notes": "Looks a permit up in a government register, which is the whole of what it does, so without network it does nothing at all.",
+  "screenshots": [
+    "https://play-lh.googleusercontent.com/cBDUgupCqHqmLxkHkqAoPBi6OIqHGV0k0kVSjY2aKtTrPQLBSIiYhMSZATUvHvCPaF9u6J2U0q_ZLD4ne7wRTA",
+    "https://play-lh.googleusercontent.com/SDIj69FZ3w8ml_BqaSNbt6SGQEmJoFA788hHG5gV9rCXNNtToS5En7dsvMcOgUlQMmtpPyPsFfcSkSt7zCiiLg",
+    "https://play-lh.googleusercontent.com/pjNhu75BiKMP-oUPYQ7bCqJ5HED7z2OnvmR_PvxhHcepP_IvZMh4sr0uDjg_it6YAgRoshxMXsKWUEZMqYiWAA",
+    "https://play-lh.googleusercontent.com/e5RdxCidHxyCRzuaG26WCat7txkIYcMiROSm1tONdNA2TEJdynoTDs7uRmtKke18lmqNzFZVBZ6GjbwouGT1"
+  ]
 }

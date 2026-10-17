@@ -10,11 +10,15 @@
   "availableInStore": true,
   "grantsNetworkAccess": true,
   "minUserMode": "REDUCED_RISK",
-  "flags": {
-    "isRecommendedInStore": false
-  },
   "source": {
     "type": "PLAY",
     "id": "fm.jewishmusic.application"
-  }
+  },
+  "screenshots": [
+    "https://play-lh.googleusercontent.com/bBhSb4fFg4e4xgYmAZd0ObjB8PTJ0T53-vw0Uwls1STz94iqvo4va86GakX9JP81ERTinsZ2mQUBb9eu-KtNS5g",
+    "https://play-lh.googleusercontent.com/oMwfdqn04tZQQQ0eZtPiC_eArqXRxGBShihzHYBIoLdVyS7R75sS_QD463HZBMlwS8NRbCRukKPaVkDzHL-TRg",
+    "https://play-lh.googleusercontent.com/FfNbwl9RrCaQiCLNWRoK1b_cQGtVxFPYPepTJ6oaWi8FWND7WqHD5o1KMhs8fGhN-70zouvuVR_KF-1N_CSZvhw",
+    "https://play-lh.googleusercontent.com/QXh6rR_8igYXXyNsVbsmPFPwJf7xYBM-AMX-oajSEiuWE5ayhyYAdVh6Jgphd-rle3WllaV6lz6ptkyvpdTH",
+    "https://play-lh.googleusercontent.com/t_q0Ds9iXo6vlx4LWMDOxgaE-Z-MwMbQ5yM0k6xPPYVIyAwxQCv7qAgfVVuxdYb5LGQa7_qyAt-WawQUQ9yvB_s"
+  ]
 }

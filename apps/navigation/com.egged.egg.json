@@ -10,12 +10,15 @@
   "availableInStore": true,
   "grantsNetworkAccess": true,
   "minUserMode": "NAVIGATION_ONLY",
-  "flags": {
-    "isRecommendedInStore": false
-  },
   "source": {
     "type": "PLAY",
     "id": "com.egged.egg"
   },
-  "notes": "Public transport, so it sits at NAVIGATION_ONLY beside the train and Moovit. KDroidDatabase has no policy for this package, and none is written here either: with no policy an allowed application is FULL_OPEN inside the tunnel, which is the honest state for a timetable and ticketing application nobody has measured. The certificate was read off the build installed on the test device."
+  "notes": "Public transport, so it sits at NAVIGATION_ONLY beside the train and Moovit. KDroidDatabase has no policy for this package, and none is written here either: with no policy an allowed application is FULL_OPEN inside the tunnel, which is the honest state for a timetable and ticketing application nobody has measured. The certificate was read off the build installed on the test device.",
+  "screenshots": [
+    "https://play-lh.googleusercontent.com/UaXp0LKUgM-AVmDK6GZ2hmxpqZuOEp_aL4qj5X5moqPsVYVeR7dzXXdOdjrAcn7Oud0QG8BHWs25MbgcW8bV",
+    "https://play-lh.googleusercontent.com/UI5s0EVeruV2IKiAPQ6stahw9CExdN-v0VpABOKPMi0ZnPa9s7t7AitnTurfRmZ_IFUG3kTFEwcCdaFSDj5GKw",
+    "https://play-lh.googleusercontent.com/abgBTdq3ReBvNx_m9_2QVwq25KuAHMBbEvSelMlE9IOcHcu54Qs4lnBh7gpc8xt4Ap26RfKJv1mlzqR6cKqcMA",
+    "https://play-lh.googleusercontent.com/sw71MD1G_8Jt7uzcefIQuRHf8T8ZTbvQMoVi0-4sz-uf4ePg8aC81tXBHcxPWmbBAzaUt1LgcSAfXjRagO0pOA"
+  ]
 }

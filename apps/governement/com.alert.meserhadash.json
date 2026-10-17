@@ -17,5 +17,14 @@
     "type": "PLAY",
     "id": "com.alert.meserhadash"
   },
-  "notes": "The package name is com.alert.meserhadash, not the com.ioref.meserhadashtv that KDroidDatabase files this under. The certificate settles it: the application installed on the test device carries SHA-1 131c243751d9ea44299c0a97311deee77eb2345e, which is exactly the value upstream records for that other name. Same signer, different package name, and only this one exists on a phone. minUserMode is NAVIGATION_ONLY, the lowest mode in which anything reaches the internet at all, because an alert application that cannot reach its server is worse than absent: the device looks protected and is not."
+  "notes": "The package name is com.alert.meserhadash, not the com.ioref.meserhadashtv that KDroidDatabase files this under. The certificate settles it: the application installed on the test device carries SHA-1 131c243751d9ea44299c0a97311deee77eb2345e, which is exactly the value upstream records for that other name. Same signer, different package name, and only this one exists on a phone. minUserMode is NAVIGATION_ONLY, the lowest mode in which anything reaches the internet at all, because an alert application that cannot reach its server is worse than absent: the device looks protected and is not.",
+  "screenshots": [
+    "https://play-lh.googleusercontent.com/0z0JlY1s34h2Z6ykP1ns02yf0Ly7Zk3sVNjiVxVO9yl-2yhL9RzBCGamJ3wVY0CYA5_LxWxMM33pP3_VYPXD",
+    "https://play-lh.googleusercontent.com/HR-aid09HynKmutLirznxTIz6RQnfxaGpzGJVppzSnE3WMxYgJWh1mB4oXHSt3XHzLVy63o7oJoLEhaPAQZQ",
+    "https://play-lh.googleusercontent.com/p79rX3h7Rdml9g-ycozZqHgkGplnWU1vI6G6f9j-dxrOpjnt3EgrfXFndyxKWRxYbvOlwA5rKlzdwz6Adi35tg",
+    "https://play-lh.googleusercontent.com/Ws3zHj6aKxBmx7yB-Lv_9xQ3aYchaeVF9njcopXr57K1Pt4ZNeoprRPYUDW1a-cL0Y1JEJg2XmirthW5XAr48Q",
+    "https://play-lh.googleusercontent.com/jJBSMQtpc98d6YegvVucO7UJGP1nQhsxZ-4SHOcHWa1F_-iB0pHO8omlXmZpl7IVoTdrO3YQtCoSp9xUQ5maHQ",
+    "https://play-lh.googleusercontent.com/6pSv5M18aDt_wxMLf8ebVf7gxhKwo4rc9OmIM-LoMkEJsy2gKNdzY63plVlQxnXZbYUPnJCL-CHX3R99p53cSw",
+    "https://play-lh.googleusercontent.com/c_p-zA6qalWJ0g-szHfAxCaVzGj9w5D6fs6STu4iufAowg5BOX0L4QiEA5XbNPsJYupDuWwz_ZDYB8DIRcnkTQ"
+  ]
 }

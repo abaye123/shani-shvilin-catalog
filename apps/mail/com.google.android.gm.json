@@ -10,11 +10,17 @@
   "availableInStore": true,
   "grantsNetworkAccess": true,
   "minUserMode": "NAVIGATION_AND_MAIL_ONLY",
-  "flags": {
-    "isRecommendedInStore": false
-  },
   "source": {
     "type": "PLAY",
     "id": "com.google.android.gm"
-  }
+  },
+  "screenshots": [
+    "https://play-lh.googleusercontent.com/7nnJaHKhF1RejKTbMZvaz2QTCj_PGrz7IdzbcFrUwtcFriT6F1uZRB8dCxn1M6lIlyK0mLbX4UKMr8VLuzSbEmg",
+    "https://play-lh.googleusercontent.com/T5C2GUPTFLxvNdBG9ZOR8SWlwbU50bmXGN29mB_PXbVwKJYVi4WkYLZ6X7AZryTTEpNXblYg-JSuDkFp_iQucCQ",
+    "https://play-lh.googleusercontent.com/Tt0DWmpGb4MkEmT6L6WE-4PCLxLPcFaWdVGIkuJlq5SQY-thuKDsJpcpAwxx9D23g8X6OlsgoqmzgoX4nO_qgA",
+    "https://play-lh.googleusercontent.com/1pyy4P9-omvtF5qXUBOtjl-u6FAv7Dzp1_0yCJqcwfEqGB625YSyTKv_R3mnqSighzpl2sdiCwZfVMnBaz688g",
+    "https://play-lh.googleusercontent.com/9oWPA6ykBel9OHaakqddfhmutRx3wyTTh8xJSUUObEm1D_b5ZnGruE26KEsVauQ2P05uhAxM0nCW3Rb_Ebzp4w",
+    "https://play-lh.googleusercontent.com/GvhcSb_9rISkRbjr17QZ0klb3ni0j15FIdGPoti2yEFedAD153ClC6hwZ1Ddezz1aRfjf3vUd2mdI4YZpTfY64s",
+    "https://play-lh.googleusercontent.com/ikFCwoaAJsAaldyJ9sZGrecejEYq55JK0HO_OnjXzJFZWvhuUs12SRw6AjX_xuTRmPi3nkmdKKopeu-c-Eaa"
+  ]
 }
