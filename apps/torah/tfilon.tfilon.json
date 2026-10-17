@@ -14,7 +14,7 @@
     "isRecommendedInStore": true
   },
   "source": {
-    "type": "APKPURE",
+    "type": "PLAY",
     "id": "tfilon.tfilon"
   },
   "notes": "Offered in the store and given no network at all, which is what its upstream policy says and what a siddur needs. minUserMode OFFLINE for the same reason: an application that asks for nothing should be available in every mode, including the one where nothing is allowed out."

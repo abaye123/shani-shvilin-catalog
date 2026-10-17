@@ -14,7 +14,7 @@
     "isRecommendedInStore": false
   },
   "source": {
-    "type": "APKPURE",
+    "type": "PLAY",
     "id": "com.egged.egg"
   },
   "notes": "Public transport, so it sits at NAVIGATION_ONLY beside the train and Moovit. KDroidDatabase has no policy for this package, and none is written here either: with no policy an allowed application is FULL_OPEN inside the tunnel, which is the honest state for a timetable and ticketing application nobody has measured. The certificate was read off the build installed on the test device."

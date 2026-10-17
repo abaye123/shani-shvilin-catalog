@@ -14,8 +14,8 @@
     "isRecommendedInStore": false
   },
   "source": {
-    "type": "APKCOMBO",
+    "type": "PLAY",
     "id": "com.moblin.israeltrain"
   },
-  "notes": "Was APKPURE, but apkpure.com answers 410 Gone for this package while it is still live on Play, so that source could not serve a download. Pinned from the APKCombo build, which is where the file actually came from."
+  "notes": "Was APKPURE, but apkpure.com answers 410 Gone for this package, and APKCOMBO was never a source the store could download from. Now PLAY. The pin was taken from the APKCombo build, which mirrors the Play release and carries the same certificate."
 }

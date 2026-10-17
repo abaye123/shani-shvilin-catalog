@@ -14,8 +14,8 @@
     "isRecommendedInStore": true
   },
   "source": {
-    "type": "APKPURE",
+    "type": "PLAY",
     "id": "in.krosbits.musicolet"
   },
-  "notes": "Not on F-Droid despite an earlier entry claiming so: the F-Droid API answers 404. APKPURE is where the file actually comes from, so hasSignedIndex is false and the pinned digest is the only remaining defence."
+  "notes": "Not on F-Droid despite an earlier entry claiming so: the F-Droid API answers 404. Play is where the file comes from, so hasSignedIndex is false and the pinned digest is the only remaining defence."
 }

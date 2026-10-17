@@ -14,7 +14,7 @@
     "isRecommendedInStore": false
   },
   "source": {
-    "type": "APKPURE",
+    "type": "PLAY",
     "id": "com.app.GoSurf"
   },
   "notes": "Granted network on the assumption that it is a service client. If it turns out to work offline this should become false: network here is opt-in, and an application that does not need it should not have it."

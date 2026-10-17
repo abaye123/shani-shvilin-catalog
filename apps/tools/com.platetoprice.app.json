@@ -14,7 +14,7 @@
     "isRecommendedInStore": false
   },
   "source": {
-    "type": "APKPURE",
+    "type": "PLAY",
     "id": "com.platetoprice.app"
   },
   "notes": "Reads a licence plate and looks the vehicle up, so without network it does nothing at all. The signing certificate is Google's, not the developer's (CN=Android, O=Google Inc.), because the application is distributed through Play App Signing; that is the certificate an installed copy carries and therefore the one to pin."

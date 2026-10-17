@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-16T21:38:51Z",
+  "generatedAt": "2026-10-17T19:56:15Z",
   "entries": [
     {
       "packageName": "air.com.cellogroup.Cellopark",
@@ -18,7 +18,7 @@
         "isRecommendedInStore": false
       },
       "source": {
-        "type": "APKPURE",
+        "type": "PLAY",
         "id": "air.com.cellogroup.Cellopark"
       },
       "notes": "Parking payments, which is part of driving, so it sits beside Pango. No policy: nobody has measured which hosts it needs, and a host list invented for it would be a guess wearing the clothes of a rule."
@@ -76,7 +76,7 @@
         "isRecommendedInStore": true
       },
       "source": {
-        "type": "APKPURE",
+        "type": "PLAY",
         "id": "com.alert.meserhadash"
       },
       "notes": "The package name is com.alert.meserhadash, not the com.ioref.meserhadashtv that KDroidDatabase files this under. The certificate settles it: the application installed on the test device carries SHA-1 131c243751d9ea44299c0a97311deee77eb2345e, which is exactly the value upstream records for that other name. Same signer, different package name, and only this one exists on a phone. minUserMode is NAVIGATION_ONLY, the lowest mode in which anything reaches the internet at all, because an alert application that cannot reach its server is worse than absent: the device looks protected and is not."
@@ -97,7 +97,7 @@
         "isRecommendedInStore": false
       },
       "source": {
-        "type": "APKPURE",
+        "type": "PLAY",
         "id": "com.app.GoSurf"
       },
       "notes": "Granted network on the assumption that it is a service client. If it turns out to work offline this should become false: network here is opt-in, and an application that does not need it should not have it."
@@ -118,7 +118,7 @@
         "isRecommendedInStore": false
       },
       "source": {
-        "type": "APKPURE",
+        "type": "PLAY",
         "id": "com.egged.egg"
       },
       "notes": "Public transport, so it sits at NAVIGATION_ONLY beside the train and Moovit. KDroidDatabase has no policy for this package, and none is written here either: with no policy an allowed application is FULL_OPEN inside the tunnel, which is the honest state for a timetable and ticketing application nobody has measured. The certificate was read off the build installed on the test device."
@@ -156,7 +156,7 @@
         "isRecommendedInStore": false
       },
       "source": {
-        "type": "APKPURE",
+        "type": "PLAY",
         "id": "com.google.android.gm"
       }
     },
@@ -225,10 +225,10 @@
         "isRecommendedInStore": false
       },
       "source": {
-        "type": "APKCOMBO",
+        "type": "PLAY",
         "id": "com.moblin.israeltrain"
       },
-      "notes": "Was APKPURE, but apkpure.com answers 410 Gone for this package while it is still live on Play, so that source could not serve a download. Pinned from the APKCombo build, which is where the file actually came from."
+      "notes": "Was APKPURE, but apkpure.com answers 410 Gone for this package, and APKCOMBO was never a source the store could download from. Now PLAY. The pin was taken from the APKCombo build, which mirrors the Play release and carries the same certificate."
     },
     {
       "packageName": "com.myadventure.myadventure",
@@ -246,7 +246,7 @@
         "isRecommendedInStore": false
       },
       "source": {
-        "type": "APKPURE",
+        "type": "PLAY",
         "id": "com.myadventure.myadventure"
       },
       "notes": "Off road route navigation. Granted network because its maps and tracks come from a server; no policy, for the same reason as Cellopark."
@@ -267,7 +267,7 @@
         "isRecommendedInStore": false
       },
       "source": {
-        "type": "APKPURE",
+        "type": "PLAY",
         "id": "com.noctuasoftware.stellarium_free"
       },
       "notes": "Granted network. I had it offline on the reasoning that a star map draws the sky from a catalogue and a clock, which is true of the drawing and not of everything else it does: the free build fetches its extended catalogues, satellite elements and imagery on demand, and without the network those simply never appear. Network is opt-in in this catalog, so the default was the safe direction; being wrong in that direction costs a feature that silently does nothing, which is worse to diagnose than a refusal."
@@ -288,7 +288,7 @@
         "isRecommendedInStore": false
       },
       "source": {
-        "type": "APKPURE",
+        "type": "PLAY",
         "id": "com.platetoprice.app"
       },
       "notes": "Reads a licence plate and looks the vehicle up, so without network it does nothing at all. The signing certificate is Google's, not the developer's (CN=Android, O=Google Inc.), because the application is distributed through Play App Signing; that is the certificate an installed copy carries and therefore the one to pin."
@@ -309,7 +309,7 @@
         "isRecommendedInStore": true
       },
       "source": {
-        "type": "APKPURE",
+        "type": "PLAY",
         "id": "com.redalert.tzevaadom"
       },
       "notes": "Alerts, so it is granted network and sits at the lowest mode in which anything reaches the internet at all. Its certificate SHA-1 is exactly the value KDroidDatabase records for this package, so the build on the device is the build its policy was written for. The application calls itself Tzofar on the launcher; the name here is the one people ask for."
@@ -347,7 +347,7 @@
         "isRecommendedInStore": false
       },
       "source": {
-        "type": "APKPURE",
+        "type": "PLAY",
         "id": "com.tranzmate"
       }
     },
@@ -367,7 +367,7 @@
         "isRecommendedInStore": false
       },
       "source": {
-        "type": "APKPURE",
+        "type": "PLAY",
         "id": "com.unicell.pangoandroid"
       }
     },
@@ -387,10 +387,10 @@
         "isRecommendedInStore": true
       },
       "source": {
-        "type": "APKPURE",
+        "type": "PLAY",
         "id": "com.waze"
       },
-      "notes": "APKPure serves this as a ~169 MB XAPK bundle, not a plain APK. The pin is the certificate of the BASE apk inside it (com.waze.apk), which is the only member PackageManager reports for the package."
+      "notes": "Play delivers this as a base APK plus configuration splits (~169 MB in all). The pin is the certificate of the BASE apk, which is the only member PackageManager reports for the package."
     },
     {
       "packageName": "fm.jewishmusic.application",
@@ -408,7 +408,7 @@
         "isRecommendedInStore": false
       },
       "source": {
-        "type": "APKPURE",
+        "type": "PLAY",
         "id": "fm.jewishmusic.application"
       }
     },
@@ -428,7 +428,7 @@
         "isRecommendedInStore": false
       },
       "source": {
-        "type": "APKPURE",
+        "type": "PLAY",
         "id": "il.co.pat.disabledparkingpermits"
       },
       "notes": "Looks a permit up in a government register, which is the whole of what it does, so without network it does nothing at all."
@@ -449,10 +449,10 @@
         "isRecommendedInStore": true
       },
       "source": {
-        "type": "APKPURE",
+        "type": "PLAY",
         "id": "in.krosbits.musicolet"
       },
-      "notes": "Not on F-Droid despite an earlier entry claiming so: the F-Droid API answers 404. APKPURE is where the file actually comes from, so hasSignedIndex is false and the pinned digest is the only remaining defence."
+      "notes": "Not on F-Droid despite an earlier entry claiming so: the F-Droid API answers 404. Play is where the file comes from, so hasSignedIndex is false and the pinned digest is the only remaining defence."
     },
     {
       "packageName": "kcm.fm.volume",
@@ -470,7 +470,7 @@
         "isRecommendedInStore": false
       },
       "source": {
-        "type": "APKPURE",
+        "type": "PLAY",
         "id": "kcm.fm.volume"
       },
       "notes": "Streams, so it is granted network, and its policy is a four host whitelist rather than an open door. The certificate was read off the installed application and its SHA-1 matches the one KDroidDatabase records for this package exactly, which is as good a confirmation as this catalog can get that the build on the device is the build the policy was written for."
@@ -491,7 +491,7 @@
         "isRecommendedInStore": true
       },
       "source": {
-        "type": "APKPURE",
+        "type": "PLAY",
         "id": "net.sf.times"
       },
       "notes": "Computes its times from the position and the clock, the same arithmetic this product does for its own home screen, so it needs no network. Offline and available in every mode."
@@ -512,7 +512,7 @@
         "isRecommendedInStore": true
       },
       "source": {
-        "type": "APKPURE",
+        "type": "PLAY",
         "id": "tfilon.tfilon"
       },
       "notes": "Offered in the store and given no network at all, which is what its upstream policy says and what a siddur needs. minUserMode OFFLINE for the same reason: an application that asks for nothing should be available in every mode, including the one where nothing is allowed out."

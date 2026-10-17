@@ -14,7 +14,7 @@
     "isRecommendedInStore": false
   },
   "source": {
-    "type": "APKPURE",
+    "type": "PLAY",
     "id": "kcm.fm.volume"
   },
   "notes": "Streams, so it is granted network, and its policy is a four host whitelist rather than an open door. The certificate was read off the installed application and its SHA-1 matches the one KDroidDatabase records for this package exactly, which is as good a confirmation as this catalog can get that the build on the device is the build the policy was written for."

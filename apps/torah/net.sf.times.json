@@ -14,7 +14,7 @@
     "isRecommendedInStore": true
   },
   "source": {
-    "type": "APKPURE",
+    "type": "PLAY",
     "id": "net.sf.times"
   },
   "notes": "Computes its times from the position and the clock, the same arithmetic this product does for its own home screen, so it needs no network. Offline and available in every mode."

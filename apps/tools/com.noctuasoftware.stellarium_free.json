@@ -14,7 +14,7 @@
     "isRecommendedInStore": false
   },
   "source": {
-    "type": "APKPURE",
+    "type": "PLAY",
     "id": "com.noctuasoftware.stellarium_free"
   },
   "notes": "Granted network. I had it offline on the reasoning that a star map draws the sky from a catalogue and a clock, which is true of the drawing and not of everything else it does: the free build fetches its extended catalogues, satellite elements and imagery on demand, and without the network those simply never appear. Network is opt-in in this catalog, so the default was the safe direction; being wrong in that direction costs a feature that silently does nothing, which is worse to diagnose than a refusal."

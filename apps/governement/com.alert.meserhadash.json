@@ -14,7 +14,7 @@
     "isRecommendedInStore": true
   },
   "source": {
-    "type": "APKPURE",
+    "type": "PLAY",
     "id": "com.alert.meserhadash"
   },
   "notes": "The package name is com.alert.meserhadash, not the com.ioref.meserhadashtv that KDroidDatabase files this under. The certificate settles it: the application installed on the test device carries SHA-1 131c243751d9ea44299c0a97311deee77eb2345e, which is exactly the value upstream records for that other name. Same signer, different package name, and only this one exists on a phone. minUserMode is NAVIGATION_ONLY, the lowest mode in which anything reaches the internet at all, because an alert application that cannot reach its server is worse than absent: the device looks protected and is not."

@@ -14,7 +14,7 @@
     "isRecommendedInStore": false
   },
   "source": {
-    "type": "APKPURE",
+    "type": "PLAY",
     "id": "il.co.pat.disabledparkingpermits"
   },
   "notes": "Looks a permit up in a government register, which is the whole of what it does, so without network it does nothing at all."

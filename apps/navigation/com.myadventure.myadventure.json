@@ -14,7 +14,7 @@
     "isRecommendedInStore": false
   },
   "source": {
-    "type": "APKPURE",
+    "type": "PLAY",
     "id": "com.myadventure.myadventure"
   },
   "notes": "Off road route navigation. Granted network because its maps and tracks come from a server; no policy, for the same reason as Cellopark."

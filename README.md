@@ -51,7 +51,7 @@ catalog.json.sig  policies.json.sig                       ← אותן חתימ�
   "grantsNetworkAccess": true,
   "minUserMode": "NAVIGATION_ONLY",
   "flags": { "isRecommendedInStore": true },
-  "source": { "type": "APKPURE", "id": "com.waze" }
+  "source": { "type": "PLAY", "id": "com.waze" }
 }
 ```
 
@@ -187,7 +187,7 @@ apksigner verify --print-certs app.apk | grep -i "SHA-256 digest"
   "grantsNetworkAccess": true,
   "minUserMode": "NAVIGATION_ONLY",
   "flags": { "isRecommendedInStore": true },
-  "source": { "type": "APKPURE", "id": "com.example.app" }
+  "source": { "type": "PLAY", "id": "com.example.app" }
 }
 ```
 
@@ -198,17 +198,19 @@ apksigner verify --print-certs app.apk | grep -i "SHA-256 digest"
 
 | `type` | מה קורה בפועל |
 |---|---|
+| `PLAY` | **ברירת המחדל.** מוריד מ-Google Play דרך חשבון Google שמחובר מהחנות: APK בסיס ו-splits, כל קובץ נבדק מול ה-SHA-256 של Play. מתעדכן אוטומטית כל 12 שעות |
 | `APKPURE` | מוריד. מנסה XAPK ואז APK, כי חבילות split מגיעות רק כ-XAPK |
 | `FDROID` | מוריד דרך ה-index הרשמי |
 | `DIRECT_URL` | מוריד מהכתובת. **חייבת להיות https** |
-| `APKCOMBO`, `APTOIDE`, `PLAY` | **מזוהים אך לא מורידים דבר** |
+| `APKCOMBO`, `APTOIDE` | **מזוהים אך לא מורידים דבר** |
 
-שלושת האחרונים חוזרים כ-`Unsupported` מה-resolver. רשומה כזאת עם
+כל אפליקציה שזמינה ב-Play מקבלת `PLAY`. **בלי חשבון Google מחובר, רשומת `PLAY`
+לא תותקן** - אין נפילה אוטומטית למקור אחר. `APKPURE`, `FDROID` ו-`DIRECT_URL`
+נשארים לאפליקציות שאינן ב-Play.
+
+`APKCOMBO` ו-`APTOIDE` חוזרים כ-`Unsupported` מה-resolver. רשומה כזאת עם
 `availableInStore: true` תופיע בחנות ותיכשל בהתקנה. אם אין מקור שמוריד, עדיף
 `availableInStore: false` והתקנה ידנית.
-
-> `com.moblin.israeltrain` נמצא כרגע במצב הזה בדיוק: `APKCOMBO`, מוצג בחנות,
-> לא ניתן להורדה. ההערה בקובץ מסבירה למה - apkpure החזיר 410 עבור החבילה הזאת.
 
 #### כמה אישורי חתימה לאותה חבילה
 
