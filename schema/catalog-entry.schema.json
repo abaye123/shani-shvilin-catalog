@@ -62,6 +62,16 @@
       "type": "boolean",
       "default": false
     },
+    "screenshots": {
+      "description": "Screenshots the store may show, chosen one by one. The store never fetches screenshots on its own.",
+      "type": "array",
+      "maxItems": 8,
+      "items": {
+        "type": "string",
+        "pattern": "^https://"
+      },
+      "default": []
+    },
     "minUserMode": {
       "type": "string",
       "enum": [

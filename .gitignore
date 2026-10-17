@@ -7,3 +7,6 @@ signing*.der
 
 __pycache__/
 *.pyc
+
+# Catalog Studio downloads
+studio/cache/

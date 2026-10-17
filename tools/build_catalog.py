@@ -91,6 +91,16 @@ def validate(path, entry, errors, warnings):
     if not isinstance(entry.get("minimumVersionCode"), int):
         err("minimumVersionCode must be an integer")
 
+    shots = entry.get("screenshots", [])
+    if not isinstance(shots, list):
+        err("screenshots must be a list")
+    else:
+        if len(shots) > 8:
+            err(f"screenshots has {len(shots)} entries; the store shows at most 8")
+        for url in shots:
+            if not isinstance(url, str) or not url.startswith("https://"):
+                err(f"screenshot '{url}' is not an https URL")
+
     mode = entry.get("minUserMode", "MOST_OPEN")
     if mode not in MODES:
         err(f"unknown minUserMode '{mode}'")

@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>עורך הקטלוג - שני שבילין</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <h1>עורך הקטלוג</h1>
+  <span class="muted" id="repo-status"></span>
+  <div class="spacer"></div>
+  <button id="btn-build" title="בונה את catalog.json ו-policies.json מהקבצים">בנייה</button>
+  <button id="btn-release" title="בנייה וחתימה עם המפתח הפרטי (tools/release.sh)">חתימה</button>
+  <button id="btn-commit" class="primary" title="commit לשינויים (בלי push)">שמירה ל-git</button>
+</header>
+
+<div class="layout">
+  <aside class="sidebar">
+    <button id="btn-new" class="primary wide">+ אפליקציה חדשה</button>
+    <input id="filter" type="search" placeholder="סינון לפי שם או חבילה">
+    <ul id="app-list"></ul>
+  </aside>
+
+  <main id="editor" class="hidden">
+    <section class="card">
+      <h2>חבילה</h2>
+      <div class="row">
+        <input id="pkg" dir="ltr" placeholder="com.example.app" class="grow">
+        <button id="btn-play">שליפה מ-Google Play</button>
+        <button id="btn-apk">הורדת APK וקריאת חתימה</button>
+      </div>
+      <div id="play-box" class="hidden play">
+        <img id="play-icon" alt="">
+        <div class="grow">
+          <div class="title" id="play-title"></div>
+          <div class="muted" id="play-dev"></div>
+          <div id="play-summary"></div>
+          <div class="chips" id="play-meta"></div>
+          <details><summary>תיאור מלא</summary><div id="play-desc" class="desc"></div></details>
+        </div>
+      </div>
+      <div id="apk-box" class="hidden apk"></div>
+    </section>
+
+    <section class="card">
+      <h2>צילומי מסך <span class="muted" id="shot-count"></span></h2>
+      <p class="muted">לחיצה על צילום מוסיפה או מסירה אותו. הסדר הוא סדר הבחירה. החנות מציגה רק את מה שנבחר כאן, עד 8.</p>
+      <div id="shots" class="shots"></div>
+      <div class="row">
+        <input id="shot-url" dir="ltr" class="grow" placeholder="או הדביקו כתובת https של תמונה">
+        <button id="btn-add-shot">הוספה</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>רשומת קטלוג</h2>
+      <div class="grid">
+        <label>שם בעברית<input id="name-he"></label>
+        <label>שם באנגלית<input id="name-en" dir="ltr"></label>
+        <label>קטגוריה<select id="category"></select></label>
+        <label>מצב סינון מינימלי<select id="min-mode"></select></label>
+        <label>versionCode מינימלי<input id="min-version" type="number" dir="ltr"></label>
+        <label>sha256 של החתימה<input id="sha256" dir="ltr" class="mono"></label>
+        <label class="span2">חתימות נוספות (שורה לכל אחת)<textarea id="extra-sha" dir="ltr" class="mono" rows="2"></textarea></label>
+        <label>מקור התקנה<select id="source-type">
+          <option value="">ללא</option><option>PLAY</option><option>FDROID</option><option>APKPURE</option>
+          <option>APKCOMBO</option><option>APTOIDE</option><option>DIRECT_URL</option></select></label>
+        <label>מזהה במקור<input id="source-id" dir="ltr"></label>
+        <label class="span2">כתובת ישירה (DIRECT_URL)<input id="source-url" dir="ltr"></label>
+      </div>
+      <div class="checks">
+        <label><input type="checkbox" id="in-store"> מוצגת בחנות</label>
+        <label><input type="checkbox" id="network"> מקבלת גישה לרשת</label>
+        <label><input type="checkbox" id="f-recommended"> מומלצת</label>
+        <label><input type="checkbox" id="f-unmodest"> תוכן חזותי לא צנוע</label>
+        <label><input type="checkbox" id="f-dangerous"> מסוכנת טכנית</label>
+        <label><input type="checkbox" id="f-play"> חייבת התקנה מ-Play</label>
+      </div>
+      <label>הערות<textarea id="notes" rows="2"></textarea></label>
+    </section>
+
+    <section class="card">
+      <h2>מדיניות רשת</h2>
+      <label class="checks"><input type="checkbox" id="has-policy"> לאפליקציה יש מדיניות (מה חסום בתוכה)</label>
+      <div id="policy-box">
+        <div id="fixed-policy">
+          <div class="grid">
+            <label>מצב<select id="net-mode">
+              <option value="BLACKLIST">רשימה שחורה: הכול פתוח מלבד</option>
+              <option value="WHITELIST">רשימה לבנה: הכול חסום מלבד</option>
+              <option value="FULL_OPEN">פתוח לגמרי</option>
+              <option value="OFFLINE">חסום לגמרי</option></select></label>
+            <label>תיאור<input id="net-desc"></label>
+          </div>
+          <label id="hosts-label">כתובות (שורה לכל אחת)<textarea id="hosts" dir="ltr" class="mono" rows="6"></textarea></label>
+          <p class="muted">שימו לב: <code>*.example.com</code> כאן פירושו example.com ו-www.example.com בלבד, לא כל תת-דומיין.</p>
+          <div class="row">
+            <button id="btn-hosts">איתור כתובות מתוך ה-APK</button>
+            <span class="muted">דורש הורדת APK קודם</span>
+          </div>
+          <div id="found-hosts" class="found"></div>
+        </div>
+        <div id="raw-policy" class="hidden">
+          <p class="muted">מדיניות מסוג ModeBased או MultiMode נערכת כאן כ-JSON.</p>
+          <textarea id="policy-json" dir="ltr" class="mono" rows="14"></textarea>
+        </div>
+      </div>
+    </section>
+
+    <div class="savebar">
+      <button id="btn-save" class="primary">שמירת האפליקציה</button>
+      <span id="save-result"></span>
+    </div>
+  </main>
+
+  <main id="welcome">
+    <div class="card">
+      <h2>ברוכים הבאים</h2>
+      <p>בחרו אפליקציה מהרשימה כדי לערוך אותה, או "אפליקציה חדשה" כדי להוסיף אחת.</p>
+      <p>הסדר הרגיל: שליפה מ-Google Play ← בחירת צילומי מסך ← הורדת APK (חתימה וגרסה) ← איתור כתובות וקביעת מדיניות ← שמירה ← בנייה ← חתימה ← שמירה ל-git.</p>
+    </div>
+  </main>
+</div>
+
+<div id="log" class="log hidden"><button id="log-close">סגירה</button><pre id="log-text"></pre></div>
+<div id="toast" class="toast hidden"></div>
+<script src="app.js"></script>
+</body>
+</html>
