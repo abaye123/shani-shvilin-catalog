@@ -1,6 +1,7 @@
 # report-worker
 
-Turns a report from the store into an issue in this repository. Deployed as
+Turns a report from the store, or a request from the app itself (POST
+/feedback, label "feedback"), into an issue in this repository. Deployed as
 the Cloudflare Worker `shani-shvilin-report`
 (`https://shani-shvilin-report.8140hp.workers.dev/report`).
 

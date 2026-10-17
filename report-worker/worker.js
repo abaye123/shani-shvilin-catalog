@@ -1,10 +1,12 @@
 /**
- * Turns a report from the store into an issue in this repository.
+ * Turns a report from the store, or a request from the app itself, into an
+ * issue in this repository.
  *
  * The store cannot open an issue itself: that needs a GitHub token, and a
  * token inside an APK is a token anyone holding the APK can lift. This worker
  * holds the token instead, as a secret, and accepts one narrow kind of request:
- * a report about one catalog package, with a reason from a fixed list and a
+ * a report about one catalog package (POST /report), or a request about the
+ * app itself (POST /feedback), each with a subject from a fixed list and a
  * short free text. Everything else is refused.
  *
  * Secrets and variables (set in the Cloudflare dashboard, never committed):
@@ -14,9 +16,12 @@
  *                  from someone who unpacks the APK, but it keeps the endpoint
  *                  closed to anything that merely found the URL.
  *
- * Abuse limits: one report per package and reason per IP per hour, through
- * the Cache API, and a duplicate of an open issue becomes a comment on it
- * rather than a new issue.
+ * Abuse limits: one report per package and reason per IP per hour, and one
+ * request per kind per IP per ten minutes, through the Cache API. A duplicate
+ * of an open report becomes a comment on it rather than a new issue; requests
+ * are each different and always open their own.
+ *
+ * Labels: "report" and "feedback" must exist in the repository.
  */
 
 const REASONS = {
@@ -28,13 +33,23 @@ const REASONS = {
   other: "אחר",
 };
 
+const FEEDBACK_KINDS = {
+  bug: "תקלה באפליקציה",
+  filter: "בעיה בסינון",
+  app_request: "בקשה להוספת אפליקציה",
+  idea: "הצעה לשיפור",
+  other: "אחר",
+};
+
 const PACKAGE_RE = /^[a-zA-Z][a-zA-Z0-9_]*(\.[a-zA-Z0-9_]+)+$/;
 const MAX_DETAILS = 1500;
 const RATE_WINDOW_SECONDS = 3600;
+const FEEDBACK_WINDOW_SECONDS = 600;
 
 export default {
   async fetch(request, env) {
-    if (request.method !== "POST" || new URL(request.url).pathname !== "/report") {
+    const path = new URL(request.url).pathname;
+    if (request.method !== "POST" || (path !== "/report" && path !== "/feedback")) {
       return json({ ok: false, error: "not_found" }, 404);
     }
     if (request.headers.get("X-Report-Key") !== env.REPORT_KEY) {
@@ -48,10 +63,24 @@ export default {
       return json({ ok: false, error: "bad_json" }, 400);
     }
 
+    const ip = request.headers.get("CF-Connecting-IP") || "unknown";
+
+    if (path === "/feedback") {
+      const feedback = validateFeedback(body);
+      if (typeof feedback === "string") return json({ ok: false, error: feedback }, 400);
+      if (await limited(`feedback/${encodeURIComponent(ip)}/${feedback.kind}`, FEEDBACK_WINDOW_SECONDS)) {
+        return json({ ok: false, error: "too_many" }, 429);
+      }
+      try {
+        return json({ ok: true, ...(await fileFeedback(env, feedback)) });
+      } catch (e) {
+        return json({ ok: false, error: "github", detail: String(e).slice(0, 200) }, 502);
+      }
+    }
+
     const report = validate(body);
     if (typeof report === "string") return json({ ok: false, error: report }, 400);
 
-    const ip = request.headers.get("CF-Connecting-IP") || "unknown";
     if (await rateLimited(ip, report)) {
       return json({ ok: false, error: "too_many" }, 429);
     }
@@ -86,6 +115,23 @@ function validate(body) {
   };
 }
 
+function validateFeedback(body) {
+  if (!body || typeof body !== "object") return "bad_body";
+  const kind = String(body.kind || "");
+  if (!(kind in FEEDBACK_KINDS)) return "bad_kind";
+  const details = clean(body.details, MAX_DETAILS);
+  if (details.length < 10) return "too_short";
+  return {
+    kind,
+    details,
+    appVersion: clean(body.appVersion, 60),
+    catalogRevision: clean(body.catalogRevision, 60),
+    userMode: clean(body.userMode, 40),
+    device: clean(body.device, 100),
+    sdk: clean(body.sdk, 10),
+  };
+}
+
 /** Plain text, bounded, with nothing that GitHub would turn into a mention or a link to run. */
 function clean(value, max) {
   return String(value ?? "")
@@ -96,16 +142,45 @@ function clean(value, max) {
 }
 
 async function rateLimited(ip, report) {
+  return limited(
+    `${encodeURIComponent(ip)}/${report.packageName}/${report.reason}`,
+    RATE_WINDOW_SECONDS,
+  );
+}
+
+async function limited(path, seconds) {
   const cache = caches.default;
-  const key = new Request(
-    `https://rate.limit/${encodeURIComponent(ip)}/${report.packageName}/${report.reason}`,
-  );
+  const key = new Request(`https://rate.limit/${path}`);
   if (await cache.match(key)) return true;
-  await cache.put(
-    key,
-    new Response("1", { headers: { "Cache-Control": `max-age=${RATE_WINDOW_SECONDS}` } }),
-  );
+  await cache.put(key, new Response("1", { headers: { "Cache-Control": `max-age=${seconds}` } }));
   return false;
+}
+
+async function fileFeedback(env, feedback) {
+  // The first words of the text make the title, so the issue list reads as a
+  // list of subjects rather than a column of identical "request" lines.
+  const firstLine = feedback.details.split("\n")[0];
+  const summary = firstLine.length > 60 ? `${firstLine.slice(0, 60)}…` : firstLine;
+  const title = `[${FEEDBACK_KINDS[feedback.kind]}] ${summary}`;
+  const body = [
+    `<!-- feedback:${feedback.kind} -->`,
+    `**נושא:** ${FEEDBACK_KINDS[feedback.kind]}`,
+    "",
+    feedback.details,
+    "",
+    "| | |",
+    "|---|---|",
+    `| גרסת שני שבילין | ${feedback.appVersion || "-"} |`,
+    `| מהדורת קטלוג | ${feedback.catalogRevision || "-"} |`,
+    `| מצב סינון | ${feedback.userMode || "-"} |`,
+    `| מכשיר | ${feedback.device || "-"} (SDK ${feedback.sdk || "-"}) |`,
+  ].join("\n");
+
+  const created = await github(env, `/repos/${env.GITHUB_REPO}/issues`, {
+    method: "POST",
+    body: JSON.stringify({ title, body, labels: ["feedback"] }),
+  });
+  return { issue: created.number, duplicate: false };
 }
 
 async function fileIssue(env, report) {
