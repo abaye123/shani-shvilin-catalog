@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-18T10:14:10Z",
+  "generatedAt": "2026-10-18T17:59:00Z",
   "entries": [
     {
       "packageName": "air.com.cellogroup.Cellopark",
@@ -24,6 +24,28 @@
       "notes": "Parking payments, which is part of driving, so it sits beside Pango. No policy: nobody has measured which hosts it needs, and a host list invented for it would be a guess wearing the clothes of a rule."
     },
     {
+      "packageName": "co.abaye.mailtice",
+      "displayName": {
+        "he": "מיילטיס",
+        "en": "Mailtice"
+      },
+      "category": "MAIL",
+      "minimumVersionCode": 1,
+      "sha256": "536ff9560774dba224cc36542ae4ce059ca7dab2266a03e1ccefac0b1b73c7a7",
+      "availableInStore": true,
+      "grantsNetworkAccess": true,
+      "minUserMode": "NAVIGATION_ONLY",
+      "flags": {
+        "isRecommendedInStore": false
+      },
+      "source": {
+        "type": "GITHUB",
+        "id": "abaye123/Mailtice",
+        "directUrl": "https://github.com/abaye123/Mailtice/releases/latest"
+      },
+      "notes": "Installed from the latest GitHub release. sha256 computed with apksigner from Mailtice-1.6.0.apk (versionCode 12), single signer CN=Mailtice, O=abaye123. Network in every mode that has network at all, with no host policy."
+    },
+    {
       "packageName": "co.abaye.musicradio",
       "displayName": {
         "he": "מיוזיק רדיו",
@@ -32,13 +54,21 @@
       "category": "MUSIC_AUDIO",
       "minimumVersionCode": 1,
       "sha256": "e1d3afd85bf391fafb673fa31ed3121e7eb0e1e9cdfb33bfa129452a300a1c12",
-      "availableInStore": false,
+      "additionalSha256": [
+        "2d5f647dbb815ca22c2283d00645e49f0cd2ed1ae3408a77b33b760bd9e40d93"
+      ],
+      "availableInStore": true,
       "grantsNetworkAccess": true,
       "minUserMode": "NAVIGATION_ONLY",
       "flags": {
         "isRecommendedInStore": false
       },
-      "notes": "sha256 computed with apksigner from the base APK of the copy installed on the reference device, versionCode 1. Single signer, no rotation lineage; the source stamp on the file is Google's and is deliberately not the pinned value. availableInStore is false because no download source is defined for this package, and an install button with nothing behind it is worse than no button."
+      "source": {
+        "type": "GITHUB",
+        "id": "abaye123/MusicRadio",
+        "directUrl": "https://github.com/abaye123/MusicRadio/releases/latest"
+      },
+      "notes": "Installed from the latest GitHub release. Two accepted signers: e1d3... is the Play App Signing certificate of the copy from Google Play (computed with apksigner from the copy on the reference device, versionCode 1), and 2d5f... is the developer's own certificate on the GitHub APK (MusicRadio-1.0.12.apk, versionCode 20, CN=abaye, OU=MusicRadio). The two are not interchangeable on one device: a Play copy cannot be updated in place by the GitHub APK."
     },
     {
       "packageName": "com.abaye.derechkohanim",
