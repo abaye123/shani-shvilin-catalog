@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-18T17:59:00Z",
+  "generatedAt": "2026-10-18T20:45:41Z",
   "entries": [
     {
       "packageName": "air.com.cellogroup.Cellopark",
@@ -76,17 +76,17 @@
         "he": "דרך כהנים",
         "en": "Derech Kohanim"
       },
-      "category": "TORAH",
-      "minimumVersionCode": 1,
+      "category": "NAVIGATION",
+      "minimumVersionCode": 0,
       "sha256": "1576ff26779c0f0e929b7da663f998183e4d6d3c3b78a42efe5dc91fc99f41ee",
       "additionalSha256": [
         "5560e47deeadb29b3da24871ac2f1b1fc44c0b79ed40636d3a014292e0986689"
       ],
-      "availableInStore": false,
+      "availableInStore": true,
       "grantsNetworkAccess": true,
       "minUserMode": "NAVIGATION_ONLY",
       "flags": {
-        "isRecommendedInStore": false
+        "isRecommendedInStore": true
       },
       "notes": "Not published on Play, so it is not offered for installation and is installed by hand. The entry exists because network access is decided here: a package that is not in the catalog gets nothing, whatever its policy says. Two certificates are accepted while this app is still in development: the release key (C=IL, O=abaye, CN=abaye) and the debug key of the machine it is built on (C=US, O=Android, CN=Android Debug), which is what is installed on the test device today. Drop the debug entry once the app ships."
     },
@@ -191,19 +191,30 @@
     {
       "packageName": "com.google.android.apps.maps",
       "displayName": {
-        "he": "מפות גוגל",
+        "he": "גוגל מפות",
         "en": "Google Maps"
       },
       "category": "NAVIGATION",
       "minimumVersionCode": 0,
       "sha256": "f0fd6c5b410f25cb25c3b53346c8972fae30f8ee7411df910480ad6b2d60db83",
-      "availableInStore": false,
+      "availableInStore": true,
       "grantsNetworkAccess": true,
       "minUserMode": "NAVIGATION_ONLY",
-      "flags": {
-        "isRecommendedInStore": false
+      "notes": "Preinstalled on the test device, so it is granted network but not offered for installation. Signature pinned from that device.",
+      "source": {
+        "type": "PLAY",
+        "id": "com.google.android.apps.maps"
       },
-      "notes": "Preinstalled on the test device, so it is granted network but not offered for installation. Signature pinned from that device."
+      "screenshots": [
+        "https://play-lh.googleusercontent.com/ySeICLMpNc_hmQOJJHz7mgMlxhTfbMQdf7bVrvfI88X2s9aggGXLG4ZETv2WyceJ0Z2GWWx4OCnudgeMGaIZ",
+        "https://play-lh.googleusercontent.com/LvTiA8JehexJpiyg8GyyGYccORBw4zZgcs6suAb_acLmkMWi53YvmFL8HhLoPAH6Wlt6ruNJ7Sd802FMkftUtg",
+        "https://play-lh.googleusercontent.com/_qPq9OOKXpVSmIKoWkzkmtD6ENSHpQHwBQ4rY-S4fDZGqexpEBskK40a2xuxL7_U4Jh8f9shDWo4blP1P_GJAw",
+        "https://play-lh.googleusercontent.com/tM6BZ9oVH-sHqFx8Dii312-BYhRPAXDwpN-ZOli5icpjpJxwrsirdsrB-5sKQQIDaxa8tsCqYUYpBkQGUXLAceU",
+        "https://play-lh.googleusercontent.com/tutv2vpmvmvQj98T3tZgQMhlYjRRZUsU-ahPyCYGm2OGT0gwAehOE54Q3mCKkDX6HDO_1hnRU6BUtq8-6qB2Pg",
+        "https://play-lh.googleusercontent.com/0lUrRdiWOb7e0BNBtZbpTnxVYqXYe4HM0S2GTdaNSlXnrzWHlXUZgrO37GW6BVHPBcyv9bnRtjuxC1IU4T5pag",
+        "https://play-lh.googleusercontent.com/SZYkejxa4A8q-NB60TKTHgX3u7g1TOYNFGqSl9v0ExE5yydTuIeSqdu9hTKSioifipAKeMpaCWTr9WBGGXQQcw",
+        "https://play-lh.googleusercontent.com/6vqNimEQei7H4ZIiGXiZexY2z2fWeBao1Ss0Mm2aX_V_nUdlX1O7_7O8snY5J2qk3Q4xAiN9z_n5hxEaNt34dQ"
+      ]
     },
     {
       "packageName": "com.google.android.gm",

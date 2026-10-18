@@ -1,17 +1,28 @@
 {
   "packageName": "com.google.android.apps.maps",
   "displayName": {
-    "he": "מפות גוגל",
+    "he": "גוגל מפות",
     "en": "Google Maps"
   },
   "category": "NAVIGATION",
   "minimumVersionCode": 0,
   "sha256": "f0fd6c5b410f25cb25c3b53346c8972fae30f8ee7411df910480ad6b2d60db83",
-  "availableInStore": false,
+  "availableInStore": true,
   "grantsNetworkAccess": true,
   "minUserMode": "NAVIGATION_ONLY",
-  "flags": {
-    "isRecommendedInStore": false
+  "notes": "Preinstalled on the test device, so it is granted network but not offered for installation. Signature pinned from that device.",
+  "source": {
+    "type": "PLAY",
+    "id": "com.google.android.apps.maps"
   },
-  "notes": "Preinstalled on the test device, so it is granted network but not offered for installation. Signature pinned from that device."
+  "screenshots": [
+    "https://play-lh.googleusercontent.com/ySeICLMpNc_hmQOJJHz7mgMlxhTfbMQdf7bVrvfI88X2s9aggGXLG4ZETv2WyceJ0Z2GWWx4OCnudgeMGaIZ",
+    "https://play-lh.googleusercontent.com/LvTiA8JehexJpiyg8GyyGYccORBw4zZgcs6suAb_acLmkMWi53YvmFL8HhLoPAH6Wlt6ruNJ7Sd802FMkftUtg",
+    "https://play-lh.googleusercontent.com/_qPq9OOKXpVSmIKoWkzkmtD6ENSHpQHwBQ4rY-S4fDZGqexpEBskK40a2xuxL7_U4Jh8f9shDWo4blP1P_GJAw",
+    "https://play-lh.googleusercontent.com/tM6BZ9oVH-sHqFx8Dii312-BYhRPAXDwpN-ZOli5icpjpJxwrsirdsrB-5sKQQIDaxa8tsCqYUYpBkQGUXLAceU",
+    "https://play-lh.googleusercontent.com/tutv2vpmvmvQj98T3tZgQMhlYjRRZUsU-ahPyCYGm2OGT0gwAehOE54Q3mCKkDX6HDO_1hnRU6BUtq8-6qB2Pg",
+    "https://play-lh.googleusercontent.com/0lUrRdiWOb7e0BNBtZbpTnxVYqXYe4HM0S2GTdaNSlXnrzWHlXUZgrO37GW6BVHPBcyv9bnRtjuxC1IU4T5pag",
+    "https://play-lh.googleusercontent.com/SZYkejxa4A8q-NB60TKTHgX3u7g1TOYNFGqSl9v0ExE5yydTuIeSqdu9hTKSioifipAKeMpaCWTr9WBGGXQQcw",
+    "https://play-lh.googleusercontent.com/6vqNimEQei7H4ZIiGXiZexY2z2fWeBao1Ss0Mm2aX_V_nUdlX1O7_7O8snY5J2qk3Q4xAiN9z_n5hxEaNt34dQ"
+  ]
 }

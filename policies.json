@@ -1,17 +1,18 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-18T17:58:59Z",
-  "sourceTag": "7f62f9af909036af",
+  "generatedAt": "2026-10-18T20:45:40Z",
+  "sourceTag": "b33e681993f53e94",
   "policies": [
     {
       "type": "Fixed",
       "packageName": "com.abaye.derechkohanim",
-      "category": "TORAH",
+      "category": "NAVIGATION",
       "networkPolicy": {
         "mode": "FULL_OPEN",
         "desc": "Unfiltered inside the tunnel, by request"
       },
-      "minimumVersionCode": 1
+      "minimumVersionCode": 0,
+      "isRecommendedInStore": true
     },
     {
       "type": "Fixed",
