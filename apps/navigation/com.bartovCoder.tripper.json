@@ -8,7 +8,7 @@
   "minimumVersionCode": 77,
   "sha256": "227299c5f9bd8731b4e9c7fa5353f2e9fc038c085aa6060f417e1db77f7c9d5f",
   "availableInStore": true,
-  "grantsNetworkAccess": false,
+  "grantsNetworkAccess": true,
   "minUserMode": "MOST_OPEN",
   "screenshots": [
     "https://play-lh.googleusercontent.com/LZvLaxA_u6yFMmRofl3aZftQpRscLKp5x0QbHb9hfT3rcu9DaDHurh17W6r2utDREpFBuN0VOEkbNjOsKHfDflQ",
