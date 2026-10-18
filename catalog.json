@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-17T22:57:11Z",
+  "generatedAt": "2026-10-18T10:06:15Z",
   "entries": [
     {
       "packageName": "air.com.cellogroup.Cellopark",
@@ -110,6 +110,29 @@
         "id": "com.app.GoSurf"
       },
       "notes": "Granted network on the assumption that it is a service client. If it turns out to work offline this should become false: network here is opt-in, and an application that does not need it should not have it."
+    },
+    {
+      "packageName": "com.bartovCoder.tripper",
+      "displayName": {
+        "he": "מאחורי ההר - Beyond the hill",
+        "en": "מאחורי ההר - Beyond the hill"
+      },
+      "category": "NAVIGATION",
+      "minimumVersionCode": 77,
+      "sha256": "227299c5f9bd8731b4e9c7fa5353f2e9fc038c085aa6060f417e1db77f7c9d5f",
+      "availableInStore": true,
+      "grantsNetworkAccess": false,
+      "minUserMode": "MOST_OPEN",
+      "screenshots": [
+        "https://play-lh.googleusercontent.com/LZvLaxA_u6yFMmRofl3aZftQpRscLKp5x0QbHb9hfT3rcu9DaDHurh17W6r2utDREpFBuN0VOEkbNjOsKHfDflQ",
+        "https://play-lh.googleusercontent.com/FItKK5d455jacGbmVYbgvTh42I2rx_RdiLS4qiRnnuc5nOldd38WWtDiRkjCk3GbkA5KKv2LLRDqK_c8tbN-S64",
+        "https://play-lh.googleusercontent.com/x5abXl3krqiNvyLxOxkU0_6JNmWH1DhCSq2C6RMaP4xql6DO1rfpl2VsRaue8AMmTUnQfcU7trJkPOlDzSXWa00",
+        "https://play-lh.googleusercontent.com/iOZdjEDCHVorCMr8oobfx0qbR186BAm3Ouqa3O4XqnOypd6kC1k62_64ljILBp3C-s_purvvFN3UW5DObZrU"
+      ],
+      "source": {
+        "type": "PLAY",
+        "id": "com.bartovCoder.tripper"
+      }
     },
     {
       "packageName": "com.egged.egg",

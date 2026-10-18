@@ -1,0 +1,17 @@
+{
+  "type": "Fixed",
+  "packageName": "com.bartovCoder.tripper",
+  "category": "NAVIGATION",
+  "minimumVersionCode": 77,
+  "networkPolicy": {
+    "mode": "BLACKLIST",
+    "spec": {
+      "type": "HostList",
+      "hosts": [
+        "googleads.g.doubleclick.net",
+        "graph.facebook.com",
+        "www.facebook.com"
+      ]
+    }
+  }
+}

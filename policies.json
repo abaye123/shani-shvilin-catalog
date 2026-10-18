@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-17T22:57:11Z",
-  "sourceTag": "abc508f41fc6ce89",
+  "generatedAt": "2026-10-18T10:06:14Z",
+  "sourceTag": "7f62f9af909036af",
   "policies": [
     {
       "type": "Fixed",
@@ -23,6 +23,23 @@
       "minimumVersionCode": 191,
       "notes": "Home Front Command alerts, unfiltered on purpose. KDroidDatabase files this policy under com.ioref.meserhadashtv; the certificate of the application actually installed matches the SHA-1 recorded there, so this is the same application under the name it really has. The upstream name is kept beside this one in case a TV build shares the signer.",
       "isRecommendedInStore": true
+    },
+    {
+      "type": "Fixed",
+      "packageName": "com.bartovCoder.tripper",
+      "category": "NAVIGATION",
+      "minimumVersionCode": 77,
+      "networkPolicy": {
+        "mode": "BLACKLIST",
+        "spec": {
+          "type": "HostList",
+          "hosts": [
+            "googleads.g.doubleclick.net",
+            "graph.facebook.com",
+            "www.facebook.com"
+          ]
+        }
+      }
     },
     {
       "type": "Fixed",
