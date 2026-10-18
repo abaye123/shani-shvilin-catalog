@@ -1,0 +1,22 @@
+{
+  "packageName": "co.abaye.mailtice",
+  "displayName": {
+    "he": "מיילטיס",
+    "en": "Mailtice"
+  },
+  "category": "MAIL",
+  "minimumVersionCode": 1,
+  "sha256": "536ff9560774dba224cc36542ae4ce059ca7dab2266a03e1ccefac0b1b73c7a7",
+  "availableInStore": true,
+  "grantsNetworkAccess": true,
+  "minUserMode": "NAVIGATION_ONLY",
+  "flags": {
+    "isRecommendedInStore": false
+  },
+  "source": {
+    "type": "GITHUB",
+    "id": "abaye123/Mailtice",
+    "directUrl": "https://github.com/abaye123/Mailtice/releases/latest"
+  },
+  "notes": "Installed from the latest GitHub release. sha256 computed with apksigner from Mailtice-1.6.0.apk (versionCode 12), single signer CN=Mailtice, O=abaye123. Network in every mode that has network at all, with no host policy."
+}

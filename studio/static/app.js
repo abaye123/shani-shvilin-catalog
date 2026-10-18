@@ -222,6 +222,8 @@ function collect() {
   if (type) {
     entry.source = { type, id: $("source-id").value.trim() || entry.packageName };
     if (type === "DIRECT_URL") entry.source.directUrl = $("source-url").value.trim();
+    // GITHUB takes owner/repo as its id, or a github.com link in the URL field.
+    if (type === "GITHUB" && $("source-url").value.trim()) entry.source.directUrl = $("source-url").value.trim();
   } else {
     delete entry.source;
   }

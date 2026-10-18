@@ -117,7 +117,8 @@
             "FDROID",
             "APTOIDE",
             "PLAY",
-            "DIRECT_URL"
+            "DIRECT_URL",
+            "GITHUB"
           ]
         },
         "id": {
