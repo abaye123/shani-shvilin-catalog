@@ -1,0 +1,10 @@
+{
+  "type": "Fixed",
+  "packageName": "com.khl.www2",
+  "category": "TORAH",
+  "networkPolicy": {
+    "mode": "FULL_OPEN"
+  },
+  "minimumVersionCode": 20100,
+  "notes": "Open on purpose: a Haredi Torah application, and video could not be separated from audio by host.\n\nA WebView over www.kolhalashon.com/he/regularSite/home/app (the binary also carries home/appNoVideo, which a policy cannot force). Its pages pull from www.kolhalashon.com, chatrace.com, static.cloudflareinsights.com, www.googletagmanager.com and accounts.google.com. Both audio and video are served from media-cdn.kolhalashon.com over https (api/files/GetPlayToken/N/1 is mp3, /2 to /4 are mp4), so a host rule would take audio down with video."
+}

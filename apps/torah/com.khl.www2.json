@@ -1,0 +1,21 @@
+{
+  "packageName": "com.khl.www2",
+  "displayName": {
+    "he": "קול הלשון",
+    "en": "Kol Halashon"
+  },
+  "category": "TORAH",
+  "minimumVersionCode": 20100,
+  "sha256": "5b32d78ade54ca6e75c5681755778fed96e412e8ea0c4119d1c0c80642f0b530",
+  "availableInStore": true,
+  "grantsNetworkAccess": true,
+  "minUserMode": "REDUCED_RISK",
+  "flags": {
+    "isRecommendedInStore": false
+  },
+  "source": {
+    "type": "PLAY",
+    "id": "com.khl.www2"
+  },
+  "notes": "Kol Halashon's current application (2.10, versionCode 20100, from Play), signed by Kol Halashon, the same key as com.khl.kiosk. A WebView over www.kolhalashon.com."
+}

@@ -3,15 +3,8 @@
   "packageName": "com.khl.kiosk",
   "category": "TORAH",
   "networkPolicy": {
-    "mode": "BLACKLIST",
-    "desc": "Everything except the video only media host",
-    "spec": {
-      "type": "HostList",
-      "hosts": [
-        "mp4.kolhalashon.com"
-      ]
-    }
+    "mode": "FULL_OPEN"
   },
   "minimumVersionCode": 267,
-  "notes": "First stage, to watch the application on a device. Video is not blocked yet beyond mp4.kolhalashon.com.\n\nFrom the binary and the server: the API is SOAP and ASPX over clear HTTP on www.kolhalashon.com (WebSrv/iPhoneServices.asmx, iPhone/GetMediaURL.aspx?FileID=N&FileType=audio|video|Video|hd). Today the server answers audio with an https URL under /mp3/ and video with an http URL under /mp4/, both on www.kolhalashon.com. Live streams use port 1935 on www.kolhalashon.com for audio (KHL_Mp3, LiveAudio) and video (KHL_Video, KHL_LiveVideo) alike. kol.kolhl.com is another base URL in the code.\n\nSo neither host nor port separates video from audio: blocking port 80 kills the API, blocking 1935 kills live audio. The difference is only in the path, and that path is in clear text, so a path rule on HTTP is the planned second stage."
+  "notes": "Open on purpose: a Haredi Torah application, and video could not be separated from audio by host.\n\nWatched on a device: the API runs over clear HTTP on streaming.kolhalashon.com (the base URL is chosen at runtime; www.kolhalashon.com and kol.kolhl.com are in the code too), iPhone/GetMediaURL.aspx?FileID=N&FileType=audio|video answers audio with an https URL under /mp3/ and video with an http URL under /mp4/, both on www.kolhalashon.com. Live plays in a WebView with JW Player (ssl.p.jwpcdn.com, prd.jwpltx.com) from streaming.kolhalashon.com:443; older live streams use port 1935 for audio and video alike. A video only block would need a rule on the clear HTTP path, which the filter does not do."
 }

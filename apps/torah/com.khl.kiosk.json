@@ -17,5 +17,5 @@
     "type": "PLAY",
     "id": "com.khl.kiosk"
   },
-  "notes": "Kol Halashon's older native player (2.67, versionCode 267, from Play), signed by Kol Halashon, the same key as com.khl.www2. Chosen over com.khl.www2 because its media requests travel in clear HTTP, which is what makes an audio only policy possible later; see the policy notes."
+  "notes": "Kol Halashon's older native player (2.67, versionCode 267, from Play), signed by Kol Halashon, the same key as com.khl.www2. A native player, unlike the WebView of com.khl.www2; see the policy notes."
 }
