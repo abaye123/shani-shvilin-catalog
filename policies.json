@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-20T16:14:59Z",
-  "sourceTag": "181c4f5214ad6b90",
+  "generatedAt": "2026-10-20T16:26:37Z",
+  "sourceTag": "6c5d3abfe67cf6bc",
   "policies": [
     {
       "type": "Fixed",
@@ -48,7 +48,7 @@
       "category": "NAVIGATION",
       "networkPolicy": {
         "mode": "BLACKLIST",
-        "desc": "Navigation works; place photos and Street View do not",
+        "desc": "Navigation works; place photos, attraction thumbnails and Street View do not",
         "spec": {
           "type": "HostList",
           "hosts": [
@@ -102,13 +102,23 @@
             "geo7.ggpht.com",
             "geo8.ggpht.com",
             "geo9.ggpht.com",
+            "encrypted-tbn0.gstatic.com",
+            "encrypted-tbn1.gstatic.com",
+            "encrypted-tbn2.gstatic.com",
+            "encrypted-tbn3.gstatic.com",
+            "encrypted-tbn4.gstatic.com",
+            "encrypted-tbn5.gstatic.com",
+            "encrypted-tbn6.gstatic.com",
+            "encrypted-tbn7.gstatic.com",
+            "encrypted-tbn8.gstatic.com",
+            "encrypted-tbn9.gstatic.com",
             "streetviewpixels-pa.googleapis.com",
             "s.youtube.com"
           ]
         }
       },
       "minimumVersionCode": 0,
-      "notes": "Every host is written out, and that is the whole point of this file. Upstream blocks \"*.googleusercontent.com\", which reads as a wildcard and is not one: in this data format the star is dropped and a www twin added, so it expands to googleusercontent.com and www.googleusercontent.com and matches nothing that serves a photograph. See KDroidHosts in the application for the evidence.\n\nThe numbered families are written out in full, 0 through 9, because the device proved that guessing the range is how photographs get through. A first pass covered lh3 through lh6 and the photographs kept arriving; the log said why:\n\n    lh3.googleusercontent.com -> 0.0.0.0\n    gz0.googleusercontent.com -> 216.239.38.135\n\ngz0 was not on the list and was serving them. Listing a range that does not exist yet costs nothing; leaving one out costs the whole rule.\n\nNote that gz0.googleusercontent.com answers on the same address as mobilemaps-pa-gz.googleapis.com, which carries the map itself. That is why this file blocks names and never addresses: the map keeps working, the photographs do not."
+      "notes": "Every host is written out, and that is the whole point of this file. Upstream blocks \"*.googleusercontent.com\", which reads as a wildcard and is not one: in this data format the star is dropped and a www twin added, so it expands to googleusercontent.com and www.googleusercontent.com and matches nothing that serves a photograph. See KDroidHosts in the application for the evidence.\n\nThe numbered families are written out in full, 0 through 9, because the device proved that guessing the range is how photographs get through. A first pass covered lh3 through lh6 and the photographs kept arriving; the log said why:\n\n    lh3.googleusercontent.com -> 0.0.0.0\n    gz0.googleusercontent.com -> 216.239.38.135\n\ngz0 was not on the list and was serving them. Listing a range that does not exist yet costs nothing; leaving one out costs the whole rule.\n\nNote that gz0.googleusercontent.com answers on the same address as mobilemaps-pa-gz.googleapis.com, which carries the map itself. That is why this file blocks names and never addresses: the map keeps working, the photographs do not.\n\nencrypted-tbn0.gstatic.com was found serving the photographs in the attractions tab (seen on a device, 2026-10-20). It is Google's image thumbnail host, the same one image search uses, and nothing the map needs; the family is written out 0 through 9 for the reason above."
     },
     {
       "type": "ModeBased",
@@ -349,8 +359,24 @@
       "packageName": "io.github.guzsbhtk.twa",
       "category": "TOOLS",
       "networkPolicy": {
-        "mode": "FULL_OPEN",
-        "desc": "Its station data, the map tiles and its Firebase sign in, and nothing else"
+        "mode": "WHITELIST",
+        "desc": "Its station data, the map tiles and its Firebase sign in, and nothing else",
+        "spec": {
+          "type": "HostList",
+          "hosts": [
+            "docs.google.com",
+            "tile.openstreetmap.org",
+            "firestore.googleapis.com",
+            "identitytoolkit.googleapis.com",
+            "securetoken.googleapis.com",
+            "firebaseinstallations.googleapis.com",
+            "www.googleapis.com",
+            "accounts.google.com",
+            "www.recaptcha.net",
+            "www.gstatic.com",
+            "www.google.com"
+          ]
+        }
       },
       "minimumVersionCode": 4113,
       "notes": "An allow list, written from the binary. It is a Flutter application, so its own code is in lib/arm64-v8a/libapp.so in the ABI split, which tools/extract_hosts.py does not read; the strings there were read by hand.\n\nWhat it dials: docs.google.com, where the station list is a Google Sheet (gviz/tq?tqx=out:json) and reports go to two Google Forms (formResponse); tile.openstreetmap.org for the map; Firestore, and Firebase Auth with Google sign in and reCAPTCHA (identitytoolkit, securetoken, firebaseinstallations, www.googleapis.com, accounts.google.com, www.recaptcha.net, www.gstatic.com/recaptcha). www.google.com is asked for its favicon, which reads as a connectivity check.\n\nNot dialled: waze.com/ul and google.com/maps/dir are links handed to the navigation apps. The base APK also carries dozens of github.com hosts and YouTube, Instagram, TikTok, Twitch, LinkedIn and X: library resources, never used. No ads, no analytics, no Crashlytics were found.\n\nNot yet watched on a device through the tunnel: a host built at runtime would show up there as WHITELIST_MISS."
