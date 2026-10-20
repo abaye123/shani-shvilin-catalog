@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-18T20:45:41Z",
+  "generatedAt": "2026-10-20T16:03:32Z",
   "entries": [
     {
       "packageName": "air.com.cellogroup.Cellopark",
@@ -292,6 +292,27 @@
       "notes": "Needed for spoken navigation directions"
     },
     {
+      "packageName": "com.khl.kiosk",
+      "displayName": {
+        "he": "הקיוסק של קול הלשון",
+        "en": "Kol Halashon Kiosk"
+      },
+      "category": "TORAH",
+      "minimumVersionCode": 267,
+      "sha256": "5b32d78ade54ca6e75c5681755778fed96e412e8ea0c4119d1c0c80642f0b530",
+      "availableInStore": true,
+      "grantsNetworkAccess": true,
+      "minUserMode": "REDUCED_RISK",
+      "flags": {
+        "isRecommendedInStore": false
+      },
+      "source": {
+        "type": "PLAY",
+        "id": "com.khl.kiosk"
+      },
+      "notes": "Kol Halashon's older native player (2.67, versionCode 267, from Play), signed by Kol Halashon, the same key as com.khl.www2. Chosen over com.khl.www2 because its media requests travel in clear HTTP, which is what makes an audio only policy possible later; see the policy notes."
+    },
+    {
       "packageName": "com.moblin.israeltrain",
       "displayName": {
         "he": "רכבת ישראל",
@@ -573,6 +594,31 @@
         "https://play-lh.googleusercontent.com/V1fpd9g1_vTaByDjm4WmUep335KZVnrfrp5Q3vOay5DJ1Bm_JJ5yIFq_tDnwOog0BNhcSZJ-d3ng_RNmExpgLQ",
         "https://play-lh.googleusercontent.com/E8E_zjpZDvXjM7AW63E_gYGhRYoiFTRf0kXUn_Sxurb6kcEsTPn0oR_T8smJEPBWduOtcF020J_Ztxb3NVve",
         "https://play-lh.googleusercontent.com/uP_FFWnPgu1CT5Pj3mawgXkxbDMj0JlO0F0oIkETTbqwnZme1Q0fnXTbg33ymqh32cMIBBvdF_O1TjVuwhwYX6Q"
+      ]
+    },
+    {
+      "packageName": "io.github.guzsbhtk.twa",
+      "displayName": {
+        "he": "תחנות גפ״מ",
+        "en": "LPG Stations"
+      },
+      "category": "TOOLS",
+      "minimumVersionCode": 4113,
+      "sha256": "e86c972a965c7a63f30b784f9488eafb44345aad80433652aea6adadd53cd1ea",
+      "availableInStore": true,
+      "grantsNetworkAccess": true,
+      "minUserMode": "REDUCED_RISK",
+      "source": {
+        "type": "PLAY",
+        "id": "io.github.guzsbhtk.twa"
+      },
+      "notes": "LPG filling stations on a map, with directions handed to Waze or Maps: fuel for the car, so it sits with navigation. Pin and version from the build installed from Play (1.1.5, versionCode 4113), signed with Play App Signing.",
+      "screenshots": [
+        "https://play-lh.googleusercontent.com/Mb4gy5cS2uSewwu2obzeTK2sQt7XfqcVXESeEQ44Jprt-i5Q-SOvnLbSr70BM-rm9RMi8lloJ5iUKkSDtKZdBHs",
+        "https://play-lh.googleusercontent.com/q-M4b47icOkCyK_wscoiTmbtby_AuBGOxVMLVqrLFfd2fM4uWrk9LpisoMuChyc1psmtCGapShDQRpnA-OJl9R4",
+        "https://play-lh.googleusercontent.com/cS6JZkZuFO7_TIyLtLEviE2IyllKeYrcnXLVPQOcqgP-wS1osTzh9Ubflnzpkyo07xCS6kvEuVeAaLW5mvtZSQ",
+        "https://play-lh.googleusercontent.com/9CcvnBKWwtYb3FQBnNavO1j4MmfYa7pDuQ5z1PVDf_RPVAEOcWWg76xzXrGI0nu6sAdVvuuynFwv2X6n05LyUrM",
+        "https://play-lh.googleusercontent.com/tsa5cpSo6muHqnSzxB8CukOgJVxSVVgv6KIqgyLYm638SA9zjGGO3PHVdBKyJhE7gVGZMpmkAcpL22kawSSOhKM"
       ]
     },
     {

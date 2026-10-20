@@ -1,0 +1,25 @@
+{
+  "packageName": "io.github.guzsbhtk.twa",
+  "displayName": {
+    "he": "תחנות גפ״מ",
+    "en": "LPG Stations"
+  },
+  "category": "TOOLS",
+  "minimumVersionCode": 4113,
+  "sha256": "e86c972a965c7a63f30b784f9488eafb44345aad80433652aea6adadd53cd1ea",
+  "availableInStore": true,
+  "grantsNetworkAccess": true,
+  "minUserMode": "REDUCED_RISK",
+  "source": {
+    "type": "PLAY",
+    "id": "io.github.guzsbhtk.twa"
+  },
+  "notes": "LPG filling stations on a map, with directions handed to Waze or Maps: fuel for the car, so it sits with navigation. Pin and version from the build installed from Play (1.1.5, versionCode 4113), signed with Play App Signing.",
+  "screenshots": [
+    "https://play-lh.googleusercontent.com/Mb4gy5cS2uSewwu2obzeTK2sQt7XfqcVXESeEQ44Jprt-i5Q-SOvnLbSr70BM-rm9RMi8lloJ5iUKkSDtKZdBHs",
+    "https://play-lh.googleusercontent.com/q-M4b47icOkCyK_wscoiTmbtby_AuBGOxVMLVqrLFfd2fM4uWrk9LpisoMuChyc1psmtCGapShDQRpnA-OJl9R4",
+    "https://play-lh.googleusercontent.com/cS6JZkZuFO7_TIyLtLEviE2IyllKeYrcnXLVPQOcqgP-wS1osTzh9Ubflnzpkyo07xCS6kvEuVeAaLW5mvtZSQ",
+    "https://play-lh.googleusercontent.com/9CcvnBKWwtYb3FQBnNavO1j4MmfYa7pDuQ5z1PVDf_RPVAEOcWWg76xzXrGI0nu6sAdVvuuynFwv2X6n05LyUrM",
+    "https://play-lh.googleusercontent.com/tsa5cpSo6muHqnSzxB8CukOgJVxSVVgv6KIqgyLYm638SA9zjGGO3PHVdBKyJhE7gVGZMpmkAcpL22kawSSOhKM"
+  ]
+}

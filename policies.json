@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-18T20:45:40Z",
-  "sourceTag": "b33e681993f53e94",
+  "generatedAt": "2026-10-20T16:03:32Z",
+  "sourceTag": "f2cc8cc076b2501a",
   "policies": [
     {
       "type": "Fixed",
@@ -182,6 +182,23 @@
     },
     {
       "type": "Fixed",
+      "packageName": "com.khl.kiosk",
+      "category": "TORAH",
+      "networkPolicy": {
+        "mode": "BLACKLIST",
+        "desc": "Everything except the video only media host",
+        "spec": {
+          "type": "HostList",
+          "hosts": [
+            "mp4.kolhalashon.com"
+          ]
+        }
+      },
+      "minimumVersionCode": 267,
+      "notes": "First stage, to watch the application on a device. Video is not blocked yet beyond mp4.kolhalashon.com.\n\nFrom the binary and the server: the API is SOAP and ASPX over clear HTTP on www.kolhalashon.com (WebSrv/iPhoneServices.asmx, iPhone/GetMediaURL.aspx?FileID=N&FileType=audio|video|Video|hd). Today the server answers audio with an https URL under /mp3/ and video with an http URL under /mp4/, both on www.kolhalashon.com. Live streams use port 1935 on www.kolhalashon.com for audio (KHL_Mp3, LiveAudio) and video (KHL_Video, KHL_LiveVideo) alike. kol.kolhl.com is another base URL in the code.\n\nSo neither host nor port separates video from audio: blocking port 80 kills the API, blocking 1935 kills live audio. The difference is only in the path, and that path is in clear text, so a path rule on HTTP is the planned second stage."
+    },
+    {
+      "type": "Fixed",
       "packageName": "com.miui.weather2",
       "category": "TOOLS",
       "networkPolicy": {
@@ -323,6 +340,33 @@
       "networkPolicy": {
         "mode": "OFFLINE"
       }
+    },
+    {
+      "type": "Fixed",
+      "packageName": "io.github.guzsbhtk.twa",
+      "category": "TOOLS",
+      "networkPolicy": {
+        "mode": "WHITELIST",
+        "desc": "Its station data, the map tiles and its Firebase sign in, and nothing else",
+        "spec": {
+          "type": "HostList",
+          "hosts": [
+            "docs.google.com",
+            "tile.openstreetmap.org",
+            "firestore.googleapis.com",
+            "identitytoolkit.googleapis.com",
+            "securetoken.googleapis.com",
+            "firebaseinstallations.googleapis.com",
+            "www.googleapis.com",
+            "accounts.google.com",
+            "www.recaptcha.net",
+            "www.gstatic.com",
+            "www.google.com"
+          ]
+        }
+      },
+      "minimumVersionCode": 4113,
+      "notes": "An allow list, written from the binary. It is a Flutter application, so its own code is in lib/arm64-v8a/libapp.so in the ABI split, which tools/extract_hosts.py does not read; the strings there were read by hand.\n\nWhat it dials: docs.google.com, where the station list is a Google Sheet (gviz/tq?tqx=out:json) and reports go to two Google Forms (formResponse); tile.openstreetmap.org for the map; Firestore, and Firebase Auth with Google sign in and reCAPTCHA (identitytoolkit, securetoken, firebaseinstallations, www.googleapis.com, accounts.google.com, www.recaptcha.net, www.gstatic.com/recaptcha). www.google.com is asked for its favicon, which reads as a connectivity check.\n\nNot dialled: waze.com/ul and google.com/maps/dir are links handed to the navigation apps. The base APK also carries dozens of github.com hosts and YouTube, Instagram, TikTok, Twitch, LinkedIn and X: library resources, never used. No ads, no analytics, no Crashlytics were found.\n\nNot yet watched on a device through the tunnel: a host built at runtime would show up there as WHITELIST_MISS."
     },
     {
       "type": "Fixed",
