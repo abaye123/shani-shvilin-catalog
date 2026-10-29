@@ -1,0 +1,27 @@
+{
+  "type": "Fixed",
+  "packageName": "il.org.osm.israelhiking",
+  "category": "NAVIGATION",
+  "networkPolicy": {
+    "mode": "BLACKLIST",
+    "desc": "Tag Manager, YouTube, Facebook and imgur are blocked; maps, routes and the project's own photos stay open",
+    "spec": {
+      "type": "HostList",
+      "hosts": [
+        "www.googletagmanager.com",
+        "www.google-analytics.com",
+        "www.youtube.com",
+        "youtube.com",
+        "m.youtube.com",
+        "www.youtube-nocookie.com",
+        "i.ytimg.com",
+        "www.facebook.com",
+        "facebook.com",
+        "imgur.com",
+        "i.imgur.com"
+      ]
+    }
+  },
+  "minimumVersionCode": 921256,
+  "notes": "Written from the binary. It is a Capacitor application with a MapLibre map, so its code is the JavaScript in assets/public. What it needs: israelhiking.osm.org.il (its own API, tiles and uploaded photos), api.openstreetmap.org and overpass-api.de (map data), upload.wikimedia.org and commons.wikimedia.org (point of interest photos), inature.info, and RevenueCat (api.revenuecat.com and its siblings) for the subscription.\n\nBlocked: Google Tag Manager and Analytics; YouTube, which is an embedded help video (youtube.com/embed); Facebook, which is the project's group page and a share link; and imgur, which is where some user photos are hosted and where uploads went, so those photos do not load and an upload to imgur fails. The embedded video's stream comes from googlevideo.com hosts that cannot be listed one by one; blocking www.youtube.com stops the embed before it asks for them.\n\nWhat this does not block: photos on Wikimedia and on the project's own server, which are most of them. That is why the catalog entry carries hasUnmodestImage. Not yet watched on a device through the tunnel."
+}

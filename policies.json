@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-29T19:51:13Z",
-  "sourceTag": "211399ab8a30bc55",
+  "generatedAt": "2026-10-29T19:54:09Z",
+  "sourceTag": "eeb782f282f81c23",
   "policies": [
     {
       "type": "Fixed",
@@ -482,6 +482,33 @@
       },
       "minimumVersionCode": 80,
       "notes": "Written from the binary. What it needs: ten.inmanage.com, its API, banners and coupons alike, and hotclient5.inmanage.com, the one domain in its network security configuration. Firebase for Crashlytics and dynamic links (tenapp.page.link).\n\nBlocked: Pushwoosh, which delivers its marketing push notifications, so promotional pushes with pictures stop arriving; AppsFlyer, which is install attribution and marketing tracking; and the Facebook SDK. The AppsFlyer and Facebook names are assembled at runtime from format strings (\"%sinapps.%s\", \"graph.%s\" and so on), which is why the extractor did not list most of them; the list here is those strings filled in with appsflyersdk.com and facebook.com.\n\nWhat this cannot do: the in-app banners come from ten.inmanage.com, the same host as the fuelling itself. That is why the catalog entry carries hasUnmodestImage.\n\nNot yet watched on a device through the tunnel. If the banner images turn out to come from a separate image host, that host is the one to add here."
+    },
+    {
+      "type": "Fixed",
+      "packageName": "il.org.osm.israelhiking",
+      "category": "NAVIGATION",
+      "networkPolicy": {
+        "mode": "BLACKLIST",
+        "desc": "Tag Manager, YouTube, Facebook and imgur are blocked; maps, routes and the project's own photos stay open",
+        "spec": {
+          "type": "HostList",
+          "hosts": [
+            "www.googletagmanager.com",
+            "www.google-analytics.com",
+            "www.youtube.com",
+            "youtube.com",
+            "m.youtube.com",
+            "www.youtube-nocookie.com",
+            "i.ytimg.com",
+            "www.facebook.com",
+            "facebook.com",
+            "imgur.com",
+            "i.imgur.com"
+          ]
+        }
+      },
+      "minimumVersionCode": 921256,
+      "notes": "Written from the binary. It is a Capacitor application with a MapLibre map, so its code is the JavaScript in assets/public. What it needs: israelhiking.osm.org.il (its own API, tiles and uploaded photos), api.openstreetmap.org and overpass-api.de (map data), upload.wikimedia.org and commons.wikimedia.org (point of interest photos), inature.info, and RevenueCat (api.revenuecat.com and its siblings) for the subscription.\n\nBlocked: Google Tag Manager and Analytics; YouTube, which is an embedded help video (youtube.com/embed); Facebook, which is the project's group page and a share link; and imgur, which is where some user photos are hosted and where uploads went, so those photos do not load and an upload to imgur fails. The embedded video's stream comes from googlevideo.com hosts that cannot be listed one by one; blocking www.youtube.com stops the embed before it asks for them.\n\nWhat this does not block: photos on Wikimedia and on the project's own server, which are most of them. That is why the catalog entry carries hasUnmodestImage. Not yet watched on a device through the tunnel."
     },
     {
       "type": "Fixed",
