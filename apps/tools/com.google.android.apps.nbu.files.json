@@ -1,0 +1,21 @@
+{
+  "packageName": "com.google.android.apps.nbu.files",
+  "displayName": {
+    "he": "Files by Google",
+    "en": "Files by Google"
+  },
+  "category": "TOOLS",
+  "minimumVersionCode": 1593359,
+  "sha256": "207af9a133a630c4246a06c79c09946a70840f4702ee5baa53f3791b537b0f14",
+  "availableInStore": true,
+  "grantsNetworkAccess": false,
+  "minUserMode": "OFFLINE",
+  "flags": {
+    "isRecommendedInStore": true
+  },
+  "source": {
+    "type": "PLAY",
+    "id": "com.google.android.apps.nbu.files"
+  },
+  "notes": "A file manager for the device's own storage. Pin and version from the build installed from Play on the F21 Pro (1.9291, versionCode 1593359), signed with Play App Signing (CN=Android, O=Google Inc.). No network on purpose: browsing, opening, moving and cleaning up files all work offline, and what the network adds (cloud backup, cleaning suggestions) is not needed. It holds REQUEST_INSTALL_PACKAGES and can open an APK it finds on the storage; whether that installs is decided by the install restrictions on the device, not by this entry. Nearby Share goes over Bluetooth and Wi-Fi Direct, which the Bluetooth sharing restriction governs."
+}

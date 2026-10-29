@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-29T20:03:19Z",
+  "generatedAt": "2026-10-29T20:19:43Z",
   "entries": [
     {
       "packageName": "air.com.cellogroup.Cellopark",
@@ -257,6 +257,27 @@
         "https://play-lh.googleusercontent.com/SZYkejxa4A8q-NB60TKTHgX3u7g1TOYNFGqSl9v0ExE5yydTuIeSqdu9hTKSioifipAKeMpaCWTr9WBGGXQQcw",
         "https://play-lh.googleusercontent.com/6vqNimEQei7H4ZIiGXiZexY2z2fWeBao1Ss0Mm2aX_V_nUdlX1O7_7O8snY5J2qk3Q4xAiN9z_n5hxEaNt34dQ"
       ]
+    },
+    {
+      "packageName": "com.google.android.apps.nbu.files",
+      "displayName": {
+        "he": "Files by Google",
+        "en": "Files by Google"
+      },
+      "category": "TOOLS",
+      "minimumVersionCode": 1593359,
+      "sha256": "207af9a133a630c4246a06c79c09946a70840f4702ee5baa53f3791b537b0f14",
+      "availableInStore": true,
+      "grantsNetworkAccess": false,
+      "minUserMode": "OFFLINE",
+      "flags": {
+        "isRecommendedInStore": true
+      },
+      "source": {
+        "type": "PLAY",
+        "id": "com.google.android.apps.nbu.files"
+      },
+      "notes": "A file manager for the device's own storage. Pin and version from the build installed from Play on the F21 Pro (1.9291, versionCode 1593359), signed with Play App Signing (CN=Android, O=Google Inc.). No network on purpose: browsing, opening, moving and cleaning up files all work offline, and what the network adds (cloud backup, cleaning suggestions) is not needed. It holds REQUEST_INSTALL_PACKAGES and can open an APK it finds on the storage; whether that installs is decided by the install restrictions on the device, not by this entry. Nearby Share goes over Bluetooth and Wi-Fi Direct, which the Bluetooth sharing restriction governs."
     },
     {
       "packageName": "com.google.android.apps.translate",
@@ -712,14 +733,16 @@
       "availableInStore": true,
       "grantsNetworkAccess": true,
       "minUserMode": "NAVIGATION_ONLY",
-      "flags": {
-        "isRecommendedInStore": false
-      },
       "source": {
         "type": "PLAY",
         "id": "gps.hakohanim.org"
       },
-      "notes": "Routes for kohanim that avoid cemeteries, the same need Derech Kohanim answers. Pin and version from the build installed from Play (15.1, versionCode 15), signed with Play App Signing (CN=Android, O=Google Inc.). No policy, so it is fully open inside the tunnel, by choice. It is a Capacitor web application with a MapLibre map; its network security configuration names gps.hakohanim.org, api.maptiler.com, tile.openstreetmap.org, server.arcgisonline.com, nominatim.openstreetmap.org and unpkg.com, and the code also reaches tiles.openfreemap.org and photon.komoot.io. No ad SDK and no analytics were found."
+      "notes": "Routes for kohanim that avoid cemeteries, the same need Derech Kohanim answers. Pin and version from the build installed from Play (15.1, versionCode 15), signed with Play App Signing (CN=Android, O=Google Inc.). No policy, so it is fully open inside the tunnel, by choice. It is a Capacitor web application with a MapLibre map; its network security configuration names gps.hakohanim.org, api.maptiler.com, tile.openstreetmap.org, server.arcgisonline.com, nominatim.openstreetmap.org and unpkg.com, and the code also reaches tiles.openfreemap.org and photon.komoot.io. No ad SDK and no analytics were found.",
+      "screenshots": [
+        "https://play-lh.googleusercontent.com/XIZA_isXrd9LGflpHCEkERWlFGwwiZ1HXfcDEhz27Qh7aowjZeNv7KwSWk9U8bjoINuXzovN25O0DFE-7kDUlI8",
+        "https://play-lh.googleusercontent.com/CHIaeQWRquMA26WhdDBt8RM2hpIj-KP5Scldzq34Uh05NKKnoqLXw9gaWaY96EoKSSfgEYy4GJE9MbPh_650",
+        "https://play-lh.googleusercontent.com/5rsSFgy_Wb8SqI7m02oFA36nSRPP7q87nzzksw751isU3L1Ut_9TBvTGTb9cRUDgjkJgYxoJuzjvi-tcVmV07-s"
+      ]
     },
     {
       "packageName": "il.co.corido.cemeterynavigation",
