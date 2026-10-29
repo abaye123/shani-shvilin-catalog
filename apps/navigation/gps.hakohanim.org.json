@@ -1,0 +1,21 @@
+{
+  "packageName": "gps.hakohanim.org",
+  "displayName": {
+    "he": "ניווט לכהנים",
+    "en": "Navigation for Kohanim"
+  },
+  "category": "NAVIGATION",
+  "minimumVersionCode": 15,
+  "sha256": "78e2a40cb5a58434b1af319f5e5aeb33c4c9c185414804fd30ad2ece95eff09f",
+  "availableInStore": true,
+  "grantsNetworkAccess": true,
+  "minUserMode": "NAVIGATION_ONLY",
+  "flags": {
+    "isRecommendedInStore": false
+  },
+  "source": {
+    "type": "PLAY",
+    "id": "gps.hakohanim.org"
+  },
+  "notes": "Routes for kohanim that avoid cemeteries, the same need Derech Kohanim answers. Pin and version from the build installed from Play (15.1, versionCode 15), signed with Play App Signing (CN=Android, O=Google Inc.). No policy, so it is fully open inside the tunnel, by choice. It is a Capacitor web application with a MapLibre map; its network security configuration names gps.hakohanim.org, api.maptiler.com, tile.openstreetmap.org, server.arcgisonline.com, nominatim.openstreetmap.org and unpkg.com, and the code also reaches tiles.openfreemap.org and photon.komoot.io. No ad SDK and no analytics were found."
+}

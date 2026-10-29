@@ -1,0 +1,21 @@
+{
+  "packageName": "com.noegcoil.theorystudy",
+  "displayName": {
+    "he": "נוהג לימוד תאוריה",
+    "en": "Noeg Theory Study"
+  },
+  "category": "TOOLS",
+  "minimumVersionCode": 92,
+  "sha256": "4ecbe67b7a585cbb02a9286b2871e089b2b493b98119b086f911d107ae4ac7f7",
+  "availableInStore": true,
+  "grantsNetworkAccess": true,
+  "minUserMode": "REDUCED_RISK",
+  "flags": {
+    "isRecommendedInStore": false
+  },
+  "source": {
+    "type": "PLAY",
+    "id": "com.noegcoil.theorystudy"
+  },
+  "notes": "Driving theory test practice. Pin and version from the build installed from Play (15.0.0, versionCode 92), signed with the developer's own key (CN=Erez, C=IL). It carries real advertising: AdMob with nineteen ad units (banners, interstitials, rewarded), Facebook Audience Network and ironSource mediation, plus a local ad server, deliver.trustmedia.co.il. The policy blocks all of them; see it for what that costs."
+}

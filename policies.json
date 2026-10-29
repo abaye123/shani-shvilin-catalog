@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-29T19:38:19Z",
-  "sourceTag": "7297bbabb6d7c157",
+  "generatedAt": "2026-10-29T19:47:05Z",
+  "sourceTag": "fa2670c8df2529b0",
   "policies": [
     {
       "type": "Fixed",
@@ -247,6 +247,43 @@
       "networkPolicy": {
         "mode": "FULL_OPEN"
       }
+    },
+    {
+      "type": "Fixed",
+      "packageName": "com.noegcoil.theorystudy",
+      "category": "TOOLS",
+      "networkPolicy": {
+        "mode": "BLACKLIST",
+        "desc": "Every ad network it carries is blocked; questions, sign in and sync stay open",
+        "spec": {
+          "type": "HostList",
+          "hosts": [
+            "deliver.trustmedia.co.il",
+            "googleads.g.doubleclick.net",
+            "pubads.g.doubleclick.net",
+            "ad.doubleclick.net",
+            "pagead2.googlesyndication.com",
+            "tpc.googlesyndication.com",
+            "www.googleadservices.com",
+            "adservice.google.com",
+            "imasdk.googleapis.com",
+            "fundingchoicesmessages.google.com",
+            "admob-gmats.uc.r.appspot.com",
+            "googlemobileadssdk.page.link",
+            "graph.facebook.com",
+            "an.facebook.com",
+            "www.facebook.com",
+            "s.facebook.com",
+            "init.supersonicads.com",
+            "outcome-ssp.supersonicads.com",
+            "outcome-arm-ext-med-ext.sonic-us.supersonicads.com",
+            "outcome-crash-report.supersonicads.com",
+            "bit.ly"
+          ]
+        }
+      },
+      "minimumVersionCode": 92,
+      "notes": "Written from the binary. It is a Flutter application, so its own code is in lib/arm64-v8a/libapp.so in the ABI split, which tools/extract_hosts.py does not read; those strings were read by hand. What it needs: api.noeg.co.il (a Parse server), noeg.co.il (app data, sign in, password reset, friend sync), book.noeg.co.il and teo.co.il (lessons and teachers), and Firebase (remote config, Crashlytics).\n\nBlocked: AdMob and its consent and measurement hosts, Facebook Audience Network (ad requests go to graph.facebook.com; the SDK builds %s.facebook.com/audience_network at runtime), ironSource mediation (supersonicads.com), and deliver.trustmedia.co.il, an Israeli ad server the Flutter code calls next to its SmartBannerAdSize. The Google ad hosts are listed here even though the global list carries them, because app builds that predate globalBlockedHosts only read this.\n\nbit.ly is blocked because every bit.ly link in it (teoapp1 to teoapp5 and five others) is a promotional short link.\n\nWhat it costs: banners leave empty space or collapse, and anything gated behind a rewarded ad (the dex has 25 references to rewarded ads) will not unlock, because the ad never loads. Not yet watched on a device through the tunnel."
     },
     {
       "type": "Fixed",
