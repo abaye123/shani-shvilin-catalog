@@ -1,0 +1,21 @@
+{
+  "packageName": "com.sonol.mobileapp",
+  "displayName": {
+    "he": "סונול",
+    "en": "Sonol"
+  },
+  "category": "TOOLS",
+  "minimumVersionCode": 30000030,
+  "sha256": "d0c27bfa449927e65f912c2a2962671326c383027d1cb59418411954c1dd4be2",
+  "availableInStore": true,
+  "grantsNetworkAccess": true,
+  "minUserMode": "REDUCED_RISK",
+  "flags": {
+    "isRecommendedInStore": false
+  },
+  "source": {
+    "type": "PLAY",
+    "id": "com.sonol.mobileapp"
+  },
+  "notes": "Sonol fuelling. React Native, Google Maps, Firebase, Branch, Sentry and Forter. No ad SDK. Pin and version from the build installed from Play (2.7.4, versionCode 30000030), signed with the developer's own key (CN=Sonol, OU=Sonol, O=Sonol, L=Israel, ST=Israel, C=IL)."
+}

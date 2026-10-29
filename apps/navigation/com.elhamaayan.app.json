@@ -1,0 +1,22 @@
+{
+  "packageName": "com.elhamaayan.app",
+  "displayName": {
+    "he": "אל המעיין",
+    "en": "El HaMaayan"
+  },
+  "category": "NAVIGATION",
+  "minimumVersionCode": 11,
+  "sha256": "7352fbd6ced74b747c1959946ee189969b2a3654c424aa2e276e67fafb31813a",
+  "availableInStore": true,
+  "grantsNetworkAccess": true,
+  "minUserMode": "MOST_OPEN",
+  "flags": {
+    "hasUnmodestImage": true,
+    "isRecommendedInStore": false
+  },
+  "source": {
+    "type": "PLAY",
+    "id": "com.elhamaayan.app"
+  },
+  "notes": "Map of springs. A Capacitor web application backed by Supabase (sbnbfpihfhsyctumpqod.supabase.co), with Leaflet maps from MapTiler, OpenStreetMap and govmap. No ad SDK and no analytics. No policy, so it is open inside the tunnel. Flagged hasUnmodestImage: spring photos come from upload.wikimedia.org and from users, and a photo of a spring may show bathers. Blocking the photo hosts was considered and left out for now. Pin and version from the build installed from Play (1.0.0, versionCode 11), signed with Play App Signing (CN=Android, O=Google Inc.). The flag keeps it out of REDUCED_RISK and asks for explicit acceptance; MOST_OPEN is stated so the entry says what the flag already means."
+}

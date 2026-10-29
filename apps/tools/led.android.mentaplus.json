@@ -1,0 +1,21 @@
+{
+  "packageName": "led.android.mentaplus",
+  "displayName": {
+    "he": "דלק",
+    "en": "Delek"
+  },
+  "category": "TOOLS",
+  "minimumVersionCode": 132,
+  "sha256": "10f678e4bb89f69920f4bd1fb6469d0c6fde0030c7bb309ef21f553afb35ca4c",
+  "availableInStore": true,
+  "grantsNetworkAccess": true,
+  "minUserMode": "REDUCED_RISK",
+  "flags": {
+    "isRecommendedInStore": false
+  },
+  "source": {
+    "type": "PLAY",
+    "id": "led.android.mentaplus"
+  },
+  "notes": "Delek fuelling (Menta). React Native, Google Maps, Firebase, AppsFlyer and Emarsys. No ad SDK. Pin and version from the build installed from Play (8.0.4, versionCode 132), signed with the developer's own key (CN=keeprz, O=keeprz, L=Tel Aviv)."
+}

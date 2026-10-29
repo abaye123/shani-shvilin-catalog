@@ -1,0 +1,21 @@
+{
+  "packageName": "gnrgy.android.emobilityapp",
+  "displayName": {
+    "he": "Gnrgy Go",
+    "en": "Gnrgy Go"
+  },
+  "category": "TOOLS",
+  "minimumVersionCode": 724,
+  "sha256": "fb1fa434cf3174c12664a62a29e19e4b771f5f402e05e73b908fc905c7ac6305",
+  "availableInStore": true,
+  "grantsNetworkAccess": true,
+  "minUserMode": "NAVIGATION_ONLY",
+  "flags": {
+    "isRecommendedInStore": false
+  },
+  "source": {
+    "type": "PLAY",
+    "id": "gnrgy.android.emobilityapp"
+  },
+  "notes": "Gnrgy EV charging. It reached portal.gnrgy.com only. Google Maps and Firebase. No ad SDK. No policy, so it is open inside the tunnel. Pin and version from the build installed from Play (8.8, versionCode 724), signed with the developer's own key (CN=Midhun Madhu, OU=Software Department, O=Gnrgy, L=Bangalore, ST=Karnataka, C=IN)."
+}

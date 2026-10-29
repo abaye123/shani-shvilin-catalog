@@ -1,0 +1,21 @@
+{
+  "packageName": "com.driivz.mobile.android.evi.driver",
+  "displayName": {
+    "he": "EVI סונול",
+    "en": "EVI Sonol"
+  },
+  "category": "TOOLS",
+  "minimumVersionCode": 27237,
+  "sha256": "beabc48d4644f349909794ea949f0c49b04aa2fe51a646b14bb7702b97f891dd",
+  "availableInStore": true,
+  "grantsNetworkAccess": true,
+  "minUserMode": "NAVIGATION_ONLY",
+  "flags": {
+    "isRecommendedInStore": false
+  },
+  "source": {
+    "type": "PLAY",
+    "id": "com.driivz.mobile.android.evi.driver"
+  },
+  "notes": "Sonol EVI EV charging, on the Driivz platform. It reached mobile.sonolevi.co.il only. Payment SDKs (Stripe, Adyen, Braintree), Google Maps, Firebase. No ad SDK. No policy, so it is open inside the tunnel. Pin and version from the build installed from Play (9.1.20-9302ab832e, versionCode 27237), signed with the developer's own key (CN=Joseph Levy, O=Driivz LTD, C=IL)."
+}

@@ -1,0 +1,21 @@
+{
+  "type": "Fixed",
+  "packageName": "il.org.startach.theplatform.android.yedidim",
+  "category": "TOOLS",
+  "networkPolicy": {
+    "mode": "BLACKLIST",
+    "desc": "PostHog analytics is blocked; calls and dispatch stay open",
+    "spec": {
+      "type": "HostList",
+      "hosts": [
+        "us.i.posthog.com",
+        "eu.i.posthog.com",
+        "us-assets.i.posthog.com",
+        "eu-assets.i.posthog.com",
+        "app.posthog.com"
+      ]
+    }
+  },
+  "minimumVersionCode": 320,
+  "notes": "Written from the binary and from the tunnel. Flutter, on the Startach platform. What it needs: api-prod.startach.io, api-yedidim.startach.io, yedidim.startach.io, redirect.startach.io, platform.startach.org.il, Google Maps, Firebase and Sentry. Blocked: PostHog, product analytics that can also record sessions. On launch it reached only Firebase and Sentry, before sign in, so the hosts used after sign in were not seen."
+}

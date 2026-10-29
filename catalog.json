@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-29T20:19:43Z",
+  "generatedAt": "2026-10-29T21:58:20Z",
   "entries": [
     {
       "packageName": "air.com.cellogroup.Cellopark",
@@ -92,6 +92,28 @@
       "notes": "Installed from the latest GitHub release. Two accepted signers: e1d3... is the Play App Signing certificate of the copy from Google Play (computed with apksigner from the copy on the reference device, versionCode 1), and 2d5f... is the developer's own certificate on the GitHub APK (MusicRadio-1.0.12.apk, versionCode 20, CN=abaye, OU=MusicRadio). The two are not interchangeable on one device: a Play copy cannot be updated in place by the GitHub APK."
     },
     {
+      "packageName": "co.bird.android",
+      "displayName": {
+        "he": "בירד",
+        "en": "Bird"
+      },
+      "category": "NAVIGATION",
+      "minimumVersionCode": 908560,
+      "sha256": "bd0bc056cb0183837e10d386d8c181b6444fc4174ed8badcd0d7295c204fcd91",
+      "availableInStore": true,
+      "grantsNetworkAccess": true,
+      "minUserMode": "MOST_OPEN",
+      "flags": {
+        "hasUnmodestImage": true,
+        "isRecommendedInStore": false
+      },
+      "source": {
+        "type": "PLAY",
+        "id": "co.bird.android"
+      },
+      "notes": "Shared scooters. Flagged hasUnmodestImage: the sign in screen plays a video of people riding (res/raw/intro_video.mp4), packaged in the APK, so the tunnel cannot remove it. Braze, Stripe, Braintree and PayPal, Persona for identity checks, Zendesk. Pin and version from the build installed from Play (4.421.0.1, versionCode 908560), signed with the developer's own key (CN=Bird Ride, O=Bird Rides, L=Santa Monica, ST=CA, C=01). The flag keeps it out of REDUCED_RISK and asks for explicit acceptance; MOST_OPEN is stated so the entry says what the flag already means."
+    },
+    {
       "packageName": "com.abaye.derechkohanim",
       "displayName": {
         "he": "דרך כהנים",
@@ -142,6 +164,28 @@
       ]
     },
     {
+      "packageName": "com.amudanan.amudanan",
+      "displayName": {
+        "he": "עמוד ענן",
+        "en": "Amud Anan"
+      },
+      "category": "NAVIGATION",
+      "minimumVersionCode": 2004031,
+      "sha256": "2c6a1653ae7f29f83f1b6da29f0e53d1c9615788e65c90a61e54651004f3ae7f",
+      "availableInStore": true,
+      "grantsNetworkAccess": true,
+      "minUserMode": "MOST_OPEN",
+      "flags": {
+        "hasUnmodestImage": true,
+        "isRecommendedInStore": false
+      },
+      "source": {
+        "type": "PLAY",
+        "id": "com.amudanan.amudanan"
+      },
+      "notes": "Hiking and offroad maps. Flutter, Mapbox and MapLibre, Firebase and the Facebook SDK. Flagged hasUnmodestImage, like Israel Hiking Map: points of interest carry photos users upload. Pin and version from the build installed from Play (2.4.3, versionCode 2004031), signed with the developer's own key (CN=Yoav Rofe, OU=Amud Anan, O=Amud Anan, L=Jerusalem, ST=Jerusalem, C=IL). The flag keeps it out of REDUCED_RISK and asks for explicit acceptance; MOST_OPEN is stated so the entry says what the flag already means."
+    },
+    {
       "packageName": "com.app.GoSurf",
       "displayName": {
         "he": "GoSurf",
@@ -186,6 +230,112 @@
       }
     },
     {
+      "packageName": "com.bluegate.app",
+      "displayName": {
+        "he": "PalGate",
+        "en": "PalGate"
+      },
+      "category": "TOOLS",
+      "minimumVersionCode": 447,
+      "sha256": "c4d0169d9d75c4d3eb0223982d31802b30933370c9f2d0ea2b25d41b66370193",
+      "availableInStore": true,
+      "grantsNetworkAccess": true,
+      "minUserMode": "NAVIGATION_ONLY",
+      "flags": {
+        "isRecommendedInStore": false
+      },
+      "source": {
+        "type": "PLAY",
+        "id": "com.bluegate.app"
+      },
+      "notes": "Opening gates and barriers by phone. Its network security configuration names api1.pal-es.com and that is all it reached. Firebase and Google Maps. No ad SDK. No policy, so it is open inside the tunnel. Most of the host list extract_hosts.py prints for it is the public suffix list bundled in a library, not hosts it reaches. Pin and version from the build installed from Play (1.6.0076, versionCode 447), signed with the developer's own key (CN=Nisso Pardo, OU=Developer, O=Pal-Electronics, L=Ranana, ST=Israel, C=972)."
+    },
+    {
+      "packageName": "com.centralpark.mobile",
+      "displayName": {
+        "he": "סנטרל פארק",
+        "en": "Central Park"
+      },
+      "category": "NAVIGATION",
+      "minimumVersionCode": 309,
+      "sha256": "1f53648b97a9a002c9aa9dfa1c2d4037bf168ba4c3b304c7eb4086223092d57c",
+      "availableInStore": true,
+      "grantsNetworkAccess": true,
+      "minUserMode": "NAVIGATION_ONLY",
+      "flags": {
+        "isRecommendedInStore": false
+      },
+      "source": {
+        "type": "PLAY",
+        "id": "com.centralpark.mobile"
+      },
+      "notes": "Parking payment. React Native, Google Maps, Firebase and AppsFlyer. No ad SDK. Pin and version from the build installed from Play (3.2.0, versionCode 309), signed with Play App Signing (CN=Android, O=Google Inc.)."
+    },
+    {
+      "packageName": "com.doscast.app",
+      "displayName": {
+        "he": "דוסקאסט",
+        "en": "Doscast"
+      },
+      "category": "MUSIC_AUDIO",
+      "minimumVersionCode": 20908,
+      "sha256": "5f68b62ddef6b976e9136baa50b9e3b898e829e47da803bf078f024537f4cf9b",
+      "availableInStore": true,
+      "grantsNetworkAccess": true,
+      "minUserMode": "MOST_OPEN",
+      "flags": {
+        "hasUnmodestImage": true,
+        "isRecommendedInStore": false
+      },
+      "source": {
+        "type": "PLAY",
+        "id": "com.doscast.app"
+      },
+      "notes": "Podcasts and shiurim. It carries video: a YouTube and Vimeo player and VAST video ads (go.aniview.com, Google IMA). Flagged hasUnmodestImage because episode artwork and video come from the server and cannot be known in advance. Pin and version from the build installed from Play (2.9.8, versionCode 20908), signed with Play App Signing (CN=Android, O=Google Inc.). The flag keeps it out of REDUCED_RISK and asks for explicit acceptance; MOST_OPEN is stated so the entry says what the flag already means."
+    },
+    {
+      "packageName": "com.driivz.mobile.android.afcon.driver",
+      "displayName": {
+        "he": "ON EV",
+        "en": "ON EV"
+      },
+      "category": "TOOLS",
+      "minimumVersionCode": 27252,
+      "sha256": "4d022849b506aed06dbd537ebdeaca88792d4af7e31b3b6d4403babfd7e6d0a9",
+      "availableInStore": true,
+      "grantsNetworkAccess": true,
+      "minUserMode": "NAVIGATION_ONLY",
+      "flags": {
+        "isRecommendedInStore": false
+      },
+      "source": {
+        "type": "PLAY",
+        "id": "com.driivz.mobile.android.afcon.driver"
+      },
+      "notes": "Afcon EV charging, on the Driivz platform. It reached mobile.afconev.co.il only. Payment SDKs (Stripe, Adyen, Braintree), Google Maps, Firebase. No ad SDK. No policy, so it is open inside the tunnel. Pin and version from the build installed from Play (9.1.23-a691ee5218, versionCode 27252), signed with Play App Signing (CN=Android, O=Google Inc.)."
+    },
+    {
+      "packageName": "com.driivz.mobile.android.evi.driver",
+      "displayName": {
+        "he": "EVI סונול",
+        "en": "EVI Sonol"
+      },
+      "category": "TOOLS",
+      "minimumVersionCode": 27237,
+      "sha256": "beabc48d4644f349909794ea949f0c49b04aa2fe51a646b14bb7702b97f891dd",
+      "availableInStore": true,
+      "grantsNetworkAccess": true,
+      "minUserMode": "NAVIGATION_ONLY",
+      "flags": {
+        "isRecommendedInStore": false
+      },
+      "source": {
+        "type": "PLAY",
+        "id": "com.driivz.mobile.android.evi.driver"
+      },
+      "notes": "Sonol EVI EV charging, on the Driivz platform. It reached mobile.sonolevi.co.il only. Payment SDKs (Stripe, Adyen, Braintree), Google Maps, Firebase. No ad SDK. No policy, so it is open inside the tunnel. Pin and version from the build installed from Play (9.1.20-9302ab832e, versionCode 27237), signed with the developer's own key (CN=Joseph Levy, O=Driivz LTD, C=IL)."
+    },
+    {
       "packageName": "com.egged.egg",
       "displayName": {
         "he": "אגד",
@@ -208,6 +358,28 @@
         "https://play-lh.googleusercontent.com/abgBTdq3ReBvNx_m9_2QVwq25KuAHMBbEvSelMlE9IOcHcu54Qs4lnBh7gpc8xt4Ap26RfKJv1mlzqR6cKqcMA",
         "https://play-lh.googleusercontent.com/sw71MD1G_8Jt7uzcefIQuRHf8T8ZTbvQMoVi0-4sz-uf4ePg8aC81tXBHcxPWmbBAzaUt1LgcSAfXjRagO0pOA"
       ]
+    },
+    {
+      "packageName": "com.elhamaayan.app",
+      "displayName": {
+        "he": "אל המעיין",
+        "en": "El HaMaayan"
+      },
+      "category": "NAVIGATION",
+      "minimumVersionCode": 11,
+      "sha256": "7352fbd6ced74b747c1959946ee189969b2a3654c424aa2e276e67fafb31813a",
+      "availableInStore": true,
+      "grantsNetworkAccess": true,
+      "minUserMode": "MOST_OPEN",
+      "flags": {
+        "hasUnmodestImage": true,
+        "isRecommendedInStore": false
+      },
+      "source": {
+        "type": "PLAY",
+        "id": "com.elhamaayan.app"
+      },
+      "notes": "Map of springs. A Capacitor web application backed by Supabase (sbnbfpihfhsyctumpqod.supabase.co), with Leaflet maps from MapTiler, OpenStreetMap and govmap. No ad SDK and no analytics. No policy, so it is open inside the tunnel. Flagged hasUnmodestImage: spring photos come from upload.wikimedia.org and from users, and a photo of a spring may show bathers. Blocking the photo hosts was considered and left out for now. Pin and version from the build installed from Play (1.0.0, versionCode 11), signed with Play App Signing (CN=Android, O=Google Inc.). The flag keeps it out of REDUCED_RISK and asks for explicit acceptance; MOST_OPEN is stated so the entry says what the flag already means."
     },
     {
       "packageName": "com.google.android.apps.authenticator2",
@@ -376,6 +548,27 @@
       "notes": "Needed for spoken navigation directions"
     },
     {
+      "packageName": "com.grevo",
+      "displayName": {
+        "he": "גריבו",
+        "en": "Grivo"
+      },
+      "category": "NAVIGATION",
+      "minimumVersionCode": 4194916,
+      "sha256": "84bb4ccad4ca55439779ea3017370d2c6738381f4b88e56f9988eecfbb011c24",
+      "availableInStore": true,
+      "grantsNetworkAccess": true,
+      "minUserMode": "NAVIGATION_ONLY",
+      "flags": {
+        "isRecommendedInStore": false
+      },
+      "source": {
+        "type": "PLAY",
+        "id": "com.grevo"
+      },
+      "notes": "Drivers' application from grivo.co.il. React Native, Mapbox and Google Maps, Firebase, Facebook SDK, LogRocket and Microsoft Clarity. No ad unit found. Pin and version from the build installed from Play (2.8.6, versionCode 4194916), signed with Play App Signing (CN=Android, O=Google Inc.)."
+    },
+    {
       "packageName": "com.hebvoice.stt",
       "displayName": {
         "he": "תמלול קולי עברי",
@@ -438,6 +631,48 @@
         "id": "com.khl.www2"
       },
       "notes": "Kol Halashon's current application (2.10, versionCode 20100, from Play), signed by Kol Halashon, the same key as com.khl.kiosk. A WebView over www.kolhalashon.com."
+    },
+    {
+      "packageName": "com.libra.chik",
+      "displayName": {
+        "he": "צ'יק",
+        "en": "CHIK"
+      },
+      "category": "TOOLS",
+      "minimumVersionCode": 20,
+      "sha256": "73f9c4978c90a9ec2c2001f782fea51a9d10783a43b33e4d760c11787979bd32",
+      "availableInStore": true,
+      "grantsNetworkAccess": true,
+      "minUserMode": "NAVIGATION_ONLY",
+      "flags": {
+        "isRecommendedInStore": false
+      },
+      "source": {
+        "type": "PLAY",
+        "id": "com.libra.chik"
+      },
+      "notes": "Libra insurance's CHIK. React Native, Firebase, Facebook SDK and AppsFlyer. No ad SDK. Pin and version from the build installed from Play (1.1.4, versionCode 20), signed with Play App Signing (CN=Android, O=Google Inc.)."
+    },
+    {
+      "packageName": "com.limebike",
+      "displayName": {
+        "he": "ליים",
+        "en": "Lime"
+      },
+      "category": "NAVIGATION",
+      "minimumVersionCode": 3288000,
+      "sha256": "547d3283ade8e9fe50ab804d48a9289871baadba912ff422dec0492d8567be48",
+      "availableInStore": true,
+      "grantsNetworkAccess": true,
+      "minUserMode": "REDUCED_RISK",
+      "flags": {
+        "isRecommendedInStore": false
+      },
+      "source": {
+        "type": "PLAY",
+        "id": "com.limebike"
+      },
+      "notes": "Shared scooters. No video is packaged in the APK; the test did not get past the splash screen, so the screens after it were not seen. Braze, Branch, Amplitude, Datadog, Mapbox, Stripe and Braintree. Pin and version from the build installed from Play (3.288.0, versionCode 3288000), signed with the developer's own key (CN=Lime Bike, OU=Mobile Development, O=LimeBike, L=San Mateo, ST=California, C=US)."
     },
     {
       "packageName": "com.moblin.israeltrain",
@@ -565,6 +800,27 @@
       "notes": "Driving theory test practice. Pin and version from the build installed from Play (15.0.0, versionCode 92), signed with the developer's own key (CN=Erez, C=IL). It carries real advertising: AdMob with nineteen ad units (banners, interstitials, rewarded), Facebook Audience Network and ironSource mediation, plus a local ad server, deliver.trustmedia.co.il. The policy blocks all of them; see it for what that costs."
     },
     {
+      "packageName": "com.pcentra.ravkavonlinemobile",
+      "displayName": {
+        "he": "רב-קו אונליין",
+        "en": "Rav-Kav Online"
+      },
+      "category": "NAVIGATION",
+      "minimumVersionCode": 24001702,
+      "sha256": "75be6f59f43ac729296fca4192f77539b79a43dd707b2097a3d6245d3cc31297",
+      "availableInStore": true,
+      "grantsNetworkAccess": true,
+      "minUserMode": "NAVIGATION_ONLY",
+      "flags": {
+        "isRecommendedInStore": false
+      },
+      "source": {
+        "type": "PLAY",
+        "id": "com.pcentra.ravkavonlinemobile"
+      },
+      "notes": "Loading the Rav-Kav card over NFC. A Cordova application that reaches ravkavonline.co.il and Google Maps. No ad SDK. No policy, so it is open inside the tunnel. Pin and version from the build installed from Play (1.17.2, versionCode 24001702), signed with the developer's own key (CN=Pcentra, OU=Pcentra, O=Pcentra, L=Israel, ST=Israel, C=IL)."
+    },
+    {
       "packageName": "com.platetoprice.app",
       "displayName": {
         "he": "סרוק רכב",
@@ -629,6 +885,90 @@
         "isRecommendedInStore": false
       },
       "notes": "Samsung Weather, preinstalled on the test device at /system/app/SamsungWeather/SamsungWeather.apk, so it is granted network but not offered for installation. Signature pinned from that device. Category is TOOLS rather than SYSTEM on purpose: CatalogMapper exempts SYSTEM entries from the sha256 validity gate, and this entry has a real pin that should be enforced."
+    },
+    {
+      "packageName": "com.siddurim.kavanathalev",
+      "displayName": {
+        "he": "תפילאור",
+        "en": "Tefilor"
+      },
+      "category": "TORAH",
+      "minimumVersionCode": 899,
+      "sha256": "3ffc0f981485c221a82aaf9c7c3182f8099fe00704cf36aead09144d130584cd",
+      "availableInStore": true,
+      "grantsNetworkAccess": true,
+      "minUserMode": "NAVIGATION_ONLY",
+      "flags": {
+        "isRecommendedInStore": true
+      },
+      "source": {
+        "type": "PLAY",
+        "id": "com.siddurim.kavanathalev"
+      },
+      "notes": "Siddur from Siddurim.com, the same code base as Siddur Klilat Yofi under a different key. No ad SDK; Firebase for sync, remote config and Crashlytics. Pin and version from the build installed from Play (3.5.4, versionCode 899), signed with Play App Signing (CN=Android, O=Google Inc.)."
+    },
+    {
+      "packageName": "com.siddurim.klilat_yofi.ashkenaz",
+      "displayName": {
+        "he": "סידור כלילת יופי - אשכנז",
+        "en": "Siddur Klilat Yofi - Ashkenaz"
+      },
+      "category": "TORAH",
+      "minimumVersionCode": 899,
+      "sha256": "248d59718e0a6477c68bdea5ece85900f961ccc280941add75b4fb3ada279ec1",
+      "availableInStore": true,
+      "grantsNetworkAccess": true,
+      "minUserMode": "NAVIGATION_ONLY",
+      "flags": {
+        "isRecommendedInStore": true
+      },
+      "source": {
+        "type": "PLAY",
+        "id": "com.siddurim.klilat_yofi.ashkenaz"
+      },
+      "notes": "Siddur, nusach Ashkenaz, from Siddurim.com; the same code as the Sfard build and the same signing key. No ad SDK; Firebase for sync, remote config and Crashlytics. Pin and version from the build installed from Play (3.5.4, versionCode 899), signed with the developer's own key (O=Siddurim.com)."
+    },
+    {
+      "packageName": "com.siddurim.klilat_yofi.sfard",
+      "displayName": {
+        "he": "סידור כלילת יופי - ספרד",
+        "en": "Siddur Klilat Yofi - Sfard"
+      },
+      "category": "TORAH",
+      "minimumVersionCode": 899,
+      "sha256": "248d59718e0a6477c68bdea5ece85900f961ccc280941add75b4fb3ada279ec1",
+      "availableInStore": true,
+      "grantsNetworkAccess": true,
+      "minUserMode": "NAVIGATION_ONLY",
+      "flags": {
+        "isRecommendedInStore": true
+      },
+      "source": {
+        "type": "PLAY",
+        "id": "com.siddurim.klilat_yofi.sfard"
+      },
+      "notes": "Siddur, nusach Sfard, from Siddurim.com. No ad SDK; Firebase for sync, remote config and Crashlytics. Pin and version from the build installed from Play (3.5.4, versionCode 899), signed with the developer's own key (O=Siddurim.com)."
+    },
+    {
+      "packageName": "com.sonol.mobileapp",
+      "displayName": {
+        "he": "סונול",
+        "en": "Sonol"
+      },
+      "category": "TOOLS",
+      "minimumVersionCode": 30000030,
+      "sha256": "d0c27bfa449927e65f912c2a2962671326c383027d1cb59418411954c1dd4be2",
+      "availableInStore": true,
+      "grantsNetworkAccess": true,
+      "minUserMode": "REDUCED_RISK",
+      "flags": {
+        "isRecommendedInStore": false
+      },
+      "source": {
+        "type": "PLAY",
+        "id": "com.sonol.mobileapp"
+      },
+      "notes": "Sonol fuelling. React Native, Google Maps, Firebase, Branch, Sentry and Forter. No ad SDK. Pin and version from the build installed from Play (2.7.4, versionCode 30000030), signed with the developer's own key (CN=Sonol, OU=Sonol, O=Sonol, L=Israel, ST=Israel, C=IL)."
     },
     {
       "packageName": "com.tranzmate",
@@ -698,6 +1038,27 @@
       ]
     },
     {
+      "packageName": "com.xatori.Plugshare",
+      "displayName": {
+        "he": "PlugShare",
+        "en": "PlugShare"
+      },
+      "category": "TOOLS",
+      "minimumVersionCode": 20402,
+      "sha256": "047adf45005752f339e34cc9ac056dc00d7813ee343584ffcf99439dd21c4707",
+      "availableInStore": true,
+      "grantsNetworkAccess": true,
+      "minUserMode": "REDUCED_RISK",
+      "flags": {
+        "isRecommendedInStore": false
+      },
+      "source": {
+        "type": "PLAY",
+        "id": "com.xatori.Plugshare"
+      },
+      "notes": "EV charger map. It carries advertising (Google Ad Manager, AdMob, Amazon Publisher Services, PubMatic), all blocked by its policy. Braze, Amplitude, OneTrust, Stripe. Pin and version from the build installed from Play (4.52.0, versionCode 20402), signed with the developer's own key (CN=Unknown, OU=Unknown, O=Unknown, L=Unknown, ST=Unknown, C=Unknown)."
+    },
+    {
       "packageName": "fm.jewishmusic.application",
       "displayName": {
         "he": "מוזיקה יהודית",
@@ -720,6 +1081,27 @@
         "https://play-lh.googleusercontent.com/QXh6rR_8igYXXyNsVbsmPFPwJf7xYBM-AMX-oajSEiuWE5ayhyYAdVh6Jgphd-rle3WllaV6lz6ptkyvpdTH",
         "https://play-lh.googleusercontent.com/t_q0Ds9iXo6vlx4LWMDOxgaE-Z-MwMbQ5yM0k6xPPYVIyAwxQCv7qAgfVVuxdYb5LGQa7_qyAt-WawQUQ9yvB_s"
       ]
+    },
+    {
+      "packageName": "gnrgy.android.emobilityapp",
+      "displayName": {
+        "he": "Gnrgy Go",
+        "en": "Gnrgy Go"
+      },
+      "category": "TOOLS",
+      "minimumVersionCode": 724,
+      "sha256": "fb1fa434cf3174c12664a62a29e19e4b771f5f402e05e73b908fc905c7ac6305",
+      "availableInStore": true,
+      "grantsNetworkAccess": true,
+      "minUserMode": "NAVIGATION_ONLY",
+      "flags": {
+        "isRecommendedInStore": false
+      },
+      "source": {
+        "type": "PLAY",
+        "id": "gnrgy.android.emobilityapp"
+      },
+      "notes": "Gnrgy EV charging. It reached portal.gnrgy.com only. Google Maps and Firebase. No ad SDK. No policy, so it is open inside the tunnel. Pin and version from the build installed from Play (8.8, versionCode 724), signed with the developer's own key (CN=Midhun Madhu, OU=Software Department, O=Gnrgy, L=Bangalore, ST=Karnataka, C=IN)."
     },
     {
       "packageName": "gps.hakohanim.org",
@@ -818,6 +1200,28 @@
       ]
     },
     {
+      "packageName": "il.co.yellow.app",
+      "displayName": {
+        "he": "Yellow",
+        "en": "Yellow"
+      },
+      "category": "TOOLS",
+      "minimumVersionCode": 1344,
+      "sha256": "c8bdab1bc72d5ef2eb4a94f5c6205d18d47ac96b7c8e06bc1c67af748924b971",
+      "availableInStore": true,
+      "grantsNetworkAccess": true,
+      "minUserMode": "MOST_OPEN",
+      "flags": {
+        "hasUnmodestImage": true,
+        "isRecommendedInStore": false
+      },
+      "source": {
+        "type": "PLAY",
+        "id": "il.co.yellow.app"
+      },
+      "notes": "Paz fuelling and Yellow club. Flagged hasUnmodestImage: the home screen and What's New show marketing images and stories served by Paz, which change without a release. AppsFlyer, Emarsys, Facebook SDK, New Relic. Pin and version from the build installed from Play (8.13.0.1344, versionCode 1344), signed with the developer's own key (CN=Paz Oil, O=Paz Oil Company Ltd, C=IL). The flag keeps it out of REDUCED_RISK and asks for explicit acceptance; MOST_OPEN is stated so the entry says what the flag already means."
+    },
+    {
       "packageName": "il.org.osm.israelhiking",
       "displayName": {
         "he": "מפת טיולים ישראל",
@@ -838,6 +1242,27 @@
         "id": "il.org.osm.israelhiking"
       },
       "notes": "Hiking and trail maps on OpenStreetMap, open source. Pin and version from the build installed from Play (9.21.256, versionCode 921256), signed with Play App Signing (CN=Android, O=Google Inc.). No ad SDK. Flagged hasUnmodestImage: points of interest show photos from Wikimedia Commons, iNature and pictures users upload to the project's own server, mostly landscapes but open to anyone, so what appears cannot be known in advance. The flag keeps it out of REDUCED_RISK and asks for explicit acceptance; MOST_OPEN is stated so the entry says what the flag already means."
+    },
+    {
+      "packageName": "il.org.startach.theplatform.android.yedidim",
+      "displayName": {
+        "he": "ידידים",
+        "en": "Yedidim"
+      },
+      "category": "TOOLS",
+      "minimumVersionCode": 320,
+      "sha256": "f355716322c0034b8233a2045c38d8ea7c0999b993ea64cdd6958b482a733e40",
+      "availableInStore": true,
+      "grantsNetworkAccess": true,
+      "minUserMode": "NAVIGATION_ONLY",
+      "flags": {
+        "isRecommendedInStore": false
+      },
+      "source": {
+        "type": "PLAY",
+        "id": "il.org.startach.theplatform.android.yedidim"
+      },
+      "notes": "Yedidim volunteer roadside assistance: calls for help and volunteer dispatch, with background location. Flutter, Google Maps, Firebase, Sentry and PostHog. No ad SDK. Pin and version from the build installed from Play (2.10.140, versionCode 320), signed with Play App Signing (CN=Android, O=Google Inc.)."
     },
     {
       "packageName": "in.krosbits.musicolet",
@@ -911,6 +1336,48 @@
         "id": "kcm.fm.volume"
       },
       "notes": "Streams, so it is granted network, and its policy is a four host whitelist rather than an open door. The certificate was read off the installed application and its SHA-1 matches the one KDroidDatabase records for this package exactly, which is as good a confirmation as this catalog can get that the build on the device is the build the policy was written for."
+    },
+    {
+      "packageName": "led.android.mentaplus",
+      "displayName": {
+        "he": "דלק",
+        "en": "Delek"
+      },
+      "category": "TOOLS",
+      "minimumVersionCode": 132,
+      "sha256": "10f678e4bb89f69920f4bd1fb6469d0c6fde0030c7bb309ef21f553afb35ca4c",
+      "availableInStore": true,
+      "grantsNetworkAccess": true,
+      "minUserMode": "REDUCED_RISK",
+      "flags": {
+        "isRecommendedInStore": false
+      },
+      "source": {
+        "type": "PLAY",
+        "id": "led.android.mentaplus"
+      },
+      "notes": "Delek fuelling (Menta). React Native, Google Maps, Firebase, AppsFlyer and Emarsys. No ad SDK. Pin and version from the build installed from Play (8.0.4, versionCode 132), signed with the developer's own key (CN=keeprz, O=keeprz, L=Tel Aviv)."
+    },
+    {
+      "packageName": "md.obsidian",
+      "displayName": {
+        "he": "Obsidian",
+        "en": "Obsidian"
+      },
+      "category": "PRODUCTIVITY",
+      "minimumVersionCode": 389,
+      "sha256": "f6eec988e36eed4e9165b5b4bf2083ec1b1cf26611fabb01db4d4aa75735d999",
+      "availableInStore": true,
+      "grantsNetworkAccess": false,
+      "minUserMode": "OFFLINE",
+      "flags": {
+        "isRecommendedInStore": false
+      },
+      "source": {
+        "type": "PLAY",
+        "id": "md.obsidian"
+      },
+      "notes": "Markdown notes, kept as files on the device. Given no network: it embeds web pages (YouTube, X, Bilibili, Reddit) inside notes and community plugins download code from GitHub and unpkg, and none of that is needed to write notes. Sync and publish will not work. Pin and version from the build installed from Play (1.14.4, versionCode 389), signed with Play App Signing (CN=Android, O=Google Inc.)."
     },
     {
       "packageName": "net.sf.times",

@@ -1,0 +1,21 @@
+{
+  "packageName": "com.grevo",
+  "displayName": {
+    "he": "גריבו",
+    "en": "Grivo"
+  },
+  "category": "NAVIGATION",
+  "minimumVersionCode": 4194916,
+  "sha256": "84bb4ccad4ca55439779ea3017370d2c6738381f4b88e56f9988eecfbb011c24",
+  "availableInStore": true,
+  "grantsNetworkAccess": true,
+  "minUserMode": "NAVIGATION_ONLY",
+  "flags": {
+    "isRecommendedInStore": false
+  },
+  "source": {
+    "type": "PLAY",
+    "id": "com.grevo"
+  },
+  "notes": "Drivers' application from grivo.co.il. React Native, Mapbox and Google Maps, Firebase, Facebook SDK, LogRocket and Microsoft Clarity. No ad unit found. Pin and version from the build installed from Play (2.8.6, versionCode 4194916), signed with Play App Signing (CN=Android, O=Google Inc.)."
+}

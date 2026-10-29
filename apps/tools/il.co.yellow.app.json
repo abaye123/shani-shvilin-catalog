@@ -1,0 +1,22 @@
+{
+  "packageName": "il.co.yellow.app",
+  "displayName": {
+    "he": "Yellow",
+    "en": "Yellow"
+  },
+  "category": "TOOLS",
+  "minimumVersionCode": 1344,
+  "sha256": "c8bdab1bc72d5ef2eb4a94f5c6205d18d47ac96b7c8e06bc1c67af748924b971",
+  "availableInStore": true,
+  "grantsNetworkAccess": true,
+  "minUserMode": "MOST_OPEN",
+  "flags": {
+    "hasUnmodestImage": true,
+    "isRecommendedInStore": false
+  },
+  "source": {
+    "type": "PLAY",
+    "id": "il.co.yellow.app"
+  },
+  "notes": "Paz fuelling and Yellow club. Flagged hasUnmodestImage: the home screen and What's New show marketing images and stories served by Paz, which change without a release. AppsFlyer, Emarsys, Facebook SDK, New Relic. Pin and version from the build installed from Play (8.13.0.1344, versionCode 1344), signed with the developer's own key (CN=Paz Oil, O=Paz Oil Company Ltd, C=IL). The flag keeps it out of REDUCED_RISK and asks for explicit acceptance; MOST_OPEN is stated so the entry says what the flag already means."
+}

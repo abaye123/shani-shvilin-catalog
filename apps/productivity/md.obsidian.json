@@ -1,0 +1,21 @@
+{
+  "packageName": "md.obsidian",
+  "displayName": {
+    "he": "Obsidian",
+    "en": "Obsidian"
+  },
+  "category": "PRODUCTIVITY",
+  "minimumVersionCode": 389,
+  "sha256": "f6eec988e36eed4e9165b5b4bf2083ec1b1cf26611fabb01db4d4aa75735d999",
+  "availableInStore": true,
+  "grantsNetworkAccess": false,
+  "minUserMode": "OFFLINE",
+  "flags": {
+    "isRecommendedInStore": false
+  },
+  "source": {
+    "type": "PLAY",
+    "id": "md.obsidian"
+  },
+  "notes": "Markdown notes, kept as files on the device. Given no network: it embeds web pages (YouTube, X, Bilibili, Reddit) inside notes and community plugins download code from GitHub and unpkg, and none of that is needed to write notes. Sync and publish will not work. Pin and version from the build installed from Play (1.14.4, versionCode 389), signed with Play App Signing (CN=Android, O=Google Inc.)."
+}

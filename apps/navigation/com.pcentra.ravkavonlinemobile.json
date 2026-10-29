@@ -1,0 +1,21 @@
+{
+  "packageName": "com.pcentra.ravkavonlinemobile",
+  "displayName": {
+    "he": "רב-קו אונליין",
+    "en": "Rav-Kav Online"
+  },
+  "category": "NAVIGATION",
+  "minimumVersionCode": 24001702,
+  "sha256": "75be6f59f43ac729296fca4192f77539b79a43dd707b2097a3d6245d3cc31297",
+  "availableInStore": true,
+  "grantsNetworkAccess": true,
+  "minUserMode": "NAVIGATION_ONLY",
+  "flags": {
+    "isRecommendedInStore": false
+  },
+  "source": {
+    "type": "PLAY",
+    "id": "com.pcentra.ravkavonlinemobile"
+  },
+  "notes": "Loading the Rav-Kav card over NFC. A Cordova application that reaches ravkavonline.co.il and Google Maps. No ad SDK. No policy, so it is open inside the tunnel. Pin and version from the build installed from Play (1.17.2, versionCode 24001702), signed with the developer's own key (CN=Pcentra, OU=Pcentra, O=Pcentra, L=Israel, ST=Israel, C=IL)."
+}

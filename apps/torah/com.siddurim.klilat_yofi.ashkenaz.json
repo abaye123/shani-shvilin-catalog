@@ -1,0 +1,21 @@
+{
+  "packageName": "com.siddurim.klilat_yofi.ashkenaz",
+  "displayName": {
+    "he": "סידור כלילת יופי - אשכנז",
+    "en": "Siddur Klilat Yofi - Ashkenaz"
+  },
+  "category": "TORAH",
+  "minimumVersionCode": 899,
+  "sha256": "248d59718e0a6477c68bdea5ece85900f961ccc280941add75b4fb3ada279ec1",
+  "availableInStore": true,
+  "grantsNetworkAccess": true,
+  "minUserMode": "NAVIGATION_ONLY",
+  "flags": {
+    "isRecommendedInStore": true
+  },
+  "source": {
+    "type": "PLAY",
+    "id": "com.siddurim.klilat_yofi.ashkenaz"
+  },
+  "notes": "Siddur, nusach Ashkenaz, from Siddurim.com; the same code as the Sfard build and the same signing key. No ad SDK; Firebase for sync, remote config and Crashlytics. Pin and version from the build installed from Play (3.5.4, versionCode 899), signed with the developer's own key (O=Siddurim.com)."
+}

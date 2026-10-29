@@ -1,0 +1,21 @@
+{
+  "packageName": "com.bluegate.app",
+  "displayName": {
+    "he": "PalGate",
+    "en": "PalGate"
+  },
+  "category": "TOOLS",
+  "minimumVersionCode": 447,
+  "sha256": "c4d0169d9d75c4d3eb0223982d31802b30933370c9f2d0ea2b25d41b66370193",
+  "availableInStore": true,
+  "grantsNetworkAccess": true,
+  "minUserMode": "NAVIGATION_ONLY",
+  "flags": {
+    "isRecommendedInStore": false
+  },
+  "source": {
+    "type": "PLAY",
+    "id": "com.bluegate.app"
+  },
+  "notes": "Opening gates and barriers by phone. Its network security configuration names api1.pal-es.com and that is all it reached. Firebase and Google Maps. No ad SDK. No policy, so it is open inside the tunnel. Most of the host list extract_hosts.py prints for it is the public suffix list bundled in a library, not hosts it reaches. Pin and version from the build installed from Play (1.6.0076, versionCode 447), signed with the developer's own key (CN=Nisso Pardo, OU=Developer, O=Pal-Electronics, L=Ranana, ST=Israel, C=972)."
+}

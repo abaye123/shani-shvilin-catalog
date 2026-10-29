@@ -1,0 +1,25 @@
+{
+  "type": "Fixed",
+  "packageName": "com.grevo",
+  "category": "NAVIGATION",
+  "networkPolicy": {
+    "mode": "BLACKLIST",
+    "desc": "Facebook, LogRocket and Microsoft Clarity are blocked; the application stays open",
+    "spec": {
+      "type": "HostList",
+      "hosts": [
+        "graph.facebook.com",
+        "facebook.com",
+        "www.facebook.com",
+        "r.lr-intake.com",
+        "r.logrocket.io",
+        "e.logrocket.com",
+        "www.clarity.ms",
+        "clarity.ms",
+        "clarity.microsoft.com"
+      ]
+    }
+  },
+  "minimumVersionCode": 4194916,
+  "notes": "Written from the binary and from the tunnel. React Native with Mapbox and Google Maps. What it needs: prod.api.grivo-cloud.net, prod.payplus.grivo-cloud.net, grivo.co.il, Mapbox and Firebase. Blocked: the Facebook SDK, and two session recorders, LogRocket and Microsoft Clarity, which record what is on the screen."
+}

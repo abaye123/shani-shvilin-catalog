@@ -1,0 +1,21 @@
+{
+  "packageName": "il.org.startach.theplatform.android.yedidim",
+  "displayName": {
+    "he": "ידידים",
+    "en": "Yedidim"
+  },
+  "category": "TOOLS",
+  "minimumVersionCode": 320,
+  "sha256": "f355716322c0034b8233a2045c38d8ea7c0999b993ea64cdd6958b482a733e40",
+  "availableInStore": true,
+  "grantsNetworkAccess": true,
+  "minUserMode": "NAVIGATION_ONLY",
+  "flags": {
+    "isRecommendedInStore": false
+  },
+  "source": {
+    "type": "PLAY",
+    "id": "il.org.startach.theplatform.android.yedidim"
+  },
+  "notes": "Yedidim volunteer roadside assistance: calls for help and volunteer dispatch, with background location. Flutter, Google Maps, Firebase, Sentry and PostHog. No ad SDK. Pin and version from the build installed from Play (2.10.140, versionCode 320), signed with Play App Signing (CN=Android, O=Google Inc.)."
+}

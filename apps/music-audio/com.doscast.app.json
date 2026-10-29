@@ -1,0 +1,22 @@
+{
+  "packageName": "com.doscast.app",
+  "displayName": {
+    "he": "דוסקאסט",
+    "en": "Doscast"
+  },
+  "category": "MUSIC_AUDIO",
+  "minimumVersionCode": 20908,
+  "sha256": "5f68b62ddef6b976e9136baa50b9e3b898e829e47da803bf078f024537f4cf9b",
+  "availableInStore": true,
+  "grantsNetworkAccess": true,
+  "minUserMode": "MOST_OPEN",
+  "flags": {
+    "hasUnmodestImage": true,
+    "isRecommendedInStore": false
+  },
+  "source": {
+    "type": "PLAY",
+    "id": "com.doscast.app"
+  },
+  "notes": "Podcasts and shiurim. It carries video: a YouTube and Vimeo player and VAST video ads (go.aniview.com, Google IMA). Flagged hasUnmodestImage because episode artwork and video come from the server and cannot be known in advance. Pin and version from the build installed from Play (2.9.8, versionCode 20908), signed with Play App Signing (CN=Android, O=Google Inc.). The flag keeps it out of REDUCED_RISK and asks for explicit acceptance; MOST_OPEN is stated so the entry says what the flag already means."
+}

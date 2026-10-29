@@ -1,0 +1,21 @@
+{
+  "packageName": "com.driivz.mobile.android.afcon.driver",
+  "displayName": {
+    "he": "ON EV",
+    "en": "ON EV"
+  },
+  "category": "TOOLS",
+  "minimumVersionCode": 27252,
+  "sha256": "4d022849b506aed06dbd537ebdeaca88792d4af7e31b3b6d4403babfd7e6d0a9",
+  "availableInStore": true,
+  "grantsNetworkAccess": true,
+  "minUserMode": "NAVIGATION_ONLY",
+  "flags": {
+    "isRecommendedInStore": false
+  },
+  "source": {
+    "type": "PLAY",
+    "id": "com.driivz.mobile.android.afcon.driver"
+  },
+  "notes": "Afcon EV charging, on the Driivz platform. It reached mobile.afconev.co.il only. Payment SDKs (Stripe, Adyen, Braintree), Google Maps, Firebase. No ad SDK. No policy, so it is open inside the tunnel. Pin and version from the build installed from Play (9.1.23-a691ee5218, versionCode 27252), signed with Play App Signing (CN=Android, O=Google Inc.)."
+}

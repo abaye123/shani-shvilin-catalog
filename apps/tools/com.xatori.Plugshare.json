@@ -1,0 +1,21 @@
+{
+  "packageName": "com.xatori.Plugshare",
+  "displayName": {
+    "he": "PlugShare",
+    "en": "PlugShare"
+  },
+  "category": "TOOLS",
+  "minimumVersionCode": 20402,
+  "sha256": "047adf45005752f339e34cc9ac056dc00d7813ee343584ffcf99439dd21c4707",
+  "availableInStore": true,
+  "grantsNetworkAccess": true,
+  "minUserMode": "REDUCED_RISK",
+  "flags": {
+    "isRecommendedInStore": false
+  },
+  "source": {
+    "type": "PLAY",
+    "id": "com.xatori.Plugshare"
+  },
+  "notes": "EV charger map. It carries advertising (Google Ad Manager, AdMob, Amazon Publisher Services, PubMatic), all blocked by its policy. Braze, Amplitude, OneTrust, Stripe. Pin and version from the build installed from Play (4.52.0, versionCode 20402), signed with the developer's own key (CN=Unknown, OU=Unknown, O=Unknown, L=Unknown, ST=Unknown, C=Unknown)."
+}

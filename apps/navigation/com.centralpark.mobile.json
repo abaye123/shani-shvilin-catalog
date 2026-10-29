@@ -1,0 +1,21 @@
+{
+  "packageName": "com.centralpark.mobile",
+  "displayName": {
+    "he": "סנטרל פארק",
+    "en": "Central Park"
+  },
+  "category": "NAVIGATION",
+  "minimumVersionCode": 309,
+  "sha256": "1f53648b97a9a002c9aa9dfa1c2d4037bf168ba4c3b304c7eb4086223092d57c",
+  "availableInStore": true,
+  "grantsNetworkAccess": true,
+  "minUserMode": "NAVIGATION_ONLY",
+  "flags": {
+    "isRecommendedInStore": false
+  },
+  "source": {
+    "type": "PLAY",
+    "id": "com.centralpark.mobile"
+  },
+  "notes": "Parking payment. React Native, Google Maps, Firebase and AppsFlyer. No ad SDK. Pin and version from the build installed from Play (3.2.0, versionCode 309), signed with Play App Signing (CN=Android, O=Google Inc.)."
+}

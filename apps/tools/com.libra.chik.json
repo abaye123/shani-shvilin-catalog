@@ -1,0 +1,21 @@
+{
+  "packageName": "com.libra.chik",
+  "displayName": {
+    "he": "צ'יק",
+    "en": "CHIK"
+  },
+  "category": "TOOLS",
+  "minimumVersionCode": 20,
+  "sha256": "73f9c4978c90a9ec2c2001f782fea51a9d10783a43b33e4d760c11787979bd32",
+  "availableInStore": true,
+  "grantsNetworkAccess": true,
+  "minUserMode": "NAVIGATION_ONLY",
+  "flags": {
+    "isRecommendedInStore": false
+  },
+  "source": {
+    "type": "PLAY",
+    "id": "com.libra.chik"
+  },
+  "notes": "Libra insurance's CHIK. React Native, Firebase, Facebook SDK and AppsFlyer. No ad SDK. Pin and version from the build installed from Play (1.1.4, versionCode 20), signed with Play App Signing (CN=Android, O=Google Inc.)."
+}

@@ -1,0 +1,52 @@
+{
+  "type": "Fixed",
+  "packageName": "com.xatori.Plugshare",
+  "category": "TOOLS",
+  "networkPolicy": {
+    "mode": "BLACKLIST",
+    "desc": "Every ad network and Braze are blocked; the charger map stays open",
+    "spec": {
+      "type": "HostList",
+      "hosts": [
+        "googleads.g.doubleclick.net",
+        "pubads.g.doubleclick.net",
+        "ad.doubleclick.net",
+        "pagead2.googlesyndication.com",
+        "tpc.googlesyndication.com",
+        "www.googleadservices.com",
+        "pagead2.googleadservices.com",
+        "adservice.google.com",
+        "imasdk.googleapis.com",
+        "www.googletagservices.com",
+        "fundingchoicesmessages.google.com",
+        "admob-gmats.uc.r.appspot.com",
+        "googlemobileadssdk.page.link",
+        "media.admob.com",
+        "c.amazon-adsystem.com",
+        "mads.amazon-adsystem.com",
+        "aax.amazon-adsystem.com",
+        "aax-us-east.amazon-adsystem.com",
+        "video-player.aps.amazon-adsystem.com",
+        "beta-video-player.aps.amazon-adsystem.com",
+        "prod.cm.publishers.advertising.a2z.com",
+        "prod.tahoe-analytics.publishers.advertising.a2z.com",
+        "api.webcontentassessor.com",
+        "scripts.webcontentassessor.com",
+        "ads.pubmatic.com",
+        "ow.pubmatic.com",
+        "repo.pubmatic.com",
+        "sdk.iad-01.braze.com",
+        "sdk.iad-02.braze.com",
+        "sdk.iad-03.braze.com",
+        "sdk.iad-04.braze.com",
+        "sdk.iad-05.braze.com",
+        "sdk.iad-06.braze.com",
+        "sdk.iad-07.braze.com",
+        "sdk.iad-08.braze.com",
+        "sondheim.braze.com"
+      ]
+    }
+  },
+  "minimumVersionCode": 20402,
+  "notes": "Written from the binary and from the tunnel. What it needs: api.plugshare.com, assets.plugshare.com, company.plugshare.com, auth.plugshare.com, Google Maps, Stripe and Firebase. It carries real advertising: Google Ad Manager and AdMob, Amazon Publisher Services and PubMatic, all seen on launch. Blocked: all of them, and Braze marketing. Amplitude and OneTrust are left open. What it costs: ad slots stay empty. Charger photos are uploaded by users."
+}

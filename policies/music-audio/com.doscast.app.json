@@ -1,0 +1,45 @@
+{
+  "type": "Fixed",
+  "packageName": "com.doscast.app",
+  "category": "MUSIC_AUDIO",
+  "networkPolicy": {
+    "mode": "BLACKLIST",
+    "desc": "Video ads, YouTube and Vimeo are blocked; the audio stays open",
+    "spec": {
+      "type": "HostList",
+      "hosts": [
+        "go.aniview.com",
+        "www.googletagmanager.com",
+        "googleads.g.doubleclick.net",
+        "pubads.g.doubleclick.net",
+        "ad.doubleclick.net",
+        "pagead2.googlesyndication.com",
+        "tpc.googlesyndication.com",
+        "www.googleadservices.com",
+        "pagead2.googleadservices.com",
+        "adservice.google.com",
+        "imasdk.googleapis.com",
+        "www.googletagservices.com",
+        "fundingchoicesmessages.google.com",
+        "www.youtube.com",
+        "youtube.com",
+        "m.youtube.com",
+        "www.youtube-nocookie.com",
+        "youtube-nocookie.com",
+        "youtubei.googleapis.com",
+        "i.ytimg.com",
+        "img.youtube.com",
+        "player.vimeo.com",
+        "vimeo.com",
+        "www.vimeo.com",
+        "i.vimeocdn.com",
+        "f.vimeocdn.com",
+        "vod-progressive.akamaized.net",
+        "download-video-ak.vimeocdn.com",
+        "noembed.com"
+      ]
+    }
+  },
+  "minimumVersionCode": 20908,
+  "notes": "Written from the binary and from the tunnel. It is a Cordova web application (assets/www). What it needs: api.doscast.co.il and media.doscast.co.il, and Firebase. Blocked: VAST video ads from go.aniview.com and Google IMA, Google Tag Manager, and the YouTube and Vimeo players the code embeds (through cdn.plyr.io, with noembed.com for oEmbed). What it costs: any episode published as a YouTube or Vimeo video will not play. googlevideo.com stream hosts cannot be listed exactly, which is why the player hosts are what is blocked."
+}

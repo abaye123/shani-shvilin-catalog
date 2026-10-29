@@ -1,0 +1,33 @@
+{
+  "type": "Fixed",
+  "packageName": "com.libra.chik",
+  "category": "TOOLS",
+  "networkPolicy": {
+    "mode": "BLACKLIST",
+    "desc": "Facebook and AppsFlyer are blocked; the application stays open",
+    "spec": {
+      "type": "HostList",
+      "hosts": [
+        "graph.facebook.com",
+        "facebook.com",
+        "www.facebook.com",
+        "launches.appsflyersdk.com",
+        "inapps.appsflyersdk.com",
+        "conversions.appsflyersdk.com",
+        "attr.appsflyersdk.com",
+        "gcdsdk.appsflyersdk.com",
+        "cdn-settings.appsflyersdk.com",
+        "register.appsflyersdk.com",
+        "sdk-services.appsflyersdk.com",
+        "settings.appsflyersdk.com",
+        "dlsdk.appsflyersdk.com",
+        "monitorsdk.appsflyersdk.com",
+        "impression.appsflyersdk.com",
+        "adrevenue.appsflyersdk.com",
+        "privacy-sandbox.appsflyersdk.com"
+      ]
+    }
+  },
+  "minimumVersionCode": 20,
+  "notes": "Written from the binary and from the tunnel. React Native. What it needs: chik.lbr.co.il, www.lbr.co.il and Firebase. Blocked: the Facebook SDK (graph.facebook.com, seen on launch) and AppsFlyer. Its AppsFlyer prefix was not seen on launch, so only the unprefixed hosts are listed; a prefixed one would pass."
+}

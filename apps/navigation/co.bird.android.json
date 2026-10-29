@@ -1,0 +1,22 @@
+{
+  "packageName": "co.bird.android",
+  "displayName": {
+    "he": "בירד",
+    "en": "Bird"
+  },
+  "category": "NAVIGATION",
+  "minimumVersionCode": 908560,
+  "sha256": "bd0bc056cb0183837e10d386d8c181b6444fc4174ed8badcd0d7295c204fcd91",
+  "availableInStore": true,
+  "grantsNetworkAccess": true,
+  "minUserMode": "MOST_OPEN",
+  "flags": {
+    "hasUnmodestImage": true,
+    "isRecommendedInStore": false
+  },
+  "source": {
+    "type": "PLAY",
+    "id": "co.bird.android"
+  },
+  "notes": "Shared scooters. Flagged hasUnmodestImage: the sign in screen plays a video of people riding (res/raw/intro_video.mp4), packaged in the APK, so the tunnel cannot remove it. Braze, Stripe, Braintree and PayPal, Persona for identity checks, Zendesk. Pin and version from the build installed from Play (4.421.0.1, versionCode 908560), signed with the developer's own key (CN=Bird Ride, O=Bird Rides, L=Santa Monica, ST=CA, C=01). The flag keeps it out of REDUCED_RISK and asks for explicit acceptance; MOST_OPEN is stated so the entry says what the flag already means."
+}
