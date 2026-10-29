@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-29T19:19:41Z",
+  "generatedAt": "2026-10-29T19:26:48Z",
   "entries": [
     {
       "packageName": "air.com.cellogroup.Cellopark",
@@ -388,14 +388,21 @@
       "availableInStore": true,
       "grantsNetworkAccess": true,
       "minUserMode": "NAVIGATION_ONLY",
-      "flags": {
-        "isRecommendedInStore": false
-      },
       "source": {
         "type": "PLAY",
         "id": "com.mot.haniti"
       },
-      "notes": "Ministry of Transport parking application, so it sits beside Pango and Cellopark. Pin and version from the build installed from Play (1.1.1, versionCode 113), signed with Play App Signing (CN=Android, O=Google Inc.). It is an OutSystems shell: the screens are a web application served from transportation.outsystems.app and shown in a WebView. No policy, so it is fully open inside the tunnel, by choice. An allow list of that one host was written and dropped: the WebView's content security policy also permits *.amazonaws.com, which in OutSystems usually means uploads to presigned S3 URLs whose host is only known at runtime, and a list that misses it breaks those screens without saying why."
+      "notes": "Ministry of Transport parking application, so it sits beside Pango and Cellopark. Pin and version from the build installed from Play (1.1.1, versionCode 113), signed with Play App Signing (CN=Android, O=Google Inc.). It is an OutSystems shell: the screens are a web application served from transportation.outsystems.app and shown in a WebView. No policy, so it is fully open inside the tunnel, by choice. An allow list of that one host was written and dropped: the WebView's content security policy also permits *.amazonaws.com, which in OutSystems usually means uploads to presigned S3 URLs whose host is only known at runtime, and a list that misses it breaks those screens without saying why.",
+      "screenshots": [
+        "https://play-lh.googleusercontent.com/Vy1HV_lMvWd9t1Pi5TKiNSelwXKYGWbfUAZjKclhmA1ql79Hv9YCjD1Yfv9ndHpAEYjp90-9o7GnHvg2TxziRA",
+        "https://play-lh.googleusercontent.com/lPBm2e-L2m0gipfNLsgO4B9TtqWzCJexRqAowxbmzDnSqBzlDMHNZvW6heRX8yUunYcH23S_VqSCyoUpxLEQFQ",
+        "https://play-lh.googleusercontent.com/B9Th2CY26wFg4RpMKuijHyVtA4C5xRHLf7lJdOfZ0x-XmuxBcnkSOqgl9p-defR_jbAENltwT3OOfi3dn7ox",
+        "https://play-lh.googleusercontent.com/PSnLSHhpkZYBXujoJElaCF5akTGtQ4IHI_cMzsfiksq-iuSaINr7WnbATkBYtrZPdFSGc9MbF7HGbjPtYXRcPA",
+        "https://play-lh.googleusercontent.com/NlL3efkmkune_yhJ4-C9f0y-i9pMicQ-thM8-eLTYEIWha2nwNth21qy3wQGpgm7dJPvr7CGCtLG1vFjeF5A",
+        "https://play-lh.googleusercontent.com/-mXC3kSLft73IotWacSgoBDQY_y6xk6zPBVEOv1fePlvO346yVmjf_FDyTkhATPVnkrZvIFkd4TTLjrlEjtyYw",
+        "https://play-lh.googleusercontent.com/6TEeVvVQFl9zID9j7ZCzOFChF1Mdtq-GEXEbAgg4aVd6lLAep_nlPiVPPP9GmrcTI0onYI0fahhxDZEFZrCm",
+        "https://play-lh.googleusercontent.com/p-bpEHl5FD2pEQ_GXdG1IXFgqfWHok2fDVK8pPgaFL2d7XthWBGXBLdaAm08-yHT5-HZA090AXeNaldFyIUQFw"
+      ]
     },
     {
       "packageName": "com.myadventure.myadventure",
@@ -608,6 +615,27 @@
         "https://play-lh.googleusercontent.com/QXh6rR_8igYXXyNsVbsmPFPwJf7xYBM-AMX-oajSEiuWE5ayhyYAdVh6Jgphd-rle3WllaV6lz6ptkyvpdTH",
         "https://play-lh.googleusercontent.com/t_q0Ds9iXo6vlx4LWMDOxgaE-Z-MwMbQ5yM0k6xPPYVIyAwxQCv7qAgfVVuxdYb5LGQa7_qyAt-WawQUQ9yvB_s"
       ]
+    },
+    {
+      "packageName": "il.co.corido.cemeterynavigation",
+      "displayName": {
+        "he": "Gravez - ניווט בבתי עלמין",
+        "en": "Gravez"
+      },
+      "category": "NAVIGATION",
+      "minimumVersionCode": 104,
+      "sha256": "a134cace06c37f225197e20d8cd206abd08b05aff0fb9bc612fb7328967b5804",
+      "availableInStore": true,
+      "grantsNetworkAccess": true,
+      "minUserMode": "NAVIGATION_ONLY",
+      "flags": {
+        "isRecommendedInStore": false
+      },
+      "source": {
+        "type": "PLAY",
+        "id": "il.co.corido.cemeterynavigation"
+      },
+      "notes": "Finds a grave and walks you to it inside the cemetery. Pin and version from the build installed from Play (3.2.5, versionCode 104), signed with Play App Signing (CN=Android, O=Google Inc.). No advertising: none of the common ad SDKs are in the dex, the Google Ads classes present are the ones Firebase Analytics pulls in, and there is no AdMob application id. The 'AdvertisementService' class is Bluetooth LE advertising, not ads. sonol.co.il and trail-camera.co.il are website tags on points in the bundled OpenStreetMap extracts, and hagilda.com is a font's copyright line."
     },
     {
       "packageName": "il.co.pat.disabledparkingpermits",

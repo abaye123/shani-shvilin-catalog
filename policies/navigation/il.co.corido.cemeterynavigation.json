@@ -1,0 +1,19 @@
+{
+  "type": "Fixed",
+  "packageName": "il.co.corido.cemeterynavigation",
+  "category": "NAVIGATION",
+  "networkPolicy": {
+    "mode": "BLACKLIST",
+    "desc": "Facebook sign in and tracking are blocked; everything else stays open",
+    "spec": {
+      "type": "HostList",
+      "hosts": [
+        "graph.facebook.com",
+        "facebook.com",
+        "www.facebook.com"
+      ]
+    }
+  },
+  "minimumVersionCode": 104,
+  "notes": "Written from the binary. What it needs: gravez.me, backendapi.gravez.me and services.gravez.me (search, route markers, the paid services page), apiendusers.corido.co.il and contentpages.corido.co.il (the vendor's API and content pages such as Prayers.html), coridopersonalimages.s3.eu-west-1.amazonaws.com (photos users upload to a deceased's page, left open on purpose) and Firebase (auth, messaging, Crashlytics, Analytics). The map comes from OpenStreetMap extracts bundled in assets, so no tile host is needed.\n\nBlocked: the Facebook SDK, which is there for sign in, sharing and app events. Its host is built at runtime as graph.%s, which is why the extractor did not list graph.facebook.com. WhatsApp, Telegram and Facebook share links are handed to those applications and are not this application's traffic.\n\nNot an allow list on purpose: several backends, and a list that misses one breaks a screen without saying why. Not yet watched on a device through the tunnel."
+}

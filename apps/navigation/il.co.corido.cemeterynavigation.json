@@ -1,0 +1,21 @@
+{
+  "packageName": "il.co.corido.cemeterynavigation",
+  "displayName": {
+    "he": "Gravez - ניווט בבתי עלמין",
+    "en": "Gravez"
+  },
+  "category": "NAVIGATION",
+  "minimumVersionCode": 104,
+  "sha256": "a134cace06c37f225197e20d8cd206abd08b05aff0fb9bc612fb7328967b5804",
+  "availableInStore": true,
+  "grantsNetworkAccess": true,
+  "minUserMode": "NAVIGATION_ONLY",
+  "flags": {
+    "isRecommendedInStore": false
+  },
+  "source": {
+    "type": "PLAY",
+    "id": "il.co.corido.cemeterynavigation"
+  },
+  "notes": "Finds a grave and walks you to it inside the cemetery. Pin and version from the build installed from Play (3.2.5, versionCode 104), signed with Play App Signing (CN=Android, O=Google Inc.). No advertising: none of the common ad SDKs are in the dex, the Google Ads classes present are the ones Firebase Analytics pulls in, and there is no AdMob application id. The 'AdvertisementService' class is Bluetooth LE advertising, not ads. sonol.co.il and trail-camera.co.il are website tags on points in the bundled OpenStreetMap extracts, and hagilda.com is a font's copyright line."
+}
