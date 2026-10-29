@@ -10,12 +10,17 @@
   "availableInStore": true,
   "grantsNetworkAccess": true,
   "minUserMode": "REDUCED_RISK",
-  "flags": {
-    "isRecommendedInStore": false
-  },
   "source": {
     "type": "PLAY",
     "id": "com.platetoprice.app"
   },
-  "notes": "Reads a licence plate and looks the vehicle up, so without network it does nothing at all. The signing certificate is Google's, not the developer's (CN=Android, O=Google Inc.), because the application is distributed through Play App Signing; that is the certificate an installed copy carries and therefore the one to pin."
+  "notes": "Reads a licence plate and looks the vehicle up, so without network it does nothing at all. The signing certificate is Google's, not the developer's (CN=Android, O=Google Inc.), because the application is distributed through Play App Signing; that is the certificate an installed copy carries and therefore the one to pin.",
+  "screenshots": [
+    "https://play-lh.googleusercontent.com/hg24ngvoHniVJrU6NsDCKArJAcYGirGGfpRbQHpuDI0VTmvZRHvc6dnwGOljldaZikIhJyOUZoLRGxUB56wZpw",
+    "https://play-lh.googleusercontent.com/3jVEJ6onMU5Et6KDPQCpudRozh31v2pfycJaj_gzo8PZsqqVdMfItPVKSyy259Pq0wiQtq7WfpbC53N2IYLShg",
+    "https://play-lh.googleusercontent.com/pjyzqRkuA4HnMDtWjcTVqmtbLgBc9B5iIXlZ55CgX-tM1hb4g471VofyJNXIdkb7ne-Lntw6EthrdIijCdf1",
+    "https://play-lh.googleusercontent.com/H9DOUIEivHkaP25mDD9c8_Qo9nJzskqQe3uP_hJpehcxgbwAmIoaTzpvYEy_EK71dJIP65FWYF-tODTclHAVzbk",
+    "https://play-lh.googleusercontent.com/SUUgC1_k_US4Cqqxgbc7ykuq8aU_K2AIdTRxhWKYURt1OoCilHuFKFp1qYgZCo-_5bitFeO01LBGUThz0kxF",
+    "https://play-lh.googleusercontent.com/8aTeUqBVIImKm0mziboQZ8p-Zi0dURBshBeyLrmyKm-nZSbQqLVk8JDF2OEcQaUN-99e1xvqNwl4zJ-tLS7T"
+  ]
 }

@@ -10,12 +10,16 @@
   "availableInStore": true,
   "grantsNetworkAccess": true,
   "minUserMode": "NAVIGATION_ONLY",
-  "flags": {
-    "isRecommendedInStore": false
-  },
   "source": {
     "type": "PLAY",
     "id": "gnrgy.android.emobilityapp"
   },
-  "notes": "Gnrgy EV charging. It reached portal.gnrgy.com only. Google Maps and Firebase. No ad SDK. No policy, so it is open inside the tunnel. Pin and version from the build installed from Play (8.8, versionCode 724), signed with the developer's own key (CN=Midhun Madhu, OU=Software Department, O=Gnrgy, L=Bangalore, ST=Karnataka, C=IN)."
+  "notes": "Gnrgy EV charging. It reached portal.gnrgy.com only. Google Maps and Firebase. No ad SDK. No policy, so it is open inside the tunnel. Pin and version from the build installed from Play (8.8, versionCode 724), signed with the developer's own key (CN=Midhun Madhu, OU=Software Department, O=Gnrgy, L=Bangalore, ST=Karnataka, C=IN).",
+  "screenshots": [
+    "https://play-lh.googleusercontent.com/Z8hXzX0QKGMH2Pvbxyis4iW_hUlNWuOc1SBBNvzqHF_IRXmNVQb_O6cbH2pM3huVqVHKAP2VNHQEsUQNXIUMtw",
+    "https://play-lh.googleusercontent.com/ce5s3fImK0OCSc0xSu7sUCLTPou1zB2uiME_0d1TKrZzqR1BKKL8CX6NxkOVad3CYL7VRF0pfCxE55Q5n5Gr_A",
+    "https://play-lh.googleusercontent.com/5AXWs60zv91jAWGye-ulq9a3G-h4IxefpSEQi7JNPQfLog34uijl5USdZpX1X771lAIPpoOFybgnOBVLchCb4bs",
+    "https://play-lh.googleusercontent.com/7yGYFUpqkArW5QQElFY0eaGlvfYciRQTjpT_MIRkmUF1GX6QBvRp1g5Ato2YYv6PU9VIWxtdFFtViA2xN1iO1g",
+    "https://play-lh.googleusercontent.com/I2Je7VGgyMDb2E1mnpDDtlsklQt4XRTpP5wEHWPn8aNfMceuYb7CDMbno-nXtKyo-TUjFr78LtoOAfLhg4rhZQ"
+  ]
 }

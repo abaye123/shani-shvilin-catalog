@@ -10,12 +10,14 @@
   "availableInStore": true,
   "grantsNetworkAccess": true,
   "minUserMode": "REDUCED_RISK",
-  "flags": {
-    "isRecommendedInStore": false
-  },
   "source": {
     "type": "PLAY",
     "id": "com.khl.kiosk"
   },
-  "notes": "Kol Halashon's older native player (2.67, versionCode 267, from Play), signed by Kol Halashon, the same key as com.khl.www2. A native player, unlike the WebView of com.khl.www2; see the policy notes."
+  "notes": "Kol Halashon's older native player (2.67, versionCode 267, from Play), signed by Kol Halashon, the same key as com.khl.www2. A native player, unlike the WebView of com.khl.www2; see the policy notes.",
+  "screenshots": [
+    "https://play-lh.googleusercontent.com/AYKdO_TzzbEdvjzlTO5s7H8WxkGI7JCY8g9qY4f2r0RMSzS6OGSjU7NvycmuokAFPL-n5I8L_38dWvVYSZVqDA",
+    "https://play-lh.googleusercontent.com/_GcnqqgH3kpfqeo_5FK9w3HqJoTwj8-C0-fVQGqPimSx5hYKEbtiubQO1Rr4IQ9B8DG0TLAbkI3ORKVaEz40",
+    "https://play-lh.googleusercontent.com/CPn9IetKu1I4g1TjuffxNhuD_udrMXNlTyNoRwNLpH3ZoLqMXSFEHeQ8Iv5V6Cs2-DmJDjHhOQEAv7zDVGHDYw"
+  ]
 }

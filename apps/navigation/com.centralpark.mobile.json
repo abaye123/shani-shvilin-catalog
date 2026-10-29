@@ -10,12 +10,16 @@
   "availableInStore": true,
   "grantsNetworkAccess": true,
   "minUserMode": "NAVIGATION_ONLY",
-  "flags": {
-    "isRecommendedInStore": false
-  },
   "source": {
     "type": "PLAY",
     "id": "com.centralpark.mobile"
   },
-  "notes": "Parking payment. React Native, Google Maps, Firebase and AppsFlyer. No ad SDK. Pin and version from the build installed from Play (3.2.0, versionCode 309), signed with Play App Signing (CN=Android, O=Google Inc.)."
+  "notes": "Parking payment. React Native, Google Maps, Firebase and AppsFlyer. No ad SDK. Pin and version from the build installed from Play (3.2.0, versionCode 309), signed with Play App Signing (CN=Android, O=Google Inc.).",
+  "screenshots": [
+    "https://play-lh.googleusercontent.com/lWkEd-qSnA5wcMEXVYJEyhvukpX3aCxU5ZzpiFhAAvxoaXloBpv9HkUh7gEmeefDIUhL8OvMGWB_LI3LWvAGXw",
+    "https://play-lh.googleusercontent.com/Ll4fesNNXH2LbW_qGWyFdXLi5BmAy-Oqpmfsw95Ma2hhSDvL5LZcfKK4WYcvnxYwj3DIn7hyRBqQGkKBMQd5Xg",
+    "https://play-lh.googleusercontent.com/uYXdFSTwVi0oaf93YpFxOVdYzErBnD_0q3tMSJYbYQ4QtK_TNJde3ecZ-QD0Yh_YR_bwvDXFMZ0rKURmNuPZ4g",
+    "https://play-lh.googleusercontent.com/PPRNsvv34Y3HmskW7JFSasUIHUk8qTiYI_Lawu5KORuqakfN_Yzx7WUYbsmfxIwtI2EUir3a-mHdPznmaJwnNW0",
+    "https://play-lh.googleusercontent.com/rwSLKRD3RiHR9RG8TV7mce9HnIzc0c-vILC-uQzNBShTkV54DVNf6xKo23ykdJq0Wa9ndl1qN91a3Ohvi6zSvQ"
+  ]
 }

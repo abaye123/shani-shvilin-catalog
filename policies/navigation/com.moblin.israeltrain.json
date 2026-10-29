@@ -2,7 +2,7 @@
   "type": "Fixed",
   "packageName": "com.moblin.israeltrain",
   "category": "NAVIGATION",
-  "minimumVersionCode": 1435123456,
+  "minimumVersionCode": 0,
   "networkPolicy": {
     "mode": "FULL_OPEN"
   }

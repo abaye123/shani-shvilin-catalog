@@ -10,12 +10,18 @@
   "availableInStore": true,
   "grantsNetworkAccess": true,
   "minUserMode": "NAVIGATION_ONLY",
-  "flags": {
-    "isRecommendedInStore": false
-  },
   "source": {
     "type": "PLAY",
     "id": "com.driivz.mobile.android.afcon.driver"
   },
-  "notes": "Afcon EV charging, on the Driivz platform. It reached mobile.afconev.co.il only. Payment SDKs (Stripe, Adyen, Braintree), Google Maps, Firebase. No ad SDK. No policy, so it is open inside the tunnel. Pin and version from the build installed from Play (9.1.23-a691ee5218, versionCode 27252), signed with Play App Signing (CN=Android, O=Google Inc.)."
+  "notes": "Afcon EV charging, on the Driivz platform. It reached mobile.afconev.co.il only. Payment SDKs (Stripe, Adyen, Braintree), Google Maps, Firebase. No ad SDK. No policy, so it is open inside the tunnel. Pin and version from the build installed from Play (9.1.23-a691ee5218, versionCode 27252), signed with Play App Signing (CN=Android, O=Google Inc.).",
+  "screenshots": [
+    "https://play-lh.googleusercontent.com/fMu_4SQKGNtwxu2An92WUhB5rgnnxi-_wtp3dU3krlu0oRihOspwwazDosq1AjB2oEuWzayJqa20XolOa80Bcg",
+    "https://play-lh.googleusercontent.com/teK92xlAE3yEPG4427WjvL5EWCv_ArGqxzVStMgy1cs0bAnbf1zM__aJBXXHzEQUShJDM4KA6fpV54zSOZs7kGs",
+    "https://play-lh.googleusercontent.com/8HMsF0ueR14wOWKq0k8DWaPe7RTiywSxj_FerZ2KKN8co-mWcWNzWNWN6WrcIcMHs9L48xJD0ZZoH0tWbQnlRQ",
+    "https://play-lh.googleusercontent.com/873d4msdWeWqvoSAi7lWwYBJ34-LLcpfdQGTEHgDjcbvjilW6c0wvu4EAvNKQlM6wbWurSA3VwLl36nWHsjDz-M",
+    "https://play-lh.googleusercontent.com/fYL4yA_q8PYYV9Jy6TfF0mG2ZWtAFLo29DBjmnce_jAFxmPSz1VZe8pVMPrXjehuLWtYemsyqubOsIGppyMvc34",
+    "https://play-lh.googleusercontent.com/-962eCoEd2htEmuANug-VTDh3OniB2w6_FVRGzpvJIrK2M2tirDQt8aJuXzFHQP0YqWSfleVA-UwbDDd6de958w",
+    "https://play-lh.googleusercontent.com/if372KFfclBoChZkfe5fredJTrAg4KG_eILGfMrnG7y-cmBc3ERizz-9e1gx2DWzPVhYiJCgfwHs34YgZL1FbQ"
+  ]
 }

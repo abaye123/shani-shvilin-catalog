@@ -10,12 +10,14 @@
   "availableInStore": true,
   "grantsNetworkAccess": true,
   "minUserMode": "REDUCED_RISK",
-  "flags": {
-    "isRecommendedInStore": false
-  },
   "source": {
     "type": "PLAY",
     "id": "com.khl.www2"
   },
-  "notes": "Kol Halashon's current application (2.10, versionCode 20100, from Play), signed by Kol Halashon, the same key as com.khl.kiosk. A WebView over www.kolhalashon.com."
+  "notes": "Kol Halashon's current application (2.10, versionCode 20100, from Play), signed by Kol Halashon, the same key as com.khl.kiosk. A WebView over www.kolhalashon.com.",
+  "screenshots": [
+    "https://play-lh.googleusercontent.com/3waMr5U6GIF78NfL4fn11irdKRMQ3xMME3k7UmQBIP--wFvNn0QzJKZbMXjlg0uHVp3zwXJPGVikIyzxEPOAFA",
+    "https://play-lh.googleusercontent.com/cTVfCHX4IhiedSmtVizvm7c0U64Frprpa2FRrQmVsPyRmLgz3iXS1VcdtpySL_olGY2OslMiLdonjaVjEN_XgFM",
+    "https://play-lh.googleusercontent.com/vZQR_nqCHV5f-7jUkbQdWdB6h6nWWAanviqxPho_wxSEvgGaQ3al1VhXB7Mg976iTys8KzjnZii2UWeREfLneQ"
+  ]
 }

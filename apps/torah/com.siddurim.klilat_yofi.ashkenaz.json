@@ -17,5 +17,13 @@
     "type": "PLAY",
     "id": "com.siddurim.klilat_yofi.ashkenaz"
   },
-  "notes": "Siddur, nusach Ashkenaz, from Siddurim.com; the same code as the Sfard build and the same signing key. No ad SDK; Firebase for sync, remote config and Crashlytics. Pin and version from the build installed from Play (3.5.4, versionCode 899), signed with the developer's own key (O=Siddurim.com)."
+  "notes": "Siddur, nusach Ashkenaz, from Siddurim.com; the same code as the Sfard build and the same signing key. No ad SDK; Firebase for sync, remote config and Crashlytics. Pin and version from the build installed from Play (3.5.4, versionCode 899), signed with the developer's own key (O=Siddurim.com).",
+  "screenshots": [
+    "https://play-lh.googleusercontent.com/kQzHS1dakwkNAHgP4jd66pXUxL4fBGarg6v9cqGaHmIh_ONBsx1gEs-ttZNBJyLIvXQiUtVJLyssUbDEKUIdUEo",
+    "https://play-lh.googleusercontent.com/y4WOVSVhkF5hqNkkwYCNYIWwCZ3ln7HRrPBuawL0Gr-PEWhSUabtfyAbU8PYqHmMQYzH6mbWivUPwPPtS551",
+    "https://play-lh.googleusercontent.com/TIA2Rxp4U4kptmCrKmymbf52UN5_Z-y5wp9zFEQ3TKAZpHSRQ2ozKuFPM7ZZj8q5nVC_K7ninoXk0u8lMqKeSw",
+    "https://play-lh.googleusercontent.com/G5KF_kgIPP4u_9KzMrtY5T1q7DbL-DWZF_ASV-RGp_A8tWmSxViuhHd3n1DxGj1ljIzfLwzxtWY31UYFhlLBPw",
+    "https://play-lh.googleusercontent.com/OjPMRfV0RA6QqUzXY4pfEG1VaeNFx9hFyZmT12bqtHRjsyEdYXOPmbMtKpV4yvscQPIstRMDsv52hmEXsmzE",
+    "https://play-lh.googleusercontent.com/zpcVdWFmB56uIb7VOqZQ922WrLOD-xTFJSZJqpXwSXXGVkj-UsHJ78K04wFdfix_Pv3yqnRk825g0n8D3KL6"
+  ]
 }

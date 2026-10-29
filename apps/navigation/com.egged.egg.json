@@ -1,8 +1,8 @@
 {
   "packageName": "com.egged.egg",
   "displayName": {
-    "he": "אגד",
-    "en": "Egged"
+    "he": "אג - ניווט בתחבורה ציבורית",
+    "en": "Egg"
   },
   "category": "NAVIGATION",
   "minimumVersionCode": 400001098,

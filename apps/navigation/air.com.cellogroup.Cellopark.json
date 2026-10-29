@@ -10,12 +10,16 @@
   "availableInStore": true,
   "grantsNetworkAccess": true,
   "minUserMode": "NAVIGATION_ONLY",
-  "flags": {
-    "isRecommendedInStore": false
-  },
   "source": {
     "type": "PLAY",
     "id": "air.com.cellogroup.Cellopark"
   },
-  "notes": "Parking payments, which is part of driving, so it sits beside Pango. No policy: nobody has measured which hosts it needs, and a host list invented for it would be a guess wearing the clothes of a rule."
+  "notes": "Parking payments, which is part of driving, so it sits beside Pango. No policy: nobody has measured which hosts it needs, and a host list invented for it would be a guess wearing the clothes of a rule.",
+  "screenshots": [
+    "https://play-lh.googleusercontent.com/0Rve0P5qrByH28raIb8rCnOImHaAvFDBJh9U8SxMcgREBVJ_SOUrhLv8zER4RpTgjP1HSJdw9ltTbGZcKmhT2A",
+    "https://play-lh.googleusercontent.com/CKk_NVYPXPpKftavttVUwtiSddPy06FfgtRcxDowcVAoHnWq5HX0TmYKvrs_6G-BW-TSoTI3cfheZVX5gSOW2w",
+    "https://play-lh.googleusercontent.com/9R0u--p61QPsf9ZpC-hSLC6cPndrHpxlBpLpM2xJkxKgFcVp_vdCnqKi0Nhn96k4esWgVLrmDE1bVjDSEGHIqQ",
+    "https://play-lh.googleusercontent.com/q8VDnhZdYb2NNC4CYx_k4kO4CrE2hsgSo8SYXe1OL2yM7ylxVOTc1tVmiGCCh5M6drZc_UFG7o5pCJupJedo",
+    "https://play-lh.googleusercontent.com/J1Ul6dW6iXPmBvF1GBGX2ZID1VSHr5gWqEt5uAug7NY34tjIFhNixxCEuD-3wwQOTgrD7OTd-S5EThXPmqtGEQ"
+  ]
 }

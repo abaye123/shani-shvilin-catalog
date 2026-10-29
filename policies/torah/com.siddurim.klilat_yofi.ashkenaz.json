@@ -14,5 +14,6 @@
     }
   },
   "minimumVersionCode": 899,
-  "notes": "Written from the binary and from the tunnel. On launch it reached Firebase only (Realtime Database and Remote Config). matara.pro is a link the code opens next to its store links and is not needed by the siddur, so it is blocked. The network security configuration names vbot.vip, which nothing was seen reaching."
+  "notes": "Written from the binary and from the tunnel. On launch it reached Firebase only (Realtime Database and Remote Config). matara.pro is a link the code opens next to its store links and is not needed by the siddur, so it is blocked. The network security configuration names vbot.vip, which nothing was seen reaching.",
+  "isRecommendedInStore": true
 }

@@ -11,12 +11,20 @@
   "grantsNetworkAccess": true,
   "minUserMode": "MOST_OPEN",
   "flags": {
-    "hasUnmodestImage": true,
-    "isRecommendedInStore": false
+    "hasUnmodestImage": true
   },
   "source": {
     "type": "PLAY",
     "id": "com.elhamaayan.app"
   },
-  "notes": "Map of springs. A Capacitor web application backed by Supabase (sbnbfpihfhsyctumpqod.supabase.co), with Leaflet maps from MapTiler, OpenStreetMap and govmap. No ad SDK and no analytics. No policy, so it is open inside the tunnel. Flagged hasUnmodestImage: spring photos come from upload.wikimedia.org and from users, and a photo of a spring may show bathers. Blocking the photo hosts was considered and left out for now. Pin and version from the build installed from Play (1.0.0, versionCode 11), signed with Play App Signing (CN=Android, O=Google Inc.). The flag keeps it out of REDUCED_RISK and asks for explicit acceptance; MOST_OPEN is stated so the entry says what the flag already means."
+  "notes": "Map of springs. A Capacitor web application backed by Supabase (sbnbfpihfhsyctumpqod.supabase.co), with Leaflet maps from MapTiler, OpenStreetMap and govmap. No ad SDK and no analytics. No policy, so it is open inside the tunnel. Flagged hasUnmodestImage: spring photos come from upload.wikimedia.org and from users, and a photo of a spring may show bathers. Blocking the photo hosts was considered and left out for now. Pin and version from the build installed from Play (1.0.0, versionCode 11), signed with Play App Signing (CN=Android, O=Google Inc.). The flag keeps it out of REDUCED_RISK and asks for explicit acceptance; MOST_OPEN is stated so the entry says what the flag already means.",
+  "screenshots": [
+    "https://play-lh.googleusercontent.com/dzJ0RJk2ieaqq4k-Sj9b-fHD_ieXbJhfDYsazrExnDIo19J2AMh0oAJdqZciyn-YaFj9LLFsBMWSm3NmJy3DXQ",
+    "https://play-lh.googleusercontent.com/VVUIlwiY6zRji7xHDpt-iO5tRM6R8z4iBOYYq44Rsxh86b3ec_C8OwzvWd5J8yuXhmECtTczF2EmUkq3gfCNdcY",
+    "https://play-lh.googleusercontent.com/BoezrSp2fT_bsCpDtwaRj8Cv8t76oPdlhq3kqOWRZL-56iBTXXNGEJkRH_calMTyZNpYQr0TmLOtBzNsh0bbMgM",
+    "https://play-lh.googleusercontent.com/Kif05woioMsM1oSJcjB5KW4_brUYMFBaIrr-sy5qTH8utw0ZECn1QcYsgGn-4ENcxAGoCjvBfQIXDmHRn6PF",
+    "https://play-lh.googleusercontent.com/HdhYf5shigW9UT2BcycdBc7-vsg41MGQbJzzTMXVLNOfZuH1OxJlvsih2f2mimdwKm9cWEeuFDEtZtSaunKGYg",
+    "https://play-lh.googleusercontent.com/mPgL7_dQshXbRHBijlww3u3lqW3QFj-76OMkB5EMKwR6K-Tb8O_Y-Pbx-xJzF1vNWsl7o_hN72H4k6MDeS8lgwo",
+    "https://play-lh.googleusercontent.com/F8oOQO5A9zYcGOaBxshzvhNXPxBGEzwPKz2cD6WSgVJ-a4WkpsSIIrWjluoxJ8ghEGTeM9nwOcnXSZHH_ID9qQ"
+  ]
 }

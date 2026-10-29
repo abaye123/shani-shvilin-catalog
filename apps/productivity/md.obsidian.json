@@ -1,7 +1,7 @@
 {
   "packageName": "md.obsidian",
   "displayName": {
-    "he": "Obsidian",
+    "he": "Obsidian - אובסדיאן",
     "en": "Obsidian"
   },
   "category": "PRODUCTIVITY",
@@ -10,12 +10,19 @@
   "availableInStore": true,
   "grantsNetworkAccess": false,
   "minUserMode": "OFFLINE",
-  "flags": {
-    "isRecommendedInStore": false
-  },
   "source": {
     "type": "PLAY",
     "id": "md.obsidian"
   },
-  "notes": "Markdown notes, kept as files on the device. Given no network: it embeds web pages (YouTube, X, Bilibili, Reddit) inside notes and community plugins download code from GitHub and unpkg, and none of that is needed to write notes. Sync and publish will not work. Pin and version from the build installed from Play (1.14.4, versionCode 389), signed with Play App Signing (CN=Android, O=Google Inc.)."
+  "notes": "Markdown notes, kept as files on the device. Given no network: it embeds web pages (YouTube, X, Bilibili, Reddit) inside notes and community plugins download code from GitHub and unpkg, and none of that is needed to write notes. Sync and publish will not work. Pin and version from the build installed from Play (1.14.4, versionCode 389), signed with Play App Signing (CN=Android, O=Google Inc.).",
+  "screenshots": [
+    "https://play-lh.googleusercontent.com/Clit1R4ds6j17elulTT2Ccy0UhRNTUQONDM-F8sFgHitZu0p9NGcpgA1TranKxto6ZDuFXlujdq2g8q6XXPe1LQ",
+    "https://play-lh.googleusercontent.com/Y27-uuQXEI0Rmqy8OeR98OPFcsDOptmZcS2b4cgjFiZaf1sfhu8zE1Ff1Gku7MwYDv5aDtV-rzlBaDrLjtDG",
+    "https://play-lh.googleusercontent.com/z_FCUTwNp_CQjXZzUSC9RFt0_fViaW6fJsfIS8RNCpG1iwowTLUnipTv-swRlPZvSISz_tm7zVD0JjChjUbo3w",
+    "https://play-lh.googleusercontent.com/zBv0L2oSJ7kbHle8AhHlsWaGWO2Z3fQpVoVWnwYZHlsgJnAceFhADXFlguzYG775FRdWI9HymkNXrTYGyEU0Bg",
+    "https://play-lh.googleusercontent.com/x15Fccr61nyPhKfw5qR6HMBr8G318aXGN6MCG6daxYhnu3YJaywksU7uTKNmFbx7gW2sL7spjvuCYF9tW_Bi",
+    "https://play-lh.googleusercontent.com/9Y4Og02s77FD_GoGdBtlsHnOakGob78VJ6cESRVKakAnycMvpVWjPe1EK1gJjx_6c-ffqQYjaTxhMLqVUpEG7A",
+    "https://play-lh.googleusercontent.com/LwHiRDf5qKJn51PREq6fQ7dmV58ohOtavsGbgGh_I1WDq_NsbssNhVsPt3Y4cnj9hgBX-e3HJCSrCymnZOf4oA",
+    "https://play-lh.googleusercontent.com/reiqUXUbtikXNprAhKEKiS50ojl7IttpcBRIsEHv_DqkVKRO7HfQFnreU-Z3p7g2Fi7caAG9xAZ-sh58WuZGwg"
+  ]
 }

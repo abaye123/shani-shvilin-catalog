@@ -1,7 +1,7 @@
 {
   "packageName": "com.tranzmate",
   "displayName": {
-    "he": "מוביט",
+    "he": "מוביט: ניווט ותכנון מסלולים",
     "en": "Moovit"
   },
   "category": "NAVIGATION",
@@ -10,11 +10,14 @@
   "availableInStore": true,
   "grantsNetworkAccess": true,
   "minUserMode": "NAVIGATION_ONLY",
-  "flags": {
-    "isRecommendedInStore": false
-  },
   "source": {
     "type": "PLAY",
     "id": "com.tranzmate"
-  }
+  },
+  "screenshots": [
+    "https://play-lh.googleusercontent.com/ghUtXdgyUGJ3S4GFQ59cPgQyhdkKtfyoV2GHigbyK378egKvItxZ6hC5jy2-vVpAEbc4SKitKFCUk4EthjduVQ",
+    "https://play-lh.googleusercontent.com/-Q-bvmj4Gjh46dqOxI9Z8FBEdaMdWvrSvlqUoVrnWSy62nF7cuN-doKV3enomiVqSLcE_dy1NPtYlB-ybwa2Kyc",
+    "https://play-lh.googleusercontent.com/qNvd0augImnBERybtrppb5QqR6jHB2Ab_I-h3bRrZLvA1B2mN-sJmDSWv-6e43ZqEQn_p4Qsh0F-VL86jcF6YQ",
+    "https://play-lh.googleusercontent.com/h43nlPZwg7_A7DZRlfy4zSyH71WQll53CdOA-sp1fnScxe-IMjzlfqpGqlE4aV-S5NVNfePg8csRLfWYt-EODQ"
+  ]
 }

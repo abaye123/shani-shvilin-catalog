@@ -10,12 +10,19 @@
   "availableInStore": true,
   "grantsNetworkAccess": true,
   "minUserMode": "NAVIGATION_ONLY",
-  "flags": {
-    "isRecommendedInStore": false
-  },
   "source": {
     "type": "PLAY",
     "id": "com.pcentra.ravkavonlinemobile"
   },
-  "notes": "Loading the Rav-Kav card over NFC. A Cordova application that reaches ravkavonline.co.il and Google Maps. No ad SDK. No policy, so it is open inside the tunnel. Pin and version from the build installed from Play (1.17.2, versionCode 24001702), signed with the developer's own key (CN=Pcentra, OU=Pcentra, O=Pcentra, L=Israel, ST=Israel, C=IL)."
+  "notes": "Loading the Rav-Kav card over NFC. A Cordova application that reaches ravkavonline.co.il and Google Maps. No ad SDK. No policy, so it is open inside the tunnel. Pin and version from the build installed from Play (1.17.2, versionCode 24001702), signed with the developer's own key (CN=Pcentra, OU=Pcentra, O=Pcentra, L=Israel, ST=Israel, C=IL).",
+  "screenshots": [
+    "https://play-lh.googleusercontent.com/x63s0Y-VE2tPSjpikXtz9_ouJsffkPp1cZwEs9ZjXaJWG3JvPwxbROys7nQIxOnFhmUtnS7XjrItkQQyhaHaEg",
+    "https://play-lh.googleusercontent.com/kg9ULsIHHWB16NUtnu9I9g02qjp12Es0K02qsWJ4cu_gAvMw5Q_r-QLuszMWidTdFcU6v9jcIsY2Q5Hgc-yH",
+    "https://play-lh.googleusercontent.com/QrRcH0Kma1HTBUxOhoIbTGbsS1_VECE1gzZLL6vePx-nQsC-dCXmVQfY_YIytjVhv5WpsGkPj7mdYC5EaZrFcQ",
+    "https://play-lh.googleusercontent.com/6ghmQNDak4nU4q0rc5bRG5fiVQuzzeqUqsgL27a39EuaDN1_ZqtSNljlIA9tgxQclx1lSwwMsakq9AqkwI3G5QU",
+    "https://play-lh.googleusercontent.com/E2tEkhcwUEE0nwubu0xMagsii2mSswClqYRCxS9Hx7gvqfPQwICN5dlk_uRpvWvMsG97ExdBf08-rnYAnShC",
+    "https://play-lh.googleusercontent.com/Fk6o8OnZiCjXPvbsnwAHJ7_LEQJ2ms8OnOt4EK6Crq0b84q956ecT2h0HWY-2U1F7PHW1uup1gR44XsvgrvsAAk",
+    "https://play-lh.googleusercontent.com/PE2AXvTE3MuoZGhQP9NMaHO-Ifc_hHGtX3fRFrMzq7ejj36bwu08b4c8NS3gU-HdHgTt36d14FQrW5iFDQVL1w",
+    "https://play-lh.googleusercontent.com/-kydzzGS5b_4sJlK4qlpKlBHj_wnVGlADu-xJMoTlz_N9D5M2ivKSOzwbrCaqVT_TXgs25jaTaKteqTHsrXNkDw"
+  ]
 }

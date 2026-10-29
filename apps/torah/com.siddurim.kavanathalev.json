@@ -1,7 +1,7 @@
 {
   "packageName": "com.siddurim.kavanathalev",
   "displayName": {
-    "he": "תפילאור",
+    "he": "תפילאור - הסידור החכם החדש",
     "en": "Tefilor"
   },
   "category": "TORAH",
@@ -17,5 +17,15 @@
     "type": "PLAY",
     "id": "com.siddurim.kavanathalev"
   },
-  "notes": "Siddur from Siddurim.com, the same code base as Siddur Klilat Yofi under a different key. No ad SDK; Firebase for sync, remote config and Crashlytics. Pin and version from the build installed from Play (3.5.4, versionCode 899), signed with Play App Signing (CN=Android, O=Google Inc.)."
+  "notes": "Siddur from Siddurim.com, the same code base as Siddur Klilat Yofi under a different key. No ad SDK; Firebase for sync, remote config and Crashlytics. Pin and version from the build installed from Play (3.5.4, versionCode 899), signed with Play App Signing (CN=Android, O=Google Inc.).",
+  "screenshots": [
+    "https://play-lh.googleusercontent.com/unMJLO4a-JHLXCTmaUACB7nlHX-SIkoWT9sEPwvaQx1XMn3lS_bBFgMe0upjCYsXZH9pAaGYzt0WdXY6URe_7w",
+    "https://play-lh.googleusercontent.com/1ub5MSxEYTsT197p7TlnZYwz1uNrsEOJ8-7XH7lXuKezwyivKkQqDjfCEgjS6uIEj3SeDc68tqdL7I8lEp63W7o",
+    "https://play-lh.googleusercontent.com/KJLFIr6rjbjCZho0Ezdylv9yHdBOll0twLAUuMfzV8nytjFM_7xVcDFfPBSkYggCqP6Bn_VEybOBWVubOLwu",
+    "https://play-lh.googleusercontent.com/nWRk-53csnW2Iz3w49sycwY9e_MUyAFk9Tls-X7Z9UiMr07dBWA0iJR124ThVh9ZNB2vt1Jj5ZtQ0IvcVYp95w",
+    "https://play-lh.googleusercontent.com/7R99S1okhYnYbmd4CqzGCm3Ek0a5asr1ZDItdZN3BW6L4HUgWjIYEsmCu7tYNb9aIusFXW1ww6gyHwzYANrkDpw",
+    "https://play-lh.googleusercontent.com/-qzTC6sjb7I_ieglLYqHr_1UulA0JiCuKOwGr6v0_TbqIaIWdCJt6fSxkiVxtrMAmlklCb4-pS0wqvyCjPoBDcU",
+    "https://play-lh.googleusercontent.com/43xn_4MkDlh1OqYafReiiFn78v8RnZyk_RbTF3diesYK1j-qc2_ph4bTn1wkvUZUUqgRNlQK293-uwvYM1NO",
+    "https://play-lh.googleusercontent.com/ABlUMcD4tK56g9fStkVgBUc--WrSPOxNO7mALQaSck0lNVYmBZfq7JZAt6BA6_wLd32dsOrd1llE2w6kgT-3Lg"
+  ]
 }

@@ -1,7 +1,7 @@
 {
   "packageName": "com.google.android.apps.authenticator2",
   "displayName": {
-    "he": "Google Authenticator",
+    "he": "מאמת החשבונות של Google",
     "en": "Google Authenticator"
   },
   "category": "TOOLS",
@@ -10,12 +10,18 @@
   "availableInStore": true,
   "grantsNetworkAccess": true,
   "minUserMode": "NAVIGATION_ONLY",
-  "flags": {
-    "isRecommendedInStore": false
-  },
   "source": {
     "type": "PLAY",
     "id": "com.google.android.apps.authenticator2"
   },
-  "notes": "Two factor codes. Pin and version from the build installed from Play (7.2, versionCode 7002011), signed with Play App Signing (CN=Android, O=Google Inc.). No policy, so it is fully open inside the tunnel, by choice. The codes themselves are computed on the device and need no network; the network is for backing the accounts up to the Google account and restoring them. Available from NAVIGATION_ONLY because a device in the strictest modes still has to sign in to things, and it shows nothing but codes."
+  "notes": "Two factor codes. Pin and version from the build installed from Play (7.2, versionCode 7002011), signed with Play App Signing (CN=Android, O=Google Inc.). No policy, so it is fully open inside the tunnel, by choice. The codes themselves are computed on the device and need no network; the network is for backing the accounts up to the Google account and restoring them. Available from NAVIGATION_ONLY because a device in the strictest modes still has to sign in to things, and it shows nothing but codes.",
+  "screenshots": [
+    "https://play-lh.googleusercontent.com/d8SmgK0c50lqQlBY4YB3cSmqCTg5-UnvL424zh1m_s8lEzqQW4Uzbnl-LAy0TibpSjKXbrdcX9lVMudDX994rg",
+    "https://play-lh.googleusercontent.com/K0v7YVrTI4T1rHkjrYzuPbRyB6VG2SuuNHyKoAIKbUnpi2n_G7HOtPFR__vT9Gnk229Pr0Kj17yO6-hRQj2Lgq0",
+    "https://play-lh.googleusercontent.com/L1rjVN3V0Hu9o-6zY5Rp_FWCtWd2XmIXcvNJy2P1x0rhWcdzCBSfqkZZNk6fXotvP9KS8Kd9I9iKyjVwImgvUg",
+    "https://play-lh.googleusercontent.com/Jvmb0fVVGKyIpRTjntISXTH1bv5fzaTqZ7lxvCk9i1OAr0_VphtLczEYQgDEkTu5p5cK70cj38sUCil7g67b",
+    "https://play-lh.googleusercontent.com/pXzvAkfAJWWthWh2VyarJSpcnAamcXEk_34CiVvAyopC879oMW2mGE8CvaqeNsICNgP2E0FU4fT-a550IN2x",
+    "https://play-lh.googleusercontent.com/CLA_X-VOeSLHlm1QY3_daAGCn3kL2hsGBPZOVcVQdKuepE6SBj41-uCE3bbXuswkxSD2H7TI--Ewi3-Vr3zucw",
+    "https://play-lh.googleusercontent.com/dHclNspOs3vc5NiA7paJrW19caGxZ5f7vxhPvjEvdaeTF8fxaUnLNfrYSqO7N0cdsPyGWzUEk0um9VmfZtXiLQ"
+  ]
 }

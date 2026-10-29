@@ -1,7 +1,7 @@
 {
   "packageName": "com.google.android.apps.nbu.files",
   "displayName": {
-    "he": "Files by Google",
+    "he": "Files by Google - סייר קבצים",
     "en": "Files by Google"
   },
   "category": "TOOLS",
@@ -17,5 +17,11 @@
     "type": "PLAY",
     "id": "com.google.android.apps.nbu.files"
   },
-  "notes": "A file manager for the device's own storage. Pin and version from the build installed from Play on the F21 Pro (1.9291, versionCode 1593359), signed with Play App Signing (CN=Android, O=Google Inc.). No network on purpose: browsing, opening, moving and cleaning up files all work offline, and what the network adds (cloud backup, cleaning suggestions) is not needed. It holds REQUEST_INSTALL_PACKAGES and can open an APK it finds on the storage; whether that installs is decided by the install restrictions on the device, not by this entry. Nearby Share goes over Bluetooth and Wi-Fi Direct, which the Bluetooth sharing restriction governs."
+  "notes": "A file manager for the device's own storage. Pin and version from the build installed from Play on the F21 Pro (1.9291, versionCode 1593359), signed with Play App Signing (CN=Android, O=Google Inc.). No network on purpose: browsing, opening, moving and cleaning up files all work offline, and what the network adds (cloud backup, cleaning suggestions) is not needed. It holds REQUEST_INSTALL_PACKAGES and can open an APK it finds on the storage; whether that installs is decided by the install restrictions on the device, not by this entry. Nearby Share goes over Bluetooth and Wi-Fi Direct, which the Bluetooth sharing restriction governs.",
+  "screenshots": [
+    "https://play-lh.googleusercontent.com/-JBeuyJc5bxmmypHE16W-wb4LuXhYGLrVerRf2z0QqFCWvHdNVJFS99LqpenGYpBQoPlrpa3DSOFs8bDFXSe",
+    "https://play-lh.googleusercontent.com/0qGSSrjDHFZettmn0jCmh_c591yzSdYj-OquqF6VvQxj_LbGeph9XZHdxySxG8-3EWPqU1TrrYPi-jyrBPHfavE",
+    "https://play-lh.googleusercontent.com/kUirNFSe6NExMHhtiLMd_YiVZyRCpnLb1CSZ_UlhN3tMujvQSZ5bw1pbJJKS-cSHk4isakwM2an0CWuZeGm8",
+    "https://play-lh.googleusercontent.com/2o0tUttFCI4xotBbXzR2_pKBF60yEa2uqgDO5vKs2hZESBHx29iTUAIiLHUPMvwDf-3c-apOeHycLguCQvAJqg"
+  ]
 }

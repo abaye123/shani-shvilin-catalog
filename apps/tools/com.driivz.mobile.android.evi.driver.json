@@ -10,12 +10,17 @@
   "availableInStore": true,
   "grantsNetworkAccess": true,
   "minUserMode": "NAVIGATION_ONLY",
-  "flags": {
-    "isRecommendedInStore": false
-  },
   "source": {
     "type": "PLAY",
     "id": "com.driivz.mobile.android.evi.driver"
   },
-  "notes": "Sonol EVI EV charging, on the Driivz platform. It reached mobile.sonolevi.co.il only. Payment SDKs (Stripe, Adyen, Braintree), Google Maps, Firebase. No ad SDK. No policy, so it is open inside the tunnel. Pin and version from the build installed from Play (9.1.20-9302ab832e, versionCode 27237), signed with the developer's own key (CN=Joseph Levy, O=Driivz LTD, C=IL)."
+  "notes": "Sonol EVI EV charging, on the Driivz platform. It reached mobile.sonolevi.co.il only. Payment SDKs (Stripe, Adyen, Braintree), Google Maps, Firebase. No ad SDK. No policy, so it is open inside the tunnel. Pin and version from the build installed from Play (9.1.20-9302ab832e, versionCode 27237), signed with the developer's own key (CN=Joseph Levy, O=Driivz LTD, C=IL).",
+  "screenshots": [
+    "https://play-lh.googleusercontent.com/ZQwGNZfekP0xRiQMIFK3kSyFNi9dOpZviAA0gnsJ4VBoDRr0JwRMmKuocL20s-rIDUywJdH_0EmLH-BrB_cv",
+    "https://play-lh.googleusercontent.com/V6romCxQDcjcoMMz8fVspjOx9faVZhJ-3XljS6TWTqDOWyKbC0bV3x5I2QOmtl4sPvsmNUJuHjp4K5ybQrJfQA",
+    "https://play-lh.googleusercontent.com/aaMt0OzTV8oOb_hh_mPJM6DNaGl_kDHJVWLL3iY5foh--Xb-qW8xWCEn5OkSQLWfUcvt5kpE2SZgiuzM5PZ62g",
+    "https://play-lh.googleusercontent.com/5uk7pS80mZjSNnvP9dbab8mMmcOaQUIdhuIbSIH5dnWUVr-YDVvI0O_F7JhQelaWkBgom3QHO5NRdpYFO2RzCg",
+    "https://play-lh.googleusercontent.com/unGydVYxhwrMIo4ygpE6XLK43drvKVEfsQp8zHIDBLzHjR2Yu5ytLkPbKNrcS2AFLt9h9DYWxzDveJX2yAjh_A",
+    "https://play-lh.googleusercontent.com/xjlz7pnojVRppPuWah6OI0gnSY0NR-BJNbsIy0voWqBfnwAPRA2SOoqUyZJkDSIj48YJbY-6KB3v6kBer6c8"
+  ]
 }

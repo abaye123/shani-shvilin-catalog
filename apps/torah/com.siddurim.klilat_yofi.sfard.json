@@ -17,5 +17,15 @@
     "type": "PLAY",
     "id": "com.siddurim.klilat_yofi.sfard"
   },
-  "notes": "Siddur, nusach Sfard, from Siddurim.com. No ad SDK; Firebase for sync, remote config and Crashlytics. Pin and version from the build installed from Play (3.5.4, versionCode 899), signed with the developer's own key (O=Siddurim.com)."
+  "notes": "Siddur, nusach Sfard, from Siddurim.com. No ad SDK; Firebase for sync, remote config and Crashlytics. Pin and version from the build installed from Play (3.5.4, versionCode 899), signed with the developer's own key (O=Siddurim.com).",
+  "screenshots": [
+    "https://play-lh.googleusercontent.com/MC_vwArW7n4JfKNYxlFIRxLrDggdIEsPo0CSIU74bsl5WAi8C_tWuJwGN5MuaqcL_68VYosD5w3eXUKIGEjI",
+    "https://play-lh.googleusercontent.com/j3pXLz2iyim2QMvAXl3mm_cJLZB8UZW-QwCbQshieiTWDFOQuDq6j0FRQUpzh4be2w_7V59o6QDs8h52BFLksg",
+    "https://play-lh.googleusercontent.com/l8VfIdFKy88At27Rhvlbz4Kl8DRRZ8d5mvs7VBcfTZq7kU2OfujdlItl5Lmk8MCAoyzgzeO36OcbCTj8UwgLXWE",
+    "https://play-lh.googleusercontent.com/O4pVab8oxQc-OLpjYA77MB7sgLRXm9CdaVdVG59DYP7em9k1taw9U68uV_4WMRg5Sql0gtrSrH4QFC5BGsouZg",
+    "https://play-lh.googleusercontent.com/Y1aXWFjAO8miKmDbcAVrzgnuSdoKY53K6pm5UTztRV5ms11N2-xMU2yvY5VeM_7PCd_OvS75B17y0b4U_Hju",
+    "https://play-lh.googleusercontent.com/cRDnONcUdHKqJacR1J-ZbOFY4zHACUuUAJ8X_J5zDdPHXgFUgAESDtJVB2-7Q90tx-nU3fpSqilZCltWn1g4",
+    "https://play-lh.googleusercontent.com/hYghIQzuLT1xrRbnLm3_iGhCeH3iaseN0pRoK_5srbxwnW2GksZU_BB30oED-TWh6To_UB59Ogy-uPoUfYt8",
+    "https://play-lh.googleusercontent.com/2t5u6XbqhdpZQ2q6FJxmcxRd3PQZOtcOwFfElKvHJv0YEz2SJrC2py_xDjYNx8PvPQ9G8E_Lx4O_Q9DVdM3iiA"
+  ]
 }

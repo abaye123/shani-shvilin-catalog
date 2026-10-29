@@ -10,12 +10,13 @@
   "availableInStore": true,
   "grantsNetworkAccess": true,
   "minUserMode": "NAVIGATION_ONLY",
-  "flags": {
-    "isRecommendedInStore": false
-  },
   "source": {
     "type": "PLAY",
     "id": "il.org.startach.theplatform.android.yedidim"
   },
-  "notes": "Yedidim volunteer roadside assistance: calls for help and volunteer dispatch, with background location. Flutter, Google Maps, Firebase, Sentry and PostHog. No ad SDK. Pin and version from the build installed from Play (2.10.140, versionCode 320), signed with Play App Signing (CN=Android, O=Google Inc.)."
+  "notes": "Yedidim volunteer roadside assistance: calls for help and volunteer dispatch, with background location. Flutter, Google Maps, Firebase, Sentry and PostHog. No ad SDK. Pin and version from the build installed from Play (2.10.140, versionCode 320), signed with Play App Signing (CN=Android, O=Google Inc.).",
+  "screenshots": [
+    "https://play-lh.googleusercontent.com/QKmGaa0qrYJ9SUX9S06IGJCQDcMh1JI6PnCMUO5j0JTdIpFKasHSWQ6DciTO7VdpiiMR9op3qEo-I7lyPUSbT_Q",
+    "https://play-lh.googleusercontent.com/cDNFQFE75GL8u7xsQYptu_ccf6eM1hwOuxJ1h7rI-tdMNozJhY4Pj7aIOl4Xf6hmblG_OYvvzYPmhjxXHqO5qg"
+  ]
 }

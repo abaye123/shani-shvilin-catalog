@@ -1,7 +1,7 @@
 {
   "packageName": "il.co.yellow.app",
   "displayName": {
-    "he": "Yellow",
+    "he": "Yellow - פז ילו",
     "en": "Yellow"
   },
   "category": "TOOLS",
@@ -11,12 +11,19 @@
   "grantsNetworkAccess": true,
   "minUserMode": "MOST_OPEN",
   "flags": {
-    "hasUnmodestImage": true,
-    "isRecommendedInStore": false
+    "hasUnmodestImage": true
   },
   "source": {
     "type": "PLAY",
     "id": "il.co.yellow.app"
   },
-  "notes": "Paz fuelling and Yellow club. Flagged hasUnmodestImage: the home screen and What's New show marketing images and stories served by Paz, which change without a release. AppsFlyer, Emarsys, Facebook SDK, New Relic. Pin and version from the build installed from Play (8.13.0.1344, versionCode 1344), signed with the developer's own key (CN=Paz Oil, O=Paz Oil Company Ltd, C=IL). The flag keeps it out of REDUCED_RISK and asks for explicit acceptance; MOST_OPEN is stated so the entry says what the flag already means."
+  "notes": "Paz fuelling and Yellow club. Flagged hasUnmodestImage: the home screen and What's New show marketing images and stories served by Paz, which change without a release. AppsFlyer, Emarsys, Facebook SDK, New Relic. Pin and version from the build installed from Play (8.13.0.1344, versionCode 1344), signed with the developer's own key (CN=Paz Oil, O=Paz Oil Company Ltd, C=IL). The flag keeps it out of REDUCED_RISK and asks for explicit acceptance; MOST_OPEN is stated so the entry says what the flag already means.",
+  "screenshots": [
+    "https://play-lh.googleusercontent.com/AbAPoEQ9f8QhO1GQxPQPuHtQCtwVvUauIFIljqZKswPDYqEEJAGTfZSRbV7KuWa2nGnTB25z490ZKkrLi17feA",
+    "https://play-lh.googleusercontent.com/Aqt9IvoWX9x4f5H-yUTJk2RuRRDasfSjqhobWHD1O8AfAPqtUJeUyewsCAj8hNCuxYd7JalPooxFU1DplHDhf8I",
+    "https://play-lh.googleusercontent.com/8_zLfCFb5tITSvPtUY4FuvGyldyqH0vUlaeHEzwSRw9DRgXUp6wbX7l1cTjjEUT99iGLidRowkcJbUYNLsSXqMQ",
+    "https://play-lh.googleusercontent.com/VocD3M-aBdp_tm3xYZMSsqPA1RW6w7XsIEm6NrjIBPq1pY20M8h32vUb5OirmyzoTdsFonBKlr-6u181AZT0Ew",
+    "https://play-lh.googleusercontent.com/WNwqfZKH8pnPYEqieyzwoxc3eaveorzYzlClR6hFReCB_dn6P1kX-bBmEa3UpBdRqhaTc4UVwm-GpSgAMTUEbI0",
+    "https://play-lh.googleusercontent.com/tAqdxhv0WZSH_bRvTG1o7FOZaqssU29nl58gox14_fGK__iZSxXQPIEivdp2x2hdMESaui0ULWD0DUm1l4fLSAY"
+  ]
 }

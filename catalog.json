@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-29T21:58:20Z",
+  "generatedAt": "2026-10-29T22:27:33Z",
   "entries": [
     {
       "packageName": "air.com.cellogroup.Cellopark",
@@ -14,14 +14,18 @@
       "availableInStore": true,
       "grantsNetworkAccess": true,
       "minUserMode": "NAVIGATION_ONLY",
-      "flags": {
-        "isRecommendedInStore": false
-      },
       "source": {
         "type": "PLAY",
         "id": "air.com.cellogroup.Cellopark"
       },
-      "notes": "Parking payments, which is part of driving, so it sits beside Pango. No policy: nobody has measured which hosts it needs, and a host list invented for it would be a guess wearing the clothes of a rule."
+      "notes": "Parking payments, which is part of driving, so it sits beside Pango. No policy: nobody has measured which hosts it needs, and a host list invented for it would be a guess wearing the clothes of a rule.",
+      "screenshots": [
+        "https://play-lh.googleusercontent.com/0Rve0P5qrByH28raIb8rCnOImHaAvFDBJh9U8SxMcgREBVJ_SOUrhLv8zER4RpTgjP1HSJdw9ltTbGZcKmhT2A",
+        "https://play-lh.googleusercontent.com/CKk_NVYPXPpKftavttVUwtiSddPy06FfgtRcxDowcVAoHnWq5HX0TmYKvrs_6G-BW-TSoTI3cfheZVX5gSOW2w",
+        "https://play-lh.googleusercontent.com/9R0u--p61QPsf9ZpC-hSLC6cPndrHpxlBpLpM2xJkxKgFcVp_vdCnqKi0Nhn96k4esWgVLrmDE1bVjDSEGHIqQ",
+        "https://play-lh.googleusercontent.com/q8VDnhZdYb2NNC4CYx_k4kO4CrE2hsgSo8SYXe1OL2yM7ylxVOTc1tVmiGCCh5M6drZc_UFG7o5pCJupJedo",
+        "https://play-lh.googleusercontent.com/J1Ul6dW6iXPmBvF1GBGX2ZID1VSHr5gWqEt5uAug7NY34tjIFhNixxCEuD-3wwQOTgrD7OTd-S5EThXPmqtGEQ"
+      ]
     },
     {
       "packageName": "bitgroup.weather2day",
@@ -35,14 +39,21 @@
       "availableInStore": true,
       "grantsNetworkAccess": true,
       "minUserMode": "REDUCED_RISK",
-      "flags": {
-        "isRecommendedInStore": false
-      },
       "source": {
         "type": "PLAY",
         "id": "bitgroup.weather2day"
       },
-      "notes": "Israeli weather forecasts. Pin and version from the build installed from Play (2.24, versionCode 94), signed with the developer's own key (CN=111111). It is a WebViewActivity around the mobile site, m.weather2day.co.il, with AdMob on top: banners, interstitials, rewarded and native ads, which carry pictures. The policy blocks the ad hosts; see it for what it cannot reach."
+      "notes": "Israeli weather forecasts. Pin and version from the build installed from Play (2.24, versionCode 94), signed with the developer's own key (CN=111111). It is a WebViewActivity around the mobile site, m.weather2day.co.il, with AdMob on top: banners, interstitials, rewarded and native ads, which carry pictures. The policy blocks the ad hosts; see it for what it cannot reach.",
+      "screenshots": [
+        "https://play-lh.googleusercontent.com/2kWHe1h4Ue1WzXJmaZ_lKQx0LGplrLdHlTgcUJIEY3RyPLJBcguQHFCEZJZWnhLtNUnOLJ0EEqZVOnFFKDhZxw",
+        "https://play-lh.googleusercontent.com/CAd7Tzbmq4-VfvJ6XGZUn7LwR0-rdKIx5g4kqdavYv0pMjSU1Bijd61U42ONjdm7Qc7aVOfjpvz6CEBCUIZD",
+        "https://play-lh.googleusercontent.com/vjV5rkkwN1dK1RgcSS6ddebqLuo7piR4srPHdsvJtPtTTnpZJXAM15ubVgv8qRu66ZXiyq3_8NU5XZNKHutzCck",
+        "https://play-lh.googleusercontent.com/SX8IxsAEStb6MQfRsC46NVkjQ9AEESVY3rGqdg7e9cin0xJdcDEBognatlU9JzIUlewNsyi6fO-cxZCkNgce",
+        "https://play-lh.googleusercontent.com/_KEsJBrlm6SB9vcT9MyJpe0phw3UwSoTHipRkPFVwptEpU8VzeOzCtw7q7-8F9jQRs5r901-LtYwpF5h8sd_IHo",
+        "https://play-lh.googleusercontent.com/vNHfNQyw3_oTBp-SW9a4BRpyRVL1Ci1l9IBAE5VvKATbt9_tGC7Ln0mn_w3l_ZCdMFsG6prgCOBFtSRZNtoYCA",
+        "https://play-lh.googleusercontent.com/x5Bmilo5xhVlJspdRPVpF0qT4XKM01sVD-zAToAUmeiI4KMEH4A_UfwnEyajHtI3CHsP0vk-xRWw_ZCfFAld3w",
+        "https://play-lh.googleusercontent.com/aXQUdJJhJWuhsxxrsxfQzNv_aAFrkaC-cihv2edvtXjlMJRp8jyFOrN99zM3L8jcO7mB0A1z3b0jQSzYqL8q"
+      ]
     },
     {
       "packageName": "co.abaye.mailtice",
@@ -94,7 +105,7 @@
     {
       "packageName": "co.bird.android",
       "displayName": {
-        "he": "בירד",
+        "he": "Bird - רכיבה חשמלית",
         "en": "Bird"
       },
       "category": "NAVIGATION",
@@ -104,14 +115,17 @@
       "grantsNetworkAccess": true,
       "minUserMode": "MOST_OPEN",
       "flags": {
-        "hasUnmodestImage": true,
-        "isRecommendedInStore": false
+        "hasUnmodestImage": true
       },
       "source": {
         "type": "PLAY",
         "id": "co.bird.android"
       },
-      "notes": "Shared scooters. Flagged hasUnmodestImage: the sign in screen plays a video of people riding (res/raw/intro_video.mp4), packaged in the APK, so the tunnel cannot remove it. Braze, Stripe, Braintree and PayPal, Persona for identity checks, Zendesk. Pin and version from the build installed from Play (4.421.0.1, versionCode 908560), signed with the developer's own key (CN=Bird Ride, O=Bird Rides, L=Santa Monica, ST=CA, C=01). The flag keeps it out of REDUCED_RISK and asks for explicit acceptance; MOST_OPEN is stated so the entry says what the flag already means."
+      "notes": "Shared scooters. Flagged hasUnmodestImage: the sign in screen plays a video of people riding (res/raw/intro_video.mp4), packaged in the APK, so the tunnel cannot remove it. Braze, Stripe, Braintree and PayPal, Persona for identity checks, Zendesk. Pin and version from the build installed from Play (4.421.0.1, versionCode 908560), signed with the developer's own key (CN=Bird Ride, O=Bird Rides, L=Santa Monica, ST=CA, C=01). The flag keeps it out of REDUCED_RISK and asks for explicit acceptance; MOST_OPEN is stated so the entry says what the flag already means.",
+      "screenshots": [
+        "https://play-lh.googleusercontent.com/R0gIdTHSJezJppfAyFTpTKnInoItZwm1GXK7Zahcl9AMG_6Z-Eh3RoYav-RBlaNF1KSrVFiGYVVjgCCPBz4dudA",
+        "https://play-lh.googleusercontent.com/3AmmMqJ8w81ffSybjpMjcL8-Y5Mvm1qPKtD2uLYcR00c9rkEV8jF84uTw1DIGF1I6uo2Vccizj93ZR_dSpiRoQ"
+      ]
     },
     {
       "packageName": "com.abaye.derechkohanim",
@@ -166,7 +180,7 @@
     {
       "packageName": "com.amudanan.amudanan",
       "displayName": {
-        "he": "עמוד ענן",
+        "he": "עמוד ענן - מדריך הטיולים החברתי",
         "en": "Amud Anan"
       },
       "category": "NAVIGATION",
@@ -176,14 +190,23 @@
       "grantsNetworkAccess": true,
       "minUserMode": "MOST_OPEN",
       "flags": {
-        "hasUnmodestImage": true,
-        "isRecommendedInStore": false
+        "hasUnmodestImage": true
       },
       "source": {
         "type": "PLAY",
         "id": "com.amudanan.amudanan"
       },
-      "notes": "Hiking and offroad maps. Flutter, Mapbox and MapLibre, Firebase and the Facebook SDK. Flagged hasUnmodestImage, like Israel Hiking Map: points of interest carry photos users upload. Pin and version from the build installed from Play (2.4.3, versionCode 2004031), signed with the developer's own key (CN=Yoav Rofe, OU=Amud Anan, O=Amud Anan, L=Jerusalem, ST=Jerusalem, C=IL). The flag keeps it out of REDUCED_RISK and asks for explicit acceptance; MOST_OPEN is stated so the entry says what the flag already means."
+      "notes": "Hiking and offroad maps. Flutter, Mapbox and MapLibre, Firebase and the Facebook SDK. Flagged hasUnmodestImage, like Israel Hiking Map: points of interest carry photos users upload. Pin and version from the build installed from Play (2.4.3, versionCode 2004031), signed with the developer's own key (CN=Yoav Rofe, OU=Amud Anan, O=Amud Anan, L=Jerusalem, ST=Jerusalem, C=IL). The flag keeps it out of REDUCED_RISK and asks for explicit acceptance; MOST_OPEN is stated so the entry says what the flag already means.",
+      "screenshots": [
+        "https://play-lh.googleusercontent.com/ROzk2oK3_S35j4YYZLBcHw12CgPm7AOTMvjaxizQiadb_e4-V-EXkz0gkymCZWj9Re7ZOJn-CuPwOWCkMXVeI00",
+        "https://play-lh.googleusercontent.com/ZeG6M9o7ciyKEor51zF0DA1Cw_1qc2L9N7RluEfDz1Wq1JRsPZg0ApsGOrCNT6xLhJYfNKmUdGMEUOgIjiFIpA",
+        "https://play-lh.googleusercontent.com/ttl6mRk7Vx3VO0ox_qeKDoUqzQE-jLtP9lt820evCDnQwopgCM1A7FLLVM-00yUFfWPxqs7LNey-J7lFb7DySQ",
+        "https://play-lh.googleusercontent.com/uvXd0WKzxF1DpfiRW7PKuy78qrDWQP-FmOF9jgMgkdGO252mIrTSfyEs2bUNlxzFS5dbKJ7Et5fuYJyUvoPw",
+        "https://play-lh.googleusercontent.com/cQnPTf3TUToRyx8b4viSwWccjb948ungD4nojS88eeNOsalzTMEFbo9J-0LZGzu3O1qCXS3kJBKsR1p3SCF2RA",
+        "https://play-lh.googleusercontent.com/MuHaQDv1oP2t8rFnqlD06DUVUS70C8WeTKoMRHJaokm9NtzU_Vc81S27wy5CiobcCU2aOC1r5Fj1o7GcBht1Ug4",
+        "https://play-lh.googleusercontent.com/ZvMYVDLOdve6vcnn3XRieHzcO8tN3arsb7NjjhtTyghMlVS-og2Kpevl7YpjxNpf-HQgnPFOtXMy9tloqTMCaA",
+        "https://play-lh.googleusercontent.com/ViTqgRc_ozC1R9Qhh_18sujbdXEsjdEv0uN-RIAwxLbYPHbMTDlwA3rzCrmENkjYfLXEVz5f3YKI3atTOecg"
+      ]
     },
     {
       "packageName": "com.app.GoSurf",
@@ -241,14 +264,16 @@
       "availableInStore": true,
       "grantsNetworkAccess": true,
       "minUserMode": "NAVIGATION_ONLY",
-      "flags": {
-        "isRecommendedInStore": false
-      },
       "source": {
         "type": "PLAY",
         "id": "com.bluegate.app"
       },
-      "notes": "Opening gates and barriers by phone. Its network security configuration names api1.pal-es.com and that is all it reached. Firebase and Google Maps. No ad SDK. No policy, so it is open inside the tunnel. Most of the host list extract_hosts.py prints for it is the public suffix list bundled in a library, not hosts it reaches. Pin and version from the build installed from Play (1.6.0076, versionCode 447), signed with the developer's own key (CN=Nisso Pardo, OU=Developer, O=Pal-Electronics, L=Ranana, ST=Israel, C=972)."
+      "notes": "Opening gates and barriers by phone. Its network security configuration names api1.pal-es.com and that is all it reached. Firebase and Google Maps. No ad SDK. No policy, so it is open inside the tunnel. Most of the host list extract_hosts.py prints for it is the public suffix list bundled in a library, not hosts it reaches. Pin and version from the build installed from Play (1.6.0076, versionCode 447), signed with the developer's own key (CN=Nisso Pardo, OU=Developer, O=Pal-Electronics, L=Ranana, ST=Israel, C=972).",
+      "screenshots": [
+        "https://play-lh.googleusercontent.com/QLjinAdH61Aa2rMlsG44Ba3KW7lf5sBKxx_O-vru79kIh49lCzZAaEVMbWHDoujI7qNPHmpyMRs4i6mtKzbtUA",
+        "https://play-lh.googleusercontent.com/P_ba33loNNLnlbd2Rs-owQ3nxnmiTZjgRKcIIQo-eBSqQSkCgOQqd-jNgVJe9lUGYI1CwQ5ertpXTq7ZfHJvb2Y",
+        "https://play-lh.googleusercontent.com/eWHvUmqoZLgCCmG5gaSg5cjut--AXQlATVbLPq7IgnfcBlsMz504lBFZ8e1ffza_PAsICsJVcYyNryGdBIHzlBY"
+      ]
     },
     {
       "packageName": "com.centralpark.mobile",
@@ -262,14 +287,18 @@
       "availableInStore": true,
       "grantsNetworkAccess": true,
       "minUserMode": "NAVIGATION_ONLY",
-      "flags": {
-        "isRecommendedInStore": false
-      },
       "source": {
         "type": "PLAY",
         "id": "com.centralpark.mobile"
       },
-      "notes": "Parking payment. React Native, Google Maps, Firebase and AppsFlyer. No ad SDK. Pin and version from the build installed from Play (3.2.0, versionCode 309), signed with Play App Signing (CN=Android, O=Google Inc.)."
+      "notes": "Parking payment. React Native, Google Maps, Firebase and AppsFlyer. No ad SDK. Pin and version from the build installed from Play (3.2.0, versionCode 309), signed with Play App Signing (CN=Android, O=Google Inc.).",
+      "screenshots": [
+        "https://play-lh.googleusercontent.com/lWkEd-qSnA5wcMEXVYJEyhvukpX3aCxU5ZzpiFhAAvxoaXloBpv9HkUh7gEmeefDIUhL8OvMGWB_LI3LWvAGXw",
+        "https://play-lh.googleusercontent.com/Ll4fesNNXH2LbW_qGWyFdXLi5BmAy-Oqpmfsw95Ma2hhSDvL5LZcfKK4WYcvnxYwj3DIn7hyRBqQGkKBMQd5Xg",
+        "https://play-lh.googleusercontent.com/uYXdFSTwVi0oaf93YpFxOVdYzErBnD_0q3tMSJYbYQ4QtK_TNJde3ecZ-QD0Yh_YR_bwvDXFMZ0rKURmNuPZ4g",
+        "https://play-lh.googleusercontent.com/PPRNsvv34Y3HmskW7JFSasUIHUk8qTiYI_Lawu5KORuqakfN_Yzx7WUYbsmfxIwtI2EUir3a-mHdPznmaJwnNW0",
+        "https://play-lh.googleusercontent.com/rwSLKRD3RiHR9RG8TV7mce9HnIzc0c-vILC-uQzNBShTkV54DVNf6xKo23ykdJq0Wa9ndl1qN91a3Ohvi6zSvQ"
+      ]
     },
     {
       "packageName": "com.doscast.app",
@@ -284,14 +313,18 @@
       "grantsNetworkAccess": true,
       "minUserMode": "MOST_OPEN",
       "flags": {
-        "hasUnmodestImage": true,
-        "isRecommendedInStore": false
+        "hasUnmodestImage": true
       },
       "source": {
         "type": "PLAY",
         "id": "com.doscast.app"
       },
-      "notes": "Podcasts and shiurim. It carries video: a YouTube and Vimeo player and VAST video ads (go.aniview.com, Google IMA). Flagged hasUnmodestImage because episode artwork and video come from the server and cannot be known in advance. Pin and version from the build installed from Play (2.9.8, versionCode 20908), signed with Play App Signing (CN=Android, O=Google Inc.). The flag keeps it out of REDUCED_RISK and asks for explicit acceptance; MOST_OPEN is stated so the entry says what the flag already means."
+      "notes": "Podcasts and shiurim. It carries video: a YouTube and Vimeo player and VAST video ads (go.aniview.com, Google IMA). Flagged hasUnmodestImage because episode artwork and video come from the server and cannot be known in advance. Pin and version from the build installed from Play (2.9.8, versionCode 20908), signed with Play App Signing (CN=Android, O=Google Inc.). The flag keeps it out of REDUCED_RISK and asks for explicit acceptance; MOST_OPEN is stated so the entry says what the flag already means.",
+      "screenshots": [
+        "https://play-lh.googleusercontent.com/WRjWhtrrO_5EvkWU9TZcAXRjPmY0YR4iqVJCibgymA35phXm3BtTFM5qC-cL-HSjUlFcYJhgbSYvwfAhOb7drA",
+        "https://play-lh.googleusercontent.com/Y4wMghzOlJNZLZVmG8jRsYAMonFO5y4li2qaYuatFA5jfdUjbfqcVCHK5JiISK3rPY7yv6zinXpdCOdPnx6l",
+        "https://play-lh.googleusercontent.com/xpwCizW58HBIcgrwNjIX75jncvzBwPqd8ZRBLEM6vWcxJtVZeRzvRozqAkh2OFAUPquQOiKx9Y5l4_h_TIyzyGU"
+      ]
     },
     {
       "packageName": "com.driivz.mobile.android.afcon.driver",
@@ -305,14 +338,20 @@
       "availableInStore": true,
       "grantsNetworkAccess": true,
       "minUserMode": "NAVIGATION_ONLY",
-      "flags": {
-        "isRecommendedInStore": false
-      },
       "source": {
         "type": "PLAY",
         "id": "com.driivz.mobile.android.afcon.driver"
       },
-      "notes": "Afcon EV charging, on the Driivz platform. It reached mobile.afconev.co.il only. Payment SDKs (Stripe, Adyen, Braintree), Google Maps, Firebase. No ad SDK. No policy, so it is open inside the tunnel. Pin and version from the build installed from Play (9.1.23-a691ee5218, versionCode 27252), signed with Play App Signing (CN=Android, O=Google Inc.)."
+      "notes": "Afcon EV charging, on the Driivz platform. It reached mobile.afconev.co.il only. Payment SDKs (Stripe, Adyen, Braintree), Google Maps, Firebase. No ad SDK. No policy, so it is open inside the tunnel. Pin and version from the build installed from Play (9.1.23-a691ee5218, versionCode 27252), signed with Play App Signing (CN=Android, O=Google Inc.).",
+      "screenshots": [
+        "https://play-lh.googleusercontent.com/fMu_4SQKGNtwxu2An92WUhB5rgnnxi-_wtp3dU3krlu0oRihOspwwazDosq1AjB2oEuWzayJqa20XolOa80Bcg",
+        "https://play-lh.googleusercontent.com/teK92xlAE3yEPG4427WjvL5EWCv_ArGqxzVStMgy1cs0bAnbf1zM__aJBXXHzEQUShJDM4KA6fpV54zSOZs7kGs",
+        "https://play-lh.googleusercontent.com/8HMsF0ueR14wOWKq0k8DWaPe7RTiywSxj_FerZ2KKN8co-mWcWNzWNWN6WrcIcMHs9L48xJD0ZZoH0tWbQnlRQ",
+        "https://play-lh.googleusercontent.com/873d4msdWeWqvoSAi7lWwYBJ34-LLcpfdQGTEHgDjcbvjilW6c0wvu4EAvNKQlM6wbWurSA3VwLl36nWHsjDz-M",
+        "https://play-lh.googleusercontent.com/fYL4yA_q8PYYV9Jy6TfF0mG2ZWtAFLo29DBjmnce_jAFxmPSz1VZe8pVMPrXjehuLWtYemsyqubOsIGppyMvc34",
+        "https://play-lh.googleusercontent.com/-962eCoEd2htEmuANug-VTDh3OniB2w6_FVRGzpvJIrK2M2tirDQt8aJuXzFHQP0YqWSfleVA-UwbDDd6de958w",
+        "https://play-lh.googleusercontent.com/if372KFfclBoChZkfe5fredJTrAg4KG_eILGfMrnG7y-cmBc3ERizz-9e1gx2DWzPVhYiJCgfwHs34YgZL1FbQ"
+      ]
     },
     {
       "packageName": "com.driivz.mobile.android.evi.driver",
@@ -326,20 +365,25 @@
       "availableInStore": true,
       "grantsNetworkAccess": true,
       "minUserMode": "NAVIGATION_ONLY",
-      "flags": {
-        "isRecommendedInStore": false
-      },
       "source": {
         "type": "PLAY",
         "id": "com.driivz.mobile.android.evi.driver"
       },
-      "notes": "Sonol EVI EV charging, on the Driivz platform. It reached mobile.sonolevi.co.il only. Payment SDKs (Stripe, Adyen, Braintree), Google Maps, Firebase. No ad SDK. No policy, so it is open inside the tunnel. Pin and version from the build installed from Play (9.1.20-9302ab832e, versionCode 27237), signed with the developer's own key (CN=Joseph Levy, O=Driivz LTD, C=IL)."
+      "notes": "Sonol EVI EV charging, on the Driivz platform. It reached mobile.sonolevi.co.il only. Payment SDKs (Stripe, Adyen, Braintree), Google Maps, Firebase. No ad SDK. No policy, so it is open inside the tunnel. Pin and version from the build installed from Play (9.1.20-9302ab832e, versionCode 27237), signed with the developer's own key (CN=Joseph Levy, O=Driivz LTD, C=IL).",
+      "screenshots": [
+        "https://play-lh.googleusercontent.com/ZQwGNZfekP0xRiQMIFK3kSyFNi9dOpZviAA0gnsJ4VBoDRr0JwRMmKuocL20s-rIDUywJdH_0EmLH-BrB_cv",
+        "https://play-lh.googleusercontent.com/V6romCxQDcjcoMMz8fVspjOx9faVZhJ-3XljS6TWTqDOWyKbC0bV3x5I2QOmtl4sPvsmNUJuHjp4K5ybQrJfQA",
+        "https://play-lh.googleusercontent.com/aaMt0OzTV8oOb_hh_mPJM6DNaGl_kDHJVWLL3iY5foh--Xb-qW8xWCEn5OkSQLWfUcvt5kpE2SZgiuzM5PZ62g",
+        "https://play-lh.googleusercontent.com/5uk7pS80mZjSNnvP9dbab8mMmcOaQUIdhuIbSIH5dnWUVr-YDVvI0O_F7JhQelaWkBgom3QHO5NRdpYFO2RzCg",
+        "https://play-lh.googleusercontent.com/unGydVYxhwrMIo4ygpE6XLK43drvKVEfsQp8zHIDBLzHjR2Yu5ytLkPbKNrcS2AFLt9h9DYWxzDveJX2yAjh_A",
+        "https://play-lh.googleusercontent.com/xjlz7pnojVRppPuWah6OI0gnSY0NR-BJNbsIy0voWqBfnwAPRA2SOoqUyZJkDSIj48YJbY-6KB3v6kBer6c8"
+      ]
     },
     {
       "packageName": "com.egged.egg",
       "displayName": {
-        "he": "אגד",
-        "en": "Egged"
+        "he": "אג - ניווט בתחבורה ציבורית",
+        "en": "Egg"
       },
       "category": "NAVIGATION",
       "minimumVersionCode": 400001098,
@@ -372,19 +416,27 @@
       "grantsNetworkAccess": true,
       "minUserMode": "MOST_OPEN",
       "flags": {
-        "hasUnmodestImage": true,
-        "isRecommendedInStore": false
+        "hasUnmodestImage": true
       },
       "source": {
         "type": "PLAY",
         "id": "com.elhamaayan.app"
       },
-      "notes": "Map of springs. A Capacitor web application backed by Supabase (sbnbfpihfhsyctumpqod.supabase.co), with Leaflet maps from MapTiler, OpenStreetMap and govmap. No ad SDK and no analytics. No policy, so it is open inside the tunnel. Flagged hasUnmodestImage: spring photos come from upload.wikimedia.org and from users, and a photo of a spring may show bathers. Blocking the photo hosts was considered and left out for now. Pin and version from the build installed from Play (1.0.0, versionCode 11), signed with Play App Signing (CN=Android, O=Google Inc.). The flag keeps it out of REDUCED_RISK and asks for explicit acceptance; MOST_OPEN is stated so the entry says what the flag already means."
+      "notes": "Map of springs. A Capacitor web application backed by Supabase (sbnbfpihfhsyctumpqod.supabase.co), with Leaflet maps from MapTiler, OpenStreetMap and govmap. No ad SDK and no analytics. No policy, so it is open inside the tunnel. Flagged hasUnmodestImage: spring photos come from upload.wikimedia.org and from users, and a photo of a spring may show bathers. Blocking the photo hosts was considered and left out for now. Pin and version from the build installed from Play (1.0.0, versionCode 11), signed with Play App Signing (CN=Android, O=Google Inc.). The flag keeps it out of REDUCED_RISK and asks for explicit acceptance; MOST_OPEN is stated so the entry says what the flag already means.",
+      "screenshots": [
+        "https://play-lh.googleusercontent.com/dzJ0RJk2ieaqq4k-Sj9b-fHD_ieXbJhfDYsazrExnDIo19J2AMh0oAJdqZciyn-YaFj9LLFsBMWSm3NmJy3DXQ",
+        "https://play-lh.googleusercontent.com/VVUIlwiY6zRji7xHDpt-iO5tRM6R8z4iBOYYq44Rsxh86b3ec_C8OwzvWd5J8yuXhmECtTczF2EmUkq3gfCNdcY",
+        "https://play-lh.googleusercontent.com/BoezrSp2fT_bsCpDtwaRj8Cv8t76oPdlhq3kqOWRZL-56iBTXXNGEJkRH_calMTyZNpYQr0TmLOtBzNsh0bbMgM",
+        "https://play-lh.googleusercontent.com/Kif05woioMsM1oSJcjB5KW4_brUYMFBaIrr-sy5qTH8utw0ZECn1QcYsgGn-4ENcxAGoCjvBfQIXDmHRn6PF",
+        "https://play-lh.googleusercontent.com/HdhYf5shigW9UT2BcycdBc7-vsg41MGQbJzzTMXVLNOfZuH1OxJlvsih2f2mimdwKm9cWEeuFDEtZtSaunKGYg",
+        "https://play-lh.googleusercontent.com/mPgL7_dQshXbRHBijlww3u3lqW3QFj-76OMkB5EMKwR6K-Tb8O_Y-Pbx-xJzF1vNWsl7o_hN72H4k6MDeS8lgwo",
+        "https://play-lh.googleusercontent.com/F8oOQO5A9zYcGOaBxshzvhNXPxBGEzwPKz2cD6WSgVJ-a4WkpsSIIrWjluoxJ8ghEGTeM9nwOcnXSZHH_ID9qQ"
+      ]
     },
     {
       "packageName": "com.google.android.apps.authenticator2",
       "displayName": {
-        "he": "Google Authenticator",
+        "he": "מאמת החשבונות של Google",
         "en": "Google Authenticator"
       },
       "category": "TOOLS",
@@ -393,14 +445,20 @@
       "availableInStore": true,
       "grantsNetworkAccess": true,
       "minUserMode": "NAVIGATION_ONLY",
-      "flags": {
-        "isRecommendedInStore": false
-      },
       "source": {
         "type": "PLAY",
         "id": "com.google.android.apps.authenticator2"
       },
-      "notes": "Two factor codes. Pin and version from the build installed from Play (7.2, versionCode 7002011), signed with Play App Signing (CN=Android, O=Google Inc.). No policy, so it is fully open inside the tunnel, by choice. The codes themselves are computed on the device and need no network; the network is for backing the accounts up to the Google account and restoring them. Available from NAVIGATION_ONLY because a device in the strictest modes still has to sign in to things, and it shows nothing but codes."
+      "notes": "Two factor codes. Pin and version from the build installed from Play (7.2, versionCode 7002011), signed with Play App Signing (CN=Android, O=Google Inc.). No policy, so it is fully open inside the tunnel, by choice. The codes themselves are computed on the device and need no network; the network is for backing the accounts up to the Google account and restoring them. Available from NAVIGATION_ONLY because a device in the strictest modes still has to sign in to things, and it shows nothing but codes.",
+      "screenshots": [
+        "https://play-lh.googleusercontent.com/d8SmgK0c50lqQlBY4YB3cSmqCTg5-UnvL424zh1m_s8lEzqQW4Uzbnl-LAy0TibpSjKXbrdcX9lVMudDX994rg",
+        "https://play-lh.googleusercontent.com/K0v7YVrTI4T1rHkjrYzuPbRyB6VG2SuuNHyKoAIKbUnpi2n_G7HOtPFR__vT9Gnk229Pr0Kj17yO6-hRQj2Lgq0",
+        "https://play-lh.googleusercontent.com/L1rjVN3V0Hu9o-6zY5Rp_FWCtWd2XmIXcvNJy2P1x0rhWcdzCBSfqkZZNk6fXotvP9KS8Kd9I9iKyjVwImgvUg",
+        "https://play-lh.googleusercontent.com/Jvmb0fVVGKyIpRTjntISXTH1bv5fzaTqZ7lxvCk9i1OAr0_VphtLczEYQgDEkTu5p5cK70cj38sUCil7g67b",
+        "https://play-lh.googleusercontent.com/pXzvAkfAJWWthWh2VyarJSpcnAamcXEk_34CiVvAyopC879oMW2mGE8CvaqeNsICNgP2E0FU4fT-a550IN2x",
+        "https://play-lh.googleusercontent.com/CLA_X-VOeSLHlm1QY3_daAGCn3kL2hsGBPZOVcVQdKuepE6SBj41-uCE3bbXuswkxSD2H7TI--Ewi3-Vr3zucw",
+        "https://play-lh.googleusercontent.com/dHclNspOs3vc5NiA7paJrW19caGxZ5f7vxhPvjEvdaeTF8fxaUnLNfrYSqO7N0cdsPyGWzUEk0um9VmfZtXiLQ"
+      ]
     },
     {
       "packageName": "com.google.android.apps.maps",
@@ -433,7 +491,7 @@
     {
       "packageName": "com.google.android.apps.nbu.files",
       "displayName": {
-        "he": "Files by Google",
+        "he": "Files by Google - סייר קבצים",
         "en": "Files by Google"
       },
       "category": "TOOLS",
@@ -449,12 +507,18 @@
         "type": "PLAY",
         "id": "com.google.android.apps.nbu.files"
       },
-      "notes": "A file manager for the device's own storage. Pin and version from the build installed from Play on the F21 Pro (1.9291, versionCode 1593359), signed with Play App Signing (CN=Android, O=Google Inc.). No network on purpose: browsing, opening, moving and cleaning up files all work offline, and what the network adds (cloud backup, cleaning suggestions) is not needed. It holds REQUEST_INSTALL_PACKAGES and can open an APK it finds on the storage; whether that installs is decided by the install restrictions on the device, not by this entry. Nearby Share goes over Bluetooth and Wi-Fi Direct, which the Bluetooth sharing restriction governs."
+      "notes": "A file manager for the device's own storage. Pin and version from the build installed from Play on the F21 Pro (1.9291, versionCode 1593359), signed with Play App Signing (CN=Android, O=Google Inc.). No network on purpose: browsing, opening, moving and cleaning up files all work offline, and what the network adds (cloud backup, cleaning suggestions) is not needed. It holds REQUEST_INSTALL_PACKAGES and can open an APK it finds on the storage; whether that installs is decided by the install restrictions on the device, not by this entry. Nearby Share goes over Bluetooth and Wi-Fi Direct, which the Bluetooth sharing restriction governs.",
+      "screenshots": [
+        "https://play-lh.googleusercontent.com/-JBeuyJc5bxmmypHE16W-wb4LuXhYGLrVerRf2z0QqFCWvHdNVJFS99LqpenGYpBQoPlrpa3DSOFs8bDFXSe",
+        "https://play-lh.googleusercontent.com/0qGSSrjDHFZettmn0jCmh_c591yzSdYj-OquqF6VvQxj_LbGeph9XZHdxySxG8-3EWPqU1TrrYPi-jyrBPHfavE",
+        "https://play-lh.googleusercontent.com/kUirNFSe6NExMHhtiLMd_YiVZyRCpnLb1CSZ_UlhN3tMujvQSZ5bw1pbJJKS-cSHk4isakwM2an0CWuZeGm8",
+        "https://play-lh.googleusercontent.com/2o0tUttFCI4xotBbXzR2_pKBF60yEa2uqgDO5vKs2hZESBHx29iTUAIiLHUPMvwDf-3c-apOeHycLguCQvAJqg"
+      ]
     },
     {
       "packageName": "com.google.android.apps.translate",
       "displayName": {
-        "he": "Google Translate",
+        "he": "Google Translate - תרגום",
         "en": "Google Translate"
       },
       "category": "TOOLS",
@@ -463,14 +527,16 @@
       "availableInStore": true,
       "grantsNetworkAccess": true,
       "minUserMode": "REDUCED_RISK",
-      "flags": {
-        "isRecommendedInStore": false
-      },
       "source": {
         "type": "PLAY",
         "id": "com.google.android.apps.translate"
       },
-      "notes": "Pin and version from the build installed from Play (9.27.28, versionCode 700328882), signed with Google's own key (CN=Unknown, OU=Google, Inc), not Play App Signing. No policy, so it is fully open inside the tunnel, by choice. Everything it does runs through Google hosts it cannot work without (translate-pa.googleapis.com, translate.google.com, inputtools.google.com, www.gstatic.com), so a blocklist would have nothing useful to name. No ad SDK. Translating a website goes through a *.translate.goog proxy, which can stand in for any site; the application hands that to the browser rather than showing it itself, so it is the browser's network that decides whether it loads. Camera translation shows what the camera sees, not images from the web."
+      "notes": "Pin and version from the build installed from Play (9.27.28, versionCode 700328882), signed with Google's own key (CN=Unknown, OU=Google, Inc), not Play App Signing. No policy, so it is fully open inside the tunnel, by choice. Everything it does runs through Google hosts it cannot work without (translate-pa.googleapis.com, translate.google.com, inputtools.google.com, www.gstatic.com), so a blocklist would have nothing useful to name. No ad SDK. Translating a website goes through a *.translate.goog proxy, which can stand in for any site; the application hands that to the browser rather than showing it itself, so it is the browser's network that decides whether it loads. Camera translation shows what the camera sees, not images from the web.",
+      "screenshots": [
+        "https://play-lh.googleusercontent.com/YiMXnEXOcSvgrk6KF3PDDZjnaokJBhbsB9vH41YTTTCtys81xBXghttaob2m4TIJutoFyF3h-JNVjP18tCmR",
+        "https://play-lh.googleusercontent.com/eBDYNn1TQkNwz3NQq9BdYHbgfQlt2PntXSJR9lX7sr5Hyp6wGAQlH3D5wr_sRzsPzuiibzDOPbPMOSFuKrlY6Xo",
+        "https://play-lh.googleusercontent.com/ND-XN0pIvXrEQ-Y7-Ffn7Ti0wLepwdz5p0as01UWQaz85MxTQzAgWHCcQUtOFC7pNEYgwyMz1X1I3X1tz6UB3w"
+      ]
     },
     {
       "packageName": "com.google.android.gm",
@@ -602,14 +668,16 @@
       "availableInStore": true,
       "grantsNetworkAccess": true,
       "minUserMode": "REDUCED_RISK",
-      "flags": {
-        "isRecommendedInStore": false
-      },
       "source": {
         "type": "PLAY",
         "id": "com.khl.kiosk"
       },
-      "notes": "Kol Halashon's older native player (2.67, versionCode 267, from Play), signed by Kol Halashon, the same key as com.khl.www2. A native player, unlike the WebView of com.khl.www2; see the policy notes."
+      "notes": "Kol Halashon's older native player (2.67, versionCode 267, from Play), signed by Kol Halashon, the same key as com.khl.www2. A native player, unlike the WebView of com.khl.www2; see the policy notes.",
+      "screenshots": [
+        "https://play-lh.googleusercontent.com/AYKdO_TzzbEdvjzlTO5s7H8WxkGI7JCY8g9qY4f2r0RMSzS6OGSjU7NvycmuokAFPL-n5I8L_38dWvVYSZVqDA",
+        "https://play-lh.googleusercontent.com/_GcnqqgH3kpfqeo_5FK9w3HqJoTwj8-C0-fVQGqPimSx5hYKEbtiubQO1Rr4IQ9B8DG0TLAbkI3ORKVaEz40",
+        "https://play-lh.googleusercontent.com/CPn9IetKu1I4g1TjuffxNhuD_udrMXNlTyNoRwNLpH3ZoLqMXSFEHeQ8Iv5V6Cs2-DmJDjHhOQEAv7zDVGHDYw"
+      ]
     },
     {
       "packageName": "com.khl.www2",
@@ -623,14 +691,16 @@
       "availableInStore": true,
       "grantsNetworkAccess": true,
       "minUserMode": "REDUCED_RISK",
-      "flags": {
-        "isRecommendedInStore": false
-      },
       "source": {
         "type": "PLAY",
         "id": "com.khl.www2"
       },
-      "notes": "Kol Halashon's current application (2.10, versionCode 20100, from Play), signed by Kol Halashon, the same key as com.khl.kiosk. A WebView over www.kolhalashon.com."
+      "notes": "Kol Halashon's current application (2.10, versionCode 20100, from Play), signed by Kol Halashon, the same key as com.khl.kiosk. A WebView over www.kolhalashon.com.",
+      "screenshots": [
+        "https://play-lh.googleusercontent.com/3waMr5U6GIF78NfL4fn11irdKRMQ3xMME3k7UmQBIP--wFvNn0QzJKZbMXjlg0uHVp3zwXJPGVikIyzxEPOAFA",
+        "https://play-lh.googleusercontent.com/cTVfCHX4IhiedSmtVizvm7c0U64Frprpa2FRrQmVsPyRmLgz3iXS1VcdtpySL_olGY2OslMiLdonjaVjEN_XgFM",
+        "https://play-lh.googleusercontent.com/vZQR_nqCHV5f-7jUkbQdWdB6h6nWWAanviqxPho_wxSEvgGaQ3al1VhXB7Mg976iTys8KzjnZii2UWeREfLneQ"
+      ]
     },
     {
       "packageName": "com.libra.chik",
@@ -644,14 +714,19 @@
       "availableInStore": true,
       "grantsNetworkAccess": true,
       "minUserMode": "NAVIGATION_ONLY",
-      "flags": {
-        "isRecommendedInStore": false
-      },
       "source": {
         "type": "PLAY",
         "id": "com.libra.chik"
       },
-      "notes": "Libra insurance's CHIK. React Native, Firebase, Facebook SDK and AppsFlyer. No ad SDK. Pin and version from the build installed from Play (1.1.4, versionCode 20), signed with Play App Signing (CN=Android, O=Google Inc.)."
+      "notes": "Libra insurance's CHIK. React Native, Firebase, Facebook SDK and AppsFlyer. No ad SDK. Pin and version from the build installed from Play (1.1.4, versionCode 20), signed with Play App Signing (CN=Android, O=Google Inc.).",
+      "screenshots": [
+        "https://play-lh.googleusercontent.com/GRAcff3pafhqGyMPYHpdJr7UJ-kgvYf6ukj0HS_03kNgk7m35_DRvD_PxQxhtDXilECJuEXfDt_ccsYjnUGhZw",
+        "https://play-lh.googleusercontent.com/v95L3CqCjjM4CeP_LKnACs2-Q-9MIEJ2vGbe1wzPc9H5aSiePCTcaHQBWFrQX9Yqw-BdudLpmHpX3DKSYuKkaQ",
+        "https://play-lh.googleusercontent.com/VNvDFTE2-eCaUq7BCKogRyIMjlSQo5NOMG1rvyWT_ujjIk5ibmugmMIuGwnlkIi0-5hh4HRUC4sYHWZaWJwigks",
+        "https://play-lh.googleusercontent.com/V03G3El4MyCMbM3EJl_dVibfbtmuvlnYvl0ZQnnyY4cdgcGuwd9Op-kgNibR3swHVmGbEoDYsfmLOdfWnoXS",
+        "https://play-lh.googleusercontent.com/2JNLnGd9mba9rRd7GgVVzvarym1sJ_LfkpFqjlFW5zbe5Jtqdm684urOEbvzmvzsEIMeRevpr_isDdQM0464Mg",
+        "https://play-lh.googleusercontent.com/dBDfAEf2CfgCYM6OB_QFTQ8905ggGsUV5duYfL_iZaS_ylqLkM-IDsVYJc3xPbTxm5E8mr_Ii8KeGwXDDKQ_05Q"
+      ]
     },
     {
       "packageName": "com.limebike",
@@ -665,14 +740,18 @@
       "availableInStore": true,
       "grantsNetworkAccess": true,
       "minUserMode": "REDUCED_RISK",
-      "flags": {
-        "isRecommendedInStore": false
-      },
       "source": {
         "type": "PLAY",
         "id": "com.limebike"
       },
-      "notes": "Shared scooters. No video is packaged in the APK; the test did not get past the splash screen, so the screens after it were not seen. Braze, Branch, Amplitude, Datadog, Mapbox, Stripe and Braintree. Pin and version from the build installed from Play (3.288.0, versionCode 3288000), signed with the developer's own key (CN=Lime Bike, OU=Mobile Development, O=LimeBike, L=San Mateo, ST=California, C=US)."
+      "notes": "Shared scooters. No video is packaged in the APK; the test did not get past the splash screen, so the screens after it were not seen. Braze, Branch, Amplitude, Datadog, Mapbox, Stripe and Braintree. Pin and version from the build installed from Play (3.288.0, versionCode 3288000), signed with the developer's own key (CN=Lime Bike, OU=Mobile Development, O=LimeBike, L=San Mateo, ST=California, C=US).",
+      "screenshots": [
+        "https://play-lh.googleusercontent.com/gAAHMkG7obglfO1TLsw3i4GRZUMRyt43qRD0JecJZJbUdLo4Ksq2jiPmVmDw2k0IYzG1zBSxxVdDSkUaLnDtHbg",
+        "https://play-lh.googleusercontent.com/7sqLK3XWJqX9OD6noiGxSxSt_PiNojjftcDuFyIuiIMxWRPIG2hWVnWT8o-Vv0_yPfTQReV0U0KIflnqousCeA",
+        "https://play-lh.googleusercontent.com/y3VsBycdbFSjDz-hPFUc8bv_xWhbRsorfFrvRk3AMLH_wdqrSSRBsD78235KhJg7gIxf0mQT7SSJjfmd-kGU",
+        "https://play-lh.googleusercontent.com/m2lWl8hitcsodZf2A6txoIEFV3wzzjcibDk4VLuH1LE3le2jeQ9nIUISvY5YXN7AU-w2Qaf9UL903hLNUpEhNQ",
+        "https://play-lh.googleusercontent.com/_VWxQ4vqS6tX2pIzahJAoeaqFasrrdwS4WwUtyBPm7QgUymrw99_GwId20LqGai_pSLTIY7XRA25GiHqeC4JlA"
+      ]
     },
     {
       "packageName": "com.moblin.israeltrain",
@@ -686,14 +765,18 @@
       "availableInStore": true,
       "grantsNetworkAccess": true,
       "minUserMode": "NAVIGATION_ONLY",
-      "flags": {
-        "isRecommendedInStore": false
-      },
       "source": {
         "type": "PLAY",
         "id": "com.moblin.israeltrain"
       },
-      "notes": "Was APKPURE, but apkpure.com answers 410 Gone for this package, and APKCOMBO was never a source the store could download from. Now PLAY. The pin was taken from the APKCombo build, which mirrors the Play release and carries the same certificate."
+      "notes": "Was APKPURE, but apkpure.com answers 410 Gone for this package, and APKCOMBO was never a source the store could download from. Now PLAY. The pin was taken from the APKCombo build, which mirrors the Play release and carries the same certificate.",
+      "screenshots": [
+        "https://play-lh.googleusercontent.com/D5fQM8NR7Tsw--LCrLtGrwYBq8jeHodkL2RhDW5GT2Ci9R1vEwnLTOrvDuzrEzs97_tn3Yf8drDqYNKgjklJOD4",
+        "https://play-lh.googleusercontent.com/woLZHPLLSKaaoq0931xsuPUm7IJ3wAjMyQjATdx6lZIIlo5k51LIBTW4u2eMs2MwOi3sg5nD0DVagVJNMxkn",
+        "https://play-lh.googleusercontent.com/kjhRGYDNaDZEwpqmqAwuUwYRJ5eEWQdwBwhj57AzXfUAK4EqkyUjWGRwrK5qRNKXo8w0kHEQV616rsCcwMQbN9Y",
+        "https://play-lh.googleusercontent.com/pyCh39AllCDea4b6y5-e3_xbq4EQdTXgh2yCKnOQuBT_dLdhy2XgNWVR00xMC8tKqXCcq0xkW7xqggUof3h9",
+        "https://play-lh.googleusercontent.com/wLZcvCRceJkvJzxUubIU3q5fsqB7hTHSttHQxyf0mx17ne7abWbIx-U55RmBfnK3HMkKywQwsoIMufvNLCaE5ak"
+      ]
     },
     {
       "packageName": "com.mot.haniti",
@@ -781,7 +864,7 @@
     {
       "packageName": "com.noegcoil.theorystudy",
       "displayName": {
-        "he": "נוהג לימוד תאוריה",
+        "he": "לימוד תאוריה 2026 - נוהג",
         "en": "Noeg Theory Study"
       },
       "category": "TOOLS",
@@ -790,14 +873,14 @@
       "availableInStore": true,
       "grantsNetworkAccess": true,
       "minUserMode": "REDUCED_RISK",
-      "flags": {
-        "isRecommendedInStore": false
-      },
       "source": {
         "type": "PLAY",
         "id": "com.noegcoil.theorystudy"
       },
-      "notes": "Driving theory test practice. Pin and version from the build installed from Play (15.0.0, versionCode 92), signed with the developer's own key (CN=Erez, C=IL). It carries real advertising: AdMob with nineteen ad units (banners, interstitials, rewarded), Facebook Audience Network and ironSource mediation, plus a local ad server, deliver.trustmedia.co.il. The policy blocks all of them; see it for what that costs."
+      "notes": "Driving theory test practice. Pin and version from the build installed from Play (15.0.0, versionCode 92), signed with the developer's own key (CN=Erez, C=IL). It carries real advertising: AdMob with nineteen ad units (banners, interstitials, rewarded), Facebook Audience Network and ironSource mediation, plus a local ad server, deliver.trustmedia.co.il. The policy blocks all of them; see it for what that costs.",
+      "screenshots": [
+        "https://play-lh.googleusercontent.com/sosXLyyPyN3YurZGTOQ1RIUbDa-oWyogv4wrLQlTQ8Of-tH0TCxLCDRtGH88T0IolR3rqZeK2gQDPGVm2IV6"
+      ]
     },
     {
       "packageName": "com.pcentra.ravkavonlinemobile",
@@ -811,14 +894,21 @@
       "availableInStore": true,
       "grantsNetworkAccess": true,
       "minUserMode": "NAVIGATION_ONLY",
-      "flags": {
-        "isRecommendedInStore": false
-      },
       "source": {
         "type": "PLAY",
         "id": "com.pcentra.ravkavonlinemobile"
       },
-      "notes": "Loading the Rav-Kav card over NFC. A Cordova application that reaches ravkavonline.co.il and Google Maps. No ad SDK. No policy, so it is open inside the tunnel. Pin and version from the build installed from Play (1.17.2, versionCode 24001702), signed with the developer's own key (CN=Pcentra, OU=Pcentra, O=Pcentra, L=Israel, ST=Israel, C=IL)."
+      "notes": "Loading the Rav-Kav card over NFC. A Cordova application that reaches ravkavonline.co.il and Google Maps. No ad SDK. No policy, so it is open inside the tunnel. Pin and version from the build installed from Play (1.17.2, versionCode 24001702), signed with the developer's own key (CN=Pcentra, OU=Pcentra, O=Pcentra, L=Israel, ST=Israel, C=IL).",
+      "screenshots": [
+        "https://play-lh.googleusercontent.com/x63s0Y-VE2tPSjpikXtz9_ouJsffkPp1cZwEs9ZjXaJWG3JvPwxbROys7nQIxOnFhmUtnS7XjrItkQQyhaHaEg",
+        "https://play-lh.googleusercontent.com/kg9ULsIHHWB16NUtnu9I9g02qjp12Es0K02qsWJ4cu_gAvMw5Q_r-QLuszMWidTdFcU6v9jcIsY2Q5Hgc-yH",
+        "https://play-lh.googleusercontent.com/QrRcH0Kma1HTBUxOhoIbTGbsS1_VECE1gzZLL6vePx-nQsC-dCXmVQfY_YIytjVhv5WpsGkPj7mdYC5EaZrFcQ",
+        "https://play-lh.googleusercontent.com/6ghmQNDak4nU4q0rc5bRG5fiVQuzzeqUqsgL27a39EuaDN1_ZqtSNljlIA9tgxQclx1lSwwMsakq9AqkwI3G5QU",
+        "https://play-lh.googleusercontent.com/E2tEkhcwUEE0nwubu0xMagsii2mSswClqYRCxS9Hx7gvqfPQwICN5dlk_uRpvWvMsG97ExdBf08-rnYAnShC",
+        "https://play-lh.googleusercontent.com/Fk6o8OnZiCjXPvbsnwAHJ7_LEQJ2ms8OnOt4EK6Crq0b84q956ecT2h0HWY-2U1F7PHW1uup1gR44XsvgrvsAAk",
+        "https://play-lh.googleusercontent.com/PE2AXvTE3MuoZGhQP9NMaHO-Ifc_hHGtX3fRFrMzq7ejj36bwu08b4c8NS3gU-HdHgTt36d14FQrW5iFDQVL1w",
+        "https://play-lh.googleusercontent.com/-kydzzGS5b_4sJlK4qlpKlBHj_wnVGlADu-xJMoTlz_N9D5M2ivKSOzwbrCaqVT_TXgs25jaTaKteqTHsrXNkDw"
+      ]
     },
     {
       "packageName": "com.platetoprice.app",
@@ -832,14 +922,19 @@
       "availableInStore": true,
       "grantsNetworkAccess": true,
       "minUserMode": "REDUCED_RISK",
-      "flags": {
-        "isRecommendedInStore": false
-      },
       "source": {
         "type": "PLAY",
         "id": "com.platetoprice.app"
       },
-      "notes": "Reads a licence plate and looks the vehicle up, so without network it does nothing at all. The signing certificate is Google's, not the developer's (CN=Android, O=Google Inc.), because the application is distributed through Play App Signing; that is the certificate an installed copy carries and therefore the one to pin."
+      "notes": "Reads a licence plate and looks the vehicle up, so without network it does nothing at all. The signing certificate is Google's, not the developer's (CN=Android, O=Google Inc.), because the application is distributed through Play App Signing; that is the certificate an installed copy carries and therefore the one to pin.",
+      "screenshots": [
+        "https://play-lh.googleusercontent.com/hg24ngvoHniVJrU6NsDCKArJAcYGirGGfpRbQHpuDI0VTmvZRHvc6dnwGOljldaZikIhJyOUZoLRGxUB56wZpw",
+        "https://play-lh.googleusercontent.com/3jVEJ6onMU5Et6KDPQCpudRozh31v2pfycJaj_gzo8PZsqqVdMfItPVKSyy259Pq0wiQtq7WfpbC53N2IYLShg",
+        "https://play-lh.googleusercontent.com/pjyzqRkuA4HnMDtWjcTVqmtbLgBc9B5iIXlZ55CgX-tM1hb4g471VofyJNXIdkb7ne-Lntw6EthrdIijCdf1",
+        "https://play-lh.googleusercontent.com/H9DOUIEivHkaP25mDD9c8_Qo9nJzskqQe3uP_hJpehcxgbwAmIoaTzpvYEy_EK71dJIP65FWYF-tODTclHAVzbk",
+        "https://play-lh.googleusercontent.com/SUUgC1_k_US4Cqqxgbc7ykuq8aU_K2AIdTRxhWKYURt1OoCilHuFKFp1qYgZCo-_5bitFeO01LBGUThz0kxF",
+        "https://play-lh.googleusercontent.com/8aTeUqBVIImKm0mziboQZ8p-Zi0dURBshBeyLrmyKm-nZSbQqLVk8JDF2OEcQaUN-99e1xvqNwl4zJ-tLS7T"
+      ]
     },
     {
       "packageName": "com.redalert.tzevaadom",
@@ -889,7 +984,7 @@
     {
       "packageName": "com.siddurim.kavanathalev",
       "displayName": {
-        "he": "תפילאור",
+        "he": "תפילאור - הסידור החכם החדש",
         "en": "Tefilor"
       },
       "category": "TORAH",
@@ -905,7 +1000,17 @@
         "type": "PLAY",
         "id": "com.siddurim.kavanathalev"
       },
-      "notes": "Siddur from Siddurim.com, the same code base as Siddur Klilat Yofi under a different key. No ad SDK; Firebase for sync, remote config and Crashlytics. Pin and version from the build installed from Play (3.5.4, versionCode 899), signed with Play App Signing (CN=Android, O=Google Inc.)."
+      "notes": "Siddur from Siddurim.com, the same code base as Siddur Klilat Yofi under a different key. No ad SDK; Firebase for sync, remote config and Crashlytics. Pin and version from the build installed from Play (3.5.4, versionCode 899), signed with Play App Signing (CN=Android, O=Google Inc.).",
+      "screenshots": [
+        "https://play-lh.googleusercontent.com/unMJLO4a-JHLXCTmaUACB7nlHX-SIkoWT9sEPwvaQx1XMn3lS_bBFgMe0upjCYsXZH9pAaGYzt0WdXY6URe_7w",
+        "https://play-lh.googleusercontent.com/1ub5MSxEYTsT197p7TlnZYwz1uNrsEOJ8-7XH7lXuKezwyivKkQqDjfCEgjS6uIEj3SeDc68tqdL7I8lEp63W7o",
+        "https://play-lh.googleusercontent.com/KJLFIr6rjbjCZho0Ezdylv9yHdBOll0twLAUuMfzV8nytjFM_7xVcDFfPBSkYggCqP6Bn_VEybOBWVubOLwu",
+        "https://play-lh.googleusercontent.com/nWRk-53csnW2Iz3w49sycwY9e_MUyAFk9Tls-X7Z9UiMr07dBWA0iJR124ThVh9ZNB2vt1Jj5ZtQ0IvcVYp95w",
+        "https://play-lh.googleusercontent.com/7R99S1okhYnYbmd4CqzGCm3Ek0a5asr1ZDItdZN3BW6L4HUgWjIYEsmCu7tYNb9aIusFXW1ww6gyHwzYANrkDpw",
+        "https://play-lh.googleusercontent.com/-qzTC6sjb7I_ieglLYqHr_1UulA0JiCuKOwGr6v0_TbqIaIWdCJt6fSxkiVxtrMAmlklCb4-pS0wqvyCjPoBDcU",
+        "https://play-lh.googleusercontent.com/43xn_4MkDlh1OqYafReiiFn78v8RnZyk_RbTF3diesYK1j-qc2_ph4bTn1wkvUZUUqgRNlQK293-uwvYM1NO",
+        "https://play-lh.googleusercontent.com/ABlUMcD4tK56g9fStkVgBUc--WrSPOxNO7mALQaSck0lNVYmBZfq7JZAt6BA6_wLd32dsOrd1llE2w6kgT-3Lg"
+      ]
     },
     {
       "packageName": "com.siddurim.klilat_yofi.ashkenaz",
@@ -926,7 +1031,15 @@
         "type": "PLAY",
         "id": "com.siddurim.klilat_yofi.ashkenaz"
       },
-      "notes": "Siddur, nusach Ashkenaz, from Siddurim.com; the same code as the Sfard build and the same signing key. No ad SDK; Firebase for sync, remote config and Crashlytics. Pin and version from the build installed from Play (3.5.4, versionCode 899), signed with the developer's own key (O=Siddurim.com)."
+      "notes": "Siddur, nusach Ashkenaz, from Siddurim.com; the same code as the Sfard build and the same signing key. No ad SDK; Firebase for sync, remote config and Crashlytics. Pin and version from the build installed from Play (3.5.4, versionCode 899), signed with the developer's own key (O=Siddurim.com).",
+      "screenshots": [
+        "https://play-lh.googleusercontent.com/kQzHS1dakwkNAHgP4jd66pXUxL4fBGarg6v9cqGaHmIh_ONBsx1gEs-ttZNBJyLIvXQiUtVJLyssUbDEKUIdUEo",
+        "https://play-lh.googleusercontent.com/y4WOVSVhkF5hqNkkwYCNYIWwCZ3ln7HRrPBuawL0Gr-PEWhSUabtfyAbU8PYqHmMQYzH6mbWivUPwPPtS551",
+        "https://play-lh.googleusercontent.com/TIA2Rxp4U4kptmCrKmymbf52UN5_Z-y5wp9zFEQ3TKAZpHSRQ2ozKuFPM7ZZj8q5nVC_K7ninoXk0u8lMqKeSw",
+        "https://play-lh.googleusercontent.com/G5KF_kgIPP4u_9KzMrtY5T1q7DbL-DWZF_ASV-RGp_A8tWmSxViuhHd3n1DxGj1ljIzfLwzxtWY31UYFhlLBPw",
+        "https://play-lh.googleusercontent.com/OjPMRfV0RA6QqUzXY4pfEG1VaeNFx9hFyZmT12bqtHRjsyEdYXOPmbMtKpV4yvscQPIstRMDsv52hmEXsmzE",
+        "https://play-lh.googleusercontent.com/zpcVdWFmB56uIb7VOqZQ922WrLOD-xTFJSZJqpXwSXXGVkj-UsHJ78K04wFdfix_Pv3yqnRk825g0n8D3KL6"
+      ]
     },
     {
       "packageName": "com.siddurim.klilat_yofi.sfard",
@@ -947,7 +1060,17 @@
         "type": "PLAY",
         "id": "com.siddurim.klilat_yofi.sfard"
       },
-      "notes": "Siddur, nusach Sfard, from Siddurim.com. No ad SDK; Firebase for sync, remote config and Crashlytics. Pin and version from the build installed from Play (3.5.4, versionCode 899), signed with the developer's own key (O=Siddurim.com)."
+      "notes": "Siddur, nusach Sfard, from Siddurim.com. No ad SDK; Firebase for sync, remote config and Crashlytics. Pin and version from the build installed from Play (3.5.4, versionCode 899), signed with the developer's own key (O=Siddurim.com).",
+      "screenshots": [
+        "https://play-lh.googleusercontent.com/MC_vwArW7n4JfKNYxlFIRxLrDggdIEsPo0CSIU74bsl5WAi8C_tWuJwGN5MuaqcL_68VYosD5w3eXUKIGEjI",
+        "https://play-lh.googleusercontent.com/j3pXLz2iyim2QMvAXl3mm_cJLZB8UZW-QwCbQshieiTWDFOQuDq6j0FRQUpzh4be2w_7V59o6QDs8h52BFLksg",
+        "https://play-lh.googleusercontent.com/l8VfIdFKy88At27Rhvlbz4Kl8DRRZ8d5mvs7VBcfTZq7kU2OfujdlItl5Lmk8MCAoyzgzeO36OcbCTj8UwgLXWE",
+        "https://play-lh.googleusercontent.com/O4pVab8oxQc-OLpjYA77MB7sgLRXm9CdaVdVG59DYP7em9k1taw9U68uV_4WMRg5Sql0gtrSrH4QFC5BGsouZg",
+        "https://play-lh.googleusercontent.com/Y1aXWFjAO8miKmDbcAVrzgnuSdoKY53K6pm5UTztRV5ms11N2-xMU2yvY5VeM_7PCd_OvS75B17y0b4U_Hju",
+        "https://play-lh.googleusercontent.com/cRDnONcUdHKqJacR1J-ZbOFY4zHACUuUAJ8X_J5zDdPHXgFUgAESDtJVB2-7Q90tx-nU3fpSqilZCltWn1g4",
+        "https://play-lh.googleusercontent.com/hYghIQzuLT1xrRbnLm3_iGhCeH3iaseN0pRoK_5srbxwnW2GksZU_BB30oED-TWh6To_UB59Ogy-uPoUfYt8",
+        "https://play-lh.googleusercontent.com/2t5u6XbqhdpZQ2q6FJxmcxRd3PQZOtcOwFfElKvHJv0YEz2SJrC2py_xDjYNx8PvPQ9G8E_Lx4O_Q9DVdM3iiA"
+      ]
     },
     {
       "packageName": "com.sonol.mobileapp",
@@ -961,19 +1084,21 @@
       "availableInStore": true,
       "grantsNetworkAccess": true,
       "minUserMode": "REDUCED_RISK",
-      "flags": {
-        "isRecommendedInStore": false
-      },
       "source": {
         "type": "PLAY",
         "id": "com.sonol.mobileapp"
       },
-      "notes": "Sonol fuelling. React Native, Google Maps, Firebase, Branch, Sentry and Forter. No ad SDK. Pin and version from the build installed from Play (2.7.4, versionCode 30000030), signed with the developer's own key (CN=Sonol, OU=Sonol, O=Sonol, L=Israel, ST=Israel, C=IL)."
+      "notes": "Sonol fuelling. React Native, Google Maps, Firebase, Branch, Sentry and Forter. No ad SDK. Pin and version from the build installed from Play (2.7.4, versionCode 30000030), signed with the developer's own key (CN=Sonol, OU=Sonol, O=Sonol, L=Israel, ST=Israel, C=IL).",
+      "screenshots": [
+        "https://play-lh.googleusercontent.com/5inyWo1mGwIjYX0pRf2vbGt9ndfVx6ENh5bwuFwHeGHDZdtrAeba1uld4IfakPVz7wdevq23nRsgI9Krn-YyZw",
+        "https://play-lh.googleusercontent.com/xR1mTFB_Le1iRJ0NY1vrt65T3S1N0AkUG6x5kvOWuL_0hXweGCMqeyDi2FqXfbikU9rX65pLyBcUDUobGHI4bHQ",
+        "https://play-lh.googleusercontent.com/lsF7YL2m6Iu1mYSFzLR_KV_Pxk2JgINNVrE4fF7USSgVkbrWdQBj1aRfLW2rinT6GdHbbT5auvmgBSkEei0brOM"
+      ]
     },
     {
       "packageName": "com.tranzmate",
       "displayName": {
-        "he": "מוביט",
+        "he": "מוביט: ניווט ותכנון מסלולים",
         "en": "Moovit"
       },
       "category": "NAVIGATION",
@@ -982,13 +1107,16 @@
       "availableInStore": true,
       "grantsNetworkAccess": true,
       "minUserMode": "NAVIGATION_ONLY",
-      "flags": {
-        "isRecommendedInStore": false
-      },
       "source": {
         "type": "PLAY",
         "id": "com.tranzmate"
-      }
+      },
+      "screenshots": [
+        "https://play-lh.googleusercontent.com/ghUtXdgyUGJ3S4GFQ59cPgQyhdkKtfyoV2GHigbyK378egKvItxZ6hC5jy2-vVpAEbc4SKitKFCUk4EthjduVQ",
+        "https://play-lh.googleusercontent.com/-Q-bvmj4Gjh46dqOxI9Z8FBEdaMdWvrSvlqUoVrnWSy62nF7cuN-doKV3enomiVqSLcE_dy1NPtYlB-ybwa2Kyc",
+        "https://play-lh.googleusercontent.com/qNvd0augImnBERybtrppb5QqR6jHB2Ab_I-h3bRrZLvA1B2mN-sJmDSWv-6e43ZqEQn_p4Qsh0F-VL86jcF6YQ",
+        "https://play-lh.googleusercontent.com/h43nlPZwg7_A7DZRlfy4zSyH71WQll53CdOA-sp1fnScxe-IMjzlfqpGqlE4aV-S5NVNfePg8csRLfWYt-EODQ"
+      ]
     },
     {
       "packageName": "com.unicell.pangoandroid",
@@ -1002,13 +1130,20 @@
       "availableInStore": true,
       "grantsNetworkAccess": true,
       "minUserMode": "NAVIGATION_ONLY",
-      "flags": {
-        "isRecommendedInStore": false
-      },
       "source": {
         "type": "PLAY",
         "id": "com.unicell.pangoandroid"
-      }
+      },
+      "screenshots": [
+        "https://play-lh.googleusercontent.com/zq6ddpTUCgDhPX8kpN7v-ffZOal72dOdJHJQanBgZ-N3Xpf1lfc08zcLkPLPP31vqxqVZY_cqkibYQkEPDuwqA",
+        "https://play-lh.googleusercontent.com/_SpbtHex6x_WJkFJk--jwAw5c8EdePPZRr5OBBhSR_-YSZVBvICVNicE3hqUdyTx1y5W4zoHcXV_GCXMiZPfw4o",
+        "https://play-lh.googleusercontent.com/cxaHf8VR5_211dv9xcmVQxvouD4NwweF6iYJXXXPcKDK8RzpHjFXup77fG5Y5zC2Aqpn0BGwv_2KkZ_Oqwi62g",
+        "https://play-lh.googleusercontent.com/n1u8T7AOI-uMDFesZG36F87WS3XhkEHKmH1jFd9jaRjUI0lRDm5dF2tyMKNz4ayDPovUOkZu7eQ1c2qe9cupwQ",
+        "https://play-lh.googleusercontent.com/pZ2FQZfD2c9mpBHIgUdATQNcy9Lo1Hu9WQ5cOpVPFdYwPvYkOmzgEpPog-rs0ESoY61Nv9WP-lD4b83gh8ubTQ",
+        "https://play-lh.googleusercontent.com/IoRhfZ2B8XPR9VNOTludvzqBiuoIZR7mRVjuMpHZLXRK8xgyYbnXUgQK95hll85ciUeDd8ghwP_XKjrLjiYI8w",
+        "https://play-lh.googleusercontent.com/IzC2-RMmayx9dx46BEmSYBsPDX9Kgj04k8mOPUECVKWSrR3xCT7xZlp1DsEVr1rMGjHa1SxGpa7qe1C6J2DW",
+        "https://play-lh.googleusercontent.com/KMYVfp-WXTP4QrRlpJ5V2NTs5LYgxbgmgJHDyz13MQL2SUf0lE2LB6yhlJklqFCm2V2FcxyCaVbJAcoTM-NEFX4"
+      ]
     },
     {
       "packageName": "com.waze",
@@ -1061,7 +1196,7 @@
     {
       "packageName": "fm.jewishmusic.application",
       "displayName": {
-        "he": "מוזיקה יהודית",
+        "he": "זינג - מוזיקה יהודית",
         "en": "Jewish Music"
       },
       "category": "MUSIC_AUDIO",
@@ -1094,14 +1229,18 @@
       "availableInStore": true,
       "grantsNetworkAccess": true,
       "minUserMode": "NAVIGATION_ONLY",
-      "flags": {
-        "isRecommendedInStore": false
-      },
       "source": {
         "type": "PLAY",
         "id": "gnrgy.android.emobilityapp"
       },
-      "notes": "Gnrgy EV charging. It reached portal.gnrgy.com only. Google Maps and Firebase. No ad SDK. No policy, so it is open inside the tunnel. Pin and version from the build installed from Play (8.8, versionCode 724), signed with the developer's own key (CN=Midhun Madhu, OU=Software Department, O=Gnrgy, L=Bangalore, ST=Karnataka, C=IN)."
+      "notes": "Gnrgy EV charging. It reached portal.gnrgy.com only. Google Maps and Firebase. No ad SDK. No policy, so it is open inside the tunnel. Pin and version from the build installed from Play (8.8, versionCode 724), signed with the developer's own key (CN=Midhun Madhu, OU=Software Department, O=Gnrgy, L=Bangalore, ST=Karnataka, C=IN).",
+      "screenshots": [
+        "https://play-lh.googleusercontent.com/Z8hXzX0QKGMH2Pvbxyis4iW_hUlNWuOc1SBBNvzqHF_IRXmNVQb_O6cbH2pM3huVqVHKAP2VNHQEsUQNXIUMtw",
+        "https://play-lh.googleusercontent.com/ce5s3fImK0OCSc0xSu7sUCLTPou1zB2uiME_0d1TKrZzqR1BKKL8CX6NxkOVad3CYL7VRF0pfCxE55Q5n5Gr_A",
+        "https://play-lh.googleusercontent.com/5AXWs60zv91jAWGye-ulq9a3G-h4IxefpSEQi7JNPQfLog34uijl5USdZpX1X771lAIPpoOFybgnOBVLchCb4bs",
+        "https://play-lh.googleusercontent.com/7yGYFUpqkArW5QQElFY0eaGlvfYciRQTjpT_MIRkmUF1GX6QBvRp1g5Ato2YYv6PU9VIWxtdFFtViA2xN1iO1g",
+        "https://play-lh.googleusercontent.com/I2Je7VGgyMDb2E1mnpDDtlsklQt4XRTpP5wEHWPn8aNfMceuYb7CDMbno-nXtKyo-TUjFr78LtoOAfLhg4rhZQ"
+      ]
     },
     {
       "packageName": "gps.hakohanim.org",
@@ -1166,14 +1305,19 @@
       "grantsNetworkAccess": true,
       "minUserMode": "MOST_OPEN",
       "flags": {
-        "hasUnmodestImage": true,
-        "isRecommendedInStore": false
+        "hasUnmodestImage": true
       },
       "source": {
         "type": "PLAY",
         "id": "il.co.inmanage.ten"
       },
-      "notes": "The Ten fuel station chain: fuelling, prices, coupons. Pin and version from the build installed from Play (3.8, versionCode 80), signed with Play App Signing (CN=Android, O=Google Inc.). Flagged hasUnmodestImage: it shows its own promotional banners and coupons (BannerView, FeedBanner, AppBanner in the dex), sometimes with a woman in the picture. They come from the same server as the rest of the application, ten.inmanage.com, with image URLs handed out at runtime, so no host rule can take the banners out and leave the fuelling working. The flag keeps it out of REDUCED_RISK and asks for explicit acceptance before it is installed or gets network. No third party ad SDK and no AdMob application id."
+      "notes": "The Ten fuel station chain: fuelling, prices, coupons. Pin and version from the build installed from Play (3.8, versionCode 80), signed with Play App Signing (CN=Android, O=Google Inc.). Flagged hasUnmodestImage: it shows its own promotional banners and coupons (BannerView, FeedBanner, AppBanner in the dex), sometimes with a woman in the picture. They come from the same server as the rest of the application, ten.inmanage.com, with image URLs handed out at runtime, so no host rule can take the banners out and leave the fuelling working. The flag keeps it out of REDUCED_RISK and asks for explicit acceptance before it is installed or gets network. No third party ad SDK and no AdMob application id.",
+      "screenshots": [
+        "https://play-lh.googleusercontent.com/pwGvCh8QuhnDODRGprihGnD09XXHDEvLVIupR_azfV6JIi9iuRGKL4_ld3wJ22bFCrutwXnQ9YhmvSlejWyF1xU",
+        "https://play-lh.googleusercontent.com/v8S3lKnnrl1HcUlJGXg3KM3NAIH8xqw5f81dKLYAB5ciJ8TV4f601ft5vPOjMzPHf230_7YqprW1CsgcYusZoIs",
+        "https://play-lh.googleusercontent.com/v8JiF4TPJHtQDHQ6MX81LWCa7I_QWQt9tFYF3RdNJrGFMlPUF5hVbakD-5iVpHoF_tgGJVgVJnrT58ozo0FmfyU",
+        "https://play-lh.googleusercontent.com/wpmG7MUhgft2-hheMiHDFWEhhLSmX8bR3L3-l6lClrJ47Mbq2TOAXELulVMV3ZzyB-_2vD3LxUbCQ6j_Mp6tvw"
+      ]
     },
     {
       "packageName": "il.co.pat.disabledparkingpermits",
@@ -1202,7 +1346,7 @@
     {
       "packageName": "il.co.yellow.app",
       "displayName": {
-        "he": "Yellow",
+        "he": "Yellow - פז ילו",
         "en": "Yellow"
       },
       "category": "TOOLS",
@@ -1212,19 +1356,26 @@
       "grantsNetworkAccess": true,
       "minUserMode": "MOST_OPEN",
       "flags": {
-        "hasUnmodestImage": true,
-        "isRecommendedInStore": false
+        "hasUnmodestImage": true
       },
       "source": {
         "type": "PLAY",
         "id": "il.co.yellow.app"
       },
-      "notes": "Paz fuelling and Yellow club. Flagged hasUnmodestImage: the home screen and What's New show marketing images and stories served by Paz, which change without a release. AppsFlyer, Emarsys, Facebook SDK, New Relic. Pin and version from the build installed from Play (8.13.0.1344, versionCode 1344), signed with the developer's own key (CN=Paz Oil, O=Paz Oil Company Ltd, C=IL). The flag keeps it out of REDUCED_RISK and asks for explicit acceptance; MOST_OPEN is stated so the entry says what the flag already means."
+      "notes": "Paz fuelling and Yellow club. Flagged hasUnmodestImage: the home screen and What's New show marketing images and stories served by Paz, which change without a release. AppsFlyer, Emarsys, Facebook SDK, New Relic. Pin and version from the build installed from Play (8.13.0.1344, versionCode 1344), signed with the developer's own key (CN=Paz Oil, O=Paz Oil Company Ltd, C=IL). The flag keeps it out of REDUCED_RISK and asks for explicit acceptance; MOST_OPEN is stated so the entry says what the flag already means.",
+      "screenshots": [
+        "https://play-lh.googleusercontent.com/AbAPoEQ9f8QhO1GQxPQPuHtQCtwVvUauIFIljqZKswPDYqEEJAGTfZSRbV7KuWa2nGnTB25z490ZKkrLi17feA",
+        "https://play-lh.googleusercontent.com/Aqt9IvoWX9x4f5H-yUTJk2RuRRDasfSjqhobWHD1O8AfAPqtUJeUyewsCAj8hNCuxYd7JalPooxFU1DplHDhf8I",
+        "https://play-lh.googleusercontent.com/8_zLfCFb5tITSvPtUY4FuvGyldyqH0vUlaeHEzwSRw9DRgXUp6wbX7l1cTjjEUT99iGLidRowkcJbUYNLsSXqMQ",
+        "https://play-lh.googleusercontent.com/VocD3M-aBdp_tm3xYZMSsqPA1RW6w7XsIEm6NrjIBPq1pY20M8h32vUb5OirmyzoTdsFonBKlr-6u181AZT0Ew",
+        "https://play-lh.googleusercontent.com/WNwqfZKH8pnPYEqieyzwoxc3eaveorzYzlClR6hFReCB_dn6P1kX-bBmEa3UpBdRqhaTc4UVwm-GpSgAMTUEbI0",
+        "https://play-lh.googleusercontent.com/tAqdxhv0WZSH_bRvTG1o7FOZaqssU29nl58gox14_fGK__iZSxXQPIEivdp2x2hdMESaui0ULWD0DUm1l4fLSAY"
+      ]
     },
     {
       "packageName": "il.org.osm.israelhiking",
       "displayName": {
-        "he": "מפת טיולים ישראל",
+        "he": "Israel Hiking Map - מפת טיולים ישראל",
         "en": "Israel Hiking Map"
       },
       "category": "NAVIGATION",
@@ -1234,14 +1385,23 @@
       "grantsNetworkAccess": true,
       "minUserMode": "MOST_OPEN",
       "flags": {
-        "hasUnmodestImage": true,
-        "isRecommendedInStore": false
+        "hasUnmodestImage": true
       },
       "source": {
         "type": "PLAY",
         "id": "il.org.osm.israelhiking"
       },
-      "notes": "Hiking and trail maps on OpenStreetMap, open source. Pin and version from the build installed from Play (9.21.256, versionCode 921256), signed with Play App Signing (CN=Android, O=Google Inc.). No ad SDK. Flagged hasUnmodestImage: points of interest show photos from Wikimedia Commons, iNature and pictures users upload to the project's own server, mostly landscapes but open to anyone, so what appears cannot be known in advance. The flag keeps it out of REDUCED_RISK and asks for explicit acceptance; MOST_OPEN is stated so the entry says what the flag already means."
+      "notes": "Hiking and trail maps on OpenStreetMap, open source. Pin and version from the build installed from Play (9.21.256, versionCode 921256), signed with Play App Signing (CN=Android, O=Google Inc.). No ad SDK. Flagged hasUnmodestImage: points of interest show photos from Wikimedia Commons, iNature and pictures users upload to the project's own server, mostly landscapes but open to anyone, so what appears cannot be known in advance. The flag keeps it out of REDUCED_RISK and asks for explicit acceptance; MOST_OPEN is stated so the entry says what the flag already means.",
+      "screenshots": [
+        "https://play-lh.googleusercontent.com/mSY25LjaJNycjtBQy_m3v4ObuhjI5LhJb2_2NcQ_vpVP4hw1e9edAq4o1t82nGVUY6XzriOdk-Ove_OGF59i",
+        "https://play-lh.googleusercontent.com/UR3FxryqLXZCwzb9D6OSM2xmEy71v4bhj7LHpkadN-hKNoBd8tDct57zOyT4aGQbqNf3jGZxCL22ljLucp3J3aY",
+        "https://play-lh.googleusercontent.com/qAOe2biHPbhcjd5S2aksZzF2pBbYL5jtOgKcirh6DAIIvBT5yPYhj9zpKz8DpLlfZS1moHDwBIvWhMQuK98I6w",
+        "https://play-lh.googleusercontent.com/lawUsUwI8FJ2571g3CIn2m-Hy-V__M2Rx0JV6AY4RqNoVa4095XvDnT19SbcHt0eb_vhvC0Of-ExnLg3L8Vb6A",
+        "https://play-lh.googleusercontent.com/h19-tqZjSFmgK9leWQmEpGmKCP5A00orGoGDrDVbaFvgkfUlFqLTnaDsjEhM0BLD0Llo90-ej5ZzhqOqlQmOyIo",
+        "https://play-lh.googleusercontent.com/HKUAUPhC6Z9Pc9RRluHaxmI1zQwT7VDpsCCPBiysPLhgreaUweTt2UDlOAq76E5kOo5CU_f6mB4nNmtu4wE6m1o",
+        "https://play-lh.googleusercontent.com/uVAKSy1BY-_S-ouXqQzVMBZrOLTmGnGNPGYG32PJFiVFBDKZSg9nki7KgPTNNKowhyWj5GLHnAeOuv1LpJsh3w",
+        "https://play-lh.googleusercontent.com/qBsW_8YbyGseklCnShWHk5s0Aacs4yL1L2ilHBU0JmyeaHjx6fmDpB-W0F6oa_8igGCWmTEj5ZOh5ODQ32ySYmQ"
+      ]
     },
     {
       "packageName": "il.org.startach.theplatform.android.yedidim",
@@ -1255,14 +1415,15 @@
       "availableInStore": true,
       "grantsNetworkAccess": true,
       "minUserMode": "NAVIGATION_ONLY",
-      "flags": {
-        "isRecommendedInStore": false
-      },
       "source": {
         "type": "PLAY",
         "id": "il.org.startach.theplatform.android.yedidim"
       },
-      "notes": "Yedidim volunteer roadside assistance: calls for help and volunteer dispatch, with background location. Flutter, Google Maps, Firebase, Sentry and PostHog. No ad SDK. Pin and version from the build installed from Play (2.10.140, versionCode 320), signed with Play App Signing (CN=Android, O=Google Inc.)."
+      "notes": "Yedidim volunteer roadside assistance: calls for help and volunteer dispatch, with background location. Flutter, Google Maps, Firebase, Sentry and PostHog. No ad SDK. Pin and version from the build installed from Play (2.10.140, versionCode 320), signed with Play App Signing (CN=Android, O=Google Inc.).",
+      "screenshots": [
+        "https://play-lh.googleusercontent.com/QKmGaa0qrYJ9SUX9S06IGJCQDcMh1JI6PnCMUO5j0JTdIpFKasHSWQ6DciTO7VdpiiMR9op3qEo-I7lyPUSbT_Q",
+        "https://play-lh.googleusercontent.com/cDNFQFE75GL8u7xsQYptu_ccf6eM1hwOuxJ1h7rI-tdMNozJhY4Pj7aIOl4Xf6hmblG_OYvvzYPmhjxXHqO5qg"
+      ]
     },
     {
       "packageName": "in.krosbits.musicolet",
@@ -1328,19 +1489,26 @@
       "availableInStore": true,
       "grantsNetworkAccess": true,
       "minUserMode": "REDUCED_RISK",
-      "flags": {
-        "isRecommendedInStore": false
-      },
       "source": {
         "type": "PLAY",
         "id": "kcm.fm.volume"
       },
-      "notes": "Streams, so it is granted network, and its policy is a four host whitelist rather than an open door. The certificate was read off the installed application and its SHA-1 matches the one KDroidDatabase records for this package exactly, which is as good a confirmation as this catalog can get that the build on the device is the build the policy was written for."
+      "notes": "Streams, so it is granted network, and its policy is a four host whitelist rather than an open door. The certificate was read off the installed application and its SHA-1 matches the one KDroidDatabase records for this package exactly, which is as good a confirmation as this catalog can get that the build on the device is the build the policy was written for.",
+      "screenshots": [
+        "https://play-lh.googleusercontent.com/g3FcdVZJPZT5d6tB_bpfA3nU7rrkcNhz2BKcY3DDLl-cIUe0ITkevpWO-BgCEchofL4ejto1353RGvo2g_dU",
+        "https://play-lh.googleusercontent.com/5NB6VtI-vy-Ve_LqEKUZscDqBpkAK3d3WVI4lTbsLAPEsrCb4_UGAFfRrDoONDGS7f2rEWrrjMEPb7uUkQMD-g",
+        "https://play-lh.googleusercontent.com/bWMzbXE7u9uWrEvykjLiC7XEtm6Grft-9WuF7rKencEsD5IAOM3xl3t4kb8k99C-vnBtavIfhMedc9n9RCj1lMQ",
+        "https://play-lh.googleusercontent.com/xnFenkKRk0uwRMstmZaOtuDblPxHW485jNWuxb50A63pjU4shYZpLXBdZ7VCG6vOEvQ1ACowbRmP8a6KSBKQrg",
+        "https://play-lh.googleusercontent.com/bi2kRn0IOaLPbwR3XMR8uIyLDKVTl8YOrM6SkCRgfYeF6k_D6TTyxAOyMOcYN6HKdWUUFehCHTb1FuldSb9_yA",
+        "https://play-lh.googleusercontent.com/WEOKHpM9JBLjMXdCbYd8FvfzLwuQnsHFU-izjzbxwUCpyYt28fhxMrVHMOBzEx-Mt5UBxpGzMG9UzxpvZ6JExZM",
+        "https://play-lh.googleusercontent.com/mJf85o1AYlASN-9hx2EPMnYVr2zzQNGUH9A-Yui4m9Cizju1ZDb8HRqqGBmXUpwA1XbSNC6D2wJjgJV04CBh5Yo",
+        "https://play-lh.googleusercontent.com/zbsJs33wPOzGE2lCKlfnI3I7LgtcVOP6za1p4AYorLdgJiamRSt36yZw_cEUPvHKnqgJhlMqsJLkMAT9hRnZGf8"
+      ]
     },
     {
       "packageName": "led.android.mentaplus",
       "displayName": {
-        "he": "דלק",
+        "he": "דלק - אפליקציה לתדלוק והטבות",
         "en": "Delek"
       },
       "category": "TOOLS",
@@ -1349,19 +1517,23 @@
       "availableInStore": true,
       "grantsNetworkAccess": true,
       "minUserMode": "REDUCED_RISK",
-      "flags": {
-        "isRecommendedInStore": false
-      },
       "source": {
         "type": "PLAY",
         "id": "led.android.mentaplus"
       },
-      "notes": "Delek fuelling (Menta). React Native, Google Maps, Firebase, AppsFlyer and Emarsys. No ad SDK. Pin and version from the build installed from Play (8.0.4, versionCode 132), signed with the developer's own key (CN=keeprz, O=keeprz, L=Tel Aviv)."
+      "notes": "Delek fuelling (Menta). React Native, Google Maps, Firebase, AppsFlyer and Emarsys. No ad SDK. Pin and version from the build installed from Play (8.0.4, versionCode 132), signed with the developer's own key (CN=keeprz, O=keeprz, L=Tel Aviv).",
+      "screenshots": [
+        "https://play-lh.googleusercontent.com/iS3uUKxDCXwhnxj-LANyzUL-Fj6PxzxclIGfXHfgjunj_fDyT-BXtwEukD7Os6xvwpCwisIMCWpVfpo9Pq0vZw",
+        "https://play-lh.googleusercontent.com/B0ebJV4V7hi6EivrSHrp66cWBlSOwgK45WoFamtnaZiblSnSB1ysSjtc8xQCkzq1wE5_iHVJIceKj5CpYszD",
+        "https://play-lh.googleusercontent.com/5d2UG_V0RDqGfo5nVhIlZqD6SsHgj6BdJ8JZEwMX7vl_R7DVowVqHg-BeT3bw0axV4fGfFq2VNiCwsZW5uWGKg",
+        "https://play-lh.googleusercontent.com/KQ33M0ytm-VTQfl5-4sC_gvR144bFKunBA-ZcK1MVm2DNyUFpm3PsnwqZTVFqAfk4rGhR4nbhDNLiTmipnCbOA",
+        "https://play-lh.googleusercontent.com/b1EBinhWQOlL0UwaEXkXV5X5CmhHOFGZg6KqxILLxwKPLtd48FGLZx0S03NqAvp5NmoMplFBl5jAi5Blnbpviw"
+      ]
     },
     {
       "packageName": "md.obsidian",
       "displayName": {
-        "he": "Obsidian",
+        "he": "Obsidian - אובסדיאן",
         "en": "Obsidian"
       },
       "category": "PRODUCTIVITY",
@@ -1370,14 +1542,21 @@
       "availableInStore": true,
       "grantsNetworkAccess": false,
       "minUserMode": "OFFLINE",
-      "flags": {
-        "isRecommendedInStore": false
-      },
       "source": {
         "type": "PLAY",
         "id": "md.obsidian"
       },
-      "notes": "Markdown notes, kept as files on the device. Given no network: it embeds web pages (YouTube, X, Bilibili, Reddit) inside notes and community plugins download code from GitHub and unpkg, and none of that is needed to write notes. Sync and publish will not work. Pin and version from the build installed from Play (1.14.4, versionCode 389), signed with Play App Signing (CN=Android, O=Google Inc.)."
+      "notes": "Markdown notes, kept as files on the device. Given no network: it embeds web pages (YouTube, X, Bilibili, Reddit) inside notes and community plugins download code from GitHub and unpkg, and none of that is needed to write notes. Sync and publish will not work. Pin and version from the build installed from Play (1.14.4, versionCode 389), signed with Play App Signing (CN=Android, O=Google Inc.).",
+      "screenshots": [
+        "https://play-lh.googleusercontent.com/Clit1R4ds6j17elulTT2Ccy0UhRNTUQONDM-F8sFgHitZu0p9NGcpgA1TranKxto6ZDuFXlujdq2g8q6XXPe1LQ",
+        "https://play-lh.googleusercontent.com/Y27-uuQXEI0Rmqy8OeR98OPFcsDOptmZcS2b4cgjFiZaf1sfhu8zE1Ff1Gku7MwYDv5aDtV-rzlBaDrLjtDG",
+        "https://play-lh.googleusercontent.com/z_FCUTwNp_CQjXZzUSC9RFt0_fViaW6fJsfIS8RNCpG1iwowTLUnipTv-swRlPZvSISz_tm7zVD0JjChjUbo3w",
+        "https://play-lh.googleusercontent.com/zBv0L2oSJ7kbHle8AhHlsWaGWO2Z3fQpVoVWnwYZHlsgJnAceFhADXFlguzYG775FRdWI9HymkNXrTYGyEU0Bg",
+        "https://play-lh.googleusercontent.com/x15Fccr61nyPhKfw5qR6HMBr8G318aXGN6MCG6daxYhnu3YJaywksU7uTKNmFbx7gW2sL7spjvuCYF9tW_Bi",
+        "https://play-lh.googleusercontent.com/9Y4Og02s77FD_GoGdBtlsHnOakGob78VJ6cESRVKakAnycMvpVWjPe1EK1gJjx_6c-ffqQYjaTxhMLqVUpEG7A",
+        "https://play-lh.googleusercontent.com/LwHiRDf5qKJn51PREq6fQ7dmV58ohOtavsGbgGh_I1WDq_NsbssNhVsPt3Y4cnj9hgBX-e3HJCSrCymnZOf4oA",
+        "https://play-lh.googleusercontent.com/reiqUXUbtikXNprAhKEKiS50ojl7IttpcBRIsEHv_DqkVKRO7HfQFnreU-Z3p7g2Fi7caAG9xAZ-sh58WuZGwg"
+      ]
     },
     {
       "packageName": "net.sf.times",

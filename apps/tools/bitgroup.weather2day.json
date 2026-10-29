@@ -10,12 +10,19 @@
   "availableInStore": true,
   "grantsNetworkAccess": true,
   "minUserMode": "REDUCED_RISK",
-  "flags": {
-    "isRecommendedInStore": false
-  },
   "source": {
     "type": "PLAY",
     "id": "bitgroup.weather2day"
   },
-  "notes": "Israeli weather forecasts. Pin and version from the build installed from Play (2.24, versionCode 94), signed with the developer's own key (CN=111111). It is a WebViewActivity around the mobile site, m.weather2day.co.il, with AdMob on top: banners, interstitials, rewarded and native ads, which carry pictures. The policy blocks the ad hosts; see it for what it cannot reach."
+  "notes": "Israeli weather forecasts. Pin and version from the build installed from Play (2.24, versionCode 94), signed with the developer's own key (CN=111111). It is a WebViewActivity around the mobile site, m.weather2day.co.il, with AdMob on top: banners, interstitials, rewarded and native ads, which carry pictures. The policy blocks the ad hosts; see it for what it cannot reach.",
+  "screenshots": [
+    "https://play-lh.googleusercontent.com/2kWHe1h4Ue1WzXJmaZ_lKQx0LGplrLdHlTgcUJIEY3RyPLJBcguQHFCEZJZWnhLtNUnOLJ0EEqZVOnFFKDhZxw",
+    "https://play-lh.googleusercontent.com/CAd7Tzbmq4-VfvJ6XGZUn7LwR0-rdKIx5g4kqdavYv0pMjSU1Bijd61U42ONjdm7Qc7aVOfjpvz6CEBCUIZD",
+    "https://play-lh.googleusercontent.com/vjV5rkkwN1dK1RgcSS6ddebqLuo7piR4srPHdsvJtPtTTnpZJXAM15ubVgv8qRu66ZXiyq3_8NU5XZNKHutzCck",
+    "https://play-lh.googleusercontent.com/SX8IxsAEStb6MQfRsC46NVkjQ9AEESVY3rGqdg7e9cin0xJdcDEBognatlU9JzIUlewNsyi6fO-cxZCkNgce",
+    "https://play-lh.googleusercontent.com/_KEsJBrlm6SB9vcT9MyJpe0phw3UwSoTHipRkPFVwptEpU8VzeOzCtw7q7-8F9jQRs5r901-LtYwpF5h8sd_IHo",
+    "https://play-lh.googleusercontent.com/vNHfNQyw3_oTBp-SW9a4BRpyRVL1Ci1l9IBAE5VvKATbt9_tGC7Ln0mn_w3l_ZCdMFsG6prgCOBFtSRZNtoYCA",
+    "https://play-lh.googleusercontent.com/x5Bmilo5xhVlJspdRPVpF0qT4XKM01sVD-zAToAUmeiI4KMEH4A_UfwnEyajHtI3CHsP0vk-xRWw_ZCfFAld3w",
+    "https://play-lh.googleusercontent.com/aXQUdJJhJWuhsxxrsxfQzNv_aAFrkaC-cihv2edvtXjlMJRp8jyFOrN99zM3L8jcO7mB0A1z3b0jQSzYqL8q"
+  ]
 }

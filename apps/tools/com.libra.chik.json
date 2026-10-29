@@ -10,12 +10,17 @@
   "availableInStore": true,
   "grantsNetworkAccess": true,
   "minUserMode": "NAVIGATION_ONLY",
-  "flags": {
-    "isRecommendedInStore": false
-  },
   "source": {
     "type": "PLAY",
     "id": "com.libra.chik"
   },
-  "notes": "Libra insurance's CHIK. React Native, Firebase, Facebook SDK and AppsFlyer. No ad SDK. Pin and version from the build installed from Play (1.1.4, versionCode 20), signed with Play App Signing (CN=Android, O=Google Inc.)."
+  "notes": "Libra insurance's CHIK. React Native, Firebase, Facebook SDK and AppsFlyer. No ad SDK. Pin and version from the build installed from Play (1.1.4, versionCode 20), signed with Play App Signing (CN=Android, O=Google Inc.).",
+  "screenshots": [
+    "https://play-lh.googleusercontent.com/GRAcff3pafhqGyMPYHpdJr7UJ-kgvYf6ukj0HS_03kNgk7m35_DRvD_PxQxhtDXilECJuEXfDt_ccsYjnUGhZw",
+    "https://play-lh.googleusercontent.com/v95L3CqCjjM4CeP_LKnACs2-Q-9MIEJ2vGbe1wzPc9H5aSiePCTcaHQBWFrQX9Yqw-BdudLpmHpX3DKSYuKkaQ",
+    "https://play-lh.googleusercontent.com/VNvDFTE2-eCaUq7BCKogRyIMjlSQo5NOMG1rvyWT_ujjIk5ibmugmMIuGwnlkIi0-5hh4HRUC4sYHWZaWJwigks",
+    "https://play-lh.googleusercontent.com/V03G3El4MyCMbM3EJl_dVibfbtmuvlnYvl0ZQnnyY4cdgcGuwd9Op-kgNibR3swHVmGbEoDYsfmLOdfWnoXS",
+    "https://play-lh.googleusercontent.com/2JNLnGd9mba9rRd7GgVVzvarym1sJ_LfkpFqjlFW5zbe5Jtqdm684urOEbvzmvzsEIMeRevpr_isDdQM0464Mg",
+    "https://play-lh.googleusercontent.com/dBDfAEf2CfgCYM6OB_QFTQ8905ggGsUV5duYfL_iZaS_ylqLkM-IDsVYJc3xPbTxm5E8mr_Ii8KeGwXDDKQ_05Q"
+  ]
 }

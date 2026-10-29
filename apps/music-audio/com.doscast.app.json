@@ -11,12 +11,16 @@
   "grantsNetworkAccess": true,
   "minUserMode": "MOST_OPEN",
   "flags": {
-    "hasUnmodestImage": true,
-    "isRecommendedInStore": false
+    "hasUnmodestImage": true
   },
   "source": {
     "type": "PLAY",
     "id": "com.doscast.app"
   },
-  "notes": "Podcasts and shiurim. It carries video: a YouTube and Vimeo player and VAST video ads (go.aniview.com, Google IMA). Flagged hasUnmodestImage because episode artwork and video come from the server and cannot be known in advance. Pin and version from the build installed from Play (2.9.8, versionCode 20908), signed with Play App Signing (CN=Android, O=Google Inc.). The flag keeps it out of REDUCED_RISK and asks for explicit acceptance; MOST_OPEN is stated so the entry says what the flag already means."
+  "notes": "Podcasts and shiurim. It carries video: a YouTube and Vimeo player and VAST video ads (go.aniview.com, Google IMA). Flagged hasUnmodestImage because episode artwork and video come from the server and cannot be known in advance. Pin and version from the build installed from Play (2.9.8, versionCode 20908), signed with Play App Signing (CN=Android, O=Google Inc.). The flag keeps it out of REDUCED_RISK and asks for explicit acceptance; MOST_OPEN is stated so the entry says what the flag already means.",
+  "screenshots": [
+    "https://play-lh.googleusercontent.com/WRjWhtrrO_5EvkWU9TZcAXRjPmY0YR4iqVJCibgymA35phXm3BtTFM5qC-cL-HSjUlFcYJhgbSYvwfAhOb7drA",
+    "https://play-lh.googleusercontent.com/Y4wMghzOlJNZLZVmG8jRsYAMonFO5y4li2qaYuatFA5jfdUjbfqcVCHK5JiISK3rPY7yv6zinXpdCOdPnx6l",
+    "https://play-lh.googleusercontent.com/xpwCizW58HBIcgrwNjIX75jncvzBwPqd8ZRBLEM6vWcxJtVZeRzvRozqAkh2OFAUPquQOiKx9Y5l4_h_TIyzyGU"
+  ]
 }

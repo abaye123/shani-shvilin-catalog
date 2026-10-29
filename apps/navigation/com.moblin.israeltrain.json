@@ -10,12 +10,16 @@
   "availableInStore": true,
   "grantsNetworkAccess": true,
   "minUserMode": "NAVIGATION_ONLY",
-  "flags": {
-    "isRecommendedInStore": false
-  },
   "source": {
     "type": "PLAY",
     "id": "com.moblin.israeltrain"
   },
-  "notes": "Was APKPURE, but apkpure.com answers 410 Gone for this package, and APKCOMBO was never a source the store could download from. Now PLAY. The pin was taken from the APKCombo build, which mirrors the Play release and carries the same certificate."
+  "notes": "Was APKPURE, but apkpure.com answers 410 Gone for this package, and APKCOMBO was never a source the store could download from. Now PLAY. The pin was taken from the APKCombo build, which mirrors the Play release and carries the same certificate.",
+  "screenshots": [
+    "https://play-lh.googleusercontent.com/D5fQM8NR7Tsw--LCrLtGrwYBq8jeHodkL2RhDW5GT2Ci9R1vEwnLTOrvDuzrEzs97_tn3Yf8drDqYNKgjklJOD4",
+    "https://play-lh.googleusercontent.com/woLZHPLLSKaaoq0931xsuPUm7IJ3wAjMyQjATdx6lZIIlo5k51LIBTW4u2eMs2MwOi3sg5nD0DVagVJNMxkn",
+    "https://play-lh.googleusercontent.com/kjhRGYDNaDZEwpqmqAwuUwYRJ5eEWQdwBwhj57AzXfUAK4EqkyUjWGRwrK5qRNKXo8w0kHEQV616rsCcwMQbN9Y",
+    "https://play-lh.googleusercontent.com/pyCh39AllCDea4b6y5-e3_xbq4EQdTXgh2yCKnOQuBT_dLdhy2XgNWVR00xMC8tKqXCcq0xkW7xqggUof3h9",
+    "https://play-lh.googleusercontent.com/wLZcvCRceJkvJzxUubIU3q5fsqB7hTHSttHQxyf0mx17ne7abWbIx-U55RmBfnK3HMkKywQwsoIMufvNLCaE5ak"
+  ]
 }

@@ -1,7 +1,7 @@
 {
   "packageName": "led.android.mentaplus",
   "displayName": {
-    "he": "דלק",
+    "he": "דלק - אפליקציה לתדלוק והטבות",
     "en": "Delek"
   },
   "category": "TOOLS",
@@ -10,12 +10,16 @@
   "availableInStore": true,
   "grantsNetworkAccess": true,
   "minUserMode": "REDUCED_RISK",
-  "flags": {
-    "isRecommendedInStore": false
-  },
   "source": {
     "type": "PLAY",
     "id": "led.android.mentaplus"
   },
-  "notes": "Delek fuelling (Menta). React Native, Google Maps, Firebase, AppsFlyer and Emarsys. No ad SDK. Pin and version from the build installed from Play (8.0.4, versionCode 132), signed with the developer's own key (CN=keeprz, O=keeprz, L=Tel Aviv)."
+  "notes": "Delek fuelling (Menta). React Native, Google Maps, Firebase, AppsFlyer and Emarsys. No ad SDK. Pin and version from the build installed from Play (8.0.4, versionCode 132), signed with the developer's own key (CN=keeprz, O=keeprz, L=Tel Aviv).",
+  "screenshots": [
+    "https://play-lh.googleusercontent.com/iS3uUKxDCXwhnxj-LANyzUL-Fj6PxzxclIGfXHfgjunj_fDyT-BXtwEukD7Os6xvwpCwisIMCWpVfpo9Pq0vZw",
+    "https://play-lh.googleusercontent.com/B0ebJV4V7hi6EivrSHrp66cWBlSOwgK45WoFamtnaZiblSnSB1ysSjtc8xQCkzq1wE5_iHVJIceKj5CpYszD",
+    "https://play-lh.googleusercontent.com/5d2UG_V0RDqGfo5nVhIlZqD6SsHgj6BdJ8JZEwMX7vl_R7DVowVqHg-BeT3bw0axV4fGfFq2VNiCwsZW5uWGKg",
+    "https://play-lh.googleusercontent.com/KQ33M0ytm-VTQfl5-4sC_gvR144bFKunBA-ZcK1MVm2DNyUFpm3PsnwqZTVFqAfk4rGhR4nbhDNLiTmipnCbOA",
+    "https://play-lh.googleusercontent.com/b1EBinhWQOlL0UwaEXkXV5X5CmhHOFGZg6KqxILLxwKPLtd48FGLZx0S03NqAvp5NmoMplFBl5jAi5Blnbpviw"
+  ]
 }

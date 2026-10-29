@@ -10,12 +10,19 @@
   "availableInStore": true,
   "grantsNetworkAccess": true,
   "minUserMode": "REDUCED_RISK",
-  "flags": {
-    "isRecommendedInStore": false
-  },
   "source": {
     "type": "PLAY",
     "id": "kcm.fm.volume"
   },
-  "notes": "Streams, so it is granted network, and its policy is a four host whitelist rather than an open door. The certificate was read off the installed application and its SHA-1 matches the one KDroidDatabase records for this package exactly, which is as good a confirmation as this catalog can get that the build on the device is the build the policy was written for."
+  "notes": "Streams, so it is granted network, and its policy is a four host whitelist rather than an open door. The certificate was read off the installed application and its SHA-1 matches the one KDroidDatabase records for this package exactly, which is as good a confirmation as this catalog can get that the build on the device is the build the policy was written for.",
+  "screenshots": [
+    "https://play-lh.googleusercontent.com/g3FcdVZJPZT5d6tB_bpfA3nU7rrkcNhz2BKcY3DDLl-cIUe0ITkevpWO-BgCEchofL4ejto1353RGvo2g_dU",
+    "https://play-lh.googleusercontent.com/5NB6VtI-vy-Ve_LqEKUZscDqBpkAK3d3WVI4lTbsLAPEsrCb4_UGAFfRrDoONDGS7f2rEWrrjMEPb7uUkQMD-g",
+    "https://play-lh.googleusercontent.com/bWMzbXE7u9uWrEvykjLiC7XEtm6Grft-9WuF7rKencEsD5IAOM3xl3t4kb8k99C-vnBtavIfhMedc9n9RCj1lMQ",
+    "https://play-lh.googleusercontent.com/xnFenkKRk0uwRMstmZaOtuDblPxHW485jNWuxb50A63pjU4shYZpLXBdZ7VCG6vOEvQ1ACowbRmP8a6KSBKQrg",
+    "https://play-lh.googleusercontent.com/bi2kRn0IOaLPbwR3XMR8uIyLDKVTl8YOrM6SkCRgfYeF6k_D6TTyxAOyMOcYN6HKdWUUFehCHTb1FuldSb9_yA",
+    "https://play-lh.googleusercontent.com/WEOKHpM9JBLjMXdCbYd8FvfzLwuQnsHFU-izjzbxwUCpyYt28fhxMrVHMOBzEx-Mt5UBxpGzMG9UzxpvZ6JExZM",
+    "https://play-lh.googleusercontent.com/mJf85o1AYlASN-9hx2EPMnYVr2zzQNGUH9A-Yui4m9Cizju1ZDb8HRqqGBmXUpwA1XbSNC6D2wJjgJV04CBh5Yo",
+    "https://play-lh.googleusercontent.com/zbsJs33wPOzGE2lCKlfnI3I7LgtcVOP6za1p4AYorLdgJiamRSt36yZw_cEUPvHKnqgJhlMqsJLkMAT9hRnZGf8"
+  ]
 }

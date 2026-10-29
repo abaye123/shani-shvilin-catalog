@@ -10,11 +10,18 @@
   "availableInStore": true,
   "grantsNetworkAccess": true,
   "minUserMode": "NAVIGATION_ONLY",
-  "flags": {
-    "isRecommendedInStore": false
-  },
   "source": {
     "type": "PLAY",
     "id": "com.unicell.pangoandroid"
-  }
+  },
+  "screenshots": [
+    "https://play-lh.googleusercontent.com/zq6ddpTUCgDhPX8kpN7v-ffZOal72dOdJHJQanBgZ-N3Xpf1lfc08zcLkPLPP31vqxqVZY_cqkibYQkEPDuwqA",
+    "https://play-lh.googleusercontent.com/_SpbtHex6x_WJkFJk--jwAw5c8EdePPZRr5OBBhSR_-YSZVBvICVNicE3hqUdyTx1y5W4zoHcXV_GCXMiZPfw4o",
+    "https://play-lh.googleusercontent.com/cxaHf8VR5_211dv9xcmVQxvouD4NwweF6iYJXXXPcKDK8RzpHjFXup77fG5Y5zC2Aqpn0BGwv_2KkZ_Oqwi62g",
+    "https://play-lh.googleusercontent.com/n1u8T7AOI-uMDFesZG36F87WS3XhkEHKmH1jFd9jaRjUI0lRDm5dF2tyMKNz4ayDPovUOkZu7eQ1c2qe9cupwQ",
+    "https://play-lh.googleusercontent.com/pZ2FQZfD2c9mpBHIgUdATQNcy9Lo1Hu9WQ5cOpVPFdYwPvYkOmzgEpPog-rs0ESoY61Nv9WP-lD4b83gh8ubTQ",
+    "https://play-lh.googleusercontent.com/IoRhfZ2B8XPR9VNOTludvzqBiuoIZR7mRVjuMpHZLXRK8xgyYbnXUgQK95hll85ciUeDd8ghwP_XKjrLjiYI8w",
+    "https://play-lh.googleusercontent.com/IzC2-RMmayx9dx46BEmSYBsPDX9Kgj04k8mOPUECVKWSrR3xCT7xZlp1DsEVr1rMGjHa1SxGpa7qe1C6J2DW",
+    "https://play-lh.googleusercontent.com/KMYVfp-WXTP4QrRlpJ5V2NTs5LYgxbgmgJHDyz13MQL2SUf0lE2LB6yhlJklqFCm2V2FcxyCaVbJAcoTM-NEFX4"
+  ]
 }

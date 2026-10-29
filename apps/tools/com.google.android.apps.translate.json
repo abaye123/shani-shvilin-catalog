@@ -1,7 +1,7 @@
 {
   "packageName": "com.google.android.apps.translate",
   "displayName": {
-    "he": "Google Translate",
+    "he": "Google Translate - תרגום",
     "en": "Google Translate"
   },
   "category": "TOOLS",
@@ -10,12 +10,14 @@
   "availableInStore": true,
   "grantsNetworkAccess": true,
   "minUserMode": "REDUCED_RISK",
-  "flags": {
-    "isRecommendedInStore": false
-  },
   "source": {
     "type": "PLAY",
     "id": "com.google.android.apps.translate"
   },
-  "notes": "Pin and version from the build installed from Play (9.27.28, versionCode 700328882), signed with Google's own key (CN=Unknown, OU=Google, Inc), not Play App Signing. No policy, so it is fully open inside the tunnel, by choice. Everything it does runs through Google hosts it cannot work without (translate-pa.googleapis.com, translate.google.com, inputtools.google.com, www.gstatic.com), so a blocklist would have nothing useful to name. No ad SDK. Translating a website goes through a *.translate.goog proxy, which can stand in for any site; the application hands that to the browser rather than showing it itself, so it is the browser's network that decides whether it loads. Camera translation shows what the camera sees, not images from the web."
+  "notes": "Pin and version from the build installed from Play (9.27.28, versionCode 700328882), signed with Google's own key (CN=Unknown, OU=Google, Inc), not Play App Signing. No policy, so it is fully open inside the tunnel, by choice. Everything it does runs through Google hosts it cannot work without (translate-pa.googleapis.com, translate.google.com, inputtools.google.com, www.gstatic.com), so a blocklist would have nothing useful to name. No ad SDK. Translating a website goes through a *.translate.goog proxy, which can stand in for any site; the application hands that to the browser rather than showing it itself, so it is the browser's network that decides whether it loads. Camera translation shows what the camera sees, not images from the web.",
+  "screenshots": [
+    "https://play-lh.googleusercontent.com/YiMXnEXOcSvgrk6KF3PDDZjnaokJBhbsB9vH41YTTTCtys81xBXghttaob2m4TIJutoFyF3h-JNVjP18tCmR",
+    "https://play-lh.googleusercontent.com/eBDYNn1TQkNwz3NQq9BdYHbgfQlt2PntXSJR9lX7sr5Hyp6wGAQlH3D5wr_sRzsPzuiibzDOPbPMOSFuKrlY6Xo",
+    "https://play-lh.googleusercontent.com/ND-XN0pIvXrEQ-Y7-Ffn7Ti0wLepwdz5p0as01UWQaz85MxTQzAgWHCcQUtOFC7pNEYgwyMz1X1I3X1tz6UB3w"
+  ]
 }

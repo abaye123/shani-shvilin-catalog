@@ -10,12 +10,14 @@
   "availableInStore": true,
   "grantsNetworkAccess": true,
   "minUserMode": "NAVIGATION_ONLY",
-  "flags": {
-    "isRecommendedInStore": false
-  },
   "source": {
     "type": "PLAY",
     "id": "com.bluegate.app"
   },
-  "notes": "Opening gates and barriers by phone. Its network security configuration names api1.pal-es.com and that is all it reached. Firebase and Google Maps. No ad SDK. No policy, so it is open inside the tunnel. Most of the host list extract_hosts.py prints for it is the public suffix list bundled in a library, not hosts it reaches. Pin and version from the build installed from Play (1.6.0076, versionCode 447), signed with the developer's own key (CN=Nisso Pardo, OU=Developer, O=Pal-Electronics, L=Ranana, ST=Israel, C=972)."
+  "notes": "Opening gates and barriers by phone. Its network security configuration names api1.pal-es.com and that is all it reached. Firebase and Google Maps. No ad SDK. No policy, so it is open inside the tunnel. Most of the host list extract_hosts.py prints for it is the public suffix list bundled in a library, not hosts it reaches. Pin and version from the build installed from Play (1.6.0076, versionCode 447), signed with the developer's own key (CN=Nisso Pardo, OU=Developer, O=Pal-Electronics, L=Ranana, ST=Israel, C=972).",
+  "screenshots": [
+    "https://play-lh.googleusercontent.com/QLjinAdH61Aa2rMlsG44Ba3KW7lf5sBKxx_O-vru79kIh49lCzZAaEVMbWHDoujI7qNPHmpyMRs4i6mtKzbtUA",
+    "https://play-lh.googleusercontent.com/P_ba33loNNLnlbd2Rs-owQ3nxnmiTZjgRKcIIQo-eBSqQSkCgOQqd-jNgVJe9lUGYI1CwQ5ertpXTq7ZfHJvb2Y",
+    "https://play-lh.googleusercontent.com/eWHvUmqoZLgCCmG5gaSg5cjut--AXQlATVbLPq7IgnfcBlsMz504lBFZ8e1ffza_PAsICsJVcYyNryGdBIHzlBY"
+  ]
 }

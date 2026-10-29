@@ -10,12 +10,14 @@
   "availableInStore": true,
   "grantsNetworkAccess": true,
   "minUserMode": "REDUCED_RISK",
-  "flags": {
-    "isRecommendedInStore": false
-  },
   "source": {
     "type": "PLAY",
     "id": "com.sonol.mobileapp"
   },
-  "notes": "Sonol fuelling. React Native, Google Maps, Firebase, Branch, Sentry and Forter. No ad SDK. Pin and version from the build installed from Play (2.7.4, versionCode 30000030), signed with the developer's own key (CN=Sonol, OU=Sonol, O=Sonol, L=Israel, ST=Israel, C=IL)."
+  "notes": "Sonol fuelling. React Native, Google Maps, Firebase, Branch, Sentry and Forter. No ad SDK. Pin and version from the build installed from Play (2.7.4, versionCode 30000030), signed with the developer's own key (CN=Sonol, OU=Sonol, O=Sonol, L=Israel, ST=Israel, C=IL).",
+  "screenshots": [
+    "https://play-lh.googleusercontent.com/5inyWo1mGwIjYX0pRf2vbGt9ndfVx6ENh5bwuFwHeGHDZdtrAeba1uld4IfakPVz7wdevq23nRsgI9Krn-YyZw",
+    "https://play-lh.googleusercontent.com/xR1mTFB_Le1iRJ0NY1vrt65T3S1N0AkUG6x5kvOWuL_0hXweGCMqeyDi2FqXfbikU9rX65pLyBcUDUobGHI4bHQ",
+    "https://play-lh.googleusercontent.com/lsF7YL2m6Iu1mYSFzLR_KV_Pxk2JgINNVrE4fF7USSgVkbrWdQBj1aRfLW2rinT6GdHbbT5auvmgBSkEei0brOM"
+  ]
 }

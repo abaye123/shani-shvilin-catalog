@@ -1,7 +1,7 @@
 {
   "packageName": "com.amudanan.amudanan",
   "displayName": {
-    "he": "עמוד ענן",
+    "he": "עמוד ענן - מדריך הטיולים החברתי",
     "en": "Amud Anan"
   },
   "category": "NAVIGATION",
@@ -11,12 +11,21 @@
   "grantsNetworkAccess": true,
   "minUserMode": "MOST_OPEN",
   "flags": {
-    "hasUnmodestImage": true,
-    "isRecommendedInStore": false
+    "hasUnmodestImage": true
   },
   "source": {
     "type": "PLAY",
     "id": "com.amudanan.amudanan"
   },
-  "notes": "Hiking and offroad maps. Flutter, Mapbox and MapLibre, Firebase and the Facebook SDK. Flagged hasUnmodestImage, like Israel Hiking Map: points of interest carry photos users upload. Pin and version from the build installed from Play (2.4.3, versionCode 2004031), signed with the developer's own key (CN=Yoav Rofe, OU=Amud Anan, O=Amud Anan, L=Jerusalem, ST=Jerusalem, C=IL). The flag keeps it out of REDUCED_RISK and asks for explicit acceptance; MOST_OPEN is stated so the entry says what the flag already means."
+  "notes": "Hiking and offroad maps. Flutter, Mapbox and MapLibre, Firebase and the Facebook SDK. Flagged hasUnmodestImage, like Israel Hiking Map: points of interest carry photos users upload. Pin and version from the build installed from Play (2.4.3, versionCode 2004031), signed with the developer's own key (CN=Yoav Rofe, OU=Amud Anan, O=Amud Anan, L=Jerusalem, ST=Jerusalem, C=IL). The flag keeps it out of REDUCED_RISK and asks for explicit acceptance; MOST_OPEN is stated so the entry says what the flag already means.",
+  "screenshots": [
+    "https://play-lh.googleusercontent.com/ROzk2oK3_S35j4YYZLBcHw12CgPm7AOTMvjaxizQiadb_e4-V-EXkz0gkymCZWj9Re7ZOJn-CuPwOWCkMXVeI00",
+    "https://play-lh.googleusercontent.com/ZeG6M9o7ciyKEor51zF0DA1Cw_1qc2L9N7RluEfDz1Wq1JRsPZg0ApsGOrCNT6xLhJYfNKmUdGMEUOgIjiFIpA",
+    "https://play-lh.googleusercontent.com/ttl6mRk7Vx3VO0ox_qeKDoUqzQE-jLtP9lt820evCDnQwopgCM1A7FLLVM-00yUFfWPxqs7LNey-J7lFb7DySQ",
+    "https://play-lh.googleusercontent.com/uvXd0WKzxF1DpfiRW7PKuy78qrDWQP-FmOF9jgMgkdGO252mIrTSfyEs2bUNlxzFS5dbKJ7Et5fuYJyUvoPw",
+    "https://play-lh.googleusercontent.com/cQnPTf3TUToRyx8b4viSwWccjb948ungD4nojS88eeNOsalzTMEFbo9J-0LZGzu3O1qCXS3kJBKsR1p3SCF2RA",
+    "https://play-lh.googleusercontent.com/MuHaQDv1oP2t8rFnqlD06DUVUS70C8WeTKoMRHJaokm9NtzU_Vc81S27wy5CiobcCU2aOC1r5Fj1o7GcBht1Ug4",
+    "https://play-lh.googleusercontent.com/ZvMYVDLOdve6vcnn3XRieHzcO8tN3arsb7NjjhtTyghMlVS-og2Kpevl7YpjxNpf-HQgnPFOtXMy9tloqTMCaA",
+    "https://play-lh.googleusercontent.com/ViTqgRc_ozC1R9Qhh_18sujbdXEsjdEv0uN-RIAwxLbYPHbMTDlwA3rzCrmENkjYfLXEVz5f3YKI3atTOecg"
+  ]
 }

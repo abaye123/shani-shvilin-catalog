@@ -1,7 +1,7 @@
 {
   "packageName": "il.org.osm.israelhiking",
   "displayName": {
-    "he": "מפת טיולים ישראל",
+    "he": "Israel Hiking Map - מפת טיולים ישראל",
     "en": "Israel Hiking Map"
   },
   "category": "NAVIGATION",
@@ -11,12 +11,21 @@
   "grantsNetworkAccess": true,
   "minUserMode": "MOST_OPEN",
   "flags": {
-    "hasUnmodestImage": true,
-    "isRecommendedInStore": false
+    "hasUnmodestImage": true
   },
   "source": {
     "type": "PLAY",
     "id": "il.org.osm.israelhiking"
   },
-  "notes": "Hiking and trail maps on OpenStreetMap, open source. Pin and version from the build installed from Play (9.21.256, versionCode 921256), signed with Play App Signing (CN=Android, O=Google Inc.). No ad SDK. Flagged hasUnmodestImage: points of interest show photos from Wikimedia Commons, iNature and pictures users upload to the project's own server, mostly landscapes but open to anyone, so what appears cannot be known in advance. The flag keeps it out of REDUCED_RISK and asks for explicit acceptance; MOST_OPEN is stated so the entry says what the flag already means."
+  "notes": "Hiking and trail maps on OpenStreetMap, open source. Pin and version from the build installed from Play (9.21.256, versionCode 921256), signed with Play App Signing (CN=Android, O=Google Inc.). No ad SDK. Flagged hasUnmodestImage: points of interest show photos from Wikimedia Commons, iNature and pictures users upload to the project's own server, mostly landscapes but open to anyone, so what appears cannot be known in advance. The flag keeps it out of REDUCED_RISK and asks for explicit acceptance; MOST_OPEN is stated so the entry says what the flag already means.",
+  "screenshots": [
+    "https://play-lh.googleusercontent.com/mSY25LjaJNycjtBQy_m3v4ObuhjI5LhJb2_2NcQ_vpVP4hw1e9edAq4o1t82nGVUY6XzriOdk-Ove_OGF59i",
+    "https://play-lh.googleusercontent.com/UR3FxryqLXZCwzb9D6OSM2xmEy71v4bhj7LHpkadN-hKNoBd8tDct57zOyT4aGQbqNf3jGZxCL22ljLucp3J3aY",
+    "https://play-lh.googleusercontent.com/qAOe2biHPbhcjd5S2aksZzF2pBbYL5jtOgKcirh6DAIIvBT5yPYhj9zpKz8DpLlfZS1moHDwBIvWhMQuK98I6w",
+    "https://play-lh.googleusercontent.com/lawUsUwI8FJ2571g3CIn2m-Hy-V__M2Rx0JV6AY4RqNoVa4095XvDnT19SbcHt0eb_vhvC0Of-ExnLg3L8Vb6A",
+    "https://play-lh.googleusercontent.com/h19-tqZjSFmgK9leWQmEpGmKCP5A00orGoGDrDVbaFvgkfUlFqLTnaDsjEhM0BLD0Llo90-ej5ZzhqOqlQmOyIo",
+    "https://play-lh.googleusercontent.com/HKUAUPhC6Z9Pc9RRluHaxmI1zQwT7VDpsCCPBiysPLhgreaUweTt2UDlOAq76E5kOo5CU_f6mB4nNmtu4wE6m1o",
+    "https://play-lh.googleusercontent.com/uVAKSy1BY-_S-ouXqQzVMBZrOLTmGnGNPGYG32PJFiVFBDKZSg9nki7KgPTNNKowhyWj5GLHnAeOuv1LpJsh3w",
+    "https://play-lh.googleusercontent.com/qBsW_8YbyGseklCnShWHk5s0Aacs4yL1L2ilHBU0JmyeaHjx6fmDpB-W0F6oa_8igGCWmTEj5ZOh5ODQ32ySYmQ"
+  ]
 }
