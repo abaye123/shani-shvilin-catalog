@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-20T16:26:37Z",
+  "generatedAt": "2026-10-29T19:03:22Z",
   "entries": [
     {
       "packageName": "air.com.cellogroup.Cellopark",
@@ -353,6 +353,27 @@
         "id": "com.moblin.israeltrain"
       },
       "notes": "Was APKPURE, but apkpure.com answers 410 Gone for this package, and APKCOMBO was never a source the store could download from. Now PLAY. The pin was taken from the APKCombo build, which mirrors the Play release and carries the same certificate."
+    },
+    {
+      "packageName": "com.mot.haniti",
+      "displayName": {
+        "he": "חניתי",
+        "en": "Haniti"
+      },
+      "category": "NAVIGATION",
+      "minimumVersionCode": 113,
+      "sha256": "ef7d3a82dfbc64144b2207c59fc085ae7df1e19eaea939f4b03e10ce96d5f570",
+      "availableInStore": true,
+      "grantsNetworkAccess": true,
+      "minUserMode": "NAVIGATION_ONLY",
+      "flags": {
+        "isRecommendedInStore": false
+      },
+      "source": {
+        "type": "PLAY",
+        "id": "com.mot.haniti"
+      },
+      "notes": "Ministry of Transport parking application, so it sits beside Pango and Cellopark. Pin and version from the build installed from Play (1.1.1, versionCode 113), signed with Play App Signing (CN=Android, O=Google Inc.). It is an OutSystems shell: the screens are a web application served from transportation.outsystems.app and shown in a WebView, which is why the policy can be an allow list of one host."
     },
     {
       "packageName": "com.myadventure.myadventure",

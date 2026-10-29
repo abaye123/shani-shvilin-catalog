@@ -1,0 +1,21 @@
+{
+  "packageName": "com.mot.haniti",
+  "displayName": {
+    "he": "חניתי",
+    "en": "Haniti"
+  },
+  "category": "NAVIGATION",
+  "minimumVersionCode": 113,
+  "sha256": "ef7d3a82dfbc64144b2207c59fc085ae7df1e19eaea939f4b03e10ce96d5f570",
+  "availableInStore": true,
+  "grantsNetworkAccess": true,
+  "minUserMode": "NAVIGATION_ONLY",
+  "flags": {
+    "isRecommendedInStore": false
+  },
+  "source": {
+    "type": "PLAY",
+    "id": "com.mot.haniti"
+  },
+  "notes": "Ministry of Transport parking application, so it sits beside Pango and Cellopark. Pin and version from the build installed from Play (1.1.1, versionCode 113), signed with Play App Signing (CN=Android, O=Google Inc.). It is an OutSystems shell: the screens are a web application served from transportation.outsystems.app and shown in a WebView, which is why the policy can be an allow list of one host."
+}
