@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-29T19:05:33Z",
-  "sourceTag": "6c5d3abfe67cf6bc",
+  "generatedAt": "2026-10-29T19:19:41Z",
+  "sourceTag": "098f2a9fa758bbef",
   "policies": [
     {
       "type": "Fixed",
@@ -179,6 +179,26 @@
       "networkPolicy": {
         "mode": "FULL_OPEN"
       }
+    },
+    {
+      "type": "Fixed",
+      "packageName": "com.hebvoice.stt",
+      "category": "PRODUCTIVITY",
+      "networkPolicy": {
+        "mode": "BLACKLIST",
+        "desc": "Google search and the forum links are blocked; transcription and updates stay open",
+        "spec": {
+          "type": "HostList",
+          "hosts": [
+            "www.google.com",
+            "google.com",
+            "mitmachim.top",
+            "rechavimzelaze.ovh"
+          ]
+        }
+      },
+      "minimumVersionCode": 25,
+      "notes": "Written from the binary. classes.dex carries https://www.google.com/search?q= for its spoken Google search, https://www.google.com/ and search?q=a which read as a reachability probe for that feature, and two support threads, mitmachim.top/post/1249818 and rechavimzelaze.ovh/post/156187. There is no WebView in the application: search and the threads are handed to the browser with ACTION_VIEW, so they also fail wherever the browser has no network. They are blocked here so that does not depend on the browser, and so the probe fails and the application can report the search as blocked instead of offering a button that does nothing.\n\nOpen on purpose: api.groq.com, which is the transcription itself, and raw.githubusercontent.com, api.github.com and cdn.jsdelivr.net, which are its update check and the APK download. waze.com/ul is a link handed to Waze. ogenplay.com is its store page link.\n\nThe application also has its own password lock for Google search, which survives a reinstall. That is a setting inside the application, not something this policy can turn on.\n\nNot yet watched on a device through the tunnel."
     },
     {
       "type": "Fixed",

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-29T19:05:33Z",
+  "generatedAt": "2026-10-29T19:19:41Z",
   "entries": [
     {
       "packageName": "air.com.cellogroup.Cellopark",
@@ -290,6 +290,28 @@
         "isRecommendedInStore": false
       },
       "notes": "Needed for spoken navigation directions"
+    },
+    {
+      "packageName": "com.hebvoice.stt",
+      "displayName": {
+        "he": "תמלול קולי עברי",
+        "en": "HebrewVoice"
+      },
+      "category": "PRODUCTIVITY",
+      "minimumVersionCode": 25,
+      "sha256": "b9b63db27a320f0b3f49172a79767f1ab8145880bd6cb03cf1db5737d7e68ea5",
+      "availableInStore": true,
+      "grantsNetworkAccess": true,
+      "minUserMode": "MOST_OPEN",
+      "flags": {
+        "isRecommendedInStore": false
+      },
+      "source": {
+        "type": "GITHUB",
+        "id": "o054840/hebvoice-updates",
+        "directUrl": "https://github.com/o054840/hebvoice-updates/releases/latest"
+      },
+      "notes": "Hebrew speech to text, with voice destination search in Waze. Listed on Ogen Play, whose downloads need a sign in and hand out a signed link that expires after five minutes, so it cannot be a source. The application's own updater names a public repository instead, o054840/hebvoice-updates, and its latest release asset (HebrewVoice-v3.9.2.apk, versionCode 25) is byte for byte the Ogen Play file: sha256 55981e59...6253 on both, and the same value in the repository's update.json. Signed with the developer's own key (CN=HebrewVoice, O=Private, C=IL). The in-app updater installs from the same repository, and only a build signed with this key can update it in place."
     },
     {
       "packageName": "com.khl.kiosk",
