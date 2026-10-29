@@ -1,0 +1,21 @@
+{
+  "packageName": "com.google.android.apps.translate",
+  "displayName": {
+    "he": "Google Translate",
+    "en": "Google Translate"
+  },
+  "category": "TOOLS",
+  "minimumVersionCode": 700328882,
+  "sha256": "3d7a1223019aa39d9ea0e3436ab7c0896bfb4fb679f4de5fe7c23f326c8f994a",
+  "availableInStore": true,
+  "grantsNetworkAccess": true,
+  "minUserMode": "REDUCED_RISK",
+  "flags": {
+    "isRecommendedInStore": false
+  },
+  "source": {
+    "type": "PLAY",
+    "id": "com.google.android.apps.translate"
+  },
+  "notes": "Pin and version from the build installed from Play (9.27.28, versionCode 700328882), signed with Google's own key (CN=Unknown, OU=Google, Inc), not Play App Signing. No policy, so it is fully open inside the tunnel, by choice. Everything it does runs through Google hosts it cannot work without (translate-pa.googleapis.com, translate.google.com, inputtools.google.com, www.gstatic.com), so a blocklist would have nothing useful to name. No ad SDK. Translating a website goes through a *.translate.goog proxy, which can stand in for any site; the application hands that to the browser rather than showing it itself, so it is the browser's network that decides whether it loads. Camera translation shows what the camera sees, not images from the web."
+}

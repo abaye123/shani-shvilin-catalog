@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-29T19:47:05Z",
+  "generatedAt": "2026-10-29T19:49:29Z",
   "entries": [
     {
       "packageName": "air.com.cellogroup.Cellopark",
@@ -189,6 +189,27 @@
       ]
     },
     {
+      "packageName": "com.google.android.apps.authenticator2",
+      "displayName": {
+        "he": "Google Authenticator",
+        "en": "Google Authenticator"
+      },
+      "category": "TOOLS",
+      "minimumVersionCode": 7002011,
+      "sha256": "f0fd6c5b410f25cb25c3b53346c8972fae30f8ee7411df910480ad6b2d60db83",
+      "availableInStore": true,
+      "grantsNetworkAccess": true,
+      "minUserMode": "NAVIGATION_ONLY",
+      "flags": {
+        "isRecommendedInStore": false
+      },
+      "source": {
+        "type": "PLAY",
+        "id": "com.google.android.apps.authenticator2"
+      },
+      "notes": "Two factor codes. Pin and version from the build installed from Play (7.2, versionCode 7002011), signed with Play App Signing (CN=Android, O=Google Inc.). No policy, so it is fully open inside the tunnel, by choice. The codes themselves are computed on the device and need no network; the network is for backing the accounts up to the Google account and restoring them. Available from NAVIGATION_ONLY because a device in the strictest modes still has to sign in to things, and it shows nothing but codes."
+    },
+    {
       "packageName": "com.google.android.apps.maps",
       "displayName": {
         "he": "גוגל מפות",
@@ -215,6 +236,27 @@
         "https://play-lh.googleusercontent.com/SZYkejxa4A8q-NB60TKTHgX3u7g1TOYNFGqSl9v0ExE5yydTuIeSqdu9hTKSioifipAKeMpaCWTr9WBGGXQQcw",
         "https://play-lh.googleusercontent.com/6vqNimEQei7H4ZIiGXiZexY2z2fWeBao1Ss0Mm2aX_V_nUdlX1O7_7O8snY5J2qk3Q4xAiN9z_n5hxEaNt34dQ"
       ]
+    },
+    {
+      "packageName": "com.google.android.apps.translate",
+      "displayName": {
+        "he": "Google Translate",
+        "en": "Google Translate"
+      },
+      "category": "TOOLS",
+      "minimumVersionCode": 700328882,
+      "sha256": "3d7a1223019aa39d9ea0e3436ab7c0896bfb4fb679f4de5fe7c23f326c8f994a",
+      "availableInStore": true,
+      "grantsNetworkAccess": true,
+      "minUserMode": "REDUCED_RISK",
+      "flags": {
+        "isRecommendedInStore": false
+      },
+      "source": {
+        "type": "PLAY",
+        "id": "com.google.android.apps.translate"
+      },
+      "notes": "Pin and version from the build installed from Play (9.27.28, versionCode 700328882), signed with Google's own key (CN=Unknown, OU=Google, Inc), not Play App Signing. No policy, so it is fully open inside the tunnel, by choice. Everything it does runs through Google hosts it cannot work without (translate-pa.googleapis.com, translate.google.com, inputtools.google.com, www.gstatic.com), so a blocklist would have nothing useful to name. No ad SDK. Translating a website goes through a *.translate.goog proxy, which can stand in for any site; the application hands that to the browser rather than showing it itself, so it is the browser's network that decides whether it loads. Camera translation shows what the camera sees, not images from the web."
     },
     {
       "packageName": "com.google.android.gm",
