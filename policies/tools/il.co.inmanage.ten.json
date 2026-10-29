@@ -1,0 +1,34 @@
+{
+  "type": "Fixed",
+  "packageName": "il.co.inmanage.ten",
+  "category": "TOOLS",
+  "networkPolicy": {
+    "mode": "BLACKLIST",
+    "desc": "Marketing push, attribution and Facebook are blocked; the application itself stays open",
+    "spec": {
+      "type": "HostList",
+      "hosts": [
+        "cp.pushwoosh.com",
+        "s.api.pushwoosh.com",
+        "inapps.appsflyersdk.com",
+        "launches.appsflyersdk.com",
+        "conversions.appsflyersdk.com",
+        "attr.appsflyersdk.com",
+        "register.appsflyersdk.com",
+        "sdk-services.appsflyersdk.com",
+        "settings.appsflyersdk.com",
+        "gcdsdk.appsflyersdk.com",
+        "dlsdk.appsflyersdk.com",
+        "monitorsdk.appsflyersdk.com",
+        "impression.appsflyersdk.com",
+        "adrevenue.appsflyersdk.com",
+        "aps-webhandler.appsflyer.com",
+        "graph.facebook.com",
+        "graph-video.facebook.com",
+        "m.facebook.com"
+      ]
+    }
+  },
+  "minimumVersionCode": 80,
+  "notes": "Written from the binary. What it needs: ten.inmanage.com, its API, banners and coupons alike, and hotclient5.inmanage.com, the one domain in its network security configuration. Firebase for Crashlytics and dynamic links (tenapp.page.link).\n\nBlocked: Pushwoosh, which delivers its marketing push notifications, so promotional pushes with pictures stop arriving; AppsFlyer, which is install attribution and marketing tracking; and the Facebook SDK. The AppsFlyer and Facebook names are assembled at runtime from format strings (\"%sinapps.%s\", \"graph.%s\" and so on), which is why the extractor did not list most of them; the list here is those strings filled in with appsflyersdk.com and facebook.com.\n\nWhat this cannot do: the in-app banners come from ten.inmanage.com, the same host as the fuelling itself. That is why the catalog entry carries hasUnmodestImage.\n\nNot yet watched on a device through the tunnel. If the banner images turn out to come from a separate image host, that host is the one to add here."
+}

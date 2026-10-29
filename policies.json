@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-29T19:32:42Z",
-  "sourceTag": "9052c6eea7d27ab8",
+  "generatedAt": "2026-10-29T19:38:19Z",
+  "sourceTag": "7297bbabb6d7c157",
   "policies": [
     {
       "type": "Fixed",
@@ -382,6 +382,40 @@
       },
       "minimumVersionCode": 104,
       "notes": "Written from the binary. What it needs: gravez.me, backendapi.gravez.me and services.gravez.me (search, route markers, the paid services page), apiendusers.corido.co.il and contentpages.corido.co.il (the vendor's API and content pages such as Prayers.html), coridopersonalimages.s3.eu-west-1.amazonaws.com (photos users upload to a deceased's page, left open on purpose) and Firebase (auth, messaging, Crashlytics, Analytics). The map comes from OpenStreetMap extracts bundled in assets, so no tile host is needed.\n\nBlocked: the Facebook SDK, which is there for sign in, sharing and app events. Its host is built at runtime as graph.%s, which is why the extractor did not list graph.facebook.com. WhatsApp, Telegram and Facebook share links are handed to those applications and are not this application's traffic.\n\nNot an allow list on purpose: several backends, and a list that misses one breaks a screen without saying why. Not yet watched on a device through the tunnel."
+    },
+    {
+      "type": "Fixed",
+      "packageName": "il.co.inmanage.ten",
+      "category": "TOOLS",
+      "networkPolicy": {
+        "mode": "BLACKLIST",
+        "desc": "Marketing push, attribution and Facebook are blocked; the application itself stays open",
+        "spec": {
+          "type": "HostList",
+          "hosts": [
+            "cp.pushwoosh.com",
+            "s.api.pushwoosh.com",
+            "inapps.appsflyersdk.com",
+            "launches.appsflyersdk.com",
+            "conversions.appsflyersdk.com",
+            "attr.appsflyersdk.com",
+            "register.appsflyersdk.com",
+            "sdk-services.appsflyersdk.com",
+            "settings.appsflyersdk.com",
+            "gcdsdk.appsflyersdk.com",
+            "dlsdk.appsflyersdk.com",
+            "monitorsdk.appsflyersdk.com",
+            "impression.appsflyersdk.com",
+            "adrevenue.appsflyersdk.com",
+            "aps-webhandler.appsflyer.com",
+            "graph.facebook.com",
+            "graph-video.facebook.com",
+            "m.facebook.com"
+          ]
+        }
+      },
+      "minimumVersionCode": 80,
+      "notes": "Written from the binary. What it needs: ten.inmanage.com, its API, banners and coupons alike, and hotclient5.inmanage.com, the one domain in its network security configuration. Firebase for Crashlytics and dynamic links (tenapp.page.link).\n\nBlocked: Pushwoosh, which delivers its marketing push notifications, so promotional pushes with pictures stop arriving; AppsFlyer, which is install attribution and marketing tracking; and the Facebook SDK. The AppsFlyer and Facebook names are assembled at runtime from format strings (\"%sinapps.%s\", \"graph.%s\" and so on), which is why the extractor did not list most of them; the list here is those strings filled in with appsflyersdk.com and facebook.com.\n\nWhat this cannot do: the in-app banners come from ten.inmanage.com, the same host as the fuelling itself. That is why the catalog entry carries hasUnmodestImage.\n\nNot yet watched on a device through the tunnel. If the banner images turn out to come from a separate image host, that host is the one to add here."
     },
     {
       "type": "Fixed",

@@ -1,0 +1,22 @@
+{
+  "packageName": "il.co.inmanage.ten",
+  "displayName": {
+    "he": "טן",
+    "en": "Ten"
+  },
+  "category": "TOOLS",
+  "minimumVersionCode": 80,
+  "sha256": "a8cceab0df7d58b2d54afb8e26141e5dbfb0b75ba3da64d40fca1a483bcff22d",
+  "availableInStore": true,
+  "grantsNetworkAccess": true,
+  "minUserMode": "MOST_OPEN",
+  "flags": {
+    "hasUnmodestImage": true,
+    "isRecommendedInStore": false
+  },
+  "source": {
+    "type": "PLAY",
+    "id": "il.co.inmanage.ten"
+  },
+  "notes": "The Ten fuel station chain: fuelling, prices, coupons. Pin and version from the build installed from Play (3.8, versionCode 80), signed with Play App Signing (CN=Android, O=Google Inc.). Flagged hasUnmodestImage: it shows its own promotional banners and coupons (BannerView, FeedBanner, AppBanner in the dex), sometimes with a woman in the picture. They come from the same server as the rest of the application, ten.inmanage.com, with image URLs handed out at runtime, so no host rule can take the banners out and leave the fuelling working. The flag keeps it out of REDUCED_RISK and asks for explicit acceptance before it is installed or gets network. No third party ad SDK and no AdMob application id."
+}
