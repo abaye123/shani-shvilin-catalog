@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-29T19:54:09Z",
+  "generatedAt": "2026-10-29T20:03:19Z",
   "entries": [
     {
       "packageName": "air.com.cellogroup.Cellopark",
@@ -733,14 +733,20 @@
       "availableInStore": true,
       "grantsNetworkAccess": true,
       "minUserMode": "NAVIGATION_ONLY",
-      "flags": {
-        "isRecommendedInStore": false
-      },
       "source": {
         "type": "PLAY",
         "id": "il.co.corido.cemeterynavigation"
       },
-      "notes": "Finds a grave and walks you to it inside the cemetery. Pin and version from the build installed from Play (3.2.5, versionCode 104), signed with Play App Signing (CN=Android, O=Google Inc.). No advertising: none of the common ad SDKs are in the dex, the Google Ads classes present are the ones Firebase Analytics pulls in, and there is no AdMob application id. The 'AdvertisementService' class is Bluetooth LE advertising, not ads. sonol.co.il and trail-camera.co.il are website tags on points in the bundled OpenStreetMap extracts, and hagilda.com is a font's copyright line."
+      "notes": "Finds a grave and walks you to it inside the cemetery. Pin and version from the build installed from Play (3.2.5, versionCode 104), signed with Play App Signing (CN=Android, O=Google Inc.). No advertising: none of the common ad SDKs are in the dex, the Google Ads classes present are the ones Firebase Analytics pulls in, and there is no AdMob application id. The 'AdvertisementService' class is Bluetooth LE advertising, not ads. sonol.co.il and trail-camera.co.il are website tags on points in the bundled OpenStreetMap extracts, and hagilda.com is a font's copyright line.",
+      "screenshots": [
+        "https://play-lh.googleusercontent.com/LOgWYA6lIAuwGqSJLDazovTl3OzrUubJURemYzHDyjjvR3BEsQ4vS89qoSqhmm0I0SDpKPVhwTXA_HYMEQ_E",
+        "https://play-lh.googleusercontent.com/nvezu18naJnL3tZyLPOl4cl1tDaxuSuhKZFu2PWYQsvXXPycgEfB4XorP3LnQdBRzyFHPGskjx786CjqncrWzA",
+        "https://play-lh.googleusercontent.com/tMge14ccdg43UpXdDKHvlPj511Spf35nIoBhA8rVf7ULFLsCzF7bYfJlabhryJc3PT7Wvf7IHyrWVSl3hUZH",
+        "https://play-lh.googleusercontent.com/kiW4wpAGZbPrkZ_GW98qVdOQg2l1agkl5CfcyMJdC0q3XajmBgnAzNRj1FEE4s7TRrB87HyaLqfDnEZ7YPbr",
+        "https://play-lh.googleusercontent.com/0pSbPhYDPpRvzpqeTev_c0fBt6zLq2XgXjRFVkrzGSiXUucDQDvPanXZNjzpS9CcT-FUt7dOmdpE8GXv2XtkWQ",
+        "https://play-lh.googleusercontent.com/m-_TssdE3G7NQpnyFbIf2aMD-zWFDlNBUAqy7Jq0lhH4wIaqJVvQXD-hivcEN7lPF-B6Dl8vkUn6EmEWPmVclw",
+        "https://play-lh.googleusercontent.com/ca_79eoTZs0FSFXxNLUgxfRBDL8IQvImkktzfNuktBtvfGxc0Roqfm-NVZND4sfRIlcoo5Id_bsZd6pNmAL0SiY"
+      ]
     },
     {
       "packageName": "il.co.inmanage.ten",
