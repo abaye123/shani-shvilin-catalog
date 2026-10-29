@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-29T19:03:22Z",
-  "sourceTag": "7795707470b878dd",
+  "generatedAt": "2026-10-29T19:05:33Z",
+  "sourceTag": "6c5d3abfe67cf6bc",
   "policies": [
     {
       "type": "Fixed",
@@ -227,23 +227,6 @@
       "networkPolicy": {
         "mode": "FULL_OPEN"
       }
-    },
-    {
-      "type": "Fixed",
-      "packageName": "com.mot.haniti",
-      "category": "NAVIGATION",
-      "networkPolicy": {
-        "mode": "WHITELIST",
-        "desc": "The Ministry of Transport's OutSystems server, and nothing else",
-        "spec": {
-          "type": "HostList",
-          "hosts": [
-            "transportation.outsystems.app"
-          ]
-        }
-      },
-      "minimumVersionCode": 113,
-      "notes": "An allow list, written from the binary and checked on a device. assets/capacitor.config.json sets server.url to https://transportation.outsystems.app/Haniti/ and that is where every screen comes from; the WebView's content security policy allows connect-src to 'self', transportation.outsystems.app/identity and *.amazonaws.com, and nothing else, so the application cannot fetch from anywhere the developer did not name.\n\nLaunched on the SM-A075F before it had network: every request in the log went to transportation.outsystems.app, plus two safebrowsing.googleapis.com lookups made by the WebView itself, which are not needed for the application to work.\n\n*.amazonaws.com is not on the list. The CSP allows it, which in OutSystems usually means a file upload to a presigned S3 URL, and the bucket's host is only known at runtime. Nothing dialled it during the launch. If a screen that uploads a photo or a document fails, the tunnel log will show the exact host as WHITELIST_MISS, and that one host is what to add.\n\nThe base APK also carries github.com, highcharts, jquery, MDN and similar documentation links from the bundled JavaScript libraries, and sheets.googleapis.com from a chart library's data connector. None of them are dialled."
     },
     {
       "type": "Fixed",

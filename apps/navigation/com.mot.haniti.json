@@ -17,5 +17,5 @@
     "type": "PLAY",
     "id": "com.mot.haniti"
   },
-  "notes": "Ministry of Transport parking application, so it sits beside Pango and Cellopark. Pin and version from the build installed from Play (1.1.1, versionCode 113), signed with Play App Signing (CN=Android, O=Google Inc.). It is an OutSystems shell: the screens are a web application served from transportation.outsystems.app and shown in a WebView, which is why the policy can be an allow list of one host."
+  "notes": "Ministry of Transport parking application, so it sits beside Pango and Cellopark. Pin and version from the build installed from Play (1.1.1, versionCode 113), signed with Play App Signing (CN=Android, O=Google Inc.). It is an OutSystems shell: the screens are a web application served from transportation.outsystems.app and shown in a WebView. No policy, so it is fully open inside the tunnel, by choice. An allow list of that one host was written and dropped: the WebView's content security policy also permits *.amazonaws.com, which in OutSystems usually means uploads to presigned S3 URLs whose host is only known at runtime, and a list that misses it breaks those screens without saying why."
 }
