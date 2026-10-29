@@ -1,0 +1,21 @@
+{
+  "packageName": "bitgroup.weather2day",
+  "displayName": {
+    "he": "Weather2day - מזג אוויר",
+    "en": "Weather2day"
+  },
+  "category": "TOOLS",
+  "minimumVersionCode": 94,
+  "sha256": "56598685a591cc2c09a5c5f140ce145c2cd5a2a3ac772c8848f662acc365d2dc",
+  "availableInStore": true,
+  "grantsNetworkAccess": true,
+  "minUserMode": "REDUCED_RISK",
+  "flags": {
+    "isRecommendedInStore": false
+  },
+  "source": {
+    "type": "PLAY",
+    "id": "bitgroup.weather2day"
+  },
+  "notes": "Israeli weather forecasts. Pin and version from the build installed from Play (2.24, versionCode 94), signed with the developer's own key (CN=111111). It is a WebViewActivity around the mobile site, m.weather2day.co.il, with AdMob on top: banners, interstitials, rewarded and native ads, which carry pictures. The policy blocks the ad hosts; see it for what it cannot reach."
+}

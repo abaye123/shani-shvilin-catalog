@@ -1,8 +1,37 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-29T19:49:28Z",
-  "sourceTag": "fa2670c8df2529b0",
+  "generatedAt": "2026-10-29T19:51:13Z",
+  "sourceTag": "211399ab8a30bc55",
   "policies": [
+    {
+      "type": "Fixed",
+      "packageName": "bitgroup.weather2day",
+      "category": "TOOLS",
+      "networkPolicy": {
+        "mode": "BLACKLIST",
+        "desc": "AdMob and Google's web ad hosts are blocked; the forecast site stays open",
+        "spec": {
+          "type": "HostList",
+          "hosts": [
+            "googleads.g.doubleclick.net",
+            "pubads.g.doubleclick.net",
+            "securepubads.g.doubleclick.net",
+            "ad.doubleclick.net",
+            "pagead2.googlesyndication.com",
+            "tpc.googlesyndication.com",
+            "www.googletagservices.com",
+            "www.googleadservices.com",
+            "adservice.google.com",
+            "imasdk.googleapis.com",
+            "fundingchoicesmessages.google.com",
+            "admob-gmats.uc.r.appspot.com",
+            "googlemobileadssdk.page.link"
+          ]
+        }
+      },
+      "minimumVersionCode": 94,
+      "notes": "Written from the binary. The application is a WebView on https://m.weather2day.co.il/ with push registration at www.weather2day.co.il/push.php; both stay open. AdMob is the in-app advertising: banners, interstitials, rewarded and native ads (35 references to the native ad classes, which render pictures). Those hosts and Google's web ad serving hosts (securepubads, googletagservices) are blocked, and are listed here even though the global list carries most of them, because app builds that predate globalBlockedHosts only read this.\n\nWhat this cannot see: the ads the site itself serves. The page was fetched for this policy from a NetFree line, which strips ad scripts and injects its own, so the copy read here showed no third party ad host at all. An ad network the site uses that is not Google's would show up on a device off NetFree, through the tunnel, as a host to add here. The site also sells a premium subscription that removes ads.\n\nNot yet watched on a device through the tunnel."
+    },
     {
       "type": "Fixed",
       "packageName": "com.abaye.derechkohanim",
