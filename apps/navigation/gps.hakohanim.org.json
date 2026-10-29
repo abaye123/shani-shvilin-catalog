@@ -10,12 +10,14 @@
   "availableInStore": true,
   "grantsNetworkAccess": true,
   "minUserMode": "NAVIGATION_ONLY",
-  "flags": {
-    "isRecommendedInStore": false
-  },
   "source": {
     "type": "PLAY",
     "id": "gps.hakohanim.org"
   },
-  "notes": "Routes for kohanim that avoid cemeteries, the same need Derech Kohanim answers. Pin and version from the build installed from Play (15.1, versionCode 15), signed with Play App Signing (CN=Android, O=Google Inc.). No policy, so it is fully open inside the tunnel, by choice. It is a Capacitor web application with a MapLibre map; its network security configuration names gps.hakohanim.org, api.maptiler.com, tile.openstreetmap.org, server.arcgisonline.com, nominatim.openstreetmap.org and unpkg.com, and the code also reaches tiles.openfreemap.org and photon.komoot.io. No ad SDK and no analytics were found."
+  "notes": "Routes for kohanim that avoid cemeteries, the same need Derech Kohanim answers. Pin and version from the build installed from Play (15.1, versionCode 15), signed with Play App Signing (CN=Android, O=Google Inc.). No policy, so it is fully open inside the tunnel, by choice. It is a Capacitor web application with a MapLibre map; its network security configuration names gps.hakohanim.org, api.maptiler.com, tile.openstreetmap.org, server.arcgisonline.com, nominatim.openstreetmap.org and unpkg.com, and the code also reaches tiles.openfreemap.org and photon.komoot.io. No ad SDK and no analytics were found.",
+  "screenshots": [
+    "https://play-lh.googleusercontent.com/XIZA_isXrd9LGflpHCEkERWlFGwwiZ1HXfcDEhz27Qh7aowjZeNv7KwSWk9U8bjoINuXzovN25O0DFE-7kDUlI8",
+    "https://play-lh.googleusercontent.com/CHIaeQWRquMA26WhdDBt8RM2hpIj-KP5Scldzq34Uh05NKKnoqLXw9gaWaY96EoKSSfgEYy4GJE9MbPh_650",
+    "https://play-lh.googleusercontent.com/5rsSFgy_Wb8SqI7m02oFA36nSRPP7q87nzzksw751isU3L1Ut_9TBvTGTb9cRUDgjkJgYxoJuzjvi-tcVmV07-s"
+  ]
 }
