@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-29T19:26:48Z",
-  "sourceTag": "f7049b8991e7eaa6",
+  "generatedAt": "2026-10-29T19:32:42Z",
+  "sourceTag": "9052c6eea7d27ab8",
   "policies": [
     {
       "type": "Fixed",
@@ -448,5 +448,32 @@
       "minimumVersionCode": 0,
       "notes": "Offline upstream, and left that way: the siddur is on the device and nothing it does needs a network."
     }
+  ],
+  "globalBlockedHosts": [
+    "a.applovin.com",
+    "ad.doubleclick.net",
+    "ads.mopub.com",
+    "adservice.google.com",
+    "an.facebook.com",
+    "api.vungle.com",
+    "auction.unityads.unity3d.com",
+    "config.unityads.unity3d.com",
+    "d.applovin.com",
+    "googleads.g.doubleclick.net",
+    "googleadservices.com",
+    "imasdk.googleapis.com",
+    "init.supersonicads.com",
+    "ms.applovin.com",
+    "outcome-ssp.supersonicads.com",
+    "pagead2.googlesyndication.com",
+    "partner.googleadservices.com",
+    "pubads.g.doubleclick.net",
+    "rt.applovin.com",
+    "securepubads.g.doubleclick.net",
+    "static.doubleclick.net",
+    "tpc.googlesyndication.com",
+    "unityads.unity3d.com",
+    "www.googleadservices.com",
+    "www.googletagservices.com"
   ]
 }

@@ -114,8 +114,44 @@ def validate(path, doc, errors):
                 err(f"defaultVariantId '{default}' is not one of {ids}")
 
 
-def source_tag_of(policies):
-    canonical = json.dumps(policies, ensure_ascii=False, sort_keys=True,
+GLOBAL_HOSTS = os.path.join("global", "blocked-hosts.json")
+
+
+def load_global_hosts(path, errors):
+    """The hosts blocked for every application, from global/blocked-hosts.json.
+
+    Not under policies/, because every file there is read as one application's
+    policy document. A missing file means an empty list.
+    """
+    if not os.path.exists(path):
+        return []
+    try:
+        with open(path, encoding="utf-8") as fh:
+            doc = json.load(fh)
+    except Exception as exc:
+        errors.append(f"{path}: unparsable JSON ({exc})")
+        return []
+    hosts = doc.get("hosts")
+    if not isinstance(hosts, list):
+        errors.append(f"{path}: hosts must be a list")
+        return []
+    result = []
+    for host in hosts:
+        name = host.strip().lower() if isinstance(host, str) else host
+        if not isinstance(name, str) or not HOST_RE.match(name) or name.startswith("*."):
+            errors.append(f"{path}: '{host}' is not a hostname (no stars here)")
+        elif name in result:
+            errors.append(f"{path}: '{host}' is listed twice")
+        else:
+            result.append(name)
+    return sorted(result)
+
+
+def source_tag_of(policies, global_hosts=()):
+    # Without global hosts the tag is what it always was, so adding the
+    # feature did not by itself make every device download the bundle again.
+    data = {"policies": policies, "globalBlockedHosts": list(global_hosts)} if global_hosts else policies
+    canonical = json.dumps(data, ensure_ascii=False, sort_keys=True,
                            separators=(",", ":"))
     return hashlib.sha256(canonical.encode("utf-8")).hexdigest()[:16]
 
@@ -148,19 +184,21 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--out", default="policies.json")
     parser.add_argument("--root", default="policies")
+    parser.add_argument("--global-hosts", default=GLOBAL_HOSTS)
     parser.add_argument("--check", action="store_true",
                         help="compare against the committed file instead of "
                              "writing, for CI")
     args = parser.parse_args()
 
     policies, errors = build(args.root)
+    global_hosts = load_global_hosts(args.global_hosts, errors)
     if errors:
         print("Policy validation failed:\n", file=sys.stderr)
         for e in errors:
             print(f"  {e}", file=sys.stderr)
         return 1
 
-    tag = source_tag_of(policies)
+    tag = source_tag_of(policies, global_hosts)
 
     if args.check:
         try:
@@ -174,12 +212,16 @@ def main():
             print(f"{args.out} does not match {args.root}/; run tools/release.sh",
                   file=sys.stderr)
             return 1
+        if committed.get("globalBlockedHosts", []) != global_hosts:
+            print(f"{args.out} does not match {args.global_hosts}; run tools/release.sh",
+                  file=sys.stderr)
+            return 1
         if committed.get("sourceTag") != tag:
             print(f"{args.out} carries sourceTag {committed.get('sourceTag')}, "
                   f"the data says {tag}; run tools/release.sh", file=sys.stderr)
             return 1
         print(f"policies.json is in sync with {args.root}/: "
-              f"{len(policies)} policies, tag {tag}")
+              f"{len(policies)} policies, {len(global_hosts)} global hosts, tag {tag}")
         return 0
 
     write_json(args.out, {
@@ -187,9 +229,11 @@ def main():
         "generatedAt": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "sourceTag": tag,
         "policies": policies,
+        "globalBlockedHosts": global_hosts,
     })
 
-    print(f"Wrote {args.out}: {len(policies)} policies, tag {tag}")
+    print(f"Wrote {args.out}: {len(policies)} policies, "
+          f"{len(global_hosts)} global hosts, tag {tag}")
     return 0
 
 

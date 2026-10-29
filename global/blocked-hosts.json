@@ -1,0 +1,31 @@
+{
+  "desc": "Ad servers, blocked for every application in the tunnel on top of its own policy",
+  "hosts": [
+    "pagead2.googlesyndication.com",
+    "tpc.googlesyndication.com",
+    "googleads.g.doubleclick.net",
+    "ad.doubleclick.net",
+    "pubads.g.doubleclick.net",
+    "securepubads.g.doubleclick.net",
+    "static.doubleclick.net",
+    "www.googleadservices.com",
+    "googleadservices.com",
+    "partner.googleadservices.com",
+    "adservice.google.com",
+    "www.googletagservices.com",
+    "imasdk.googleapis.com",
+    "an.facebook.com",
+    "unityads.unity3d.com",
+    "auction.unityads.unity3d.com",
+    "config.unityads.unity3d.com",
+    "a.applovin.com",
+    "d.applovin.com",
+    "ms.applovin.com",
+    "rt.applovin.com",
+    "init.supersonicads.com",
+    "outcome-ssp.supersonicads.com",
+    "api.vungle.com",
+    "ads.mopub.com"
+  ],
+  "notes": "Every name is written out because a star is not a wildcard in this data: it is dropped and a www twin added, so *.doubleclick.net would block doubleclick.net and www.doubleclick.net and nothing that serves an ad.\n\nKept short on purpose. A large community list blocks sign in, payment and link redirect hosts along with the ads, and every one of those is a support call that looks like the filter is broken. A host goes on this list when it serves ads and nothing else.\n\nWhat is deliberately not here: stats.g.doubleclick.net and app-measurement.com, which are analytics rather than ads; www.google.com, google.com and googleapis.com, which carry everything; and any host an application needs to work.\n\nApplied by app builds that read globalBlockedHosts. An older build ignores the field and blocks nothing from it. It is added to every blocklist and turns an open application into a blocklist of these; an allow list, an offline rule and a local only rule are left as they are."
+}
