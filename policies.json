@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-30T09:54:22Z",
-  "sourceTag": "980f3277f0be45bf",
+  "generatedAt": "2026-10-30T10:14:24Z",
+  "sourceTag": "0c60186c71428b21",
   "policies": [
     {
       "type": "Fixed",
@@ -245,6 +245,19 @@
       },
       "minimumVersionCode": 20908,
       "notes": "Written from the binary and from the tunnel. It is a Cordova web application (assets/www). What it needs: api.doscast.co.il and media.doscast.co.il, and Firebase. Blocked: VAST video ads from go.aniview.com and Google IMA, Google Tag Manager, and the YouTube and Vimeo players the code embeds (through cdn.plyr.io, with noembed.com for oEmbed). What it costs: any episode published as a YouTube or Vimeo video will not play. googlevideo.com stream hosts cannot be listed exactly, which is why the player hosts are what is blocked."
+    },
+    {
+      "type": "Fixed",
+      "packageName": "com.elhamaayan.app",
+      "category": "NAVIGATION",
+      "networkPolicy": {
+        "mode": "FULL_OPEN"
+      },
+      "minimumVersionCode": 11,
+      "notes": "Open, apart from what its users upload. userContentHosts: spring photos from Wikimedia. Photos users uploaded to the app itself come from its Supabase storage, which is the same host as its database (sbnbfpihfhsyctumpqod.supabase.co), so they cannot be blocked without breaking it; the entry stays flagged for them.",
+      "userContentHosts": [
+        "upload.wikimedia.org"
+      ]
     },
     {
       "type": "Fixed",
@@ -974,7 +987,14 @@
         }
       },
       "minimumVersionCode": 921256,
-      "notes": "Written from the binary. It is a Capacitor application with a MapLibre map, so its code is the JavaScript in assets/public. What it needs: israelhiking.osm.org.il (its own API, tiles and uploaded photos), api.openstreetmap.org and overpass-api.de (map data), upload.wikimedia.org and commons.wikimedia.org (point of interest photos), inature.info, and RevenueCat (api.revenuecat.com and its siblings) for the subscription.\n\nBlocked: Google Tag Manager and Analytics; YouTube, which is an embedded help video (youtube.com/embed); Facebook, which is the project's group page and a share link; and imgur, which is where some user photos are hosted and where uploads went, so those photos do not load and an upload to imgur fails. The embedded video's stream comes from googlevideo.com hosts that cannot be listed one by one; blocking www.youtube.com stops the embed before it asks for them.\n\nWhat this does not block: photos on Wikimedia and on the project's own server, which are most of them. That is why the catalog entry carries hasUnmodestImage. Not yet watched on a device through the tunnel."
+      "notes": "Written from the binary. It is a Capacitor application with a MapLibre map, so its code is the JavaScript in assets/public. What it needs: israelhiking.osm.org.il (its own API, tiles and uploaded photos), api.openstreetmap.org and overpass-api.de (map data), upload.wikimedia.org and commons.wikimedia.org (point of interest photos), inature.info, and RevenueCat (api.revenuecat.com and its siblings) for the subscription.\n\nBlocked: Google Tag Manager and Analytics; YouTube, which is an embedded help video (youtube.com/embed); Facebook, which is the project's group page and a share link; and imgur, which is where some user photos are hosted and where uploads went, so those photos do not load and an upload to imgur fails. The embedded video's stream comes from googlevideo.com hosts that cannot be listed one by one; blocking www.youtube.com stops the embed before it asks for them.\n\nWhat this does not block: photos on Wikimedia and on the project's own server, which are most of them. That is why the catalog entry carries hasUnmodestImage. Not yet watched on a device through the tunnel.\n\nuserContentHosts are the photos users upload: the app uploads them to Wikimedia Commons and shows them from there (upload.wikimedia.org, with commons.wikimedia.org for their pages), with more from inature.info and imgur. Blocked by the app unless the device allows user content; the map, routes and the project's own API on israelhiking.osm.org.il are untouched.",
+      "userContentHosts": [
+        "upload.wikimedia.org",
+        "commons.wikimedia.org",
+        "inature.info",
+        "imgur.com",
+        "i.imgur.com"
+      ]
     },
     {
       "type": "Fixed",

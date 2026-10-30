@@ -78,6 +78,19 @@ def validate(path, doc, errors):
     if not isinstance(doc.get("minimumVersionCode"), int):
         err("minimumVersionCode must be an integer")
 
+    # Hosts serving what users upload, blocked by the app unless the device
+    # allows user content. Exact names, like every host list here.
+    user_hosts = doc.get("userContentHosts")
+    if user_hosts is not None:
+        if not isinstance(user_hosts, list) or not user_hosts:
+            err("userContentHosts must be a non empty list")
+        else:
+            for host in user_hosts:
+                if not isinstance(host, str) or not HOST_RE.match(host) or host.startswith("*."):
+                    err(f"userContentHosts: '{host}' is not a hostname (no stars here)")
+            if len(set(user_hosts)) != len(user_hosts):
+                err("userContentHosts lists a host twice")
+
     if kind == "Fixed":
         policy = doc.get("networkPolicy")
         if not isinstance(policy, dict):

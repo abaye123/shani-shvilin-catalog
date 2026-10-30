@@ -101,6 +101,22 @@ def validate(path, entry, errors, warnings):
             if not isinstance(url, str) or not url.startswith("https://"):
                 err(f"screenshot '{url}' is not an https URL")
 
+    # What exactly a flagged entry may show, shown to the user in its
+    # warnings. Only meaningful on a flagged entry, and short.
+    note = entry.get("riskNote")
+    if note is not None:
+        flags = entry.get("flags", {})
+        if not isinstance(note, dict) or not note or not all(
+            isinstance(k, str) and isinstance(v, str) and v.strip() for k, v in note.items()
+        ):
+            err("riskNote must be a non empty map of language to text")
+        elif not (flags.get("hasUnmodestImage") or flags.get("isPotentiallyDangerous")):
+            err("riskNote on an entry that is not flagged is never shown")
+        elif any(len(v) > 600 for v in note.values()):
+            err("riskNote is longer than the 600 characters the app shows")
+        elif "he" not in note:
+            err("riskNote needs a Hebrew text, 'he'")
+
     mode = entry.get("minUserMode", "MOST_OPEN")
     if mode not in MODES:
         err(f"unknown minUserMode '{mode}'")

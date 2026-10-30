@@ -1,0 +1,13 @@
+{
+  "type": "Fixed",
+  "packageName": "com.elhamaayan.app",
+  "category": "NAVIGATION",
+  "networkPolicy": {
+    "mode": "FULL_OPEN"
+  },
+  "minimumVersionCode": 11,
+  "notes": "Open, apart from what its users upload. userContentHosts: spring photos from Wikimedia. Photos users uploaded to the app itself come from its Supabase storage, which is the same host as its database (sbnbfpihfhsyctumpqod.supabase.co), so they cannot be blocked without breaking it; the entry stays flagged for them.",
+  "userContentHosts": [
+    "upload.wikimedia.org"
+  ]
+}

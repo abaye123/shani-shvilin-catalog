@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-30T09:54:22Z",
+  "generatedAt": "2026-10-30T10:14:24Z",
   "entries": [
     {
       "packageName": "air.com.cellogroup.Cellopark",
@@ -125,7 +125,10 @@
       "screenshots": [
         "https://play-lh.googleusercontent.com/R0gIdTHSJezJppfAyFTpTKnInoItZwm1GXK7Zahcl9AMG_6Z-Eh3RoYav-RBlaNF1KSrVFiGYVVjgCCPBz4dudA",
         "https://play-lh.googleusercontent.com/3AmmMqJ8w81ffSybjpMjcL8-Y5Mvm1qPKtD2uLYcR00c9rkEV8jF84uTw1DIGF1I6uo2Vccizj93ZR_dSpiRoQ"
-      ]
+      ],
+      "riskNote": {
+        "he": "במסך ההתחברות מתנגן ברקע סרטון של אנשים רוכבים על קורקינטים. הסרטון ארוז בתוך האפליקציה, ולכן הסינון לא יכול לחסום אותו. אחרי ההתחברות הוא לא מוצג."
+      }
     },
     {
       "packageName": "com.abaye.derechkohanim",
@@ -206,7 +209,10 @@
         "https://play-lh.googleusercontent.com/MuHaQDv1oP2t8rFnqlD06DUVUS70C8WeTKoMRHJaokm9NtzU_Vc81S27wy5CiobcCU2aOC1r5Fj1o7GcBht1Ug4",
         "https://play-lh.googleusercontent.com/ZvMYVDLOdve6vcnn3XRieHzcO8tN3arsb7NjjhtTyghMlVS-og2Kpevl7YpjxNpf-HQgnPFOtXMy9tloqTMCaA",
         "https://play-lh.googleusercontent.com/ViTqgRc_ozC1R9Qhh_18sujbdXEsjdEv0uN-RIAwxLbYPHbMTDlwA3rzCrmENkjYfLXEVz5f3YKI3atTOecg"
-      ]
+      ],
+      "riskNote": {
+        "he": "בנקודות העניין במפה מוצגות תמונות שמשתמשים מעלים. רובן נופים ומקומות, אבל אי אפשר לבדוק כל תמונה, ולעיתים רחוקות הן עלולות לכלול אנשים. התמונות מגיעות מאותו שרת שהאפליקציה צריכה, ולכן אי אפשר לחסום רק אותן."
+      }
     },
     {
       "packageName": "com.android.chrome",
@@ -341,7 +347,10 @@
         "https://play-lh.googleusercontent.com/WRjWhtrrO_5EvkWU9TZcAXRjPmY0YR4iqVJCibgymA35phXm3BtTFM5qC-cL-HSjUlFcYJhgbSYvwfAhOb7drA",
         "https://play-lh.googleusercontent.com/Y4wMghzOlJNZLZVmG8jRsYAMonFO5y4li2qaYuatFA5jfdUjbfqcVCHK5JiISK3rPY7yv6zinXpdCOdPnx6l",
         "https://play-lh.googleusercontent.com/xpwCizW58HBIcgrwNjIX75jncvzBwPqd8ZRBLEM6vWcxJtVZeRzvRozqAkh2OFAUPquQOiKx9Y5l4_h_TIyzyGU"
-      ]
+      ],
+      "riskNote": {
+        "he": "תמונות הפרקים והשיעורים מגיעות מהשרת ומתחלפות כל הזמן, ולכן אי אפשר לדעת מראש מה יוצג. נגני הווידאו ופרסומות הווידאו חסומים."
+      }
     },
     {
       "packageName": "com.driivz.mobile.android.afcon.driver",
@@ -448,7 +457,10 @@
         "https://play-lh.googleusercontent.com/HdhYf5shigW9UT2BcycdBc7-vsg41MGQbJzzTMXVLNOfZuH1OxJlvsih2f2mimdwKm9cWEeuFDEtZtSaunKGYg",
         "https://play-lh.googleusercontent.com/mPgL7_dQshXbRHBijlww3u3lqW3QFj-76OMkB5EMKwR6K-Tb8O_Y-Pbx-xJzF1vNWsl7o_hN72H4k6MDeS8lgwo",
         "https://play-lh.googleusercontent.com/F8oOQO5A9zYcGOaBxshzvhNXPxBGEzwPKz2cD6WSgVJ-a4WkpsSIIrWjluoxJ8ghEGTeM9nwOcnXSZHH_ID9qQ"
-      ]
+      ],
+      "riskNote": {
+        "he": "לכל מעיין מוצגות תמונות, חלקן ממשתמשים, ותמונה של מעיין עלולה להראות אנשים רוחצים. תמונות מ-Wikimedia חסומות כל עוד \"אפשר תוכן משתמשים\" כבוי, אבל תמונות שמשתמשים העלו לאפליקציה עצמה מגיעות מאותו שרת שהיא צריכה, ואותן אי אפשר לחסום."
+      }
     },
     {
       "packageName": "com.google.android.apps.authenticator2",
@@ -771,6 +783,9 @@
       ],
       "flags": {
         "hasUnmodestImage": true
+      },
+      "riskNote": {
+        "he": "במסך הפתיחה מוצגת תמונה של אנשים. התמונה ארוזה בתוך האפליקציה, ולכן הסינון לא יכול לחסום אותה."
       }
     },
     {
@@ -1337,7 +1352,10 @@
         "https://play-lh.googleusercontent.com/v8S3lKnnrl1HcUlJGXg3KM3NAIH8xqw5f81dKLYAB5ciJ8TV4f601ft5vPOjMzPHf230_7YqprW1CsgcYusZoIs",
         "https://play-lh.googleusercontent.com/v8JiF4TPJHtQDHQ6MX81LWCa7I_QWQt9tFYF3RdNJrGFMlPUF5hVbakD-5iVpHoF_tgGJVgVJnrT58ozo0FmfyU",
         "https://play-lh.googleusercontent.com/wpmG7MUhgft2-hheMiHDFWEhhLSmX8bR3L3-l6lClrJ47Mbq2TOAXELulVMV3ZzyB-_2vD3LxUbCQ6j_Mp6tvw"
-      ]
+      ],
+      "riskNote": {
+        "he": "באפליקציה מוצגים באנרים וקופונים פרסומיים של טן, שלפעמים כוללים תמונות של נשים. הם מגיעים מאותו שרת שהתדלוק צריך, ולכן אי אפשר לחסום אותם בלי לשבור את האפליקציה."
+      }
     },
     {
       "packageName": "il.co.pat.disabledparkingpermits",
@@ -1411,7 +1429,10 @@
         "https://play-lh.googleusercontent.com/VocD3M-aBdp_tm3xYZMSsqPA1RW6w7XsIEm6NrjIBPq1pY20M8h32vUb5OirmyzoTdsFonBKlr-6u181AZT0Ew",
         "https://play-lh.googleusercontent.com/WNwqfZKH8pnPYEqieyzwoxc3eaveorzYzlClR6hFReCB_dn6P1kX-bBmEa3UpBdRqhaTc4UVwm-GpSgAMTUEbI0",
         "https://play-lh.googleusercontent.com/tAqdxhv0WZSH_bRvTG1o7FOZaqssU29nl58gox14_fGK__iZSxXQPIEivdp2x2hdMESaui0ULWD0DUm1l4fLSAY"
-      ]
+      ],
+      "riskNote": {
+        "he": "במסך הבית ובלשונית \"מה חדש\" מוצגים באנרים, תמונות פרסום וסטוריז של פז. הם מתחלפים בלי עדכון של האפליקציה, ועלולים לכלול תמונות של אנשים. סרטוני \"מה חדש\" חסומים."
+      }
     },
     {
       "packageName": "il.org.osm.israelhiking",
@@ -1442,7 +1463,10 @@
         "https://play-lh.googleusercontent.com/HKUAUPhC6Z9Pc9RRluHaxmI1zQwT7VDpsCCPBiysPLhgreaUweTt2UDlOAq76E5kOo5CU_f6mB4nNmtu4wE6m1o",
         "https://play-lh.googleusercontent.com/uVAKSy1BY-_S-ouXqQzVMBZrOLTmGnGNPGYG32PJFiVFBDKZSg9nki7KgPTNNKowhyWj5GLHnAeOuv1LpJsh3w",
         "https://play-lh.googleusercontent.com/qBsW_8YbyGseklCnShWHk5s0Aacs4yL1L2ilHBU0JmyeaHjx6fmDpB-W0F6oa_8igGCWmTEj5ZOh5ODQ32ySYmQ"
-      ]
+      ],
+      "riskNote": {
+        "he": "בנקודות העניין במפה מוצגות תמונות שמשתמשים מעלים. רובן נופים ומקומות, אבל אי אפשר לבדוק כל תמונה, ולעיתים רחוקות הן עלולות לכלול אנשים. כל עוד \"אפשר תוכן משתמשים\" כבוי, התמונות מ-Wikimedia, iNature ו-imgur חסומות."
+      }
     },
     {
       "packageName": "il.org.startach.theplatform.android.yedidim",

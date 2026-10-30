@@ -21,5 +21,8 @@
   "screenshots": [
     "https://play-lh.googleusercontent.com/R0gIdTHSJezJppfAyFTpTKnInoItZwm1GXK7Zahcl9AMG_6Z-Eh3RoYav-RBlaNF1KSrVFiGYVVjgCCPBz4dudA",
     "https://play-lh.googleusercontent.com/3AmmMqJ8w81ffSybjpMjcL8-Y5Mvm1qPKtD2uLYcR00c9rkEV8jF84uTw1DIGF1I6uo2Vccizj93ZR_dSpiRoQ"
-  ]
+  ],
+  "riskNote": {
+    "he": "במסך ההתחברות מתנגן ברקע סרטון של אנשים רוכבים על קורקינטים. הסרטון ארוז בתוך האפליקציה, ולכן הסינון לא יכול לחסום אותו. אחרי ההתחברות הוא לא מוצג."
+  }
 }

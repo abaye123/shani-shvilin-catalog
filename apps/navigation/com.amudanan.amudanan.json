@@ -27,5 +27,8 @@
     "https://play-lh.googleusercontent.com/MuHaQDv1oP2t8rFnqlD06DUVUS70C8WeTKoMRHJaokm9NtzU_Vc81S27wy5CiobcCU2aOC1r5Fj1o7GcBht1Ug4",
     "https://play-lh.googleusercontent.com/ZvMYVDLOdve6vcnn3XRieHzcO8tN3arsb7NjjhtTyghMlVS-og2Kpevl7YpjxNpf-HQgnPFOtXMy9tloqTMCaA",
     "https://play-lh.googleusercontent.com/ViTqgRc_ozC1R9Qhh_18sujbdXEsjdEv0uN-RIAwxLbYPHbMTDlwA3rzCrmENkjYfLXEVz5f3YKI3atTOecg"
-  ]
+  ],
+  "riskNote": {
+    "he": "בנקודות העניין במפה מוצגות תמונות שמשתמשים מעלים. רובן נופים ומקומות, אבל אי אפשר לבדוק כל תמונה, ולעיתים רחוקות הן עלולות לכלול אנשים. התמונות מגיעות מאותו שרת שהאפליקציה צריכה, ולכן אי אפשר לחסום רק אותן."
+  }
 }
