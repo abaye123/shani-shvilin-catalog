@@ -9,17 +9,20 @@
   "sha256": "547d3283ade8e9fe50ab804d48a9289871baadba912ff422dec0492d8567be48",
   "availableInStore": true,
   "grantsNetworkAccess": true,
-  "minUserMode": "REDUCED_RISK",
+  "minUserMode": "MOST_OPEN",
   "source": {
     "type": "PLAY",
     "id": "com.limebike"
   },
-  "notes": "Shared scooters. No video is packaged in the APK; the test did not get past the splash screen, so the screens after it were not seen. Braze, Branch, Amplitude, Datadog, Mapbox, Stripe and Braintree. Pin and version from the build installed from Play (3.288.0, versionCode 3288000), signed with the developer's own key (CN=Lime Bike, OU=Mobile Development, O=LimeBike, L=San Mateo, ST=California, C=US).",
+  "notes": "Shared scooters. Flagged hasUnmodestImage: the opening screen shows a picture of people that is packaged in the APK, so the tunnel cannot remove it; seen on a device by the maintainer. Braze, Branch, Amplitude, Datadog, Mapbox, Stripe and Braintree. Pin and version from the build installed from Play (3.288.0, versionCode 3288000), signed with the developer's own key (CN=Lime Bike, OU=Mobile Development, O=LimeBike, L=San Mateo, ST=California, C=US). The flag keeps it out of REDUCED_RISK and asks for explicit acceptance; MOST_OPEN is stated so the entry says what the flag already means.",
   "screenshots": [
     "https://play-lh.googleusercontent.com/gAAHMkG7obglfO1TLsw3i4GRZUMRyt43qRD0JecJZJbUdLo4Ksq2jiPmVmDw2k0IYzG1zBSxxVdDSkUaLnDtHbg",
     "https://play-lh.googleusercontent.com/7sqLK3XWJqX9OD6noiGxSxSt_PiNojjftcDuFyIuiIMxWRPIG2hWVnWT8o-Vv0_yPfTQReV0U0KIflnqousCeA",
     "https://play-lh.googleusercontent.com/y3VsBycdbFSjDz-hPFUc8bv_xWhbRsorfFrvRk3AMLH_wdqrSSRBsD78235KhJg7gIxf0mQT7SSJjfmd-kGU",
     "https://play-lh.googleusercontent.com/m2lWl8hitcsodZf2A6txoIEFV3wzzjcibDk4VLuH1LE3le2jeQ9nIUISvY5YXN7AU-w2Qaf9UL903hLNUpEhNQ",
     "https://play-lh.googleusercontent.com/_VWxQ4vqS6tX2pIzahJAoeaqFasrrdwS4WwUtyBPm7QgUymrw99_GwId20LqGai_pSLTIY7XRA25GiHqeC4JlA"
-  ]
+  ],
+  "flags": {
+    "hasUnmodestImage": true
+  }
 }
