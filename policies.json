@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-29T22:27:33Z",
-  "sourceTag": "f27ceb65a0657076",
+  "generatedAt": "2026-10-30T00:53:19Z",
+  "sourceTag": "ddfa6067904860cd",
   "policies": [
     {
       "type": "Fixed",
@@ -108,6 +108,36 @@
       },
       "minimumVersionCode": 2004031,
       "notes": "Written from the binary and from the tunnel. It is a Flutter application with Mapbox and MapLibre maps; on launch it reached a.amudanan.co.il only. Its own hosts are amudanan.co.il and its a., b., c., api., download. and purchase. subdomains, plus map tiles from api.mapbox.com, api.maptiler.com and tile.thunderforest.com. Blocked: the Facebook SDK (app events and login). The Google ad hosts are listed for app builds that predate globalBlockedHosts; no AdMob ad unit was found."
+    },
+    {
+      "type": "Fixed",
+      "packageName": "com.android.chrome",
+      "category": "SYSTEM",
+      "networkPolicy": {
+        "mode": "WHITELIST",
+        "desc": "Sign in pages only, for logins applications open in a browser",
+        "spec": {
+          "type": "HostList",
+          "hosts": [
+            "accounts.google.com",
+            "accounts.youtube.com",
+            "ssl.gstatic.com",
+            "www.gstatic.com",
+            "fonts.gstatic.com",
+            "fonts.googleapis.com",
+            "apis.google.com",
+            "login.microsoftonline.com",
+            "login.live.com",
+            "aadcdn.msauth.net",
+            "logincdn.msauth.net",
+            "appleid.apple.com",
+            "appleid.cdn-apple.com",
+            "idmsa.apple.com"
+          ]
+        }
+      },
+      "minimumVersionCode": 0,
+      "notes": "A whitelist of sign in pages. The block page that stands in for the browser reads this list: a link to one of these hosts goes to Chrome, which reaches nothing else. Google, Microsoft and Apple accounts to start with; www.google.com is left out on purpose, since it is search. Add a host here when a report from the block page's \"this site should be open\" shows a login that needs it."
     },
     {
       "type": "Fixed",

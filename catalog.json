@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-29T22:27:33Z",
+  "generatedAt": "2026-10-30T00:53:20Z",
   "entries": [
     {
       "packageName": "air.com.cellogroup.Cellopark",
@@ -207,6 +207,23 @@
         "https://play-lh.googleusercontent.com/ZvMYVDLOdve6vcnn3XRieHzcO8tN3arsb7NjjhtTyghMlVS-og2Kpevl7YpjxNpf-HQgnPFOtXMy9tloqTMCaA",
         "https://play-lh.googleusercontent.com/ViTqgRc_ozC1R9Qhh_18sujbdXEsjdEv0uN-RIAwxLbYPHbMTDlwA3rzCrmENkjYfLXEVz5f3YKI3atTOecg"
       ]
+    },
+    {
+      "packageName": "com.android.chrome",
+      "displayName": {
+        "he": "Chrome",
+        "en": "Chrome"
+      },
+      "category": "SYSTEM",
+      "minimumVersionCode": 0,
+      "sha256": "f0fd6c5b410f25cb25c3b53346c8972fae30f8ee7411df910480ad6b2d60db83",
+      "availableInStore": false,
+      "grantsNetworkAccess": true,
+      "minUserMode": "NAVIGATION_ONLY",
+      "flags": {
+        "isRecommendedInStore": false
+      },
+      "notes": "Chrome, as preinstalled, signed with Play App Signing (CN=Android, O=Google Inc.); seen at 153.0.8010.52, versionCode 801005204. Not offered in the store and pinned at versionCode 0, because the preinstalled build differs from device to device. It gets network only for the sign in pages its policy whitelists: the app's block page, which stands in for the browser while filtering, hands a link to Chrome when Chrome's policy names its host, so a login an application opens in a browser or a custom tab can complete. Everything else stays on the block page."
     },
     {
       "packageName": "com.app.GoSurf",
