@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-30T01:03:49Z",
+  "generatedAt": "2026-10-30T01:31:24Z",
   "entries": [
     {
       "packageName": "air.com.cellogroup.Cellopark",
@@ -1359,6 +1359,27 @@
         "https://play-lh.googleusercontent.com/pjNhu75BiKMP-oUPYQ7bCqJ5HED7z2OnvmR_PvxhHcepP_IvZMh4sr0uDjg_it6YAgRoshxMXsKWUEZMqYiWAA",
         "https://play-lh.googleusercontent.com/e5RdxCidHxyCRzuaG26WCat7txkIYcMiROSm1tONdNA2TEJdynoTDs7uRmtKke18lmqNzFZVBZ6GjbwouGT1"
       ]
+    },
+    {
+      "packageName": "il.co.tochen1.tochen1",
+      "displayName": {
+        "he": "תוכן אחד",
+        "en": "Tochen Echad"
+      },
+      "category": "MUSIC_AUDIO",
+      "minimumVersionCode": 145,
+      "sha256": "b3a492999037cb423d22d46f116bae8a98828a53f5a7363fa016af1663b6c347",
+      "availableInStore": true,
+      "grantsNetworkAccess": true,
+      "minUserMode": "MOST_OPEN",
+      "flags": {
+        "isRecommendedInStore": false
+      },
+      "source": {
+        "type": "PLAY",
+        "id": "il.co.tochen1.tochen1"
+      },
+      "notes": "Video and audio content, Flutter with ExoPlayer, from rbapps.studio. Pin and version from the build installed from Play (1.4.5, versionCode 145), signed with Play App Signing (CN=Android, O=Google Inc.). No ad SDK and no attribution. Traced on a device through sign in, browsing and playback: Firestore and Cloud Functions (europe-west1-tochen-one-1.cloudfunctions.net), Google sign in, Crashlytics, and media from Bunny: tochen1.b-cdn.net and three Bunny Stream libraries (vz-7353cc54-49f, vz-a6794448-29d, and vz-d85ac5ad-498 in the code). No policy, so it is fully open inside the tunnel: the Bunny Stream library hosts cannot be wildcarded, and a whitelist would break the next library the service adds. MOST_OPEN only, with no flag, by choice. Its one outside link, rbapps.studio, lands on the block page."
     },
     {
       "packageName": "il.co.yellow.app",
