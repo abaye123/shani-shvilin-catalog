@@ -21,10 +21,12 @@
         "logincdn.msauth.net",
         "appleid.apple.com",
         "appleid.cdn-apple.com",
-        "idmsa.apple.com"
+        "idmsa.apple.com",
+        "transportation.outsystems.app",
+        "login.gov.il"
       ]
     }
   },
   "minimumVersionCode": 0,
-  "notes": "A whitelist of sign in pages. The block page that stands in for the browser reads this list: a link to one of these hosts goes to Chrome, which reaches nothing else. Google, Microsoft and Apple accounts to start with; www.google.com is left out on purpose, since it is search. Add a host here when a report from the block page's \"this site should be open\" shows a login that needs it."
+  "notes": "A whitelist of sign in pages. The block page that stands in for the browser reads this list: a link to one of these hosts goes to Chrome, which reaches nothing else. Google, Microsoft and Apple accounts to start with; www.google.com is left out on purpose, since it is search. Add a host here when a report from the block page's \"this site should be open\" shows a login that needs it. Haniti (com.mot.haniti) signs in through a custom tab: transportation.outsystems.app, the Ministry of Transport portal, then login.gov.il, the national identity service; traced through a full sign in on a device. The gov.il pages also load Glassbox session analytics (cdn.gbqofs.com, report.govi.gbqofs.io), left out on purpose: with them blocked the sign in page still loads in full; a complete sign in has not yet been tried with them blocked."
 }
