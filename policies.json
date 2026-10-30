@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-30T10:14:24Z",
-  "sourceTag": "0c60186c71428b21",
+  "generatedAt": "2026-10-30T10:42:43Z",
+  "sourceTag": "734221704bd27c2f",
   "policies": [
     {
       "type": "Fixed",
@@ -107,7 +107,7 @@
         }
       },
       "minimumVersionCode": 2004031,
-      "notes": "Written from the binary and from the tunnel. It is a Flutter application with Mapbox and MapLibre maps; on launch it reached a.amudanan.co.il only. Its own hosts are amudanan.co.il and its a., b., c., api., download. and purchase. subdomains, plus map tiles from api.mapbox.com, api.maptiler.com and tile.thunderforest.com. Blocked: the Facebook SDK (app events and login). The Google ad hosts are listed for app builds that predate globalBlockedHosts; no AdMob ad unit was found."
+      "notes": "Written from the binary and from the tunnel. It is a Flutter application with Mapbox and MapLibre maps; on launch it reached a.amudanan.co.il only. Its own hosts are amudanan.co.il and its a., b., c., api., download. and purchase. subdomains, plus map tiles from api.mapbox.com, api.maptiler.com and tile.thunderforest.com. Blocked: the Facebook SDK (app events and login). The Google ad hosts are listed for app builds that predate globalBlockedHosts; no AdMob ad unit was found.\n\nTried on a device: blocking amudanan.co.il, which serves the photos users upload (amudanan.co.il/images/thumbnails/), also stops navigation, which runs on the same host. So no userContentHosts; the catalog entry stays flagged, with a riskNote."
     },
     {
       "type": "Fixed",
@@ -546,6 +546,41 @@
     },
     {
       "type": "Fixed",
+      "packageName": "com.mapeak",
+      "category": "NAVIGATION",
+      "networkPolicy": {
+        "mode": "BLACKLIST",
+        "desc": "Tag Manager, YouTube and Facebook are blocked; maps, search and routes stay open",
+        "spec": {
+          "type": "HostList",
+          "hosts": [
+            "www.googletagmanager.com",
+            "www.google-analytics.com",
+            "www.youtube.com",
+            "youtube.com",
+            "m.youtube.com",
+            "www.youtube-nocookie.com",
+            "i.ytimg.com",
+            "www.facebook.com",
+            "facebook.com"
+          ]
+        }
+      },
+      "minimumVersionCode": 921369,
+      "userContentHosts": [
+        "images.mapeak.com",
+        "api.panoramax.xyz",
+        "upload.wikimedia.org",
+        "commons.wikimedia.org",
+        "inature.info",
+        "imgur.com",
+        "i.imgur.com",
+        "www.nakeb.co.il"
+      ],
+      "notes": "Written from the binary and a short trace on a device. What it needs: mapeak.com (its API and tiles), api.openstreetmap.org and overpass-api.de, www.wikidata.org, raw.githubusercontent.com. Blocked: Google Tag Manager and Analytics, the embedded YouTube help video, Facebook.\n\nuserContentHosts: images.mapeak.com, the project's own photo server; api.panoramax.xyz, street level photos users take, where people can appear; Wikimedia (upload, commons), inature.info, imgur and nakeb.co.il, as in Israel Hiking Map. Panoramax images may also come from the hosts of its federated instances, which the code does not name; not yet seen on a device."
+    },
+    {
+      "type": "Fixed",
       "packageName": "com.miui.weather2",
       "category": "TOOLS",
       "networkPolicy": {
@@ -561,6 +596,30 @@
       "networkPolicy": {
         "mode": "FULL_OPEN"
       }
+    },
+    {
+      "type": "Fixed",
+      "packageName": "com.myadventure.myadventure",
+      "category": "NAVIGATION",
+      "networkPolicy": {
+        "mode": "BLACKLIST",
+        "desc": "Facebook is blocked; maps, routes and route books stay open",
+        "spec": {
+          "type": "HostList",
+          "hosts": [
+            "graph.facebook.com",
+            "facebook.com",
+            "www.facebook.com"
+          ]
+        }
+      },
+      "minimumVersionCode": 560,
+      "userContentHosts": [
+        "s3.off-road.io",
+        "f002.backblazeb2.com",
+        "upload.wikimedia.org"
+      ],
+      "notes": "Traced on a device while browsing routes and points with photos. What it needs: api.off-road.io and parse.off-road.io (its backend), tracks.off-road.io, files.off-road.io (route books as PDF), map tiles, ims.gov.il (weather) and storage.googleapis.com (the fixed previews of the map types). Blocked: the Facebook SDK.\n\nuserContentHosts: s3.off-road.io and f002.backblazeb2.com, its file storage on Backblaze, which is where user photos appear to come from, and upload.wikimedia.org. All of off-road.io sits behind Cloudflare, so the split was decided by blocking these and checking that photos go while routes stay; to be confirmed on a device."
     },
     {
       "type": "Fixed",
@@ -987,13 +1046,14 @@
         }
       },
       "minimumVersionCode": 921256,
-      "notes": "Written from the binary. It is a Capacitor application with a MapLibre map, so its code is the JavaScript in assets/public. What it needs: israelhiking.osm.org.il (its own API, tiles and uploaded photos), api.openstreetmap.org and overpass-api.de (map data), upload.wikimedia.org and commons.wikimedia.org (point of interest photos), inature.info, and RevenueCat (api.revenuecat.com and its siblings) for the subscription.\n\nBlocked: Google Tag Manager and Analytics; YouTube, which is an embedded help video (youtube.com/embed); Facebook, which is the project's group page and a share link; and imgur, which is where some user photos are hosted and where uploads went, so those photos do not load and an upload to imgur fails. The embedded video's stream comes from googlevideo.com hosts that cannot be listed one by one; blocking www.youtube.com stops the embed before it asks for them.\n\nWhat this does not block: photos on Wikimedia and on the project's own server, which are most of them. That is why the catalog entry carries hasUnmodestImage. Not yet watched on a device through the tunnel.\n\nuserContentHosts are the photos users upload: the app uploads them to Wikimedia Commons and shows them from there (upload.wikimedia.org, with commons.wikimedia.org for their pages), with more from inature.info and imgur. Blocked by the app unless the device allows user content; the map, routes and the project's own API on israelhiking.osm.org.il are untouched.",
+      "notes": "Written from the binary. It is a Capacitor application with a MapLibre map, so its code is the JavaScript in assets/public. What it needs: israelhiking.osm.org.il (its own API, tiles and uploaded photos), api.openstreetmap.org and overpass-api.de (map data), upload.wikimedia.org and commons.wikimedia.org (point of interest photos), inature.info, and RevenueCat (api.revenuecat.com and its siblings) for the subscription.\n\nBlocked: Google Tag Manager and Analytics; YouTube, which is an embedded help video (youtube.com/embed); Facebook, which is the project's group page and a share link; and imgur, which is where some user photos are hosted and where uploads went, so those photos do not load and an upload to imgur fails. The embedded video's stream comes from googlevideo.com hosts that cannot be listed one by one; blocking www.youtube.com stops the embed before it asks for them.\n\nWhat this does not block: photos on Wikimedia and on the project's own server, which are most of them. That is why the catalog entry carries hasUnmodestImage. Not yet watched on a device through the tunnel.\n\nuserContentHosts are the photos users upload: the app uploads them to Wikimedia Commons and shows them from there (upload.wikimedia.org, with commons.wikimedia.org for their pages), with more from inature.info and imgur. Blocked by the app unless the device allows user content; the map, routes and the project's own API on israelhiking.osm.org.il are untouched. Tried on a device: with user content off, commons.wikimedia.org and imgur were blocked and the photos went, while the map, search and routes kept working. It also loads photos from www.nakeb.co.il, a hiking site, now listed too.",
       "userContentHosts": [
         "upload.wikimedia.org",
         "commons.wikimedia.org",
         "inature.info",
         "imgur.com",
-        "i.imgur.com"
+        "i.imgur.com",
+        "www.nakeb.co.il"
       ]
     },
     {

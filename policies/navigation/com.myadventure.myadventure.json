@@ -1,0 +1,24 @@
+{
+  "type": "Fixed",
+  "packageName": "com.myadventure.myadventure",
+  "category": "NAVIGATION",
+  "networkPolicy": {
+    "mode": "BLACKLIST",
+    "desc": "Facebook is blocked; maps, routes and route books stay open",
+    "spec": {
+      "type": "HostList",
+      "hosts": [
+        "graph.facebook.com",
+        "facebook.com",
+        "www.facebook.com"
+      ]
+    }
+  },
+  "minimumVersionCode": 560,
+  "userContentHosts": [
+    "s3.off-road.io",
+    "f002.backblazeb2.com",
+    "upload.wikimedia.org"
+  ],
+  "notes": "Traced on a device while browsing routes and points with photos. What it needs: api.off-road.io and parse.off-road.io (its backend), tracks.off-road.io, files.off-road.io (route books as PDF), map tiles, ims.gov.il (weather) and storage.googleapis.com (the fixed previews of the map types). Blocked: the Facebook SDK.\n\nuserContentHosts: s3.off-road.io and f002.backblazeb2.com, its file storage on Backblaze, which is where user photos appear to come from, and upload.wikimedia.org. All of off-road.io sits behind Cloudflare, so the split was decided by blocking these and checking that photos go while routes stay; to be confirmed on a device."
+}

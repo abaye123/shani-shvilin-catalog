@@ -1,0 +1,35 @@
+{
+  "type": "Fixed",
+  "packageName": "com.mapeak",
+  "category": "NAVIGATION",
+  "networkPolicy": {
+    "mode": "BLACKLIST",
+    "desc": "Tag Manager, YouTube and Facebook are blocked; maps, search and routes stay open",
+    "spec": {
+      "type": "HostList",
+      "hosts": [
+        "www.googletagmanager.com",
+        "www.google-analytics.com",
+        "www.youtube.com",
+        "youtube.com",
+        "m.youtube.com",
+        "www.youtube-nocookie.com",
+        "i.ytimg.com",
+        "www.facebook.com",
+        "facebook.com"
+      ]
+    }
+  },
+  "minimumVersionCode": 921369,
+  "userContentHosts": [
+    "images.mapeak.com",
+    "api.panoramax.xyz",
+    "upload.wikimedia.org",
+    "commons.wikimedia.org",
+    "inature.info",
+    "imgur.com",
+    "i.imgur.com",
+    "www.nakeb.co.il"
+  ],
+  "notes": "Written from the binary and a short trace on a device. What it needs: mapeak.com (its API and tiles), api.openstreetmap.org and overpass-api.de, www.wikidata.org, raw.githubusercontent.com. Blocked: Google Tag Manager and Analytics, the embedded YouTube help video, Facebook.\n\nuserContentHosts: images.mapeak.com, the project's own photo server; api.panoramax.xyz, street level photos users take, where people can appear; Wikimedia (upload, commons), inature.info, imgur and nakeb.co.il, as in Israel Hiking Map. Panoramax images may also come from the hosts of its federated instances, which the code does not name; not yet seen on a device."
+}
