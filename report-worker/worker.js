@@ -1,6 +1,6 @@
 /**
  * Turns a report from the store, or a request from the app itself, into an
- * issue in this repository.
+ * issue in the reports repository named by GITHUB_REPO.
  *
  * The store cannot open an issue itself: that needs a GitHub token, and a
  * token inside an APK is a token anyone holding the APK can lift. This worker
@@ -43,6 +43,9 @@ const FEEDBACK_KINDS = {
 
 const PACKAGE_RE = /^[a-zA-Z][a-zA-Z0-9_]*(\.[a-zA-Z0-9_]+)+$/;
 const MAX_DETAILS = 1500;
+// The diagnostic log the app attaches on request, cut from the start so the
+// newest lines are kept. Well inside the 65536 characters of an issue body.
+const MAX_LOG = 50000;
 const RATE_WINDOW_SECONDS = 3600;
 const FEEDBACK_WINDOW_SECONDS = 600;
 
@@ -112,6 +115,7 @@ function validate(body) {
     userMode: clean(body.userMode, 40),
     device: clean(body.device, 100),
     sdk: clean(body.sdk, 10),
+    log: cleanLog(body.log),
   };
 }
 
@@ -129,7 +133,32 @@ function validateFeedback(body) {
     userMode: clean(body.userMode, 40),
     device: clean(body.device, 100),
     sdk: clean(body.sdk, 10),
+    log: cleanLog(body.log),
   };
+}
+
+/** The diagnostic log: lines kept, the newest end kept, no mentions. */
+function cleanLog(value) {
+  return String(value ?? "")
+    .replace(/[\u0000-\u0008\u000b\u000c\u000e-\u001f]/g, "")
+    .replace(/@/g, "@​")
+    .slice(-MAX_LOG)
+    .trim();
+}
+
+/** The log as a collapsed block at the end of an issue, or nothing. */
+function logBlock(log) {
+  if (!log) return [];
+  return [
+    "",
+    "<details><summary>יומן אבחון (30 הדקות האחרונות)</summary>",
+    "",
+    "````text",
+    log.replace(/````/g, "```"),
+    "````",
+    "",
+    "</details>",
+  ];
 }
 
 /** Plain text, bounded, with nothing that GitHub would turn into a mention or a link to run. */
@@ -174,6 +203,7 @@ async function fileFeedback(env, feedback) {
     `| מהדורת קטלוג | ${feedback.catalogRevision || "-"} |`,
     `| מצב סינון | ${feedback.userMode || "-"} |`,
     `| מכשיר | ${feedback.device || "-"} (SDK ${feedback.sdk || "-"}) |`,
+    ...logBlock(feedback.log),
   ].join("\n");
 
   const created = await github(env, `/repos/${env.GITHUB_REPO}/issues`, {
@@ -201,6 +231,7 @@ async function fileIssue(env, report) {
     `| מהדורת קטלוג | ${report.catalogRevision || "-"} |`,
     `| מצב סינון | ${report.userMode || "-"} |`,
     `| מכשיר | ${report.device || "-"} (SDK ${report.sdk || "-"}) |`,
+    ...logBlock(report.log),
   ].join("\n");
 
   // An open report on the same package and reason gets a comment, not a twin.

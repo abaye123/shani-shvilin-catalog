@@ -1,7 +1,7 @@
 # report-worker
 
 Turns a report from the store, or a request from the app itself (POST
-/feedback, label "feedback"), into an issue in this repository. Deployed as
+/feedback, label "feedback"), into an issue in the private reports repository. Deployed as
 the Cloudflare Worker `shani-shvilin-report`
 (`https://shani-shvilin-report.8140hp.workers.dev/report`).
 
@@ -12,8 +12,13 @@ inside an APK can be lifted by anyone holding the APK. The worker holds it.
 
 | Name | Kind | Value |
 |---|---|---|
-| `GITHUB_TOKEN` | secret | fine-grained token, Issues read/write, this repository only |
-| `GITHUB_REPO` | variable | `abaye123/shani-shvilin-catalog` |
+| `GITHUB_TOKEN` | secret | fine-grained token, Issues read/write, the reports repository only |
+| `GITHUB_REPO` | variable | `abaye123/shani-shvilin-support` (private) |
+
+Reports go to a private repository, not to this public one: they carry the
+device model and free text, and may carry the app's diagnostic log, which
+names installed applications and the sites that were blocked. The labels
+`report` and `feedback` must exist there.
 | `REPORT_KEY` | secret | the same value as `ReportClient.REPORT_KEY` in the app |
 
 ## Behaviour
@@ -24,6 +29,9 @@ inside an APK can be lifted by anyone holding the APK. The worker holds it.
 - One report per IP, package and reason per hour.
 - An open issue for the same package and reason gets a comment instead of a
   new issue. New issues carry the `report` label.
+- Either kind may carry `log`, the last minutes of the app's diagnostic log,
+  sent only when the user leaves "attach the diagnostic log" ticked. It is
+  cut to its newest 50000 characters and added as a collapsed block.
 
 ## Deploying
 
