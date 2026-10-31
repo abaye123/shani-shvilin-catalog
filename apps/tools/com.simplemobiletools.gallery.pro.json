@@ -1,0 +1,22 @@
+{
+  "packageName": "com.simplemobiletools.gallery.pro",
+  "displayName": {
+    "he": "גלריה ללא וידאו",
+    "en": "Kdroid Gallery (no video)"
+  },
+  "category": "TOOLS",
+  "minimumVersionCode": 2,
+  "sha256": "fb0b72467c9063e0325d35d77a8552bea092ef62177e705eb9f8034a5e1b40c4",
+  "availableInStore": true,
+  "grantsNetworkAccess": false,
+  "minUserMode": "OFFLINE",
+  "flags": {
+    "isRecommendedInStore": false
+  },
+  "source": {
+    "type": "DIRECT_URL",
+    "id": "kdroidFilter/Kdroid-Gallery",
+    "directUrl": "https://github.com/kdroidFilter/Kdroid-Gallery/releases/download/v0.1.1-pre-release/gallery-2-foss-release.apk"
+  },
+  "notes": "A photo gallery and editor for kosher devices: a fork of Simple Gallery Pro by kdroidFilter with video support removed by design (release note: 'Remove video mime support'). It keeps the upstream package name, so it cannot be installed next to, or over, a Simple Gallery Pro from Play, which has a different signer. The repository publishes only pre-releases, which the GitHub releases/latest endpoint does not return, so the source is the release asset itself rather than GITHUB: gallery-2-foss-release.apk from v0.1.1-pre-release (versionName 0.1.1, versionCode 2), a single universal APK. sha256 computed with apksigner from that file, single signer CN=Elyahou Hadass, O=Kdroid. No network on purpose: it is an offline gallery, and it does not request INTERNET at all. It still declares READ_MEDIA_VIDEO from upstream."
+}

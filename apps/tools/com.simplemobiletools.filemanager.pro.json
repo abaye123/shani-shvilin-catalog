@@ -1,0 +1,22 @@
+{
+  "packageName": "com.simplemobiletools.filemanager.pro",
+  "displayName": {
+    "he": "סייר קבצים ללא וידאו",
+    "en": "Kdroid File Manager (no video)"
+  },
+  "category": "TOOLS",
+  "minimumVersionCode": 2,
+  "sha256": "fb0b72467c9063e0325d35d77a8552bea092ef62177e705eb9f8034a5e1b40c4",
+  "availableInStore": true,
+  "grantsNetworkAccess": false,
+  "minUserMode": "OFFLINE",
+  "flags": {
+    "isRecommendedInStore": false
+  },
+  "source": {
+    "type": "DIRECT_URL",
+    "id": "kdroidFilter/Kdroid-File-Manager",
+    "directUrl": "https://github.com/kdroidFilter/Kdroid-File-Manager/releases/download/v0.1.1-pre-release/file-manager-core-release.apk"
+  },
+  "notes": "A file manager for the device's own storage: a fork of Simple File Manager Pro by kdroidFilter that does not open video files, by design, and has root support removed. It keeps the upstream package name, so it cannot be installed next to, or over, a Simple File Manager Pro from Play, which has a different signer. The repository publishes only pre-releases, which the GitHub releases/latest endpoint does not return, so the source is the release asset itself rather than GITHUB: file-manager-core-release.apk from v0.1.1-pre-release (versionName 0.1.1, versionCode 2), a single universal APK. sha256 computed with apksigner from that file, single signer CN=Elyahou Hadass, O=Kdroid, the same key as Kdroid Gallery. No network on purpose, and it does not request INTERNET at all. It holds REQUEST_INSTALL_PACKAGES and can open an APK it finds on the storage; whether that installs is decided by the install restrictions on the device, not by this entry."
+}

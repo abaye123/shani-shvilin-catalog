@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-30T10:42:43Z",
+  "generatedAt": "2026-10-31T21:49:06Z",
   "entries": [
     {
       "packageName": "air.com.cellogroup.Cellopark",
@@ -1127,6 +1127,50 @@
         "https://play-lh.googleusercontent.com/hYghIQzuLT1xrRbnLm3_iGhCeH3iaseN0pRoK_5srbxwnW2GksZU_BB30oED-TWh6To_UB59Ogy-uPoUfYt8",
         "https://play-lh.googleusercontent.com/2t5u6XbqhdpZQ2q6FJxmcxRd3PQZOtcOwFfElKvHJv0YEz2SJrC2py_xDjYNx8PvPQ9G8E_Lx4O_Q9DVdM3iiA"
       ]
+    },
+    {
+      "packageName": "com.simplemobiletools.filemanager.pro",
+      "displayName": {
+        "he": "סייר קבצים ללא וידאו",
+        "en": "Kdroid File Manager (no video)"
+      },
+      "category": "TOOLS",
+      "minimumVersionCode": 2,
+      "sha256": "fb0b72467c9063e0325d35d77a8552bea092ef62177e705eb9f8034a5e1b40c4",
+      "availableInStore": true,
+      "grantsNetworkAccess": false,
+      "minUserMode": "OFFLINE",
+      "flags": {
+        "isRecommendedInStore": false
+      },
+      "source": {
+        "type": "DIRECT_URL",
+        "id": "kdroidFilter/Kdroid-File-Manager",
+        "directUrl": "https://github.com/kdroidFilter/Kdroid-File-Manager/releases/download/v0.1.1-pre-release/file-manager-core-release.apk"
+      },
+      "notes": "A file manager for the device's own storage: a fork of Simple File Manager Pro by kdroidFilter that does not open video files, by design, and has root support removed. It keeps the upstream package name, so it cannot be installed next to, or over, a Simple File Manager Pro from Play, which has a different signer. The repository publishes only pre-releases, which the GitHub releases/latest endpoint does not return, so the source is the release asset itself rather than GITHUB: file-manager-core-release.apk from v0.1.1-pre-release (versionName 0.1.1, versionCode 2), a single universal APK. sha256 computed with apksigner from that file, single signer CN=Elyahou Hadass, O=Kdroid, the same key as Kdroid Gallery. No network on purpose, and it does not request INTERNET at all. It holds REQUEST_INSTALL_PACKAGES and can open an APK it finds on the storage; whether that installs is decided by the install restrictions on the device, not by this entry."
+    },
+    {
+      "packageName": "com.simplemobiletools.gallery.pro",
+      "displayName": {
+        "he": "גלריה ללא וידאו",
+        "en": "Kdroid Gallery (no video)"
+      },
+      "category": "TOOLS",
+      "minimumVersionCode": 2,
+      "sha256": "fb0b72467c9063e0325d35d77a8552bea092ef62177e705eb9f8034a5e1b40c4",
+      "availableInStore": true,
+      "grantsNetworkAccess": false,
+      "minUserMode": "OFFLINE",
+      "flags": {
+        "isRecommendedInStore": false
+      },
+      "source": {
+        "type": "DIRECT_URL",
+        "id": "kdroidFilter/Kdroid-Gallery",
+        "directUrl": "https://github.com/kdroidFilter/Kdroid-Gallery/releases/download/v0.1.1-pre-release/gallery-2-foss-release.apk"
+      },
+      "notes": "A photo gallery and editor for kosher devices: a fork of Simple Gallery Pro by kdroidFilter with video support removed by design (release note: 'Remove video mime support'). It keeps the upstream package name, so it cannot be installed next to, or over, a Simple Gallery Pro from Play, which has a different signer. The repository publishes only pre-releases, which the GitHub releases/latest endpoint does not return, so the source is the release asset itself rather than GITHUB: gallery-2-foss-release.apk from v0.1.1-pre-release (versionName 0.1.1, versionCode 2), a single universal APK. sha256 computed with apksigner from that file, single signer CN=Elyahou Hadass, O=Kdroid. No network on purpose: it is an offline gallery, and it does not request INTERNET at all. It still declares READ_MEDIA_VIDEO from upstream."
     },
     {
       "packageName": "com.sonol.mobileapp",
