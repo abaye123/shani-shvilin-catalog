@@ -16,5 +16,10 @@
   "flags": {
     "isRecommendedInStore": true
   },
-  "notes": "Not published on Play, so it is not offered for installation and is installed by hand. The entry exists because network access is decided here: a package that is not in the catalog gets nothing, whatever its policy says. Two certificates are accepted while this app is still in development: the release key (C=IL, O=abaye, CN=abaye) and the debug key of the machine it is built on (C=US, O=Android, CN=Android Debug), which is what is installed on the test device today. Drop the debug entry once the app ships."
+  "source": {
+    "type": "GITHUB",
+    "id": "derech-kohanim/derech-kohanim-android",
+    "directUrl": "https://github.com/derech-kohanim/derech-kohanim-android/releases/latest"
+  },
+  "notes": "Installed from the GitHub releases of derech-kohanim/derech-kohanim-android. Two certificates are accepted while this app is still in development: the release key (C=IL, O=abaye, CN=abaye) and the debug key of the machine it is built on (C=US, O=Android, CN=Android Debug), which is what is installed on the test device. Drop the debug entry once the test device runs a release build."
 }

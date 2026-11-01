@@ -2,11 +2,11 @@
   "schemaVersion": 1,
   "algorithm": "SHA256withECDSA",
   "signatures": {
-    "catalog.json": "MEUCIQDRG51jbTainZ6XrUVOk0HxeFUWJxAzrg7/RIqp+x+9QgIgXVbeLnAlX7c7e1MMtTY8z2ENjBFRXXY+64C7BvdSb/w=",
-    "policies.json": "MEUCIBx7Ju/Q1dldHrwxmMkVodBBpiYktGfm3OhcV/8BoFvDAiEA8IA6JM5EE/0QQ7baOFQsF0KRxr9wAQ2gM7mCTl8U2Q8="
+    "catalog.json": "MEUCIBVHKPd5jx1Wybiic0wTIQigcqTg5WgbkcXHl+wwcBI/AiEAp0i20HPSgSePATSv+0E/4vLN7sKNO2jFxZVA6UHPNiA=",
+    "policies.json": "MEQCIDre+C+YvXRtqGxVyaKwl4pIYl5hj4PwKIhVnujxQWSuAiAEoO0yGAYV8MkeFJnOCqnmbl3bzmj1d5CfJrLXwtPJfw=="
   },
   "sha256": {
-    "catalog.json": "042b9a9e5ae8d4ee6b7cfdb68a1c03fc506d5ad1b43bde00ce817400bb47a3b1",
-    "policies.json": "090697b12d8a4560278a4c6cdb4e886d744ae5335e73d649e7677e725da158e3"
+    "catalog.json": "b1e11da14ee1161df99276d3f72a6448d00a980587f8ba26afdcfb99b9f38880",
+    "policies.json": "4854b233fca1f933008b7bb47480a3259b5c08110fd348ac549c9a459e8eb386"
   }
 }
