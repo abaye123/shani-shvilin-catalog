@@ -11,7 +11,11 @@
   "grantsNetworkAccess": true,
   "minUserMode": "REDUCED_RISK",
   "flags": {
-    "isRecommendedInStore": false
+    "isRecommendedInStore": false,
+    "hasUnmodestImage": true
+  },
+  "riskNote": {
+    "he": "האפליקציה מציגה מודעות משלה לטיולי גלישה בחו\"ל ולקניה ומכירה של ציוד גלישה. התמונות במודעות חסומות, אבל המודעות עצמן מגיעות מאותו שרת של התחזית ולכן מוצגות כטקסט."
   },
   "source": {
     "type": "PLAY",

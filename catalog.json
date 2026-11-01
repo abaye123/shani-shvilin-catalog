@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-01T23:05:07Z",
+  "generatedAt": "2026-11-01T23:07:42Z",
   "entries": [
     {
       "packageName": "air.com.cellogroup.Cellopark",
@@ -249,7 +249,11 @@
       "grantsNetworkAccess": true,
       "minUserMode": "REDUCED_RISK",
       "flags": {
-        "isRecommendedInStore": false
+        "isRecommendedInStore": false,
+        "hasUnmodestImage": true
+      },
+      "riskNote": {
+        "he": "האפליקציה מציגה מודעות משלה לטיולי גלישה בחו\"ל ולקניה ומכירה של ציוד גלישה. התמונות במודעות חסומות, אבל המודעות עצמן מגיעות מאותו שרת של התחזית ולכן מוצגות כטקסט."
       },
       "source": {
         "type": "PLAY",
