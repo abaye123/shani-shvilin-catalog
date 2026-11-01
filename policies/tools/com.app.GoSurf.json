@@ -1,0 +1,17 @@
+{
+  "type": "Fixed",
+  "packageName": "com.app.GoSurf",
+  "category": "TOOLS",
+  "networkPolicy": {
+    "mode": "BLACKLIST",
+    "desc": "The app's own media server is blocked: surf trip promotions, marketplace photos, news pictures and camera stills; forecasts and live cameras stay open",
+    "spec": {
+      "type": "HostList",
+      "hosts": [
+        "media.gosurf.co.il"
+      ]
+    }
+  },
+  "minimumVersionCode": 20003,
+  "notes": "Written from the binary (a Flutter app, 5.1.2) and watched on a device through the tunnel. It carries its own promotions next to AdMob: surf trip packages and a marketplace of used gear, both with photos, some of them of people. All of those pictures come from media.gosurf.co.il (surf-trips/..., marketplace uploads, news thumbnails), so that host is blocked. The cards stay, with their text and no picture.\n\nWhat keeps working: gosurf.co.il (the API, app config and forecasts) and live.gosurf.co.il (the camera streams). The camera stills on the home screen also come from media.gosurf.co.il and go dark; opening a camera plays the live stream.\n\nAdMob (ca-app-pub-4008759075486927) is stopped by the global blocklist; with it, the banners showed Temu with images from aimg.kwcdn.com and img.kwcdn.com, which load only after the ad request succeeds."
+}
