@@ -35,6 +35,12 @@ names installed applications and the sites that were blocked. The labels
 
 ## Deploying
 
-Paste `worker.js` into the worker's editor in the dashboard and deploy. The
+Upload the code only, which keeps the secrets and variables set in the dashboard:
+
+```sh
+curl -X PUT -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN"   "https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/workers/scripts/shani-shvilin-report/content"   -F 'metadata={"main_module":"worker.js"};type=application/json'   -F "worker.js=@worker.js;type=application/javascript+module"
+```
+
+Pasting `worker.js` into the worker's editor in the dashboard works as well. The
 `workers.dev` address has to be allowed by network filters (NetFree) for
 reports to reach it from filtered devices.
