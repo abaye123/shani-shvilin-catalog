@@ -46,6 +46,8 @@ const MAX_DETAILS = 1500;
 // The diagnostic log the app attaches on request, cut from the start so the
 // newest lines are kept. Well inside the 65536 characters of an issue body.
 const MAX_LOG = 50000;
+// How the app opens the last crash inside the log field; see logBlock.
+const CRASH_MARKER = "=== Last crash";
 const RATE_WINDOW_SECONDS = 3600;
 const FEEDBACK_WINDOW_SECONDS = 600;
 
@@ -146,12 +148,26 @@ function cleanLog(value) {
     .trim();
 }
 
-/** The log as a collapsed block at the end of an issue, or nothing. */
+/**
+ * The log as a collapsed block at the end of an issue, or nothing.
+ *
+ * From app 0.2.16 the log field also carries the last crash, after the log
+ * the user chose to attach, or alone when they attached none. The summary
+ * says which, so a crash alone is not presented as half an hour of log.
+ */
 function logBlock(log) {
   if (!log) return [];
+  const crashAt = log.indexOf(CRASH_MARKER);
+  const hasCrash = crashAt >= 0;
+  const hasLog = crashAt !== 0;
+  const summary = hasCrash && !hasLog
+    ? "הקריסה האחרונה"
+    : hasCrash
+      ? "יומן אבחון (30 הדקות האחרונות) והקריסה האחרונה"
+      : "יומן אבחון (30 הדקות האחרונות)";
   return [
     "",
-    "<details><summary>יומן אבחון (30 הדקות האחרונות)</summary>",
+    `<details><summary>${summary}</summary>`,
     "",
     "````text",
     log.replace(/````/g, "```"),
