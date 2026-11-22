@@ -1,0 +1,21 @@
+{
+  "type": "Fixed",
+  "packageName": "com.ocpp",
+  "category": "TOOLS",
+  "networkPolicy": {
+    "mode": "BLACKLIST",
+    "desc": "Huawei usage metrics are blocked; the charger, the account and the maps stay open",
+    "spec": {
+      "type": "HostList",
+      "hosts": [
+        "metrics-dra.dt.hicloud.com",
+        "metrics1.data.hicloud.com",
+        "metrics5.data.hicloud.com",
+        "metrics.dt.dbankcloud.ru",
+        "wisemlops-model-drcn.dt.dbankcloud.cn"
+      ]
+    }
+  },
+  "minimumVersionCode": 2026111201,
+  "notes": "Written from the binary only, not yet from the tunnel. What it needs: apieu.suncharger.cn, auto.ienergycharge.com and app-file.ienergycharge.com, read from the Flutter code in libapp.so, plus the charger on the local network, which a host rule does not touch. Blocked: Huawei's analytics endpoints (HMS metrics and its model service). Huawei's grs and connectivity check hosts are left open, because HMS uses them to find its other services and an app that thinks it is offline is worse than one that reports a little. Crashlytics is left as in the other charging apps."
+}

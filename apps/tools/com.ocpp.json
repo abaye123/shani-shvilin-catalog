@@ -1,0 +1,28 @@
+{
+  "packageName": "com.ocpp",
+  "displayName": {
+    "he": "iEnergyCharge - טעינת רכב חשמלי",
+    "en": "iEnergyCharge"
+  },
+  "category": "TOOLS",
+  "minimumVersionCode": 2026111201,
+  "sha256": "58e3d6dc456f0138377da3daf4beca17f023f80d0f7ef929b663f78984693eeb",
+  "availableInStore": true,
+  "grantsNetworkAccess": true,
+  "minUserMode": "NAVIGATION_ONLY",
+  "source": {
+    "type": "PLAY",
+    "id": "com.ocpp"
+  },
+  "notes": "SUNGROW's app for its home and business EV chargers (account, charger setup, charging cards, start and stop, history). Flutter. Servers: apieu.suncharger.cn, auto.ienergycharge.com, app-file.ienergycharge.com; the charger itself is reached on the local network (11.11.11.1, 192.168.4.1, 192.168.18.1). Amap and Petal Maps for locations, Firebase and Crashlytics, Huawei HMS. No ad SDK. Pin and version from the build installed from Play on the test device (2.1.0.20261110, versionCode 2026111201), signed with the developer's own key (CN=zhang, OU=sungrow, O=sungrow, C=ch), not Play App Signing.",
+  "screenshots": [
+    "https://play-lh.googleusercontent.com/IpnKRyF9h1GjeD_y6O0lyJq551ksA3oNKrOmP-s3EEzgBsWGdTXMamJBcmHWIyshl46mYAfjInrwePEeyprR",
+    "https://play-lh.googleusercontent.com/63d_YZqv0Nw2qEGXxzTKps0E7YPY5kAuOQbA9VWfhbPaqJ0pKPVRd2qNNgbl8LX7y7SR4CxOnAtupqLzeb6Y8Q",
+    "https://play-lh.googleusercontent.com/PcMGRwrNh76EKsofPCDdH2crwGbUuCiqU9Ls4UPPhWs2gwoc60e9FCdlKmnzKq6n_0kYC8qmDSH5V53Mn8C-",
+    "https://play-lh.googleusercontent.com/0yfEV52I27zEtoKzOcBDqxoKLJ9x_Icr_dYezkihtEl-PZ510kxhXEAXXetoML0WS6XCsqbx6HxMhaK33-HFaA",
+    "https://play-lh.googleusercontent.com/IpnKRyF9h1GjeD_y6O0lyJq551ksA3oNKrOmP-s3EEzgBsWGdTXMamJBcmHWIyshl46mYAfjInrwePEeyprR",
+    "https://play-lh.googleusercontent.com/63d_YZqv0Nw2qEGXxzTKps0E7YPY5kAuOQbA9VWfhbPaqJ0pKPVRd2qNNgbl8LX7y7SR4CxOnAtupqLzeb6Y8Q",
+    "https://play-lh.googleusercontent.com/PcMGRwrNh76EKsofPCDdH2crwGbUuCiqU9Ls4UPPhWs2gwoc60e9FCdlKmnzKq6n_0kYC8qmDSH5V53Mn8C-",
+    "https://play-lh.googleusercontent.com/0yfEV52I27zEtoKzOcBDqxoKLJ9x_Icr_dYezkihtEl-PZ510kxhXEAXXetoML0WS6XCsqbx6HxMhaK33-HFaA"
+  ]
+}
