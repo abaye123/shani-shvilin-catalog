@@ -10,7 +10,10 @@
   "availableInStore": true,
   "grantsNetworkAccess": true,
   "minUserMode": "NAVIGATION_ONLY",
-  "notes": "Preinstalled on the test device, so it is granted network but not offered for installation. Signature pinned from that device.",
+  "flags": {
+    "hasUnmodestImage": true
+  },
+  "notes": "Preinstalled on the test device, so it is granted network but not offered for installation. Signature pinned from that device. Flagged hasUnmodestImage on 2026-11-22: place photos, user uploads included, arrive over the main mobilemaps.googleapis.com connection and no host rule can stop them without breaking search; see the policy notes and catalog issue #4.",
   "source": {
     "type": "PLAY",
     "id": "com.google.android.apps.maps"
